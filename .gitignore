@@ -1,0 +1,51 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+.next/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sw?
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Optional: yarn or npm logs
+.yarn/
+.pnp.*
+.cache/
+.npm/
+
+# coverage reports
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+# Local development
+*.local
+*.log
+
+# Testing
+jest-test-results.json

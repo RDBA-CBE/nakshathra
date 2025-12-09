@@ -1,69 +1,108 @@
-"use client"
+'use client';
 
-import { useRef } from "react"
-import { useInView } from "@/hooks/use-in-view"
+import { useRef } from 'react';
+import { useInView } from '@/hooks/use-in-view';
+import { useCounter } from '@/hooks/use-counter';
 
 export default function AboutSection() {
-  const sectionRef = useRef<HTMLDivElement>(null)
-  const isInView = useInView(sectionRef)
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(sectionRef);
+
+  const countAmenities = useCounter(isInView, 20, 800);
+  const countRooms = useCounter(isInView, 49, 800);
 
   return (
-    <section ref={sectionRef} className="py-20 px-6 bg-white">
-      <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <p className="text-[#8B4513] text-sm font-medium mb-4 tracking-wide">ABOUT OUR HOTEL</p>
-        </div>
+    <section ref={sectionRef} className='py-20 px-6 bg-white'>
+      <div className='container mx-auto'>
+        
+        {/* ⭐ GRID CONTAINER — 12 COLS */}
+        <div className='grid grid-cols-1 xl:grid-cols-12 gap-16'>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          <div>
+          {/*  CHILD 1 — col-xl-5 */}
+          <div className='xl:col-span-5'>
             <div
-              className={`grid grid-cols-2 gap-8 mb-8 transition-all duration-700 ${
-                isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              className={`grid grid-cols-2 gap-8 transition-all duration-700 ${
+                isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <div className="text-center">
-                <div className="text-5xl font-serif text-[#2C1810] mb-2">+20</div>
-                <p className="text-gray-600 text-sm">Aromatic Services</p>
+              <div className='text-center'>
+                <div className='text-8xl font-semibold font-serif text-[#2C1810] mb-2'>
+                  +{countAmenities}
+                </div>
+                <p className='text-gray-600 text-sm'>Aromatic Services</p>
               </div>
-              <div className="text-center">
-                <div className="text-5xl font-serif text-[#2C1810] mb-2">+49</div>
-                <p className="text-gray-600 text-sm">Total Luxury Rooms</p>
-              </div>
-            </div>
 
-            <div
-              className={`space-y-4 text-gray-600 leading-relaxed transition-all duration-700 delay-200 ${
-                isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-              }`}
-            >
-              <p>
-                Nakshatra&apos;s Royal Stay, a most luxurious stays hotel situated in Palghar with a growing legacy of
-                three exciting hotels in palghar. So much of modern life is spent indoors. Let your hotel room be your
-                private escape in Nakshatra Royal Stay with its array of services.
-              </p>
-              <p>
-                Nakshatra&apos;s royal Stay has 49 oven built, designed and well appointed rooms that cater moving to
-                the modern travelers in Palghar. Each room has been individually designed with a modern design and a
-                rustic character. Room amenities are thoughtfully on elegant neo-classic designs with stylish furnishing
-                and an exotic calm ambience.
-              </p>
+              <div className='text-center'>
+                <div className='text-8xl font-semibold font-serif text-[#2C1810] mb-2'>
+                  +{countRooms}
+                </div>
+                <p className='text-gray-600 text-sm'>Total Luxury Rooms</p>
+              </div>
             </div>
           </div>
 
+          {/* CHILD 2 — col-xl-7 */}
+          <div className='xl:col-span-7'>
+            <div
+              className={`transition-all duration-700 delay-300 about-section ${
+                isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+            >
+              <h6 className='mb-3 tracking-widest text-sm text-[#C89A32]'>
+                ABOUT OUR HOTEL
+              </h6>
+
+              <h2 className='text-4xl font-serif text-[#2C1810] mb-8'>
+                Redefining Stays with Warmth and Elegance
+              </h2>
+            </div>
+          </div>
+
+          {/* CHILD 3 — col-xl-5 */}
           <div
-            className={`relative transition-all duration-700 delay-300 ${
-              isInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+            className={`xl:col-span-5 space-y-6 text-gray-600 leading-relaxed about-section transition-all duration-700 delay-200 ${
+              isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            <h2 className="font-serif text-4xl text-[#2C1810] mb-8 leading-tight text-balance">
-              Redefining Stays with Warmth and Elegance
-            </h2>
-            <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <img src="/elegant-hotel-bedroom-interior.jpg" alt="Hotel Room Interior" className="w-full h-full object-cover" />
+            <p>
+              Nakshathra Royal Stay, a smart business class hotel situated in
+              Palani with a promise 'Hey we are different' from existing hotels
+              in the region with vow to delight you. For those who look for the
+              finest accommodation at a good value, Nakshathra Royal Stay would
+              certainly be a double delight.
+            </p>
+
+            <p>
+              Carefully chosen amenities furnish the rooms to ensure pleasant
+              and comfortable long stays. Both our superior and executive guest
+              rooms are decorated in elegant and modern designs with stylish
+              bathrooms and muted color schemes.
+            </p>
+
+            <div className='pt-4'>
+              <button className='px-8 py-3 bg-[#8b3232] text-white font-semibold hover:bg-[#A88327] transition-colors duration-300'>
+                View and Book the Rooms
+              </button>
             </div>
           </div>
+
+          {/* CHILD 4 — col-xl-7 */}
+          <div
+            className={`xl:col-span-7 relative transition-all duration-700 delay-300 ${
+              isInView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+            }`}
+          >
+            <div className='relative h-[auto] rounded-lg overflow-hidden'>
+              <img
+                src='/about-img.jpg'
+                alt='Hotel Room Interior'
+                className='w-full h-full object-cover'
+              />
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
-  )
+  );
 }

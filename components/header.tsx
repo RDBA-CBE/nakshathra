@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Phone } from "lucide-react"
+import { Phone, Menu, X} from "lucide-react"
+
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -14,9 +15,10 @@ const navItems = [
   { name: "Contact", href: "/contact" },
 ]
 
-export default function Header() {
+export default function Header({}) {
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,32 +30,33 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${scrolled ? "shadow-md" : ""}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${
+        scrolled ? "shadow-md" : ""
+      }`}
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link
-            href="/"
-            className="flex flex-col items-center gap-1 cursor-pointer hover:opacity-80 transition-opacity"
-          >
-            <div className="relative w-14 h-14 flex items-center justify-center">
-              <div className="absolute inset-0 border-2 border-[#8B4513] rounded-sm transform rotate-45"></div>
-              <span className="text-[#8B4513] font-serif text-2xl font-bold relative z-10">HN</span>
-            </div>
-            <div className="text-center">
-              <div className="text-[10px] text-[#2C1810] tracking-wider">HOTEL</div>
-              <div className="font-serif text-base text-[#8B4513] font-semibold tracking-wide">NAKSHATRA</div>
-            </div>
+          
+          {/* Logo */}
+          <Link href="/" className="flex items-center cursor-pointer">
+            <img
+              src="/header-logo.png"
+              alt="Hotel Nakshatra Logo"
+              className="w-40 h-auto"
+            />
           </Link>
 
-          <div className="hidden lg:flex items-center gap-12 bg-[#F5F1ED] px-12 py-4 rounded-full">
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-center gap-12 bg-[#F5F1ED] px-12 py-11 rounded-xl nav-font">
             <nav className="flex items-center gap-8">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   className={`transition-colors text-sm font-medium ${
-                    pathname === item.href ? "text-[#8B4513] font-semibold" : "text-[#2C1810] hover:text-[#8B4513]"
+                    pathname === item.href
+                      ? "text-[#8B4513] font-semibold"
+                      : "text-[#2C1810] hover:text-[#8B4513]"
                   }`}
                 >
                   {item.name}
@@ -64,12 +67,58 @@ export default function Header() {
             <div className="flex items-center gap-3 pl-8 border-l border-gray-300">
               <Phone className="w-5 h-5 text-[#8B4513]" />
               <div className="text-right">
-                <div className="text-xs text-gray-600 whitespace-nowrap">Reserve Your Stay Today</div>
-                <div className="font-semibold text-[#2C1810] whitespace-nowrap">+91 90871 73000</div>
+                <div className="text-xs text-gray-600 whitespace-nowrap">
+                  Reserve Your Stay Today
+                </div>
+                <div className="font-semibold text-[#2C1810] whitespace-nowrap">
+                  +91 90871 73000
+                </div>
               </div>
             </div>
           </div>
+
+          {/* Mobile Hamburger */}
+          <button
+            className="lg:hidden focus:outline-none"
+            onClick={() => setMobileOpen(!mobileOpen)}
+          >
+            {mobileOpen ? (
+              <X className="w-7 h-7 text-[#2C1810]" />
+            ) : (
+              <Menu className="w-7 h-7 text-[#2C1810]" />
+            )}
+          </button>
         </div>
+
+        {/* Mobile Dropdown */}
+        {mobileOpen && (
+          <div className="lg:hidden mt-4 bg-[#F5F1ED] rounded-xl px-6 py-6 nav-font">
+            <nav className="flex flex-col gap-5">
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className={`text-sm font-medium ${
+                    pathname === item.href
+                      ? "text-[#8B4513] font-semibold"
+                      : "text-[#2C1810] hover:text-[#8B4513]"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+
+            <div className="flex items-center gap-4 mt-6 border-t border-gray-300 pt-6">
+              <Phone className="w-5 h-5 text-[#8B4513]" />
+              <div>
+                <div className="text-xs text-gray-600">Reserve Your Stay Today</div>
+                <div className="font-semibold text-[#2C1810]">+91 90871 73000</div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </header>
   )

@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
+
+
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -120,6 +124,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
     scroll-behavior: smooth;
@@ -132,6 +137,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -142,6 +148,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -154,4 +161,47 @@
 
 .animate-fade-in {
   animation: fade-in 0.6s ease-out forwards;
+}
+
+.nav-font {
+  font-family: "Marcellus", serif !important;
+  font-size: 16px;
+}
+
+.nav-font a {
+  font-family: "Marcellus", serif !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about-section h6 {
+  font-family: "Marcellus", serif !important;
+  color: #d9b86b;
+  font-size: 20px;
+  font-weight: 700 !important;
+}
+
+.about-section h2 {
+  font-family: "Marcellus", serif !important;
+  color: #203 46% 15%;
+  font-size: 52px;
+  font-weight: 400 !important;
+}
+.about-section button{
+  background-color: #8b3232;
+  font-family: "Marcellus", serif !important;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 400 !important;
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1430px;
+    }
+}
+
+.banner{
+  margin-inline-start: 210px;
+    padding-block: 150px 190px;
 }
