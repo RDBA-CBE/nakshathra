@@ -1,142 +1,67 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const slides = [
   {
     id: 1,
-    subtitle: 'FIND UNIQUE HOMES IN VIBRANT PLACES.',
+    subtitle: "FIND UNIQUE HOMES IN VIBRANT PLACES.",
     title: "Experience Comfort Of The City's Stays",
     description:
-      'At SparkleClean, we believe a clean space is a happy space. With years of experience in residential and commercial cleaning our mission is to deliver top-quality ..',
-    image: '/luxury-hotel-bedroom-with-white-pillows-and-warm-l.jpg',
-    alt: 'Luxury Hotel Room',
-  },
-  {
-    id: 2,
-    subtitle: 'FIND UNIQUE HOMES IN VIBRANT PLACES.',
-    title: 'Redefining Stays with Warmth and Elegance',
-    description:
-      'Experience unparalleled comfort and luxury in our meticulously designed rooms. Each space is crafted to provide you with the perfect blend of modern amenities and traditional hospitality.',
-    image: '/elegant-hotel-suite-with-modern-furniture.jpg',
-    alt: 'Elegant Hotel Suite',
-  },
-  {
-    id: 3,
-    subtitle: 'FIND UNIQUE HOMES IN VIBRANT PLACES.',
-    title: 'Your Home Away From Home',
-    description:
-      'Discover a sanctuary of tranquility where every detail is designed for your comfort. Our dedication to excellence ensures an unforgettable stay that exceeds expectations.',
-    image: '/cozy-hotel-room-with-ambient-lighting.jpg',
-    alt: 'Cozy Hotel Room',
+      "At SparkleClean, we believe a clean space is a happy space. With years of experience in residential and commercial cleaning our mission is to deliver top-quality ..",
+    image: "/luxury-hotel-bedroom-with-white-pillows-and-warm-l.jpg",
   },
 ];
 
 export default function HeroSection() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      nextSlide();
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, [currentSlide]);
-
-  const nextSlide = () => {
-    if (!isAnimating) {
-      setIsAnimating(true);
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-      setTimeout(() => setIsAnimating(false), 600);
-    }
-  };
-
-  const prevSlide = () => {
-    if (!isAnimating) {
-      setIsAnimating(true);
-      setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-      setTimeout(() => setIsAnimating(false), 600);
-    }
-  };
-
-  const goToSlide = (index: number) => {
-    if (!isAnimating && index !== currentSlide) {
-      setIsAnimating(true);
-      setCurrentSlide(index);
-      setTimeout(() => setIsAnimating(false), 600);
-    }
-  };
-
-  const currentSlideData = slides[currentSlide];
+  const slide = slides[0];
 
   return (
-    <section className='relative pt-[12.25rem] bg-white overflow-hidden'>
-      <div className='w-full bg-[#FAF8F3]'>
-        <div className='grid lg:grid-cols-2 gap-0 h-full'>
-          {/* Left side - Text content */}
-          <div className='flex items-center px-6 sm:px-10 lg:px-16 banner'>
-            <div key={`text-${currentSlide}`} className='animate-fade-in-up'>
-              <p className='text-[#4A5568] text-xs font-medium mb-4 tracking-wider uppercase'>
-                {currentSlideData.subtitle}
-              </p>
-              <h1 className='font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#2C1810] mb-6 leading-tight text-balance'>
-                {currentSlideData.title}
-              </h1>
-              <p className='text-[#4A5568] mb-8 leading-relaxed max-w-lg text-sm'>
-                {currentSlideData.description}
-              </p>
-              <Button className='bg-[#8B4513] hover:bg-[#6B3410] text-white px-8 py-3 rounded-sm group transition-all'>
-                Know More
-                <ArrowRight className='ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform' />
-              </Button>
-            </div>
+    <section className="relative w-full bg-[#FBF3E8] pt-20 overflow-hidden">
+      <div className="w-full flex flex-col lg:flex-row items-stretch relative">
+
+        {/* VECTOR SHAPE (curved background shape) */}
+        <div className="hidden lg:block absolute right-[38%] top-0 h-full w-[420px] pointer-events-none">
+          <img
+            src="/vector-icon.png"
+            alt="vector shape"
+            className="w-full h-full object-cover opacity-70 pointer-events-none"
+          />
+        </div>
+
+        {/* LEFT TEXT BLOCK */}
+        <div className="w-full lg:w-1/2 px-6 md:px-12 lg:pl-20 relative z-10 flex items-center">
+          <div className="max-w-[720px] py-12 lg:py-28">
+            <p className="uppercase tracking-widest text-sm text-[#B88A33] mb-4">
+              {slide.subtitle}
+            </p>
+
+            <h1 className="font-serif text-[#12303a] text-4xl sm:text-5xl md:text-6xl lg:text-[84px] leading-[0.95] mb-6">
+              Experience Comfort
+              <br />
+              Of The City's Stays
+            </h1>
+
+            <p className="text-[#12303a] text-base md:text-lg max-w-[640px] leading-relaxed mb-8">
+              {slide.description}
+            </p>
+
+            <button className="bg-[#7A2E2E] text-white px-10 py-3 rounded-lg text-base inline-flex items-center">
+              Know More <ArrowRight className="ml-2 h-4 w-4" />
+            </button>
           </div>
+        </div>
 
-          {/* Right side - Image */}
-          <div className='relative h-full'>
-            <div
-              key={`image-${currentSlide}`}
-              className='absolute inset-0 animate-fade-in'
-            >
-              <img
-                src={currentSlideData.image || '/placeholder.svg'}
-                alt={currentSlideData.alt}
-                className='w-full object-cover'
-              />
-            </div>
-
-            <button
-              onClick={prevSlide}
-              className='absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all z-10'
-              aria-label='Previous slide'
-            >
-              <ChevronLeft className='w-6 h-6 text-[#2C1810]' />
-            </button>
-            <button
-              onClick={nextSlide}
-              className='absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all z-10'
-              aria-label='Next slide'
-            >
-              <ChevronRight className='w-6 h-6 text-[#2C1810]' />
-            </button>
-
-            <div className='absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10'>
-              {slides.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToSlide(index)}
-                  className={`h-2 rounded-full transition-all ${
-                    index === currentSlide
-                      ? 'w-8 bg-white'
-                      : 'w-2 bg-white/50 hover:bg-white/75'
-                  }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
-            </div>
+        {/* RIGHT IMAGE */}
+        <div className="w-full lg:w-1/2 overflow-hidden relative z-20">
+          <div className="h-[320px] md:h-[420px] lg:h-[760px] w-full">
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-full object-cover object-right"
+            />
           </div>
         </div>
       </div>
