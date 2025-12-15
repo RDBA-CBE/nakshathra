@@ -15,7 +15,7 @@ export default function LuxuryBanner() {
       <div className="w-full overflow-hidden whitespace-nowrap relative">
         <div
           className={`
-            flex gap-20 font-serif text-6xl lg:text-8xl text-[#C9A961] leading-tight
+            flex gap-20 font-heading text-6xl lg:text-8xl text-[#C9A961] leading-tight
             animate-marquee transition-all duration-1000 marquee-title
             ${isInView ? "opacity-100 scale-100" : "opacity-0 scale-95"}
           `}

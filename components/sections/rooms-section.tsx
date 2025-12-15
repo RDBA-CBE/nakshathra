@@ -37,8 +37,8 @@ export default function RoomsSection() {
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <p className="text-[#8B4513] text-sm font-medium mb-4 tracking-wide">FEEL REAL RESIDENCE</p>
-          <h2 className="font-serif text-4xl lg:text-5xl text-[#2C1810] text-balance">
+          <p className="text-[#b3862f] font-heading text-xl font-bold mb-4 tracking-wide">FEEL REAL RESIDENCE</p>
+          <h2 className="font-heading text-4xl lg:text-5xl text-[#2C1810] text-balance">
             Every Room Tells a Story of Comfort
           </h2>
         </div>

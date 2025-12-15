@@ -79,10 +79,10 @@ export default function AboutSection() {
                   : 'opacity-0 translate-y-6'
               }`}
             >
-              <h6 className='text-sm tracking-widest text-[#C89A32] mb-3'>
+              <h6 className='text-xl font-heading font-bold tracking-widest text-[#C89A32] mb-3'>
                 ABOUT OUR HOTEL
               </h6>
-              <h2 className='font-serif text-4xl md:text-5xl text-[#12303a] mb-6'>
+              <h2 className='font-heading text-4xl md:text-5xl text-[#12303a] mb-6'>
                 Redefining Stays with Warmth and Elegance
               </h2>
             </div>

@@ -79,8 +79,8 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
-  --font-serif: "Playfair Display", serif;
+  --font-sans: "Satoshi", sans-serif;
+  --font-heading: "Marcellus", serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -237,19 +237,35 @@
   text-transform: capitalize;
   color: #b99d75;
 }
+
 .marquee-four {
-    margin-block-start: -106px;
+  margin-block-start: -202px;
 }
+
 .banner-four-content {
-    margin-inline-start: 210px;
-    padding-block: 150px 190px;
+  margin-inline-start: 210px;
+  padding-block: 150px 190px;
 }
 
 .Footer .li .a {
   font-size: 16px;
-} 
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1430px;
   }
 }
+
+@media screen and (max-width: 1399px) {
+  .testimonial-two-paragraph {
+    font-size: 22px;
+  }
+}
+
+.testimonial-two-paragraph {
+  font-size: 26px;
+  line-height: 165%;
+ 
+}
+

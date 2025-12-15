@@ -13,7 +13,7 @@ import Header from "@/components/header"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#FAF8F3]">
+    <main className="min-h-screen bg-[#FFF]">
       <Header />
       <HeroSection />
       <AboutSection />

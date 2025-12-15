@@ -1,50 +1,70 @@
-import Image from "next/image"
-import { Star } from "lucide-react"
-
-interface TestimonialCardProps {
-  name: string
-  date: string
-  rating: number
-  review: string
-  avatar?: string
-  platform: string
-  platformLogo?: string
-}
+import Image from 'next/image';
+import { Star } from 'lucide-react';
 
 export default function TestimonialCard({
   name,
-  date,
-  rating,
+  role,
+  rating = 5,
   review,
-  avatar = "/placeholder-user.jpg",
+  avatar,
   platform,
-}: TestimonialCardProps) {
-  return (
-    <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-      <div className="flex items-start gap-4 mb-4">
-        <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
-          <Image src={avatar || "/placeholder.svg"} alt={name} fill className="object-cover" />
-        </div>
-        <div className="flex-1">
-          <h4 className="font-semibold text-[#2C2416]">{name}</h4>
-          <p className="text-sm text-gray-500">{date}</p>
-        </div>
-      </div>
+}: any) {
+  // show 5 stars, highlight according to rating
+  const stars = Array.from({ length: 5 });
 
-      <div className="flex gap-1 mb-4">
-        {Array.from({ length: 5 }).map((_, i) => (
-          <Star key={i} className={`h-4 w-4 ${i < rating ? "fill-[#D4AF37] text-[#D4AF37]" : "text-gray-300"}`} />
+  return (
+    <div className='relative bg-white rounded-2xl border border-[#D9B66E] p-8 shadow-sm h-full md:h-[420px] flex flex-col overflow-hidden'>
+      {/* Stars (outlined gold) */}
+      <div className='flex gap-2 mb-6'>
+        {stars.map((_, i) => (
+          <Star
+            key={i}
+            size={14}
+            className={`text-[#D9B66E] ${
+              i < rating ? 'opacity-100' : 'opacity-40'
+            }`}
+          />
         ))}
       </div>
 
-      <p className="text-gray-600 leading-relaxed mb-4">{review}</p>
+      {/* Review */}
+      <p className='font-heading testimonial-two-paragraph text-[#2b3940] text-lg leading-relaxed mb-6 flex-1'>
+        {review}
+      </p>
 
-      <div className="flex items-center gap-2 pt-4 border-t border-gray-100">
-        <div className="w-6 h-6 bg-[#00D9A5] rounded flex items-center justify-center">
-          <span className="text-white text-xs font-bold">✓</span>
+      <hr className='mb-6 border-t border-[#efe9df]' />
+
+      {/* Footer */}
+      <div className='flex items-center justify-between mt-auto'>
+        <div className='flex items-center gap-4'>
+          <div className='w-12 h-12 relative rounded-full overflow-hidden border-2 border-white flex-shrink-0'>
+            <Image src={avatar} alt={name} fill className='object-cover' />
+          </div>
+          <div>
+            <p className='font-medium text-[#10212b]'>{name}</p>
+            <p className='text-sm text-gray-400'>{role}</p>
+          </div>
         </div>
-        <span className="text-sm text-gray-500">{platform}</span>
+
+        {/* Platform badge (Tripadvisor-like) */}
+        <div className='flex items-center gap-3'>
+          <div className='text-sm text-[#00AA6C] font-semibold hidden sm:block'>
+            {platform}
+          </div>
+          <div className='w-8 h-8 rounded-full bg-[#00AA6C] flex items-center justify-center shadow-sm'>
+            <svg
+              width='14'
+              height='14'
+              viewBox='0 0 24 24'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <circle cx='6.5' cy='6.5' r='2' fill='#fff' />
+              <circle cx='17.5' cy='6.5' r='2' fill='#fff' />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
