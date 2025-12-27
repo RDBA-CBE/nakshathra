@@ -7,20 +7,23 @@ import RoomCard from "@/components/room-card"
 const rooms = [
   {
     title: "Family Room",
-    price: "900 Sqft+",
+    price: "₹6160",
+    area: "300 Sq ft",
     guests: "4 guest",
     image: "/family-hotel-room-orange-decor.jpg",
   },
   {
     title: "Suite Room",
-    price: "900 Sqft+",
-    guests: "4 guest",
+    price: "₹6000",
+    area: "200 Sq ft",
+    guests: "2 guest",
     image: "/luxury-suite-hotel-room.jpg",
   },
   {
     title: "Premium Room",
-    price: "900 Sqft+",
-    guests: "4 guest",
+    price: "₹4000",
+    area: "250 Sq ft",
+    guests: "2 guest",
     image: "/premium-hotel-room-warm-lighting.jpg",
   },
 ]
@@ -30,16 +33,32 @@ export default function RoomsSection() {
   const isInView = useInView(sectionRef)
 
   return (
-    <section ref={sectionRef} className="py-20 px-6 bg-[#FAF8F3]">
+    <section ref={sectionRef} className="py-20 px-6 bg-white">
       <div className="container mx-auto">
         <div
           className={`text-center mb-16 transition-all duration-700 ${
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <p className="text-[#b3862f] font-heading text-xl font-bold mb-4 tracking-wide">FEEL REAL RESIDENCE</p>
-          <h2 className="font-heading text-4xl lg:text-5xl text-[#2C1810] text-balance">
-            Every Room Tells a Story of Comfort
+          <p 
+            className="text-sm sm:text-base tracking-widest mb-4"
+            style={{ 
+              fontFamily: 'sans-serif',
+              color: '#C89A32',
+              letterSpacing: '0.15em'
+            }}
+          >
+            REST, RELAX, RECHARGE
+          </p>
+          <h2 
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
+            style={{ 
+              fontFamily: '"Marcellus", serif',
+              color: '#2C1810',
+              fontWeight: 400
+            }}
+          >
+            Every Room Tells a Story of<br />Comfort
           </h2>
         </div>
 
