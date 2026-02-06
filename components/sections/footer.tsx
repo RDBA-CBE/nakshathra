@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#F5F0E8] text-[#2C1810] py-16 px-6">
+    <footer className="bg-[#FAF8F3]text-[#2C1810] py-16 px-6">
       <div className="max-w-[1400px] mx-auto">
         
         {/* GRID EXACT LIKE IMAGE */}
