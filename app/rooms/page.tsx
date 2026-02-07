@@ -8,215 +8,118 @@ export const metadata: Metadata = {
   description: "Explore our luxury rooms and suites",
 };
 
+const rooms = [
+  {
+    id: "01",
+    title: "Standard Single",
+    price: "₹1499 + 5% tax (₹1574)",
+    description:
+      "Designed for solo travellers, the standard single room offers a cozy and functional space with warm decor that provides comfort and relaxation.",
+    image: "/cozy-hotel-room-with-ambient-lighting.jpg",
+    link: "/rooms/standard-single-room",
+  },
+  {
+    id: "02",
+    title: "Standard Double",
+    price: "₹1999 + 5% tax (₹2099)",
+    description:
+      "The Standard Double Room is a spacious and well-appointed accommodation offering enhanced comfort, privacy and modern amenities.",
+    image: "/cozy-hotel-room-with-ambient-lighting.jpg",
+    link: "/rooms/standard-double-room",
+  },
+  {
+    id: "03",
+    title: "Deluxe Room",
+    price: "₹2399 + 5% tax (₹2519)",
+    description:
+      "The Deluxe Room offers enhanced space with elegant interiors and premium comforts, creating a refined yet inviting atmosphere.",
+    image: "/cozy-hotel-room-with-ambient-lighting.jpg",
+    link: "/rooms/deluxe-room",
+  },
+  {
+    id: "04",
+    title: "Super Deluxe Room",
+    price: "₹3999 + 5% tax (₹4199)",
+    description:
+      "The Super Deluxe Room is the most spacious category at Hotel Nakshathra, featuring refined decor, superior amenities and exceptional comfort. ",
+    image: "/cozy-hotel-room-with-ambient-lighting.jpg",
+    link: "/rooms/super-deluxe-room",
+  },
+];
+
 export default function RoomsPage() {
   return (
-    <main className="min-h-screen bg-[#FAF8F3] text-[#2E2E2E]">
+    <main className="min-h-screen">
       <Header />
 
-      <section className="pt-32 pb-24 px-4">
-        <div className="max-w-6xl mx-auto">
-          {/* Page Heading */}
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-heading font-semibold">
-              Our Rooms
-            </h1>
-            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Thoughtfully designed rooms offering comfort, elegance and calm
-              for every kind of stay.
-            </p>
+      <section className=" pb-24 px-4 bg-[#FFFFFF]">
+        <div className="relative rounded-3xl bg-[#F3EEE6] px-6 sm:px-10 py-6 sm:py-6 text-center">
+          <h1 className="mt-4 font-heading text-3xl sm:text-4xl md:text-5xl text-[#152A38] max-w-3xl mx-auto leading-tight">
+            Our Rooms
+          </h1>
+
+          <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+            Discover thoughtfully designed rooms that reflects warmth and
+            comfort. Each room features calming interiors, functional layouts
+            and contemporary amenities, crafted to provide a peaceful and
+            convenient stay. Whether you’re visiting for a short stop or an
+            extended stay, our rooms offer the perfect balance of simplicity,
+            comfort and elegance.
+          </p>
+
+          <div className="mt-8 flex justify-center">
+            <span className="h-[1px] w-24 bg-[#8B4513]/40"></span>
           </div>
+        </div>
+        <div className="max-w-6xl mt-16 mx-auto">
+          {/* Heading */}
 
           {/* Rooms Grid */}
-          <div className="grid md:grid-cols-2 gap-10">
-            {/* Card 1 – Classic */}
-            <div className="relative h-80 rounded-2xl overflow-hidden border border-[#D8CFC0]">
-              {/* Background Image */}
+          <div className="grid gap-10 sm:grid-cols-2 mt-16 lg:grid-cols-2">
+            {rooms.map((room) => (
               <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{
-                  backgroundImage:
-                    "url('/cozy-hotel-room-with-ambient-lighting.jpg')",
-                }}
-              />
-
-              {/* Dark + Blur Overlay */}
-              <div className="absolute inset-0 bg-black/70" />
-
-              {/* Content */}
-              <div className="relative z-10 h-full p-8 flex flex-col justify-between text-white">
-                <div>
-                  <h2 className="text-2xl font-heading font-semibold mb-3">
-                    Standard Single
-                  </h2>
-
-                  {/* Tariff */}
-                  <div className="mb-4">
-                    <p className="text-[#E8DCCB] text-sm font-semibold">
-                      ₹1499{" "}
-                      <span className="text-xs font-normal text-white/80">
-                        + 5% tax (₹1574)
-                      </span>
-                    </p>
-                    <div className="mt-1 h-px w-24 bg-[#E8DCCB]" />
-                  </div>
-
-                  <p className="text-sm leading-relaxed text-white/90">
-                    Designed for solo travellers, the standard single room
-                    offers a cozy and functional space with warm decor that
-                    provides comfort and relaxation.
-                  </p>
+                key={room.id}
+                className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+              >
+                {/* Image */}
+                <div className="relative h-56 overflow-hidden">
+                  <img
+                    src={room.image}
+                    alt={room.title}
+                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                  />
                 </div>
 
-                <Link
-                  href="/rooms/standard-single-room"
-                  className="self-start inline-flex items-center gap-2 text-xs uppercase tracking-wider px-5 py-2 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white hover:bg-white hover:text-[#2E2E2E] transition-all duration-300"
-                >
-                  Read More
-                </Link>
-              </div>
-            </div>
+                {/* Content */}
+                <div className="p-6 relative">
+                  {/* Room Number */}
+                  <span className="absolute top-6 right-6 text-5xl font-light text-gray-200">
+                    {room.id}
+                  </span>
 
-            {/* Card 2 – Accent Border */}
-            <div className="relative h-80 rounded-2xl overflow-hidden border border-[#D8CFC0]">
-              {/* Background Image */}
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{
-                  backgroundImage:
-                    "url('/cozy-hotel-room-with-ambient-lighting.jpg')",
-                }}
-              />
+                  {/* Icon */}
 
-              {/* Dark + Blur Overlay */}
-              <div className="absolute inset-0 bg-black/70" />
+                  <h3 className="text-xl font-heading font-semibold mb-2">
+                    {room.title}
+                  </h3>
 
-              {/* Content */}
-              <div className="relative z-10 h-full p-8 flex flex-col justify-between text-white">
-                <div>
-                  <h2 className="text-2xl font-heading font-semibold mb-3">
-                    Standard Double
-                  </h2>
-
-                  {/* Tariff */}
-                  <div className="mb-4">
-                    <p className="text-[#E8DCCB] text-sm font-semibold">
-                      ₹1999{" "}
-                      <span className="text-xs font-normal text-white/80">
-                        + 5% tax (₹2099)
-                      </span>
-                    </p>
-                    <div className="mt-1 h-px w-24 bg-[#E8DCCB]" />
-                  </div>
-
-                  <p className="text-sm leading-relaxed text-white/90">
-                    The Standard Double Room is a spacious and well-appointed
-                    accommodation offering enhanced comfort, privacy and modern
-                    amenities.
+                  <p className="text-sm font-semibold text-[#9C8468] mb-3">
+                    {room.price}
                   </p>
-                </div>
 
-                <Link
-                  href="/rooms/standard-double-room"
-                  className="self-start inline-flex items-center gap-2 text-xs uppercase tracking-wider px-5 py-2 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white hover:bg-white hover:text-[#2E2E2E] transition-all duration-300"
-                >
-                  Read More
-                </Link>
-              </div>
-            </div>
-
-            {/* Card 3 – Soft Highlight */}
-            <div className="relative h-80 rounded-2xl overflow-hidden border border-[#D8CFC0]">
-              {/* Background Image */}
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{
-                  backgroundImage:
-                    "url('/cozy-hotel-room-with-ambient-lighting.jpg')",
-                }}
-              />
-
-              {/* Dark + Blur Overlay */}
-              <div className="absolute inset-0 bg-black/70" />
-
-              {/* Content */}
-              <div className="relative z-10 h-full p-8 flex flex-col justify-between text-white">
-                <div>
-                  <h2 className="text-2xl font-heading font-semibold mb-3">Deluxe Room</h2>
-
-                  {/* Tariff */}
-                  <div className="mb-4">
-                    <p className="text-[#E8DCCB] text-sm font-semibold">
-                      ₹2399{" "}
-                      <span className="text-xs font-normal text-white/80">
-                        + 5% tax (₹2519)
-                      </span>
-                    </p>
-                    <div className="mt-1 h-px w-24 bg-[#E8DCCB]" />
-                  </div>
-
-                  <p className="text-sm leading-relaxed text-white/90">
-                    The Deluxe Room offers enhanced space with elegant interiors
-                    and premium comforts, creating a refined yet inviting
-                    atmosphere.
+                  <p className="text-sm text-gray-600 leading-relaxed mb-6">
+                    {room.description}
                   </p>
+
+                  <Link
+                    href={room.link}
+                    className="inline-flex items-center gap-2 text-sm font-medium text-[#2E2E2E] hover:text-[#9C8468] transition"
+                  >
+                    Read More <span>→</span>
+                  </Link>
                 </div>
-
-                <Link
-                  href="/rooms/deluxe-room"
-                  className="self-start inline-flex items-center gap-2 text-xs uppercase tracking-wider px-5 py-2 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white hover:bg-white hover:text-[#2E2E2E] transition-all duration-300"
-                >
-                  Read More
-                </Link>
               </div>
-            </div>
-
-            {/* Card 4 – Minimal Luxury */}
-            <div className="relative h-80 rounded-2xl overflow-hidden border border-[#D8CFC0]">
-              {/* Background Image */}
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{
-                  backgroundImage:
-                    "url('/cozy-hotel-room-with-ambient-lighting.jpg')",
-                }}
-              />
-
-              {/* Dark + Blur Overlay */}
-              <div className="absolute inset-0 bg-black/70" />
-
-              {/* Content */}
-              <div className="relative z-10 h-full p-8 flex flex-col justify-between text-white">
-                <div>
-                  <h2 className="text-2xl font-heading font-semibold mb-3">
-                    Super Deluxe Room
-                  </h2>
-
-                  {/* Tariff */}
-                  <div className="mb-4">
-                    <p className="text-[#E8DCCB] text-sm font-semibold">
-                      ₹3999{" "}
-                      <span className="text-xs font-normal text-white/80">
-                        + 5% tax (₹4199)
-                      </span>
-                    </p>
-                    <div className="mt-1 h-px w-24 bg-[#E8DCCB]" />
-                  </div>
-
-                  <p className="text-sm leading-relaxed text-white/90">
-                    The Super Deluxe Room is the most spacious category at Hotel
-                    Nakshathra, featuring refined decor, superior amenities and
-                    exceptional comfort.
-                  </p>
-                </div>
-
-                <Link
-                  href="/rooms/super-deluxe-room"
-                  className="self-start inline-flex items-center gap-2 text-xs uppercase tracking-wider px-5 py-2 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white hover:bg-white hover:text-[#2E2E2E] transition-all duration-300"
-                >
-                  Read More
-                </Link>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

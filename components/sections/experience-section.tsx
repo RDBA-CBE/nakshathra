@@ -30,7 +30,7 @@ export default function ExperienceSection() {
   const isInView = useInView(sectionRef)
 
   return (
-    <section ref={sectionRef} className="py-20 px-0 bg-white relative overflow-hidden">
+    <section ref={sectionRef} className="py-16 px-0 bg-white relative overflow-hidden">
       <div className="relative" style={{ height: "1200px" }}>
         <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1600 1200" preserveAspectRatio="none" fill="none">
           <path

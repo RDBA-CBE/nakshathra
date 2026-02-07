@@ -6,37 +6,28 @@ import Footer from "@/components/sections/footer";
 
 export default function AboutClient() {
   return (
-    <main className="min-h-screen text-[#2E2E2E]">
+    <main className="min-h-screen">
       <Header />
 
-      {/* HERO */}
-      <section className="pt-20 bg-[#FAF8F3] pb-20 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl font-heading font-semibold"
-          >
-            About Hotel Nakshathra
-          </motion.h1>
+      <section className="pb-24 px-4 bg-[#FFFFFF]">
+        {/* HERO */}
+        <div className="relative rounded-3xl bg-[#F3EEE6] px-6 sm:px-10 py-6 sm:py-6 text-center">
+          <h1 className="mt-4 font-heading text-3xl sm:text-4xl md:text-5xl text-[#152A38] max-w-3xl mx-auto leading-tight">
+            About
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto"
-          >
-            Hotel Nakshathra is a premium business-class hotel that blends
-            modern elegance and authentic Indian hospitality to offer a relaxing
-            and pleasant stay.
-          </motion.p>
+          <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+            Hotel Nakshathra is a premium business-class hotel that blends modern elegance and authentic Indian hospitality to offer a relaxing and pleasant stay. Thoughtfully designed for business travellers, pilgrims and families alike, the hotel features well-appointed rooms, contemporary amenities and intuitive service that ensures effortless comfort throughout your visit.
+          </p>
+
+          <div className="mt-8 flex justify-center">
+            <span className="h-[1px] w-24 bg-[#8B4513]/40"></span>
+          </div>
         </div>
-      </section>
 
-      {/* CONTENT FLOW */}
-      <section className="py-24 bg-white px-4">
-        <div className="max-w-5xl mx-auto space-y-20">
+        {/* CONTENT FLOW */}
+
+        <div className="max-w-5xl mt-16 mx-auto space-y-20">
           {/* Section 1 */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}

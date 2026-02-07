@@ -48,32 +48,27 @@ const facilities = [
 
 export default function FacilityPage() {
   return (
-    <main className="min-h-screen bg-[#FAF8F3] text-[#2E2E2E]">
+    <main className="min-h-screen">
       <Header />
 
-      <section className="pt-28 md:pt-32 pb-24 px-4">
-        <div className="max-w-7xl mx-auto space-y-20 md:space-y-24">
-          {/* HERO IMAGE SECTION */}
-          <div className="relative h-[260px] sm:h-[340px] md:h-[420px] rounded-3xl overflow-hidden">
-            <Image
-              src="/images/facilities/hero.jpg"
-              alt="Hotel Nakshathra Facilities"
-              fill
-              priority
-              className="object-cover"
-            />
+      <section className="pb-24 px-4 bg-[#FFFFFF]">
+        <div className="relative rounded-3xl bg-[#F3EEE6] px-6 sm:px-10 py-6 sm:py-6 text-center">
+          <h1 className="mt-4 font-heading text-3xl sm:text-4xl md:text-5xl text-[#152A38] max-w-3xl mx-auto leading-tight">
+            Facilities
+          </h1>
 
-            <div className="absolute inset-0 bg-black/40" />
+          <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+            Stay Connected. Stay Comfortable
+            <br />
+            Facilities designed for modern lifestyles
+          </p>
 
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <p className="uppercase tracking-widest text-xs sm:text-sm mb-3 text-[#E8DCCB]">
-                Stay Connected. Stay Comfortable
-              </p>
-              <h1 className="text-3xl font-heading sm:text-4xl md:text-5xl font-semibold max-w-3xl">
-                Facilities Designed for Modern Lifestyles
-              </h1>
-            </div>
+          <div className="mt-8 flex justify-center">
+            <span className="h-[1px] w-24 bg-[#8B4513]/40"></span>
           </div>
+        </div>
+        <div className="max-w-7xl mx-auto mt-16 space-y-20 md:space-y-24">
+          {/* HERO IMAGE SECTION */}
 
           {/* INTRO – IMAGE + TEXT */}
           <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center max-w-6xl mx-auto">

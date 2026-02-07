@@ -25,7 +25,7 @@ export default function DiningSection() {
   }, []);
 
   return (
-    <section id='dining-section' className='py-20 bg-white overflow-hidden'>
+    <section id='dining-section' className='py-16 bg-white overflow-hidden'>
       <div className='container mx-auto px-4'>
         {/* Heading */}
         <div className='text-center mb-12'>

@@ -14,7 +14,7 @@ export default function AboutSection() {
   return (
     <section
       ref={sectionRef}
-      className="container mx-auto bg-white px-6 md:px-12 lg:px-16 py-24 lg:py-20"
+      className="container mx-auto bg-white px-6 md:px-12 lg:px-16 py-24 lg:py-16"
     >
       <div className="container mx-auto">
         {/* PARENT: Stats and Headings aligned to end */}

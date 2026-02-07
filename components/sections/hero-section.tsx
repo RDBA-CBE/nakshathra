@@ -8,7 +8,7 @@ export default function HeroSection() {
       <div className="w-full flex flex-col lg:flex-row items-stretch h-[60vh] lg:h-[70vh] relative">
         {/* LEFT TEXT BLOCK - Cream Background */}
         <div className="w-full lg:w-1/2 bg-[#FBF6E6] flex items-center relative z-10">
-          <div className="w-full px-6 sm:px-8 md:px-12 lg:px-14 xl:px-20 py-12 sm:py-16 lg:py-20 xl:py-24 relative z-20">
+          <div className="w-full px-6 sm:px-8 md:px-12 lg:px-14 xl:px-20 py-12 sm:py-16 lg:py-16 xl:py-24 relative z-20">
             <div className="max-w-[580px] mx-auto lg:mx-0">
               {/* Small Uppercase Heading */}
               <p 

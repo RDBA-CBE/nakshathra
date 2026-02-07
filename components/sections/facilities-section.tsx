@@ -16,7 +16,7 @@ export default function FacilitiesSection() {
   const isInView = useInView(sectionRef);
 
   return (
-    <section ref={sectionRef} className='py-20 lg:py-24 px-6 md:px-12 lg:px-16 bg-[#fbf2e6]'>
+    <section ref={sectionRef} className='py-16 lg:py-24 px-6 md:px-12 lg:px-16 bg-[#fbf2e6]'>
       <div className='container mx-auto'>
         <div className='grid lg:grid-cols-2 gap-12 lg:gap-20 items-center'>
           {/* Left: overlapping framed photos */}

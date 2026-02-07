@@ -10,7 +10,7 @@ export default function LuxuryBanner() {
   return (
     <section
       ref={sectionRef}
-      className="py-20 px-6 overflow-hidden marquee-four"
+      className="py-16 px-6 overflow-hidden marquee-four"
     >
       <div className="w-full overflow-hidden whitespace-nowrap relative">
         <div

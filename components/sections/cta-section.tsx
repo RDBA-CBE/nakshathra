@@ -25,7 +25,7 @@ export default function CTASection() {
       id="cta-section"
       className="relative py-32 flex justify-center items-center"
     >
-      <div className="container bg-[#f2f1ef] mx-auto px-4 py-20 ">
+      <div className="container bg-[#f2f1ef] mx-auto px-4 py-16 ">
          <div
         className={`text-center space-y-10 transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
