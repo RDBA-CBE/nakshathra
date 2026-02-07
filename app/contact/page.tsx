@@ -22,7 +22,7 @@ export default function ContactPage() {
             Contact
           </h1>
 
-          <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+          <p className="mt-6 text-gray-600 max-w-5xl mx-auto text-sm sm:text-base">
             At Hotel Nakshathra, we strive to make your experience seamless and
             memorable. Reach out to us for bookings, inquiries or any
             assistance, you’ll receive prompt and personalized support.{" "}

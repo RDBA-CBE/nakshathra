@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "/HN-favicon.svg",
         type: "image/svg+xml",
       },
     ],

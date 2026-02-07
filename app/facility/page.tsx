@@ -2,6 +2,24 @@ import Header from "@/components/header";
 import Footer from "@/components/sections/footer";
 import type { Metadata } from "next";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Pagination, Autoplay } from "swiper/modules"
+import "swiper/css"
+import "swiper/css/pagination"
+
+import {
+  Wifi,
+  BedDouble,
+  Coffee,
+  Car,
+  MapPin,
+  Phone,
+  Hospital,
+  ShieldCheck,
+  CalendarCheck,
+  ConciergeBell,
+  Gem,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Facilities - Nakshatra Royal Stay",
@@ -12,37 +30,37 @@ const facilities = [
   {
     title: "Prime Location in the Heart of Sivakasi",
     desc: "Easy access to local transportation, shopping areas and key landmarks makes commuting effortless and convenient.",
-    img: "/images/facilities/location.jpg",
+    icon: MapPin,
   },
   {
     title: "Complimentary High-Speed Wi-Fi",
     desc: "Stay connected for work, study or leisure with fast, reliable internet throughout the hotel.",
-    img: "/images/facilities/wifi.jpg",
+    icon: Wifi,
   },
   {
     title: "Business-Class Luxury at Exceptional Value",
     desc: "Modern rooms, refined interiors and premium services ensure a comfortable stay without compromise.",
-    img: "/images/facilities/interior.jpg",
+    icon: Gem,
   },
   {
     title: "Best Rates Guaranteed on Online Bookings",
     desc: "Enjoy competitive pricing and exclusive online offers when you book directly with us.",
-    img: "/images/facilities/rates.jpg",
+    icon: CalendarCheck,
   },
   {
     title: "Modern Amenities with Elegant Interiors",
     desc: "Each room is thoughtfully designed with contemporary decor, ergonomic furnishings and intuitive features for your convenience.",
-    img: "/images/facilities/safety.jpg",
+    icon: ConciergeBell,
   },
   {
     title: "Strict Safety, Hygiene and Cleanliness Protocols",
     desc: "Our high standards ensure a safe and healthy environment for every guest.",
-    img: "/images/facilities/hospitality.jpg",
+    icon: ShieldCheck,
   },
   {
     title: "Warm, Personalized Indian Hospitality",
     desc: "Our attentive staff and bespoke services create a welcoming atmosphere that makes every stay truly special.",
-    img: "/images/facilities/hospitality.jpg",
+    icon: Hospital,
   },
 ];
 
@@ -57,7 +75,7 @@ export default function FacilityPage() {
             Facilities
           </h1>
 
-          <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+          <p className="mt-6 text-gray-600 max-w-5xl mx-auto text-sm sm:text-base">
             Stay Connected. Stay Comfortable
             <br />
             Facilities designed for modern lifestyles
@@ -74,7 +92,7 @@ export default function FacilityPage() {
           <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center max-w-6xl mx-auto">
             <div className="relative h-[260px] sm:h-[320px] md:h-[360px] rounded-2xl overflow-hidden">
               <Image
-                src="/images/facilities/interior.jpg"
+                src="/hotel-hallway-elegant.jpg"
                 alt="Modern Hotel Interiors"
                 fill
                 className="object-cover"
@@ -109,13 +127,10 @@ export default function FacilityPage() {
                   key={item.title}
                   className="group rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
                 >
-                  <div className="relative h-44 sm:h-48">
-                    <Image
-                      src={item.img}
-                      alt={item.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
+                  <div className="h-44 sm:h-48 flex items-center justify-center bg-[#F3EEE6]">
+                    <div className="w-16 h-16 rounded-full bg-[#8B4513]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <item.icon className="w-8 h-8 text-[#8B4513]" />
+                    </div>
                   </div>
 
                   <div className="p-6">

@@ -26,7 +26,7 @@ export default function GallerySection() {
             Gallery
           </h1>
 
-          <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+          <p className="mt-6 text-gray-600 max-w-5xl mx-auto text-sm sm:text-base">
             Explore interiors that are designed to be both stylish and
             comfortable, creating a relaxing and welcoming atmosphere. From
             elegant decor to cozy furnishings, every detail is crafted to make

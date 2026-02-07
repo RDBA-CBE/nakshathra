@@ -58,7 +58,7 @@ export default function RoomsPage() {
             Our Rooms
           </h1>
 
-          <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+          <p className="mt-6 text-gray-600 max-w-5xl mx-auto text-sm sm:text-base">
             Discover thoughtfully designed rooms that reflects warmth and
             comfort. Each room features calming interiors, functional layouts
             and contemporary amenities, crafted to provide a peaceful and
