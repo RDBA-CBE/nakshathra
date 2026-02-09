@@ -89,7 +89,7 @@ export default function AboutSection() {
                   : 'opacity-0 translate-y-10'
               }`}
             >
-              <div className="max-w-xl space-y-6 text-[#5E6E73] text-base leading-relaxed">
+              <div className="max-w-xl space-y-6 text-base font-heading text-[#1F2A37] leading-relaxed">
                 <p>
                   Nakshathra Royal Stay, a smart business class hotel situated in
                   Palani with a promise 'Hey we are different' from existing hotels

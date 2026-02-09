@@ -81,8 +81,17 @@ export default function Footer() {
 
         {/* COPYRIGHT */}
         <div className="border-t border-[#C9A961]/20 pt-6 text-center text-base text-[#5C4A42]">
-          Copyright 2025 © Nakshatra Royal Stay. Concept by Repute.
-        </div>
+  Copyright 2026 © Nakshatra Royal Stay. Concept by{" "}
+  <a
+    href="https://irepute.in/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[#5C4A42] hover:text-[#C9A961] transition-colors underline"
+  >
+    Repute
+  </a>.
+</div>
+
       </div>
     </footer>
   );

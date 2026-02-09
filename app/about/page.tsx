@@ -216,12 +216,19 @@ export default function AboutClient() {
             />
 
             {/* Overlay */}
-            <motion.div
-              initial={{ backgroundColor: "rgba(0,0,0,0.2)" }}
-              whileInView={{ backgroundColor: "rgba(0,0,0,0.45)" }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              className="absolute inset-0"
-            />
+           <motion.div
+  initial={{
+    backgroundColor: "rgba(145, 145, 145, 0.8)",
+    backdropFilter: "blur(0px)",
+  }}
+  whileInView={{
+    backgroundColor: "rgba(0, 0, 0, 0.45)",
+    backdropFilter: "blur(8px)",
+  }}
+  transition={{ duration: 1, ease: "easeOut" }}
+  className="absolute inset-0"
+ />
+
 
             {/* Content */}
             <div className="relative z-10 px-6 py-16 text-center">

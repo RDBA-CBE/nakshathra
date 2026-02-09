@@ -47,7 +47,7 @@ export default function GallerySection() {
               OUR GALLERY
             </p>
 
-            <h2 className='font-heading text-[44px] md:text-[64px] text-[#2C1810] leading-[1.15]'>
+            <h2 className='font-heading text-[44px] md:text-[64px] leading-[1.15] text-[#1F3A44]'>
               Take a visual journey through
               <br />
               comfort and luxury

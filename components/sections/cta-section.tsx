@@ -37,7 +37,7 @@ export default function CTASection() {
         </span>
 
         {/* MAIN HEADING EXACT AS IMAGE */}
-        <h2 className="font-heading text-[100px] leading-[1.2] text-black">
+        <h2 className="font-heading text-[100px] leading-[1.2] text-[#1F3A44]">
           Indulge in Luxury Book
           <br />
           Your Stay Now

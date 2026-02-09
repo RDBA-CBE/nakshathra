@@ -43,7 +43,6 @@ export default function RoomsSection() {
           <p 
             className="text-sm sm:text-base tracking-widest mb-4"
             style={{ 
-              fontFamily: 'sans-serif',
               color: '#C89A32',
               letterSpacing: '0.15em'
             }}
@@ -51,10 +50,10 @@ export default function RoomsSection() {
             REST, RELAX, RECHARGE
           </p>
           <h2 
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-[#1F3A44]"
             style={{ 
               fontFamily: '"Marcellus", serif',
-              color: '#2C1810',
+              
               fontWeight: 400
             }}
           >
