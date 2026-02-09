@@ -10,6 +10,7 @@ import ExperienceSection from "@/components/sections/experience-section"
 import GallerySection from "@/components/sections/gallery-section"
 import Footer from "@/components/sections/footer"
 import Header from "@/components/header"
+import MblexperienceSection from "@/components/sections/MblexperienceSection"
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <LuxuryBanner />
       <DiningSection />
       <ExperienceSection />
+      <MblexperienceSection/>
       <GallerySection />
       <TestimonialsSection />
       <CTASection />

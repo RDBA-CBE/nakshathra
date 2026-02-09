@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { useInView } from "@/hooks/use-in-view"
+import { useRef } from "react";
+import { useInView } from "@/hooks/use-in-view";
 
 export default function LuxuryBanner() {
-  const sectionRef = useRef<HTMLDivElement>(null)
-  const isInView = useInView(sectionRef)
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(sectionRef);
 
   return (
     <section
@@ -15,10 +15,15 @@ export default function LuxuryBanner() {
       <div className="w-full overflow-hidden whitespace-nowrap relative">
         <div
           className={`
-            flex gap-20 font-heading text-6xl lg:text-8xl text-[#C9A961] leading-tight
-            animate-marquee transition-all duration-1000 marquee-title
-            ${isInView ? "opacity-100 scale-100" : "opacity-0 scale-95"}
-          `}
+    flex whitespace-nowrap
+    gap-6 sm:gap-10 lg:gap-20
+    font-heading
+    text-[28px] sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl
+    text-[#C9A961] leading-tight
+    animate-marquee marquee-title
+    transition-all duration-1000
+    ${isInView ? "opacity-100 scale-100" : "opacity-0 scale-95"}
+  `}
         >
           <span>Redefining Luxury Through</span>
           <span>Redefining Luxury Through</span>
@@ -26,5 +31,5 @@ export default function LuxuryBanner() {
         </div>
       </div>
     </section>
-  )
+  );
 }

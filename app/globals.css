@@ -269,3 +269,24 @@
  
 }
 
+.desk-experience{
+  display: block;
+}
+
+@media (max-width:1280px) {
+  .desk-experience {
+    display: none !important;
+  }
+}
+
+.mbl-experience{
+  display: none !important;
+}
+
+@media (max-width:1280px) {
+  .mbl-experience {
+    display: block !important;
+  }
+}
+
+

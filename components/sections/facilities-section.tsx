@@ -22,35 +22,52 @@ export default function FacilitiesSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* LEFT – OVERLAPPING IMAGES */}
-          <div className="relative flex justify-center">
-            {/* Image 1 */}
-            <div
-              className={`absolute left-0 top-0 w-[340px] h-[440px] lg:w-[380px] lg:h-[480px] border-[10px] border-white shadow-[0_15px_50px_rgba(0,0,0,0.18)]
-              transition-all duration-700
-              ${isInView ? "opacity-100 translate-x-0 translate-y-0" : "opacity-0 -translate-x-6 -translate-y-6"}
-              `}
-            >
-              <img
-                src="/elegant-hotel-bedroom-interior.jpg"
-                alt="Room"
-                className="w-full h-full object-cover"
-              />
-            </div>
+          <div className="relative flex justify-center overflow-hidden">
+  
+  {/* Image 1 */}
+  <div
+    className={`
+      relative lg:absolute lg:left-0 lg:top-0
+      w-[260px] sm:w-[300px] lg:w-[380px]
+      h-[340px] sm:h-[400px] lg:h-[480px]
+      border-[10px] border-white
+      
+      transition-all duration-700
+      ${isInView 
+        ? "opacity-100 translate-x-0 translate-y-0" 
+        : "opacity-0 lg:-translate-x-6 lg:-translate-y-6"}
+    `}
+  >
+    <img
+      src="/elegant-hotel-bedroom-interior.jpg"
+      alt="Room"
+      className="w-full h-full object-cover"
+    />
+  </div>
 
-            {/* Image 2 */}
-            <div
-              className={`relative ml-40 mt-32 w-[340px] h-[440px] lg:w-[380px] lg:h-[480px] border-[10px] border-white shadow-[0_20px_60px_rgba(0,0,0,0.22)]
-              transition-all duration-700 delay-150
-              ${isInView ? "opacity-100 translate-x-0 translate-y-0" : "opacity-0 translate-x-6 translate-y-6"}
-              `}
-            >
-              <img
-                src="/luxury-hotel-bedroom-with-warm-lighting.jpg"
-                alt="Luxury Room"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
+  {/* Image 2 */}
+  <div
+    className={`
+      relative lg:ml-40 lg:mt-32
+      w-[260px] sm:w-[300px] lg:w-[380px]
+      h-[340px] sm:h-[400px] lg:h-[480px]
+      border-[10px] border-white
+      
+      transition-all duration-700 delay-150
+      ${isInView 
+        ? "opacity-100 translate-x-0 translate-y-0" 
+        : "opacity-0 lg:translate-x-6 lg:translate-y-6"}
+    `}
+  >
+    <img
+      src="/luxury-hotel-bedroom-with-warm-lighting.jpg"
+      alt="Luxury Room"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+</div>
+
 
           {/* RIGHT – TEXT CONTENT */}
           <div
@@ -62,7 +79,7 @@ export default function FacilitiesSection() {
               className="text-sm tracking-[0.25em] mb-4"
               style={{ color: "#C89A32", fontFamily: "sans-serif" }}
             >
-             Stay Connected. Stay Comfortable
+              Stay Connected. Stay Comfortable
             </p>
 
             <h2
@@ -73,7 +90,7 @@ export default function FacilitiesSection() {
                 fontWeight: 400,
               }}
             >
-              Facilities Designed for 
+              Facilities Designed for
               <br />
               Modern Lifestyles
             </h2>
@@ -82,7 +99,8 @@ export default function FacilitiesSection() {
               className="text-[#5E6E73] max-w-xl mb-10 leading-relaxed"
               style={{ fontFamily: "sans-serif" }}
             >
-              Seamless check-ins, impeccably maintained spaces, modern amenities and attentive service for a comfortable and relaxing stay.
+              Seamless check-ins, impeccably maintained spaces, modern amenities
+              and attentive service for a comfortable and relaxing stay.
             </p>
 
             {/* PILLS */}
