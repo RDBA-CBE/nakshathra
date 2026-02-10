@@ -12,53 +12,66 @@ const experiences = [
   {
     title: "Attakatti View Point",
     description: "Excepteur sint occaecat",
-    image: "/mountain-waterfall-scenic-view.jpg",
+    image: "/home/near-places/attakatti-viewpoint.webp",
+    // rotation: "-rotate-6",
   },
   {
     title: "Sholayar Dam",
     description: "Sunt culpa aliquip officia",
-    image: "/pier-ocean-peaceful-view.jpg",
+    image: "/home/near-places/sholayar-dam.webp",
+    // rotation: "rotate-2",
   },
   {
     title: "Loam View Point",
     description: "Quis nostrud exercitation",
-    image: "/coastal-landscape-scenic.jpg",
+    image: "/home/near-places/loam-viewpoint.webp",
+    // rotation: "rotate-6",
   },
 ];
 
 export default function MblexperienceSection() {
   return (
-    <section className="py-16 mbl-experience">
-      <div className="container mx-auto px-6">
+    <section className="py-16 mbl-experience overflow-x-hidden">
+      <div className="container mx-auto px-4 sm:px-6">
         <p className="text-[#C9A961] font-heading text-xl font-bold mb-4 tracking-widest uppercase pt-[120px]">
-          Surrounded by Warmth
+          Smart choice for sightseeing{" "}
         </p>
         <h2 className="font-heading text-4xl lg:text-5xl text-[#2C1810] text-balance">
-          Experience the Exceptional
+          Easy Connectivity to Popular <br /> Sights and Tranquil Retreats
         </h2>
 
-        <Swiper
-          modules={[Pagination]}
-          spaceBetween={20}
-          pagination={{ clickable: true }}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-            },
-            640: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
-          }}
-        >
-          {experiences.map((experience) => (
-            <SwiperSlide key={experience.title}>
-              <ExperienceCard {...experience} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className="overflow-hidden">
+          <Swiper
+            modules={[Pagination]}
+            spaceBetween={24}
+            centeredSlides={true}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              0: {
+                slidesPerView: "auto",
+                centeredSlides: true,
+              },
+              640: {
+                slidesPerView: 2,
+                centeredSlides: false,
+              },
+              1024: {
+                slidesPerView: 3,
+                centeredSlides: false,
+              },
+            }}
+            className="!pb-12 mbl-experience-swiper"
+          >
+            {experiences.map((experience) => (
+              <SwiperSlide
+                key={experience.title}
+                className="flex justify-center w-[280px] sm:w-auto"
+              >
+                <ExperienceCard {...experience} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </section>
   );

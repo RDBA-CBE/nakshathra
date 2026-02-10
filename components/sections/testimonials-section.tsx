@@ -91,12 +91,12 @@ export default function TestimonialsSection() {
           }`}
         >
           <span className='text-[#bd9454] font-heading text-xl tracking-wider uppercase font-bold leading-[1.2]'>
-            Testimonials
+            Feedback that Mirrors our Commitment
           </span>
           <h2 className='font-heading text-[44px] md:text-[64px] text-[#152A38] mb-4'>
-            Our Guests Consistently Praise The
+            Every Review Helps us Improve 
             <br />
-            Service And Warm Hospitality
+            And Continue Delivering Meaningful Stays
           </h2>
         </div>
 

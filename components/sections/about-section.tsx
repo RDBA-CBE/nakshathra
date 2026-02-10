@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useRef } from 'react';
-import { useInView } from '@/hooks/use-in-view';
-import { useCounter } from '@/hooks/use-counter';
+import { useRef } from "react";
+import { useInView } from "@/hooks/use-in-view";
+import { useCounter } from "@/hooks/use-counter";
 
 export default function AboutSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -23,8 +23,8 @@ export default function AboutSection() {
           <div
             className={`transition-all duration-700 ${
               isInView
-                ? 'opacity-100 translate-y-0'
-                : 'opacity-0 translate-y-10'
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
             }`}
           >
             <div className="flex gap-20">
@@ -35,9 +35,7 @@ export default function AboutSection() {
                 >
                   +{countAmenities}
                 </div>
-                <p className="text-sm text-[#5E6E73]">
-                  Amenity Services
-                </p>
+                <p className="text-sm text-[#5E6E73]">Amenity Services</p>
               </div>
 
               <div>
@@ -47,9 +45,7 @@ export default function AboutSection() {
                 >
                   +{countRooms}
                 </div>
-                <p className="text-sm text-[#5E6E73]">
-                  Total Luxury Rooms
-                </p>
+                <p className="text-sm text-[#5E6E73]">Total Luxury Rooms</p>
               </div>
             </div>
           </div>
@@ -58,14 +54,15 @@ export default function AboutSection() {
           <div
             className={`transition-all duration-700 delay-200 ${
               isInView
-                ? 'opacity-100 translate-y-0'
-                : 'opacity-0 translate-y-10'
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
             }`}
           >
             {/* SMALL HEADING */}
-            <h6 className="text-sm tracking-widest text-[#C89A32] mb-4">
-              ABOUT OUR HOTEL
-            </h6>
+            
+            <p className="text-xl font-heading font-bold text-[#b3862f] uppercase tracking-widest">
+            About Our Hotel
+          </p>
 
             {/* MAIN HEADING */}
             <h2
@@ -85,24 +82,31 @@ export default function AboutSection() {
             <div
               className={`transition-all duration-700 mb-14 ${
                 isInView
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 translate-y-10'
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
               }`}
             >
               <div className="max-w-xl space-y-6 text-base font-heading text-[#1F2A37] leading-relaxed">
                 <p>
-                  Nakshathra Royal Stay, a smart business class hotel situated in
-                  Palani with a promise 'Hey we are different' from existing hotels
-                  in the region with a vow to delight you... For those who look for
-                  finest accommodation at good value, Nakshathra Royal Stay would
-                  certainly be a DOUBLE DELIGHT.
+                  Hotel Nakshathra is a premium business-class hotel, that
+                  blends modern elegance with authentic Indian hospitality for a
+                  relaxing and pleasant stay. Our well-appointed rooms,
+                  contemporary amenities and intuitive service ensure effortless
+                  comfort for business travellers, pilgrims and families alike.
+                  With a strong focus on cleanliness, safety and personalized
+                  care, every stay at Hotel Nakshatra is crafted to be peaceful
+                  reliable and truly satisfying.
                 </p>
 
                 <p>
-                  Carefully chosen amenities furnish the rooms, to ensure pleasant
-                  and comfortable long stays. Both our superior and executive guest
-                  rooms are decorated in an elegant and modern design with stylish
-                  bathrooms and muted color schemes.
+                  Nestled amidst the busy streets of Sivakasi, the hotel
+                  provides easy access to local transportation, shopping areas
+                  and key landmarks, making it an ideal choice for both business
+                  travellers and tourists exploring the region. Its strategic
+                  location makes every commute smooth and time-saving. The
+                  hotel’s calm setting provides a refreshing escape from
+                  congestion, allowing business travellers and pilgrims alike to
+                  relax and move effortlessly between engagements.
                 </p>
               </div>
             </div>
@@ -111,8 +115,8 @@ export default function AboutSection() {
             <div
               className={`transition-all duration-700 ${
                 isInView
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 translate-y-10'
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
               }`}
             >
               <button className="px-10 py-4 bg-[#8F2D2D] text-white text-sm tracking-wide hover:bg-[#742222] transition">
@@ -125,13 +129,13 @@ export default function AboutSection() {
           <div
             className={`transition-all duration-700 delay-300 ${
               isInView
-                ? 'opacity-100 translate-y-0'
-                : 'opacity-0 translate-y-10'
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
             }`}
           >
             <div className="overflow-hidden rounded-xl">
               <img
-                src="/about-img.jpg"
+                src="/home/about.webp"
                 alt="Hotel Room Interior"
                 className="w-full h-[460px] object-cover"
               />

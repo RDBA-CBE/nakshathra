@@ -6,25 +6,32 @@ import RoomCard from "@/components/room-card"
 
 const rooms = [
   {
-    title: "Family Room",
-    price: "₹6160",
-    area: "300 Sq ft",
-    guests: "4 guest",
-    image: "/family-hotel-room-orange-decor.jpg",
+    title: "Standard Single",
+    price: "₹1499 + 5% tax (₹1574)",
+    // area: "300 Sq ft",
+    // guests: "4 guest",
+    image: "/home/rooms/premium-room.webp",
   },
   {
-    title: "Suite Room",
-    price: "₹6000",
-    area: "200 Sq ft",
-    guests: "2 guest",
-    image: "/luxury-suite-hotel-room.jpg",
+    title: "Standard Double",
+    price: "₹1999 + 5% tax (₹2099)",
+    // area: "200 Sq ft",
+    // guests: "2 guest",
+    image: "/home/rooms/family-room,.webp",
   },
   {
-    title: "Premium Room",
-    price: "₹4000",
-    area: "250 Sq ft",
-    guests: "2 guest",
-    image: "/premium-hotel-room-warm-lighting.jpg",
+    title: "Deluxe Room",
+    price: "₹2399 + 5% tax (₹2519)",
+    // area: "250 Sq ft",
+    // guests: "2 guest",
+    image: "/home/rooms/premium-room.webp",
+  },
+  {
+    title: "Super Deluxe Room",
+    price: "₹3999 + 5% tax (₹4199)",
+    // area: "250 Sq ft",
+    // guests: "2 guest",
+    image: "/home/rooms/suite-room.webp",
   },
 ]
 
@@ -40,15 +47,12 @@ export default function RoomsSection() {
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <p 
-            className="text-sm sm:text-base tracking-widest mb-4"
-            style={{ 
-              color: '#C89A32',
-              letterSpacing: '0.15em'
-            }}
-          >
-            REST, RELAX, RECHARGE
+          <p className="text-xl font-heading font-bold text-[#b3862f] uppercase tracking-widest">
+            Thoughtful spaces for meaningful stays
           </p>
+          
+            
+          
           <h2 
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-[#1F3A44]"
             style={{ 
@@ -57,11 +61,11 @@ export default function RoomsSection() {
               fontWeight: 400
             }}
           >
-            Every Room Tells a Story of<br />Comfort
+            Ideal for business travellers,<br /> pilgrims and families alike
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {rooms.map((room, index) => (
             <div
               key={room.title}

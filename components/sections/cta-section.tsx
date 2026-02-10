@@ -23,7 +23,7 @@ export default function CTASection() {
   return (
     <section
       id="cta-section"
-      className="relative py-32 flex justify-center items-center"
+      className="relative pb-20 flex justify-center items-center"
     >
       <div className="container bg-[#f2f1ef] mx-auto px-4 py-16 ">
          <div
@@ -32,15 +32,15 @@ export default function CTASection() {
         }`}
       >
         {/* TOP SMALL TEXT */}
-        <span className="text-[#bd9454] font-heading text-xl tracking-wider uppercase font-bold leading-[1.2]">
-          FIND UNIQUE HOMES IN VIBRANT PLACES.
+        <span className="text-[#bd9454] font-heading text-[20px] tracking-wider uppercase font-bold leading-[1.2]">
+          Best Rates. No hidden Costs
         </span>
 
         {/* MAIN HEADING EXACT AS IMAGE */}
-        <h2 className="font-heading text-[100px] leading-[1.2] text-[#1F3A44]">
-          Indulge in Luxury Book
+        <h2 className="font-heading text-[50px] leading-[1.2] text-[#1F3A44]">
+          Make your Reservation and Look Forward to a Peaceful, 
           <br />
-          Your Stay Now
+          Well-connected and Memorable Stay
         </h2>
 
         {/* BUTTON EXACT STYLE */}

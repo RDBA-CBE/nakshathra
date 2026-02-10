@@ -30,10 +30,11 @@ export default function DiningSection() {
         {/* Heading */}
         <div className="text-center mb-12">
           <p className="text-xl font-heading font-bold text-[#b3862f] uppercase tracking-widest">
-            FINE DINING REDEFINED
+            Relaxed Ambience, Quality Cuisine
           </p>
           <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-[#10212b] mt-4">
-            Where Fine Dining Meets Fine Living
+            Peaceful Dining that Complements your Stay <br/> with Nourishing Meals and
+            Attentive Service
           </h2>
         </div>
 
@@ -48,7 +49,7 @@ export default function DiningSection() {
           >
             <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/hotel-restaurant-interior.jpg"
+                src="/home/dining.webp"
                 alt="Restaurant Interior"
                 fill
                 className="object-cover"
@@ -95,9 +96,10 @@ export default function DiningSection() {
               </div>
 
               <p className="text-gray-700 mb-6 text-sm">
-                Lorem ipsum dolor sit amet, consectetur eiusmod tempor
-                incididunt ut labore et dolore. Excepteur sint occaecat
-                cupidatat non proiden est laborum.
+                Carefully prepared dishes balance traditional flavours and
+                modern preferences, ensuring high standards of taste, hygiene
+                and consistency complemented by relaxed ambience and
+                personalized care
               </p>
 
               <div className="flex">

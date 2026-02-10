@@ -1,38 +1,49 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { useInView } from "@/hooks/use-in-view"
-import ExperienceCard from "@/components/experience-card"
+import { useRef } from "react";
+import { useInView } from "@/hooks/use-in-view";
+import ExperienceCard from "@/components/experience-card";
 
 const experiences = [
   {
     title: "Attakatti View Point",
     description: "Excepteur sint occaecat",
-    image: "/mountain-waterfall-scenic-view.jpg",
+    image: "/home/near-places/attakatti-viewpoint.webp",
     rotation: "-rotate-6",
   },
   {
     title: "Sholayar Dam",
     description: "Sunt culpa aliquip officia",
-    image: "/pier-ocean-peaceful-view.jpg",
+    image: "/home/near-places/sholayar-dam.webp",
     rotation: "rotate-2",
   },
   {
     title: "Loam View Point",
     description: "Quis nostrud exercitation",
-    image: "/coastal-landscape-scenic.jpg",
+    image: "/home/near-places/loam-viewpoint.webp",
     rotation: "rotate-6",
   },
-]
+];
 
 export default function ExperienceSection() {
-  const sectionRef = useRef<HTMLDivElement>(null)
-  const isInView = useInView(sectionRef)
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(sectionRef);
 
   return (
-    <section ref={sectionRef} className="py-16 px-0 bg-white relative overflow-hidden desk-experience">
-      <div className="relative" style={{ height: "1200px", marginTop: "-400px" }}>
-        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1600 1200" preserveAspectRatio="none" fill="none">
+    <section
+      ref={sectionRef}
+      className="py-16 px-0 bg-white relative overflow-hidden desk-experience"
+    >
+      <div
+        className="relative"
+        style={{ height: "1200px", marginTop: "-400px" }}
+      >
+        <svg
+          className="absolute inset-0 w-full h-full"
+          viewBox="0 0 1600 1200"
+          preserveAspectRatio="none"
+          fill="none"
+        >
           <path
             d="M 0,1200 A 800,800 0 0,1 1600,1200 L 1600,1200 L 0,1200 Z"
             fill="#F5F0E8"
@@ -45,12 +56,16 @@ export default function ExperienceSection() {
           <div className="container mx-auto">
             <div
               className={`text-center mb-24 transition-all duration-700 ${
-                isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                isInView
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
               }`}
             >
-              <p className="text-[#C9A961] font-heading text-xl font-bold mb-4 tracking-widest uppercase pt-[120px]">Surrounded by Warmth</p>
+              <p className="text-[#C9A961] font-heading text-xl font-bold mb-4 tracking-widest uppercase pt-[120px]">
+                Smart choice for sightseeing{" "}
+              </p>
               <h2 className="font-heading text-4xl lg:text-5xl text-[#2C1810] text-balance">
-                Experience the Exceptional
+                Easy Connectivity to Popular <br/> Sights and Tranquil Retreats
               </h2>
             </div>
 
@@ -59,7 +74,9 @@ export default function ExperienceSection() {
                 <div
                   key={experience.title}
                   className={`transition-all duration-700 ${
-                    isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
+                    isInView
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-20"
                   }`}
                   style={{ transitionDelay: `${index * 200}ms` }}
                 >
@@ -71,5 +88,5 @@ export default function ExperienceSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

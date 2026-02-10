@@ -5,12 +5,12 @@ import { Users, Maximize } from "lucide-react"
 interface RoomCardProps {
   title: string
   price: string
-  area: string
-  guests: string
+  // area: string
+  // guests: string
   image: string
 }
 
-export default function RoomCard({ title, price, area, guests, image }: RoomCardProps) {
+export default function RoomCard({ title, price, image }: RoomCardProps) {
   return (
     <div className="group cursor-pointer bg-white overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="relative h-[350px] overflow-hidden">
@@ -36,14 +36,14 @@ export default function RoomCard({ title, price, area, guests, image }: RoomCard
           {title}
         </h3>
         <div className="flex items-center gap-6 text-sm" style={{ color: '#5E6E73' }}>
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <Maximize className="w-4 h-4" />
             <span style={{ fontFamily: 'sans-serif' }}>{area}</span>
-          </div>
-          <div className="flex items-center gap-2">
+          </div> */}
+          {/* <div className="flex items-center gap-2">
             <Users className="w-4 h-4" />
             <span style={{ fontFamily: 'sans-serif' }}>{guests}</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -10,24 +10,30 @@ export default function LuxuryBanner() {
   return (
     <section
       ref={sectionRef}
-      className="py-16 px-6 overflow-hidden marquee-four"
+      className="
+        relative
+        flex items-center justify-center
+        py-8 sm:py-12 lg:py-16
+        px-4 sm:px-6
+        overflow-hidden
+        marquee-four
+      "
     >
       <div className="w-full overflow-hidden whitespace-nowrap relative">
         <div
           className={`
-    flex whitespace-nowrap
-    gap-6 sm:gap-10 lg:gap-20
-    font-heading
-    text-[28px] sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl
-    text-[#C9A961] leading-tight
-    animate-marquee marquee-title
-    transition-all duration-1000
-    ${isInView ? "opacity-100 scale-100" : "opacity-0 scale-95"}
-  `}
+            flex whitespace-nowrap
+            gap-4 sm:gap-8 lg:gap-20
+            font-heading
+            marquee-title animate-marquee
+            leading-tight
+            transition-all duration-1000
+            ${isInView ? "opacity-100 scale-100" : "opacity-0 scale-95"}
+          `}
         >
-          <span>Redefining Luxury Through</span>
-          <span>Redefining Luxury Through</span>
-          <span>Redefining Luxury Through</span>
+          <span>Dine in comfort</span>
+          <span>Dine in comfort</span>
+          <span>Dine in comfort</span>
         </div>
       </div>
     </section>

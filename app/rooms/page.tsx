@@ -15,7 +15,7 @@ const rooms = [
     price: "₹1499 + 5% tax (₹1574)",
     description:
       "Designed for solo travellers, the standard single room offers a cozy and functional space with warm decor that provides comfort and relaxation.",
-    image: "/cozy-hotel-room-with-ambient-lighting.jpg",
+    image: "/rooms/standard-single.webp",
     link: "/rooms/standard-single-room",
   },
   {
@@ -24,7 +24,7 @@ const rooms = [
     price: "₹1999 + 5% tax (₹2099)",
     description:
       "The Standard Double Room is a spacious and well-appointed accommodation offering enhanced comfort, privacy and modern amenities.",
-    image: "/cozy-hotel-room-with-ambient-lighting.jpg",
+    image: "/rooms/standard-double.webp",
     link: "/rooms/standard-double-room",
   },
   {
@@ -33,7 +33,7 @@ const rooms = [
     price: "₹2399 + 5% tax (₹2519)",
     description:
       "The Deluxe Room offers enhanced space with elegant interiors and premium comforts, creating a refined yet inviting atmosphere.",
-    image: "/cozy-hotel-room-with-ambient-lighting.jpg",
+    image: "/rooms/deluxe-room.webp",
     link: "/rooms/deluxe-room",
   },
   {
@@ -42,7 +42,7 @@ const rooms = [
     price: "₹3999 + 5% tax (₹4199)",
     description:
       "The Super Deluxe Room is the most spacious category at Hotel Nakshathra, featuring refined decor, superior amenities and exceptional comfort. ",
-    image: "/cozy-hotel-room-with-ambient-lighting.jpg",
+    image: "/rooms/super-deluxe-room.webp",
     link: "/rooms/super-deluxe-room",
   },
 ];

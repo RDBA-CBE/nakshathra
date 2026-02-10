@@ -231,7 +231,7 @@
   animation-play-state: paused;
 }
 
-.marquee-title {
+/* .marquee-title {
   font-size: 174px;
   letter-spacing: -0.01em;
   text-transform: capitalize;
@@ -240,7 +240,93 @@
 
 .marquee-four {
   margin-block-start: -187px;
+} */
+/* ===================== */
+/* Marquee Typography   */
+/* ===================== */
+
+.marquee-title {
+  font-size: 22px;
+  letter-spacing: -0.005em;
+  text-transform: capitalize;
+  color: #b99d75;
+  line-height: 1.1;
+  white-space: nowrap;
+  will-change: transform;
 }
+
+/* SM */
+@media (min-width: 640px) {
+  .marquee-title {
+    font-size: 42px;
+    letter-spacing: -0.008em;
+  }
+}
+
+/* MD */
+@media (min-width: 768px) {
+  .marquee-title {
+    font-size: 72px;
+  }
+}
+
+/* LG */
+@media (min-width: 1024px) {
+  .marquee-title {
+    font-size: 120px;
+  }
+}
+
+/* XL */
+@media (min-width: 1280px) {
+  .marquee-title {
+    font-size: 174px;
+  }
+}
+
+/* ===================== */
+/* Marquee Animation    */
+/* ===================== */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+/* ===================== */
+/* Section Offset       */
+/* ===================== */
+
+.marquee-four {
+  transform: translateY(-70px);
+}
+
+@media (min-width: 768px) {
+  .marquee-four {
+    transform: translateY(-120px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .marquee-four {
+    transform: translateY(-187px);
+  }
+}
+
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+
 
 .banner-four-content {
   margin-inline-start: 210px;

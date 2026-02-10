@@ -92,7 +92,7 @@ export default function FacilityPage() {
           <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center max-w-6xl mx-auto">
             <div className="relative h-[260px] sm:h-[320px] md:h-[360px] rounded-2xl overflow-hidden">
               <Image
-                src="/hotel-hallway-elegant.jpg"
+                src="/facilities/intro.webp"
                 alt="Modern Hotel Interiors"
                 fill
                 className="object-cover"

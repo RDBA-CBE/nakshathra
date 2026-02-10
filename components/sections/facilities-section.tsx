@@ -23,51 +23,52 @@ export default function FacilitiesSection() {
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* LEFT – OVERLAPPING IMAGES */}
           <div className="relative flex justify-center overflow-hidden">
-  
-  {/* Image 1 */}
-  <div
-    className={`
+            {/* Image 1 */}
+            <div
+              className={`
       relative lg:absolute lg:left-0 lg:top-0
       w-[260px] sm:w-[300px] lg:w-[380px]
       h-[340px] sm:h-[400px] lg:h-[480px]
       border-[10px] border-white
       
       transition-all duration-700
-      ${isInView 
-        ? "opacity-100 translate-x-0 translate-y-0" 
-        : "opacity-0 lg:-translate-x-6 lg:-translate-y-6"}
+      ${
+        isInView
+          ? "opacity-100 translate-x-0 translate-y-0"
+          : "opacity-0 lg:-translate-x-6 lg:-translate-y-6"
+      }
     `}
-  >
-    <img
-      src="/elegant-hotel-bedroom-interior.jpg"
-      alt="Room"
-      className="w-full h-full object-cover"
-    />
-  </div>
+            >
+              <img
+                src="/home/facilities/img2.webp"
+                alt="Room"
+                className="w-full h-full object-cover"
+              />
+            </div>
 
-  {/* Image 2 */}
-  <div
-    className={`
+            {/* Image 2 */}
+            <div
+              className={`
       relative lg:ml-40 lg:mt-32
       w-[260px] sm:w-[300px] lg:w-[380px]
       h-[340px] sm:h-[400px] lg:h-[480px]
       border-[10px] border-white
       
       transition-all duration-700 delay-150
-      ${isInView 
-        ? "opacity-100 translate-x-0 translate-y-0" 
-        : "opacity-0 lg:translate-x-6 lg:translate-y-6"}
+      ${
+        isInView
+          ? "opacity-100 translate-x-0 translate-y-0"
+          : "opacity-0 lg:translate-x-6 lg:translate-y-6"
+      }
     `}
-  >
-    <img
-      src="/luxury-hotel-bedroom-with-warm-lighting.jpg"
-      alt="Luxury Room"
-      className="w-full h-full object-cover"
-    />
-  </div>
-
-</div>
-
+            >
+              <img
+                src="/home/facilities/img1.webp"
+                alt="Luxury Room"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
 
           {/* RIGHT – TEXT CONTENT */}
           <div
@@ -75,12 +76,10 @@ export default function FacilitiesSection() {
             ${isInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}
             `}
           >
-            <p
-              className="text-sm tracking-[0.25em] mb-4"
-              style={{ color: "#C89A32", fontFamily: "sans-serif" }}
-            >
-              Stay Connected. Stay Comfortable
-            </p>
+            <p className="text-xl font-heading font-bold text-[#b3862f] uppercase tracking-widest">
+            Stay Connected. Stay Comfortable
+          </p>
+            
 
             <h2
               className="text-[42px] lg:text-[54px] leading-[1.15] mb-6"

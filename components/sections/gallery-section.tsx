@@ -6,14 +6,14 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
 const galleryImages = [
-  '/hotel-staircase-orange-interior.jpg',
-  '/hotel-ceiling-geometric-design.jpg',
-  '/hotel-reception-modern.jpg',
-  '/hotel-hallway-elegant.jpg',
-  '/hotel-lobby-seating.jpg',
-  '/hotel-conference-room.jpg',
-  '/hotel-restaurant-interior.jpg',
-  '/hotel-exterior-night.jpg',
+  '/home/gallery/L-img1.webp',
+  '/home/gallery/L-img2.webp',
+  '/home/gallery/L-img3.webp',
+  '/home/gallery/L-img4.webp',
+  '/home/gallery/S-img1.webp',
+  '/home/gallery/S-img2.webp',
+  '/home/gallery/S-img3.webp',
+  '/home/gallery/S-img4.webp',
 ];
 
 const imageGroups: string[][] = [];
@@ -48,9 +48,9 @@ export default function GallerySection() {
             </p>
 
             <h2 className='font-heading text-[44px] md:text-[64px] leading-[1.15] text-[#1F3A44]'>
-              Take a visual journey through
+              Sophisticated Interiors Thoughtfully 
               <br />
-              comfort and luxury
+              Balanced with Comfort and Warmth
             </h2>
           </div>
 

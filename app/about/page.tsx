@@ -45,7 +45,7 @@ export default function AboutClient() {
             {/* Image */}
             <div className="relative rounded-3xl overflow-hidden min-h-[240px]">
               <Image
-                src="/hotel-hallway-elegant.jpg"
+                src="/about/comfort.webp"
                 alt="Premium comfort rooms"
                 fill
                 className="object-cover"
@@ -80,7 +80,7 @@ export default function AboutClient() {
             {/* Image */}
             <div className="md:order-2 relative rounded-3xl overflow-hidden min-h-[240px]">
               <Image
-                src="/hotel-reception-modern.jpg"
+                src="/about/hospitality.webp"
                 alt="Exceptional hospitality"
                 fill
                 className="object-cover"
@@ -117,7 +117,7 @@ export default function AboutClient() {
               {/* Image */}
               <div className="relative rounded-2xl overflow-hidden min-h-[260px]">
                 <Image
-                  src="/hotel-hallway-elegant.jpg"
+                  src="/about/welcoming-stay.webp"
                   alt="Central location Sivakasi"
                   fill
                   className="object-cover"
@@ -170,7 +170,7 @@ export default function AboutClient() {
             {/* Image */}
             <div className="relative rounded-3xl overflow-hidden min-h-[240px]">
               <Image
-                src="/hotel-lobby-seating.jpg"
+                src="/about/design.webp"
                 alt="Thoughtful design interiors"
                 fill
                 className="object-cover"
@@ -191,7 +191,7 @@ export default function AboutClient() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/hotel-exterior-night.jpg')",
+              backgroundImage: "url('/about/img.webp')",
             }}
           />
 
@@ -212,23 +212,22 @@ export default function AboutClient() {
             {/* Background image */}
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: "url('/hotel-exterior-night.jpg')" }}
+              style={{ backgroundImage: "url('/about/img.webp')" }}
             />
 
             {/* Overlay */}
-           <motion.div
-  initial={{
-    backgroundColor: "rgba(145, 145, 145, 0.8)",
-    backdropFilter: "blur(0px)",
-  }}
-  whileInView={{
-    backgroundColor: "rgba(0, 0, 0, 0.45)",
-    backdropFilter: "blur(8px)",
-  }}
-  transition={{ duration: 1, ease: "easeOut" }}
-  className="absolute inset-0"
- />
-
+            <motion.div
+              initial={{
+                backgroundColor: "rgba(145, 145, 145, 0.8)",
+                backdropFilter: "blur(0px)",
+              }}
+              whileInView={{
+                backgroundColor: "rgba(0, 0, 0, 0.45)",
+                backdropFilter: "blur(8px)",
+              }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="absolute inset-0"
+            />
 
             {/* Content */}
             <div className="relative z-10 px-6 py-16 text-center">
