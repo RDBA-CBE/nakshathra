@@ -2,80 +2,139 @@
 
 import Header from "@/components/header";
 import Footer from "@/components/sections/footer";
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
-const images = [
-  { src: "/hotel-staircase-orange-interior.jpg", label: "Grand Staircase" },
-  { src: "/hotel-ceiling-geometric-design.jpg", label: "Architectural Detail" },
-  { src: "/hotel-reception-modern.jpg", label: "Reception Area" },
-  { src: "/hotel-hallway-elegant.jpg", label: "Elegant Hallway" },
-  { src: "/hotel-lobby-seating.jpg", label: "Lobby Lounge" },
-  { src: "/hotel-conference-room.jpg", label: "Conference Room" },
-  { src: "/hotel-restaurant-interior.jpg", label: "Restaurant" },
-  { src: "/hotel-exterior-night.jpg", label: "Hotel Exterior" },
+/* ✅ TYPE FIRST */
+type GalleryImage = {
+  src: string;
+  label: string;
+};
+
+/* ✅ IMAGES */
+const images: GalleryImage[] = [
+  { src: "/gallery/architectural-detail.webp", label: "Architectural Detail" },
+  { src: "/gallery/conference-room.webp", label: "Conference Room" },
+  { src: "/gallery/elegant-hallway.webp", label: "Elegant Hallway" },
+  { src: "/gallery/grand-staircase.webp", label: "Grand Staircase" },
+  { src: "/gallery/hotel-exterior.webp", label: "Hotel Exterior" },
+  { src: "/gallery/lobby-lounge.webp", label: "Lobby Lounge" },
+  { src: "/gallery/reception-area.webp", label: "Reception Area" },
+  { src: "/gallery/restaurant.webp", label: "Restaurant" },
 ];
 
+/* ✅ GROUPED IMAGES (TYPED) */
+const imageGroups: GalleryImage[][] = [];
+
+for (let i = 0; i < images.length; i += 4) {
+  imageGroups.push(images.slice(i, i + 4));
+}
+
 export default function GallerySection() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // 🔹 autoplay
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) =>
+        prev === imageGroups.length - 1 ? 0 : prev + 1
+      );
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <main className="min-h-screen">
       <Header />
 
-      <section className=" pb-24 px-4 bg-[#FFFFFF]">
-        <div className="relative rounded-3xl bg-[#F3EEE6] px-6 sm:px-10 py-6 sm:py-6 text-center">
-          <h1 className="mt-4 font-heading text-3xl sm:text-4xl md:text-5xl text-[#152A38] max-w-3xl mx-auto leading-tight">
+      <section className="pb-24 px-4 bg-white">
+        {/* HERO */}
+        <div className="relative rounded-3xl bg-[#F3EEE6] px-6 sm:px-10 py-6 text-center">
+          <h1 className="mt-4 font-heading text-3xl sm:text-4xl md:text-5xl text-[#152A38]">
             Gallery
           </h1>
 
           <p className="mt-6 text-gray-600 max-w-5xl mx-auto text-sm sm:text-base">
-            Explore interiors that are designed to be both stylish and
-            comfortable, creating a relaxing and welcoming atmosphere. From
-            elegant decor to cozy furnishings, every detail is crafted to make
-            your stay enjoyable and memorable.
+            Explore interiors designed to be both stylish and comfortable,
+            creating a welcoming and memorable atmosphere.
           </p>
 
           <div className="mt-8 flex justify-center">
-            <span className="h-[1px] w-24 bg-[#8B4513]/40"></span>
+            <span className="h-px w-24 bg-[#8B4513]/40" />
           </div>
         </div>
-        <div className="max-w-6xl mt-16 mx-auto">
-          {/* Masonry Grid */}
-          <motion.div
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={{
-              hidden: {},
-              show: { transition: { staggerChildren: 0.12 } },
-            }}
-            className="columns-1 sm:columns-2 lg:columns-3 gap-6"
-          >
-            {images.map((img, index) => (
-              <motion.div
-                key={index}
-                variants={{
-                  hidden: { opacity: 0, y: 40 },
-                  show: { opacity: 1, y: 0 },
-                }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                className="mb-6 break-inside-avoid relative overflow-hidden rounded-2xl group shadow-lg"
-              >
-                <img
-                  src={img.src}
-                  alt={img.label}
-                  className="w-full object-cover transition-transform duration-700 lg:group-hover:scale-110"
-                />
 
-                {/* Gradient caption */}
-                <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="absolute bottom-4 left-4">
-                    <p className="text-white text-lg font-heading font-medium">
-                      {img.label}
-                    </p>
-                  </div>
+        {/* GALLERY CAROUSEL */}
+        <div className="w-full relative overflow-hidden mt-16">
+          {/* TRACK */}
+          <div
+            className="flex transition-transform duration-700 ease-in-out"
+            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          >
+            {imageGroups.map((group, index) => (
+              <div
+                key={index}
+                className="
+                  min-w-full
+                  px-4 sm:px-6
+                  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+                  gap-4 md:gap-6
+                "
+              >
+                {/* BIG */}
+                <div className="h-[260px] sm:h-[320px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src={group[0]?.src}
+                    alt={group[0]?.label}
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
                 </div>
-              </motion.div>
+
+                {/* SMALL */}
+                <div className="h-[260px] sm:h-[300px] lg:h-[380px] rounded-2xl overflow-hidden shadow-lg lg:self-center">
+                  <img
+                    src={group[1]?.src}
+                    alt={group[1]?.label}
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                </div>
+
+                {/* BIG */}
+                <div className="h-[260px] sm:h-[320px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src={group[2]?.src}
+                    alt={group[2]?.label}
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                </div>
+
+                {/* SMALL */}
+                <div className="h-[260px] sm:h-[300px] lg:h-[380px] rounded-2xl overflow-hidden shadow-lg lg:self-center">
+                  <img
+                    src={group[3]?.src}
+                    alt={group[3]?.label}
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                </div>
+              </div>
             ))}
-          </motion.div>
+          </div>
+
+          {/* DOTS */}
+          <div className="flex justify-center gap-3 mt-10">
+            {imageGroups.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrentSlide(i)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  i === currentSlide
+                    ? "w-10 bg-[#8B4513]"
+                    : "w-2 bg-[#8B4513]/40"
+                }`}
+                aria-label={`Go to slide ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </section>
 
