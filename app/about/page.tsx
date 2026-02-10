@@ -34,7 +34,7 @@ export default function AboutClient() {
                   transition={{ duration: 0.6, delay: 0.1 }}
                   className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-[#152A38] mb-8 leading-[1.1]"
                 >
-                  About <span className="text-[#8B4513]">Us</span>{" "}
+                  About <span className="text-[#b3862f]">Us</span>{" "}
                 </motion.h1>
 
                 {/* Description */}
@@ -124,7 +124,7 @@ export default function AboutClient() {
                 <div className="h-px w-24 bg-gradient-to-r from-[#8B4513] to-transparent mb-6"></div>
                 <h2 className="text-4xl md:text-5xl font-heading text-[#152A38] leading-tight">
                   Dedicated to{" "}
-                  <span className="text-[#8B4513]">Exceptional</span>{" "}
+                  <span className="text-[#b3862f]">Exceptional</span>{" "}
                   Hospitality
                 </h2>
               </div>
@@ -157,7 +157,7 @@ export default function AboutClient() {
                 <div className="h-px w-24 bg-gradient-to-r from-[#8B4513] to-transparent mb-6"></div>
                 <h2 className="text-4xl md:text-5xl font-heading text-[#152A38] leading-tight">
                   A Welcoming Stay in the{" "}
-                  <span className="text-[#8B4513]">Heart of Sivakasi</span>
+                  <span className="text-[#b3862f]">Heart of Sivakasi</span>
                 </h2>
               </div>
 
@@ -209,7 +209,7 @@ export default function AboutClient() {
           >
             <h2 className="text-4xl md:text-5xl font-heading text-[#152A38] mb-8 leading-tight">
               Thoughtfully{" "}
-              <span className="text-[#8B4513]">Curated Design</span>
+              <span className="text-[#b3862f]">Curated Design</span>
             </h2>
             <p className="text-xl text-[#5A5A5A] max-w-3xl mx-auto">
               Blending contemporary design with timeless Indian warmth, Hotel
@@ -276,13 +276,13 @@ export default function AboutClient() {
                   {/* Opening Line */}
                   <p className="text-xl sm:text-2xl text-[#2C2416] leading-relaxed font-light">
                     Whether you are visiting Sivakasi for{" "}
-                    <span className="text-[#8B4513] font-medium">business</span>
+                    <span className="text-[#b3862f] font-medium">business</span>
                     ,{" "}
-                    <span className="text-[#8B4513] font-medium">
+                    <span className="text-[#b3862f] font-medium">
                       pilgrimage
                     </span>{" "}
                     or{" "}
-                    <span className="text-[#8B4513] font-medium">
+                    <span className="text-[#b3862f] font-medium">
                       family travel
                     </span>
                     ,
@@ -294,7 +294,7 @@ export default function AboutClient() {
                     <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8B4513]/25 to-transparent" />
 
                     {/* Hotel Name */}
-                    <div className="text-3xl sm:text-4xl md:text-5xl font-heading text-[#8B4513] mb-4">
+                    <div className="text-3xl sm:text-4xl md:text-5xl font-heading text-[#b3862f] mb-4">
                       Hotel Nakshathra
                     </div>
 

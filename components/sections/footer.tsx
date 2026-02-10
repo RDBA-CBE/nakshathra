@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FAF8F3] text-[#1F3A44] py-16 px-4 sm:px-6 overflow-x-hidden">
+    <footer className="bg-[#FAF8F3] text-[#1F3A44] pt-16 px-4 sm:px-6 overflow-x-hidden">
       <div className="max-w-[1280px] mx-auto w-full">
         
         {/* MAIN GRID */}
@@ -85,7 +85,7 @@ export default function Footer() {
         </div>
 
         {/* COPYRIGHT */}
-        <div className="border-t border-[#C9A961]/20 pt-6 text-center text-sm sm:text-base text-[#5C4A42]">
+        <div className="border-t border-[#C9A961]/20 py-6 text-center text-sm sm:text-base text-[#5C4A42]">
           Copyright 2026 © Nakshatra Royal Stay. Concept by{" "}
           <a
             href="https://irepute.in/"

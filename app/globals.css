@@ -324,7 +324,7 @@
 
 @media (min-width: 327px) {
   .marquee-four {
-    transform: translateY(-25px)  !important;
+    transform: translateY(-25px) ;
   }
 }
 
@@ -396,3 +396,23 @@
 }
 
 
+.swiper-wrapper {
+  align-items: stretch;
+}
+
+/* Base bullet */
+.custom-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(139, 69, 19, 0.3);
+  border-radius: 999px;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+/* Active bullet (Swiper controls this class) */
+.swiper-pagination-bullet-active.custom-bullet {
+  width:8px;
+  background: #8b4513;
+}

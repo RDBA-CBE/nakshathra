@@ -1,11 +1,12 @@
+"use client";
+
 import Header from "@/components/header";
 import Footer from "@/components/sections/footer";
-import type { Metadata } from "next";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Autoplay } from "swiper/modules"
-import "swiper/css"
-import "swiper/css/pagination"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 import {
   Wifi,
@@ -21,10 +22,10 @@ import {
   Gem,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Facilities - Nakshatra Royal Stay",
-  description: "Discover our world-class facilities and amenities",
-};
+// export const metadata: Metadata = {
+//   title: "Facilities - Nakshatra Royal Stay",
+//   description: "Discover our world-class facilities and amenities",
+// };
 
 const facilities = [
   {
@@ -116,33 +117,81 @@ export default function FacilityPage() {
           </div>
 
           {/* WHY CHOOSE US */}
-          <div className="space-y-10 w-full mx-auto">
-            <h2 className="text-2xl font-heading sm:text-3xl  font-semibold text-center">
-              Why Choose Hotel Nakshathra?
-            </h2>
+          <div className="w-full max-w-7xl mx-auto space-y-16">
+            {/* Heading */}
+            <div className="text-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-semibold text-[#1F3A44]">
+                Why Choose Hotel Nakshathra?
+              </h2>
+            </div>
 
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              {facilities.map((item) => (
-                <div
-                  key={item.title}
-                  className="group rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
-                >
-                  <div className="h-44 sm:h-48 flex items-center justify-center bg-[#F3EEE6]">
-                    <div className="w-16 h-16 rounded-full bg-[#8B4513]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <item.icon className="w-8 h-8 text-[#8B4513]" />
+            {/* Facilities */}
+            <div className="mt-16 relative">
+              <Swiper
+                modules={[Pagination, Autoplay]}
+                spaceBetween={24}
+                autoplay={{
+                  delay: 3500,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+                }}
+                pagination={{
+                  clickable: true,
+                  renderBullet: (index, className) =>
+                    `<span class="${className} custom-bullet"></span>`,
+                }}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1.1,
+                    centeredSlides: true,
+                  },
+                  640: {
+                    slidesPerView: 2,
+                    centeredSlides: true,
+                  },
+                  1024: {
+                    slidesPerView: 4,
+                    centeredSlides: false,
+                  },
+                }}
+                className="!pb-16"
+              >
+                {facilities.map((item) => (
+                  <SwiperSlide key={item.title} className="flex justify-center">
+                    {/* CARD */}
+                    <div
+                      className="
+            group flex flex-col
+            w-[100%] sm:w-full
+            rounded-2xl border border-[#8B4513]/20 bg-white p-8
+            transition hover:shadow-md
+
+            h-[340px]
+            sm:h-[320px]
+            lg:h-[360px]
+          "
+                    >
+                      {/* ICON */}
+                      <div className="flex justify-center">
+                        <div className="w-16 h-16 rounded-full bg-[#8B4513]/10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                          <item.icon className="w-8 h-8 text-[#8B4513]" />
+                        </div>
+                      </div>
+
+                      {/* CONTENT */}
+                      <div className="mt-6 text-center flex flex-col flex-grow">
+                        <h3 className="text-base sm:text-lg font-heading font-semibold text-[#1F3A44] mb-2">
+                          {item.title}
+                        </h3>
+
+                        <p className="text-sm text-gray-600 leading-relaxed flex-grow">
+                          {item.desc}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-
-                  <div className="p-6">
-                    <h3 className="text-base font-heading sm:text-lg font-semibold mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-gray-700 leading-relaxed">
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
 
@@ -150,8 +199,8 @@ export default function FacilityPage() {
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
               At <span className="font-semibold">Hotel Nakshathra</span>, every
-              detail is curated to provide comfort, convenience and care, making
-              it your ideal choice for business, leisure or spiritual visits in
+              is curated to provide comfort, convenience and care, making it
+              your ideal choice for business, leisure or spiritual visits in
               Sivakasi.
             </p>
           </div>
