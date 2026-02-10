@@ -25,14 +25,14 @@ export default function DiningSection() {
   }, []);
 
   return (
-    <section id="dining-section" className="py-16 bg-white overflow-hidden">
+    <section id="dining-section" className="pb-16 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="text-center mb-12">
           <p className="text-xl font-heading font-bold text-[#b3862f] uppercase tracking-widest">
             Relaxed Ambience, Quality Cuisine
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-[#10212b] mt-4">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-[#1F3A44] mt-4">
             Peaceful Dining that Complements your Stay <br/> with Nourishing Meals and
             Attentive Service
           </h2>

@@ -13,7 +13,7 @@ export default function LuxuryBanner() {
       className="
         relative
         flex items-center justify-center
-        py-8 sm:py-12 lg:py-16
+        
         px-4 sm:px-6
         overflow-hidden
         marquee-four

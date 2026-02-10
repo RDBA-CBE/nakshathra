@@ -82,10 +82,10 @@ export default function FacilitiesSection() {
             
 
             <h2
-              className="text-[42px] lg:text-[54px] leading-[1.15] mb-6"
+              className="text-[42px] lg:text-[54px] text-[#1F3A44] leading-[1.15] mb-6"
               style={{
                 fontFamily: '"Marcellus", serif',
-                color: "#1F2A37",
+                
                 fontWeight: 400,
               }}
             >
@@ -111,16 +111,7 @@ export default function FacilitiesSection() {
                 >
                   {/* Tick */}
                   <span
-                    className="
-      w-6 h-6 rounded-full
-      bg-[#F6F7F9]              /* normal light yellow */
-      flex items-center justify-center
-      text-[203 46% 15%] 
-      transition-colors duration-300
-      group-hover:bg-[#F4C430] /* hover yellow */
-      group-hover:text-white
-    "
-                  >
+                    className="w-6 h-6 rounded-full bg-[#F6F7F9] flex items-center justify-center text-[203 46% 15%] transition-colors duration-300 group-hover:bg-[#F4C430] group-hover:text-white">
                     <Check size={14} />
                   </span>
 

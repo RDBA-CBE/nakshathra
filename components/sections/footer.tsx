@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FAF8F3] text-[#2C1810] py-16 px-4 sm:px-6 overflow-x-hidden">
+    <footer className="bg-[#FAF8F3] text-[#1F3A44] py-16 px-4 sm:px-6 overflow-x-hidden">
       <div className="max-w-[1280px] mx-auto w-full">
         
         {/* MAIN GRID */}
@@ -33,7 +33,7 @@ export default function Footer() {
             
             {/* QUICK LINKS */}
             <div className="min-w-0">
-              <h4 className="font-semibold mb-6 text-lg">Quick Links</h4>
+              <h4 className="font-semibold mb-6 font-heading text-lg">Quick Links</h4>
               <ul className="space-y-3 text-base text-[#5C4A42]">
                 <li><Link href="/about" className="hover:text-[#8B1C1C]">About</Link></li>
                 <li><Link href="/rooms" className="hover:text-[#8B1C1C]">Rooms</Link></li>
@@ -45,19 +45,19 @@ export default function Footer() {
 
             {/* EXPLORE */}
             <div className="min-w-0">
-              <h4 className="font-semibold mb-6 text-lg">Explore Pages</h4>
+              <h4 className="font-semibold mb-6 font-heading text-lg">Explore Pages</h4>
               <ul className="space-y-3 text-base text-[#5C4A42]">
                 <li><Link href="/privacy-policy" className="hover:text-[#8B1C1C]">Privacy Policy</Link></li>
                 <li><Link href="/terms-and-conditions" className="hover:text-[#8B1C1C]">Terms & Conditions</Link></li>
                 <li><Link href="/refund-policy" className="hover:text-[#8B1C1C]">Refund Policy</Link></li>
-                <li><Link href="/sitemap" className="hover:text-[#8B1C1C]">Sitemap</Link></li>
+                <li><Link href="/site-map" className="hover:text-[#8B1C1C]">Sitemap</Link></li>
                 <li><Link href="/pooja-time" className="hover:text-[#8B1C1C]">Pooja Time</Link></li>
               </ul>
             </div>
 
             {/* CONTACT */}
             <div className="min-w-0">
-              <h4 className="font-semibold mb-6 text-lg">Contact Us</h4>
+              <h4 className="font-semibold mb-6 font-heading text-lg">Contact Us</h4>
 
               <p className="text-base text-[#5C4A42] leading-relaxed">
                 Kodaikanal Road,

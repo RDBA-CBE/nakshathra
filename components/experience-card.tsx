@@ -29,7 +29,7 @@ export default function ExperienceCard({
         </div>
 
         <div className="space-y-2 px-2 pb-2">
-          <h3 className="font-serif text-2xl text-[#2C1810] mb-1">
+          <h3 className="font-serif text-2xl text-[#1F3A44] mb-1">
             {title}
           </h3>
           <p className="text-sm text-gray-600 mb-3">

@@ -42,7 +42,7 @@ export default function Header() {
                   className={`text-[15px] xl:text-base font-normal transition-colors ${
                     pathname === item.href
                       ? "text-[#8B4513]"
-                      : "text-[#2C1810] hover:text-[#8B4513]"
+                      : "text-[#1F3A44] hover:text-[#8B4513]"
                   }`}
                   style={{ fontFamily: '"Marcellus", serif' }}
                 >
@@ -61,7 +61,7 @@ export default function Header() {
                 <span className="text-[11px] text-[#666666] leading-tight whitespace-nowrap">
                   Reserve Your Stay Today
                 </span>
-                <span className="text-sm font-semibold text-[#2C1810] leading-tight whitespace-nowrap">
+                <span className="text-sm font-semibold text-[#1F3A44] leading-tight whitespace-nowrap">
                   +91 90871 73000
                 </span>
               </div>
@@ -75,9 +75,9 @@ export default function Header() {
             aria-label="Toggle menu"
           >
             {mobileOpen ? (
-              <X className="w-6 h-6 text-[#2C1810]" />
+              <X className="w-6 h-6 text-[#1F3A44]" />
             ) : (
-              <Menu className="w-6 h-6 text-[#2C1810]" />
+              <Menu className="w-6 h-6 text-[#1F3A44]" />
             )}
           </button>
         </div>
@@ -94,7 +94,7 @@ export default function Header() {
                   className={`text-base font-normal transition-colors ${
                     pathname === item.href
                       ? "text-[#8B4513] font-medium"
-                      : "text-[#2C1810] hover:text-[#8B4513]"
+                      : "text-[#1F3A44] hover:text-[#8B4513]"
                   }`}
                   style={{ fontFamily: '"Marcellus", serif' }}
                 >
@@ -109,7 +109,7 @@ export default function Header() {
                 <span className="text-xs text-[#666666] leading-tight">
                   Reserve Your Stay Today
                 </span>
-                <span className="text-sm font-semibold text-[#2C1810] leading-tight">
+                <span className="text-sm font-semibold text-[#1F3A44] leading-tight">
                   +91 90871 73000
                 </span>
               </div>

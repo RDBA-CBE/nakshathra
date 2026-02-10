@@ -21,7 +21,7 @@ export default function RoomCard({ title, price, image }: RoomCardProps) {
         />
         {/* Price Tag Overlay */}
         <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm rounded px-4 py-2 shadow-lg">
-          <span className="text-base font-semibold text-[#2C1810]">{price}</span>
+          <span className="text-base font-semibold text-[#1F3A44]">{price}</span>
         </div>
       </div>
       <div className="p-5">
