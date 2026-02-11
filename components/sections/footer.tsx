@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FAF8F3] text-[#1F3A44] pt-16 px-4 sm:px-6 overflow-x-hidden">
+    <footer className="bg-[#FBF6E6] text-[#1F3A44] pt-16 px-4 sm:px-6 overflow-x-hidden">
       <div className="max-w-[1280px] mx-auto w-full">
         
         {/* MAIN GRID */}
@@ -93,7 +93,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="hover:text-[#C9A961] underline transition-colors"
           >
-            Repute
+            repute
           </a>
           .
         </div>

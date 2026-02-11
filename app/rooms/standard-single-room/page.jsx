@@ -16,11 +16,11 @@ export default function StandardSingleRoom() {
   const [activeImage, setActiveImage] = useState(images[0]);
 
   return (
-    <main className="min-h-screen bg-[#FAF8F3] text-[#2E2E2E]">
+    <main className="min-h-screen bg-white">
       <Header />
 
       {/* MAIN SECTION */}
-      <section className="pt-10 pb-24 px-4">
+      <section className="pt-10 pb-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <p className="text-sm text-gray-500 mb-10">
             Home / Rooms / Standard Single Room

@@ -15,15 +15,15 @@ export default function AboutClient() {
   const countAmenities = useCounter(isInView, 20, 900);
   const countRooms = useCounter(isInView, 49, 900);
   return (
-    <main className="min-h-screen bg-[#FAF9F7]">
+    <main className="min-h-screen bg-white">
       <Header />
 
       {/* Hero Banner with Elegant Typography */}
       <section className="relative w-full overflow-hidden">
-        <div className="relative flex flex-col lg:flex-row min-h-[50vh] w-full">
+        <div className="relative flex flex-col lg:flex-row w-full">
           {/* LEFT CONTENT - Light Background */}
           <div className="relative z-10 w-full lg:w-1/2 bg-gradient-to-br from-[#F8F4E9] to-[#F1ECE0] flex items-center">
-            <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20 py-16 lg:py-0">
+            <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20 py-20 lg:py-20">
               <div>
                 {/* Eyebrow / Subtitle */}
 
@@ -32,7 +32,7 @@ export default function AboutClient() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.1 }}
-                  className="heading leading-[1.15] mb-8"
+                  className="heading leading-[1.15]"
                 >
                   About <span className="text-[#b3862f]">Us</span>{" "}
                 </motion.h1>
@@ -69,7 +69,7 @@ export default function AboutClient() {
               <div className="absolute inset-y-0 left-1/2 transform -translate-x-1/2 w-[2px]">
                 <div className="h-full bg-gradient-to-b from-[#8B4513]/20 via-[#8B4513]/40 to-[#8B4513]/20"></div>
               </div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-[#FAF9F7] border-2 border-[#8B4513]/30 rounded-full"></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-[#FBF6E6] border-2 border-[#8B4513]/30 rounded-full"></div>
             </div>
           </div>
 
@@ -142,7 +142,7 @@ export default function AboutClient() {
       </section>
 
       {/* Location Section - Elegant Split Layout */}
-      <section className="py-20 bg-[#FAF9F7]">
+      <section className="py-20 bg-[#FBF6E6]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             {/* Content */}

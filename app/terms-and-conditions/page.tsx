@@ -1,58 +1,104 @@
+"use client";
 import Header from "@/components/header";
 import Footer from "@/components/sections/footer";
 import type { Metadata } from "next";
 import { Check } from "lucide-react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy - Hotel Nakshathra",
-  description:
-    "Privacy Policy for Hotel Nakshathra - Your privacy is important to us",
-};
+// export const metadata: Metadata = {
+//   title: "Privacy Policy - Hotel Nakshathra",
+//   description:
+//     "Privacy Policy for Hotel Nakshathra - Your privacy is important to us",
+// };
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-white">
       <Header />
+      <section className="relative w-full bg-[#FFFFFF] overflow-hidden">
+        <div className="relative flex flex-col lg:flex-row  w-full">
+          {/* LEFT CONTENT - Light Background */}
+          <div className="relative z-10 w-full lg:w-1/2 bg-gradient-to-br from-[#F8F4E9] to-[#F1ECE0] flex items-center">
+            <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20 py-16 lg:py-20">
+              <div>
+                {/* Eyebrow / Subtitle */}
 
-      <section className="pb-20 px-4 bg-[#FFFFFF]">
-        {/* Hero Section */}
-        <div className="relative rounded-3xl bg-[#F3EEE6] px-6 sm:px-10 py-12 sm:py-16 text-center">
-          <h1 className="mt-4 heading leading-[1.15] max-w-3xl mx-auto">
-            Terms and Conditions
-          </h1>
+                {/* Main Heading */}
+                <motion.h1
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                  className="heading heading leading-[1.15]"
+                >
+                  Terms and Conditions
+                </motion.h1>
+
+                {/* Description */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="space-y-6 "
+                >
+                  <p className="text-gray-600 leading-relaxed">
+                    This page states the Terms and Conditions under which you
+                    (Visitor) may visit this website. Please read this page
+                    carefully. If you do not accept the Terms and Conditions
+                    stated here, we would request you to exit this site.
+                    Nakshathra Royal Stay , any of its business divisions and /
+                    or its subsidiaries, associate companies or subsidiaries to
+                    subsidiaries or such other investment companies (in India or
+                    abroad) reserve their respective rights to revise these
+                    Terms and Conditions at any time by updating this posting.
+                    You should visit this page periodically to re-appraise
+                    yourself of the Terms and Conditions, because they are
+                    binding on all users of this website.
+                  </p>
+                </motion.div>
+
+                {/* Decorative Line */}
+
+                {/* Features */}
+              </div>
+            </div>
+          </div>
+
+          {/* DIAGONAL SEPARATOR */}
+          <div className="hidden lg:block absolute left-1/2 top-0 h-full -translate-x-1/2 z-20 pointer-events-none">
+            <div className="relative h-full w-px">
+              <div className="absolute inset-y-0 left-1/2 transform -translate-x-1/2 w-[2px]">
+                <div className="h-full bg-gradient-to-b from-[#8B4513]/20 via-[#8B4513]/40 to-[#8B4513]/20"></div>
+              </div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-[#FBF6E6] border-2 border-[#8B4513]/30 rounded-full"></div>
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="w-full lg:w-1/2 relative">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10"></div>
+            <Image
+              src="/facilities/intro.webp"
+              alt="Hotel Nakshathra Elegant Interior"
+              fill
+              className="object-cover object-center"
+              priority
+            />
+
+            {/* Image Overlay Content */}
+          </div>
         </div>
+      </section>
+      <section className="pb-20 px-4 bg-white">
+        {/* Hero Section */}
 
         {/* Content Section */}
         <div className="max-w-6xl mx-auto mt-16">
           <div className="px-8 sm:px-12">
             <div className="space-y-12">
-              {/* Information Collection */}
-              <section className="space-y-4">
-                <h2 className="heading leading-[1.15]">
-                  Terms and Conditions of Website Use
-                </h2>
-
-                <p className="text-gray-600 leading-relaxed">
-                  This page states the Terms and Conditions under which you
-                  (Visitor) may visit this website. Please read this page
-                  carefully. If you do not accept the Terms and Conditions
-                  stated here, we would request you to exit this site.
-                  Nakshathra Royal Stay , any of its business divisions and / or
-                  its subsidiaries, associate companies or subsidiaries to
-                  subsidiaries or such other investment companies (in India or
-                  abroad) reserve their respective rights to revise these Terms
-                  and Conditions at any time by updating this posting. You
-                  should visit this page periodically to re-appraise yourself of
-                  the Terms and Conditions, because they are binding on all
-                  users of this website.
-                </p>
-              </section>
-
               {/* How We Use Information */}
-              <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="heading leading-[1.15]">
-                  Use of Content
-                </h2>
+              <section className="space-y-4">
+                <h2 className="heading leading-[1.15]">Use of Content</h2>
 
                 <p className="text-gray-600 leading-relaxed">
                   All logos, brands and marks appearing in this site, except as
@@ -74,9 +120,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Data Sharing */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="heading leading-[1.15]">
-                  Acceptable Site Use
-                </h2>
+                <h2 className="heading leading-[1.15]">Acceptable Site Use</h2>
 
                 <p className="text-gray-600 leading-relaxed font-medium">
                   (A) Security Rules
@@ -169,9 +213,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Your Rights */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="heading leading-[1.15]">
-                  Indemnity
-                </h2>
+                <h2 className="heading leading-[1.15]">Indemnity</h2>
 
                 <p className="text-gray-600 leading-relaxed">
                   You agree to defend, indemnify, and hold harmless Nakshathra
@@ -189,9 +231,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Cookies */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="heading leading-[1.15]">
-                  Liability
-                </h2>
+                <h2 className="heading leading-[1.15]">Liability</h2>
                 <p className="text-gray-600 leading-relaxed">
                   While all reasonable care has been taken in providing the
                   content on this website, Nakshathra Royal Stay. and / or its
@@ -208,7 +248,7 @@ export default function PrivacyPolicyPage() {
                   operation or transmission or any failure of performance, even
                   if advised of the possibility thereof.
                 </p>
-               <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   No warranty is given that the website will operate error-free
                   or that this website and its server are free of computer
                   viruses or other harmful mechanisms. If your use of the

@@ -5,11 +5,11 @@ import { ArrowRight } from "lucide-react";
 export default function HeroSection() {
   return (
     <section className="relative w-full overflow-hidden">
-      <div className="relative flex flex-col lg:flex-row min-h-[80vh] w-full">
+      <div className="relative flex flex-col lg:flex-row w-full">
 
         {/* LEFT CONTENT */}
         <div className="relative z-10 w-full lg:w-1/2 bg-[#FBF6E6] flex items-center">
-          <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-24 py-20 lg:py-0">
+          <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-24 py-30 lg:py-30">
             <div>
 
               {/* Eyebrow text */}

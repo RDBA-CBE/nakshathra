@@ -1,12 +1,15 @@
+"use client";
+
 import Header from "@/components/header";
 import Footer from "@/components/sections/footer";
 import type { Metadata } from "next";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "Rooms - Nakshatra Royal Stay",
-  description: "Explore our luxury rooms and suites",
-};
+import Image from "next/image";
+import { motion } from "framer-motion";
+// export const metadata: Metadata = {
+//   title: "Rooms - Nakshatra Royal Stay",
+//   description: "Explore our luxury rooms and suites",
+// };
 
 const rooms = [
   {
@@ -49,28 +52,78 @@ const rooms = [
 
 export default function RoomsPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-white">
       <Header />
+      {/* Hero Banner with Elegant Typography */}
+      <section className="relative w-full overflow-hidden">
+        <div className="relative flex flex-col lg:flex-row  w-full">
+          {/* LEFT CONTENT - Light Background */}
+          <div className="relative z-10 w-full lg:w-1/2 bg-gradient-to-br from-[#F8F4E9] to-[#F1ECE0] flex items-center">
+            <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20 py-16 lg:py-20">
+              <div>
+                {/* Eyebrow / Subtitle */}
+                {/* <p className="subtitle">Stay Connected. Stay Comfortable</p> */}
+                {/* Main Heading */}
+                <motion.h1
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                  className="heading leading-[1.15]"
+                >
+                  Rooms
+                </motion.h1>
 
-      <section className=" pb-24 px-4 bg-[#FFFFFF]">
-        <div className="relative rounded-3xl bg-[#F3EEE6] px-6 sm:px-10 py-6 sm:py-6 text-center">
-          <h1 className="mt-4 heading leading-[1.15] max-w-3xl mx-auto">
-            Our Rooms
-          </h1>
+                {/* Description */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="space-y-6 "
+                >
+                  <p className="text-lg text-[#5A5A5A] leading-relaxed">
+                    Discover thoughtfully designed rooms that reflects warmth
+                    and comfort. Each room features calming interiors,
+                    functional layouts and contemporary amenities, crafted to
+                    provide a peaceful and convenient stay. Whether you’re
+                    visiting for a short stop or an extended stay, our rooms
+                    offer the perfect balance of simplicity, comfort and
+                    elegance.
+                  </p>
+                </motion.div>
 
-          <p className="mt-6 text-gray-600 max-w-5xl mx-auto text-sm sm:text-base">
-            Discover thoughtfully designed rooms that reflects warmth and
-            comfort. Each room features calming interiors, functional layouts
-            and contemporary amenities, crafted to provide a peaceful and
-            convenient stay. Whether you’re visiting for a short stop or an
-            extended stay, our rooms offer the perfect balance of simplicity,
-            comfort and elegance.
-          </p>
+                {/* Decorative Line */}
 
-          <div className="mt-8 flex justify-center">
-            <span className="h-[1px] w-24 bg-[#8B4513]/40"></span>
+                {/* Features */}
+              </div>
+            </div>
+          </div>
+
+          {/* DIAGONAL SEPARATOR */}
+          <div className="hidden lg:block absolute left-1/2 top-0 h-full -translate-x-1/2 z-20 pointer-events-none">
+            <div className="relative h-full w-px">
+              <div className="absolute inset-y-0 left-1/2 transform -translate-x-1/2 w-[2px]">
+                <div className="h-full bg-gradient-to-b from-[#8B4513]/20 via-[#8B4513]/40 to-[#8B4513]/20"></div>
+              </div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-[#FBF6E6] border-2 border-[#8B4513]/30 rounded-full"></div>
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="w-full lg:w-1/2 relative">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10"></div>
+            <Image
+              src="/facilities/intro.webp"
+              alt="Hotel Nakshathra Elegant Interior"
+              fill
+              className="object-cover object-center"
+              priority
+            />
+
+            {/* Image Overlay Content */}
           </div>
         </div>
+      </section>
+      <section className=" pb-24 px-4 bg-[#FFFFFF]">
         <div className="max-w-6xl mt-16 mx-auto">
           {/* Heading */}
 
@@ -83,11 +136,15 @@ export default function RoomsPage() {
               >
                 {/* Image */}
                 <div className="relative h-56 overflow-hidden">
-                  <img
+                  <Link
+                    href={room.link}
+                    className="inline-flex items-center gap-2 hover:text-[#9C8468] transition"
+                  ><img
                     src={room.image}
                     alt={room.title}
                     className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
-                  />
+                  /></Link>
+                  
                 </div>
 
                 {/* Content */}
@@ -98,10 +155,14 @@ export default function RoomsPage() {
                   </span>
 
                   {/* Icon */}
-
-                  <h3 className="heading leading-[1.15] mb-2">
-                    {room.title}
-                  </h3>
+                  <Link
+                    href={room.link}
+                    className="inline-flex items-center gap-2 hover:text-[#9C8468] transition"
+                  >
+                    <h3 className="heading leading-[1.15] mb-2">
+                      {room.title}
+                    </h3>
+                  </Link>
 
                   <p className="text-sm font-semibold text-[#9C8468] mb-3">
                     {room.price}
@@ -113,7 +174,7 @@ export default function RoomsPage() {
 
                   <Link
                     href={room.link}
-                    className="inline-flex items-center gap-2 text-sm font-medium text-[#2E2E2E] hover:text-[#9C8468] transition"
+                    className="inline-flex items-center gap-2 hover:text-[#9C8468] transition"
                   >
                     Read More <span>→</span>
                   </Link>

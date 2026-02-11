@@ -3,6 +3,7 @@
 import Header from "@/components/header";
 import Footer from "@/components/sections/footer";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -67,54 +68,89 @@ const facilities = [
 
 export default function FacilityPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-white">
       <Header />
 
-      <section className="pb-24 px-4 bg-[#FFFFFF]">
-        <div className="relative rounded-3xl bg-[#F3EEE6] px-6 sm:px-10 py-6 sm:py-6 text-center">
-          <h1 className="mt-4 heading leading-[1.15] max-w-3xl mx-auto">
-            Facilities
-          </h1>
+      {/* Hero Banner with Elegant Typography */}
+      <section className="relative w-full overflow-hidden">
+        <div className="relative flex flex-col lg:flex-row  w-full">
+          {/* LEFT CONTENT - Light Background */}
+          <div className="relative z-10 w-full lg:w-1/2 bg-gradient-to-br from-[#F8F4E9] to-[#F1ECE0] flex items-center">
+            <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20 py-16 lg:py-20">
+              <div>
+                {/* Eyebrow / Subtitle */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="space-y-6 "
+                >
+                  <p className="subtitle">Stay Connected. Stay Comfortable</p>
+                </motion.div>
+                {/* Main Heading */}
+                <motion.h1
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                  className="heading leading-[1.15]"
+                >
+                  Facilities Designed for <br />
+                  <span className="text-[#b3862f]">Modern Lifestyle</span>
+                </motion.h1>
 
-          <p className="mt-6 text-gray-600 max-w-5xl mx-auto text-sm sm:text-base">
-            Stay Connected. Stay Comfortable
-            <br />
-            Facilities designed for modern lifestyles
-          </p>
+                {/* Description */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="space-y-6 "
+                >
+                  <p className="text-lg text-[#5A5A5A] leading-relaxed">
+                    At Hotel Nakshathra, we combine modern convenience with
+                    authentic Indian hospitality to ensure every stay is
+                    seamless, comfortable and memorable. From smooth check-ins
+                    to impeccably maintained spaces, we cater to the needs of
+                    business travellers, pilgrims and families. Every room and
+                    common area is equipped with modern amenities, creating an
+                    environment where you can relax and stay productive.
+                  </p>
+                </motion.div>
 
-          <div className="mt-8 flex justify-center">
-            <span className="h-[1px] w-24 bg-[#8B4513]/40"></span>
+                {/* Decorative Line */}
+
+                {/* Features */}
+              </div>
+            </div>
+          </div>
+
+          {/* DIAGONAL SEPARATOR */}
+          <div className="hidden lg:block absolute left-1/2 top-0 h-full -translate-x-1/2 z-20 pointer-events-none">
+            <div className="relative h-full w-px">
+              <div className="absolute inset-y-0 left-1/2 transform -translate-x-1/2 w-[2px]">
+                <div className="h-full bg-gradient-to-b from-[#8B4513]/20 via-[#8B4513]/40 to-[#8B4513]/20"></div>
+              </div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-[#FBF6E6] border-2 border-[#8B4513]/30 rounded-full"></div>
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="w-full lg:w-1/2 relative">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10"></div>
+            <Image
+              src="/facilities/intro.webp"
+              alt="Hotel Nakshathra Elegant Interior"
+              fill
+              className="object-cover object-center"
+              priority
+            />
+
+            {/* Image Overlay Content */}
           </div>
         </div>
-        <div className="max-w-7xl mx-auto mt-16 space-y-20 md:space-y-24">
+      </section>
+      <section className="py-20 px-4 bg-[#FFFFFF]">
+        <div className="max-w-7xl mx-auto space-y-20 md:space-y-24">
           {/* HERO IMAGE SECTION */}
-
-          {/* INTRO – IMAGE + TEXT */}
-          <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center max-w-6xl mx-auto">
-            <div className="relative h-[260px] sm:h-[320px] md:h-[360px] rounded-2xl overflow-hidden">
-              <Image
-                src="/facilities/intro.webp"
-                alt="Modern Hotel Interiors"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <div>
-              <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
-                At Hotel Nakshathra, we combine modern convenience with
-                authentic Indian hospitality to ensure every stay is seamless,
-                comfortable and memorable.
-              </p>
-
-              <p className="mt-5 text-gray-700 leading-relaxed text-sm sm:text-base">
-                From smooth check-ins to impeccably maintained spaces, we cater
-                to the needs of business travellers, pilgrims and families.
-                Every room and common area is equipped with modern amenities,
-                creating an environment where you can relax and stay productive.
-              </p>
-            </div>
-          </div>
 
           {/* WHY CHOOSE US */}
           <div className="w-full max-w-7xl mx-auto space-y-16">
@@ -195,14 +231,23 @@ export default function FacilityPage() {
             </div>
           </div>
 
-          {/* CLOSING */}
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-              At <span className="font-semibold">Hotel Nakshathra</span>, every
-              is curated to provide comfort, convenience and care, making it
-              your ideal choice for business, leisure or spiritual visits in
-              Sivakasi.
-            </p>
+          <div className="relative overflow-hidden rounded-3xl bg-[#FBF6E6] shadow-2xl border border-white/30">
+            {/* Decorative Border Elements */}
+            <div className="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-[#8B4513]/20 rounded-tl-lg" />
+            <div className="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-[#8B4513]/20 rounded-br-lg" />
+
+            <div className="relative z-10 text-center space-y-8 px-6 sm:px-12 py-16">
+              {/* Main Content */}
+              <div className="space-y-8">
+                {/* Opening Line */}
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                  At <span className="font-semibold">Hotel Nakshathra</span>,
+                  every is curated to provide comfort, convenience and care,
+                  making it your ideal choice for business, leisure or spiritual
+                  visits in Sivakasi.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

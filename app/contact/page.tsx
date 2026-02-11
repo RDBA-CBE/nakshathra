@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function ContactPage() {
   const [success, setSuccess] = useState(false);
@@ -41,11 +42,68 @@ export default function ContactPage() {
       <Header />
 
       {/* HERO */}
-      <section className="px-4 pt-24 pb-20 bg-[#F3EEE6]">
-        <div className="max-w-5xl mx-auto text-center">
-          <h1 className="heading leading-[1.15]">Contact Us</h1>
-          <div className="mt-8 flex justify-center">
-            <span className="h-[1px] w-32 bg-[#8B4513]/40"></span>
+      <section className="relative w-full overflow-hidden">
+        <div className="relative flex flex-col lg:flex-row  w-full">
+          {/* LEFT CONTENT - Light Background */}
+          <div className="relative z-10 w-full lg:w-1/2 bg-gradient-to-br from-[#F8F4E9] to-[#F1ECE0] flex items-center">
+            <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20 py-16 lg:py-20">
+              <div>
+                {/* Eyebrow / Subtitle */}
+
+                {/* Main Heading */}
+                <motion.h1
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                  className="heading leading-[1.15] "
+                >
+                  Contact <span className="text-[#b3862f]">Us</span>{" "}
+                </motion.h1>
+
+                {/* Description */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="space-y-6 mb-10 "
+                >
+                  <p className="text-lg text-[#5A5A5A] leading-relaxed">
+                    At Hotel Nakshathra, we strive to make your experience
+                    seamless and memorable. Reach out to us for bookings,
+                    inquiries or any assistance, you’ll receive prompt and
+                    personalized support.
+                  </p>
+                </motion.div>
+
+                {/* Decorative Line */}
+
+                {/* Features */}
+              </div>
+            </div>
+          </div>
+
+          {/* DIAGONAL SEPARATOR */}
+          <div className="hidden lg:block absolute left-1/2 top-0 h-full -translate-x-1/2 z-20 pointer-events-none">
+            <div className="relative h-full w-px">
+              <div className="absolute inset-y-0 left-1/2 transform -translate-x-1/2 w-[2px]">
+                <div className="h-full bg-gradient-to-b from-[#8B4513]/20 via-[#8B4513]/40 to-[#8B4513]/20"></div>
+              </div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-[#FBF6E6] border-2 border-[#8B4513]/30 rounded-full"></div>
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="w-full lg:w-1/2 relative">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10"></div>
+            <Image
+              src="/about/comfort.webp"
+              alt="Hotel Nakshathra Elegant Interior"
+              fill
+              className="object-cover object-center"
+              priority
+            />
+
+            {/* Image Overlay Content */}
           </div>
         </div>
       </section>
@@ -112,19 +170,19 @@ export default function ContactPage() {
               <p className="text-xs uppercase tracking-widest text-white/80">
                 Nakshatra Royal Stay
               </p>
-              <h3 className="heading leading-[1.15] mt-2">Personalized Assistance</h3>
+              <h3 className="heading leading-[1.15] mt-2">
+                Personalized Assistance
+              </h3>
             </div>
           </div>
 
           {/* FORM SIDE */}
           <div className="max-w-xl mx-auto w-full border border-[#8B4513]/25 rounded-2xl p-10 bg-transparent">
-            <h2 className="heading leading-[1.15]">We’d love to hear from you.</h2>
+            <h2 className="heading leading-[1.15] mb-10">
+              We’d love to hear from you.
+            </h2>
 
-            <p className="text-gray-600 text-sm mb-16">
-              At Hotel Nakshathra, we strive to make your experience seamless
-              and memorable. Reach out to us for bookings, inquiries or any
-              assistance, you’ll receive prompt and personalized support.
-            </p>
+            
 
             <form onSubmit={(e) => handleSubmit(e)} className="space-y-10">
               {/* hidden settings */}
