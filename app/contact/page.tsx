@@ -67,7 +67,7 @@ export default function ContactPage() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="space-y-6 mb-10 "
                 >
-                  <p className="text-lg text-[#5A5A5A] leading-relaxed">
+                  <p className="para">
                     At Hotel Nakshathra, we strive to make your experience
                     seamless and memorable. Reach out to us for bookings,
                     inquiries or any assistance, you’ll receive prompt and

@@ -94,7 +94,7 @@ export default function DiningSection() {
                 </div>
               </div>
 
-              <p className="text-gray-700 mb-6 text-sm">
+              <p className="para">
                 Carefully prepared dishes balance traditional flavours and
                 modern preferences, ensuring high standards of taste, hygiene
                 and consistency complemented by relaxed ambience and

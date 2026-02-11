@@ -71,7 +71,7 @@ export default function StandardSingleRoom() {
                 <span className="text-sm font-medium">+ 5% tax (₹2099)</span>
               </div>
 
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="para">
                 The Standard Double Room is a spacious and well-appointed
                 accommodation offering enhanced comfort, privacy and modern
                 amenities. Perfect for couples and guests, it provides a

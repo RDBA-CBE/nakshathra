@@ -80,7 +80,7 @@ export default function RoomsPage() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="space-y-6 "
                 >
-                  <p className="text-lg text-[#5A5A5A] leading-relaxed">
+                  <p className="para">
                     Discover thoughtfully designed rooms that reflects warmth
                     and comfort. Each room features calming interiors,
                     functional layouts and contemporary amenities, crafted to
@@ -168,7 +168,7 @@ export default function RoomsPage() {
                     {room.price}
                   </p>
 
-                  <p className="text-sm text-gray-600 leading-relaxed mb-6">
+                  <p className="para">
                     {room.description}
                   </p>
 

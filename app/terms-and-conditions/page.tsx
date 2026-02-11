@@ -41,7 +41,7 @@ export default function PrivacyPolicyPage() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="space-y-6 "
                 >
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="para">
                     This page states the Terms and Conditions under which you
                     (Visitor) may visit this website. Please read this page
                     carefully. If you do not accept the Terms and Conditions
@@ -100,7 +100,7 @@ export default function PrivacyPolicyPage() {
               <section className="space-y-4">
                 <h2 className="heading leading-[1.15]">Use of Content</h2>
 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="para">
                   All logos, brands and marks appearing in this site, except as
                   otherwise noted, are properties either owned, or used under
                   licence, by Nakshathra Royal Stay and / or its associate
@@ -109,7 +109,7 @@ export default function PrivacyPolicyPage() {
                   provided in these terms and conditions or in the site content,
                   is strictly prohibited.
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="para">
                   You may not sell or modify the content of this website or
                   reproduce, display, publicly perform, distribute, or otherwise
                   use the materials in any way for any public or commercial
@@ -122,10 +122,10 @@ export default function PrivacyPolicyPage() {
               <section className="space-y-4 pt-8 border-t border-gray-200">
                 <h2 className="heading leading-[1.15]">Acceptable Site Use</h2>
 
-                <p className="text-gray-600 leading-relaxed font-medium">
+                <p className="para-title">
                   (A) Security Rules
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="para">
                   Visitors are prohibited from violating or attempting to
                   violate the security of the website, including, without
                   limitation, (1) accessing data not intended for such user or
@@ -147,10 +147,10 @@ export default function PrivacyPolicyPage() {
                   authorities in prosecuting users who are involved in such
                   violations.
                 </p>
-                <p className="text-gray-600 leading-relaxed font-medium">
+                <p className="para">
                   (B) General Rules
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="para">
                   Visitors may not use the website in order to transmit,
                   distribute, store or destroy material (a) that could
                   constitute or encourage conduct that would be considered a
@@ -168,7 +168,7 @@ export default function PrivacyPolicyPage() {
                 <h2 className="heading leading-[1.15]">
                   Links to/from other Websites
                 </h2>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="para">
                   This website contains links to other websites. These links are
                   provided solely as a convenience to you. Wherever such link/s
                   lead to sites which do not belong to Nakshathra Royal Stay and
@@ -185,7 +185,7 @@ export default function PrivacyPolicyPage() {
                   If you decide to access such linked websites, you do so at
                   your own risk.
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="para">
                   Similarly, this website can be made accessible through a link
                   created by other websites. Access to this website through such
                   link/s shall not mean or be deemed to mean that the
@@ -215,7 +215,7 @@ export default function PrivacyPolicyPage() {
               <section className="space-y-4 pt-8 border-t border-gray-200">
                 <h2 className="heading leading-[1.15]">Indemnity</h2>
 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="para">
                   You agree to defend, indemnify, and hold harmless Nakshathra
                   Royal Stay and/ or its associate entities, their officers,
                   directors, employees and agents, from and against any losses,
@@ -232,7 +232,7 @@ export default function PrivacyPolicyPage() {
               {/* Cookies */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
                 <h2 className="heading leading-[1.15]">Liability</h2>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="para">
                   While all reasonable care has been taken in providing the
                   content on this website, Nakshathra Royal Stay. and / or its
                   associate entities shall not be responsible or liable as to
@@ -248,7 +248,7 @@ export default function PrivacyPolicyPage() {
                   operation or transmission or any failure of performance, even
                   if advised of the possibility thereof.
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="para">
                   No warranty is given that the website will operate error-free
                   or that this website and its server are free of computer
                   viruses or other harmful mechanisms. If your use of the
@@ -256,7 +256,7 @@ export default function PrivacyPolicyPage() {
                   equipment or data, Nakshathra Royal Stay and / or its
                   associate entities are not responsible for those costs.
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="para">
                   The website is provided on an ‘as is’ basis without any
                   warranties either express or implied whatsoever. Nakshathra
                   Royal Stay and / or its associate entities, to the fullest
@@ -273,7 +273,7 @@ export default function PrivacyPolicyPage() {
                 <h2 className="heading leading-[1.15]">
                   Disclaimer of Consequential Damages
                 </h2>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="para">
                   In no event shall Nakshathra Royal Stay, or any parties,
                   organisations or entities associated with the corporate brand
                   name Nakshathra Royal Stay or otherwise, mentioned at this

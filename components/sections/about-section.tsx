@@ -86,7 +86,7 @@ export default function AboutSection() {
               }`}
             >
               <div className="max-w-xl space-y-6 text-base font-heading text-[#1F2A37] leading-relaxed">
-                <p>
+                <p className="para">
                   Hotel Nakshathra is a premium business-class hotel, that
                   blends modern elegance with authentic Indian hospitality for a
                   relaxing and pleasant stay. Our well-appointed rooms,
@@ -97,7 +97,7 @@ export default function AboutSection() {
                   reliable and truly satisfying.
                 </p>
 
-                <p>
+                <p className="para">
                   Nestled amidst the busy streets of Sivakasi, the hotel
                   provides easy access to local transportation, shopping areas
                   and key landmarks, making it an ideal choice for both business

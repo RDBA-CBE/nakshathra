@@ -71,7 +71,7 @@ export default function StandardSingleRoom() {
                 <span className="text-sm font-medium">+ 5% tax (₹1574)</span>
               </div>
 
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="para">
                 Designed for solo travellers, the standard single room offers a
                 cozy and functional space with warm decor that provides comfort
                 and relaxation. Ideal for guests seeking simplicity and

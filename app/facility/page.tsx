@@ -105,7 +105,7 @@ export default function FacilityPage() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="space-y-6 "
                 >
-                  <p className="text-lg text-[#5A5A5A] leading-relaxed">
+                  <p className="para">
                     At Hotel Nakshathra, we combine modern convenience with
                     authentic Indian hospitality to ensure every stay is
                     seamless, comfortable and memorable. From smooth check-ins
@@ -216,11 +216,11 @@ export default function FacilityPage() {
 
                       {/* CONTENT */}
                       <div className="mt-6 text-center flex flex-col flex-grow">
-                        <h3 className="text-base heading leading-[1.15] mb-2">
+                        <h3 className="heading leading-[1.15] mb-2">
                           {item.title}
                         </h3>
 
-                        <p className="text-sm text-gray-600 leading-relaxed flex-grow">
+                        <p className="para flex-grow">
                           {item.desc}
                         </p>
                       </div>
@@ -240,7 +240,7 @@ export default function FacilityPage() {
               {/* Main Content */}
               <div className="space-y-8">
                 {/* Opening Line */}
-                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                <p className="para">
                   At <span className="font-semibold">Hotel Nakshathra</span>,
                   every is curated to provide comfort, convenience and care,
                   making it your ideal choice for business, leisure or spiritual

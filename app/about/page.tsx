@@ -44,7 +44,7 @@ export default function AboutClient() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="space-y-6 mb-10 "
                 >
-                  <p className="text-lg text-[#5A5A5A] leading-relaxed">
+                  <p className="para">
                     Hotel Nakshathra is a premium business-class hotel that
                     blends modern elegance and authentic Indian hospitality to
                     offer a relaxing and pleasant stay. Thoughtfully designed
@@ -129,7 +129,7 @@ export default function AboutClient() {
                 </h2>
               </div>
 
-              <p className="text-lg text-[#5A5A5A] leading-relaxed">
+              <p className="para">
                 With a strong commitment to cleanliness, safety and personalized
                 care, every stay at Hotel Nakshathra is crafted to be peaceful,
                 reliable and truly satisfying. Our warm hospitality and
@@ -162,7 +162,7 @@ export default function AboutClient() {
               </div>
 
               <div className="space-y-6">
-                <p className="text-lg text-[#5A5A5A] leading-relaxed">
+                <p className="para">
                   Located in the heart of Sivakasi, Hotel Nakshathra provides
                   easy access to local transportation, shopping areas and key
                   landmarks, making it an ideal choice for both business
@@ -211,7 +211,7 @@ export default function AboutClient() {
               Thoughtfully{" "}
               <span className="text-[#b3862f]">Curated Design</span>
             </h2>
-            <p className="text-xl text-[#5A5A5A] max-w-3xl mx-auto">
+            <p className="para">
               Blending contemporary design with timeless Indian warmth, Hotel
               Nakshathra balances style and functionality. From tastefully
               designed interiors to attentive service, every element is curated
@@ -274,7 +274,7 @@ export default function AboutClient() {
                 {/* Main Content */}
                 <div className="space-y-8">
                   {/* Opening Line */}
-                  <p className="text-xl sm:text-2xl text-[#2C2416] leading-relaxed font-light">
+                  <p className="para">
                     Whether you are visiting Sivakasi for{" "}
                     <span className="text-[#b3862f] font-medium">business</span>
                     ,{" "}
@@ -299,7 +299,7 @@ export default function AboutClient() {
                     </div>
 
                     {/* Closing Line */}
-                    <p className="text-lg sm:text-xl text-[#5A5A5A] max-w-2xl mx-auto leading-relaxed">
+                    <p className="para max-w-2xl mx-auto ">
                       promises a welcoming stay defined by comfort, reliability
                       and genuine hospitality.
                     </p>

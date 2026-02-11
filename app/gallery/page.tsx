@@ -73,7 +73,7 @@ export default function GallerySection() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="space-y-6 "
                 >
-                  <p className="text-lg text-[#5A5A5A] leading-relaxed">
+                  <p className="para">
                     Explore interiors that are designed to be both stylish and
                     comfortable, creating a relaxing and welcoming atmosphere.
                     From elegant decor to cozy furnishings, every detail is

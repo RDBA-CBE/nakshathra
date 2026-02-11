@@ -71,7 +71,7 @@ export default function StandardSingleRoom() {
                 <span className="text-sm font-medium">+ 5% tax (₹4199)</span>
               </div>
 
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="para">
                 The Super Deluxe Room is the most spacious category at Hotel
                 Nakshathra, featuring refined decor, superior amenities and
                 exceptional comfort. Designed to elevate your stay, it is ideal

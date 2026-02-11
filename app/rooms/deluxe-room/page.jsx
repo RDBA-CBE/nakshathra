@@ -71,7 +71,7 @@ export default function StandardSingleRoom() {
                 <span className="text-sm font-medium">+ 5% tax (₹2519)</span>
               </div>
 
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="para">
                 The Deluxe Room offers enhanced space with elegant interiors and
                 premium comforts, creating a refined yet inviting atmosphere.
                 Thoughtfully designed for relaxation, this room comfortably

@@ -30,10 +30,7 @@ export default function HeroSection() {
               </h1>
 
               {/* Description */}
-              <p
-                className="text-[15px] text-[#1F3A44] leading-[1.75] mb-10 max-w-[520px]"
-                style={{ fontFamily: "sans-serif" }}
-              >
+              <p className="para">
                 Thoughtfully designed, spacious rooms with modern bathrooms and
                 carefully selected amenities. Experience peaceful living with
                 premium comfort, in the heart of Sivakasi.

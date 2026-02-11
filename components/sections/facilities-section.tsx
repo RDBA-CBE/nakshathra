@@ -90,10 +90,7 @@ export default function FacilitiesSection() {
               Modern Lifestyles
             </h2>
 
-            <p
-              className="text-[#5E6E73] max-w-xl mb-10 leading-relaxed"
-              style={{ fontFamily: "sans-serif" }}
-            >
+            <p className="para">
               Seamless check-ins, impeccably maintained spaces, modern amenities
               and attentive service for a comfortable and relaxing stay.
             </p>
