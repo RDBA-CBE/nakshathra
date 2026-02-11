@@ -109,7 +109,7 @@ export default function FacilitiesSection() {
                   </span>
 
                   {/* Text */}
-                  <span className="text-base font-heading text-[#1F2A37]">
+                  <span className="text-base item-text">
                     {item}
                   </span>
                 </div>

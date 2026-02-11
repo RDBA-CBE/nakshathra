@@ -149,31 +149,31 @@ export default function PrivacyPolicyPage() {
                   to:
                 </p>
                 <ul className="pl-6 space-y-2 ">
-                  <li className="group flex items-center gap-3 py-3">
+                  <li className="group list flex items-center gap-3 py-3">
                     <span className="w-6 h-6 rounded-full bg-[#F6F7F9] flex items-center justify-center text-[203 46% 15%] transition-colors duration-300 group-hover:bg-[#F4C430] group-hover:text-white">
                       <Check size={14} />
                     </span>
                     Provide, operate, and maintain our website
                   </li>
-                  <li className="group flex items-center gap-3 py-3">
+                  <li className="group list flex items-center gap-3 py-3">
                     <span className="w-6 h-6 rounded-full bg-[#F6F7F9] flex items-center justify-center text-[203 46% 15%] transition-colors duration-300 group-hover:bg-[#F4C430] group-hover:text-white">
                       <Check size={14} />
                     </span>
                     Improve, personalize, and expand our website
                   </li>
-                  <li className="group flex items-center gap-3 py-3">
+                  <li className="group list flex items-center gap-3 py-3">
                     <span className="w-6 h-6 rounded-full bg-[#F6F7F9] flex items-center justify-center text-[203 46% 15%] transition-colors duration-300 group-hover:bg-[#F4C430] group-hover:text-white">
                       <Check size={14} />
                     </span>
                     Understand and analyze how you use our website
                   </li>
-                  <li className="group flex items-center gap-3 py-3">
+                  <li className="group list flex items-center gap-3 py-3">
                     <span className="w-6 h-6 rounded-full bg-[#F6F7F9] flex items-center justify-center text-[203 46% 15%] transition-colors duration-300 group-hover:bg-[#F4C430] group-hover:text-white">
                       <Check size={14} />
                     </span>
                     Develop new products, services, features, and functionality
                   </li>
-                  <li className="group flex items-center gap-3 py-3">
+                  <li className="group list flex items-center gap-3 py-3">
                     <span className="w-6 h-6 rounded-full bg-[#F6F7F9] flex items-center justify-center text-[203 46% 15%] transition-colors duration-300 group-hover:bg-[#F4C430] group-hover:text-white">
                       <Check size={14} />
                     </span>
@@ -182,13 +182,13 @@ export default function PrivacyPolicyPage() {
                     with updates and other information relating to the website,
                     and for marketing and promotional purposes
                   </li>
-                  <li className="group flex items-center gap-3 py-3">
+                  <li className="group flex list items-center gap-3 py-3">
                     <span className="w-6 h-6 rounded-full bg-[#F6F7F9] flex items-center justify-center text-[203 46% 15%] transition-colors duration-300 group-hover:bg-[#F4C430] group-hover:text-white">
                       <Check size={14} />
                     </span>
                     Send you emails
                   </li>
-                  <li className="group flex items-center gap-3 py-3">
+                  <li className="group flex list items-center gap-3 py-3">
                     <span className="w-6 h-6 rounded-full bg-[#F6F7F9] flex items-center justify-center text-[203 46% 15%] transition-colors duration-300 group-hover:bg-[#F4C430] group-hover:text-white">
                       <Check size={14} />
                     </span>

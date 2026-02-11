@@ -450,3 +450,20 @@ p.para-title {
   line-height: 1.6 !important;
   color: #5D5D5B !important;
 }
+
+
+li.list{
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  font-family: Satoshi, sans-serif !important;
+  line-height: 1.6 !important;
+  color: #5D5D5B !important;
+}
+
+span.item-text {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  font-family: Satoshi, sans-serif !important;
+  line-height: 1.6 !important;
+  color: #5D5D5B !important;
+}
