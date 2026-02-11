@@ -182,8 +182,6 @@ export default function ContactPage() {
               We’d love to hear from you.
             </h2>
 
-            
-
             <form onSubmit={(e) => handleSubmit(e)} className="space-y-10">
               {/* hidden settings */}
               <input type="hidden" name="_captcha" value="false" />
