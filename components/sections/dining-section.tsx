@@ -102,7 +102,8 @@ export default function DiningSection() {
               </p>
 
               <div className="flex">
-                <Button className="bg-[#8b3128] hover:bg-[#77261f] text-white">
+                <Button className="inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222]
+                text-white px-10 py-3.5 rounded-lg text-sm mt-5 font-medium transition">
                   Explore More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>

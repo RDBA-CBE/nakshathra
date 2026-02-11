@@ -118,7 +118,8 @@ export default function AboutSection() {
                   : "opacity-0 translate-y-10"
               }`}
             >
-              <button className="px-10 py-4 bg-[#8F2D2D] text-white text-sm tracking-wide hover:bg-[#742222] transition">
+              <button className="inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222]
+                text-white px-10 py-3.5 rounded-lg text-sm mt-5 font-medium transition">
                 View And Book The Rooms
               </button>
             </div>

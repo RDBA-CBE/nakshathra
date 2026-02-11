@@ -39,7 +39,7 @@ export default function HeroSection() {
               {/* CTA */}
               <button
                 className="inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222]
-                text-white px-10 py-3.5 rounded-lg text-sm font-medium transition"
+                text-white px-10 py-3.5 rounded-lg text-sm mt-5 font-medium transition"
               >
                 Know More
                 <ArrowRight className="w-4 h-4" />

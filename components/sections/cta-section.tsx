@@ -45,7 +45,8 @@ export default function CTASection() {
 
         {/* BUTTON EXACT STYLE */}
         <div className="pt-4">
-          <button className="bg-[#7A2E2E] font-heading text-white px-10 py-4 text-base font-medium inline-flex items-center">
+          <button className="inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222]
+                text-white px-10 py-3.5 rounded-lg text-sm mt-5 font-medium transition">
             Make Reservation
             <ArrowRight className="ml-2 h-4 w-4" />
           </button>
