@@ -82,12 +82,8 @@ export default function FacilitiesSection() {
             
 
             <h2
-              className="text-[42px] lg:text-[54px] text-[#1F3A44] leading-[1.15] mb-6"
-              style={{
-                fontFamily: '"Marcellus", serif',
-                
-                fontWeight: 400,
-              }}
+              className="heading leading-[1.15] mb-6"
+              
             >
               Facilities Designed for
               <br />

@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
       <section className="pb-20 px-4 bg-[#FFFFFF]">
         {/* Hero Section */}
         <div className="relative rounded-3xl bg-[#F3EEE6] px-6 sm:px-10 py-12 sm:py-16 text-center">
-          <h1 className="mt-4 font-heading text-3xl sm:text-4xl md:text-5xl text-[#152A38] max-w-3xl mx-auto leading-tight">
+          <h1 className="mt-4 heading leading-[1.15] max-w-3xl mx-auto">
             Refund Policy
           </h1>
         </div>
@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Information Collection */}
               <section className="space-y-4 ">
-                <h2 className="font-heading text-4xl text-[#152A38]">
+                <h2 className="heading leading-[1.15]">
                   Refund and Cancellation Policy
                 </h2>
 

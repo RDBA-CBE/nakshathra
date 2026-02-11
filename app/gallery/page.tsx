@@ -50,7 +50,7 @@ export default function GallerySection() {
       <section className="pb-24 px-4 bg-white">
         {/* HERO */}
         <div className="relative rounded-3xl bg-[#F3EEE6] px-6 sm:px-10 py-6 text-center">
-          <h1 className="mt-4 font-heading text-3xl sm:text-4xl md:text-5xl text-[#152A38]">
+          <h1 className="mt-4 heading leading-[1.15]">
             Gallery
           </h1>
 

@@ -93,7 +93,7 @@ export default function TestimonialsSection() {
           <span className='text-[#bd9454] font-heading text-xl tracking-wider uppercase font-bold leading-[1.2]'>
             Feedback that Mirrors our Commitment
           </span>
-          <h2 className='font-heading text-[44px] md:text-[64px] text-[#152A38] mb-4'>
+          <h2 className='heading leading-[1.15] mb-4'>
             Every Review Helps us Improve 
             <br />
             And Continue Delivering Meaningful Stays

@@ -53,15 +53,8 @@ export default function RoomsSection() {
           
             
           
-          <h2 
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-[#1F3A44]"
-            style={{ 
-              fontFamily: '"Marcellus", serif',
-              
-              fontWeight: 400
-            }}
-          >
-            Ideal for business travellers,<br /> pilgrims and families alike
+          <h2 className="heading leading-[1.15]">
+            Ideal for Business Travellers,<br /> Pilgrims and Families Alike
           </h2>
         </div>
 

@@ -32,9 +32,8 @@ export default function DiningSection() {
           <p className="text-xl font-heading font-bold text-[#b3862f] uppercase tracking-widest">
             Relaxed Ambience, Quality Cuisine
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-[#1F3A44] mt-4">
-            Peaceful Dining that Complements your Stay <br/> with Nourishing Meals and
-            Attentive Service
+          <h2 className="heading leading-[1.15]  mt-4">
+            Peaceful Dining with Nourishing  <br/> Meals and Attentive Service
           </h2>
         </div>
 

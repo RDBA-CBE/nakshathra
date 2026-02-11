@@ -54,7 +54,7 @@ export default function RoomsPage() {
 
       <section className=" pb-24 px-4 bg-[#FFFFFF]">
         <div className="relative rounded-3xl bg-[#F3EEE6] px-6 sm:px-10 py-6 sm:py-6 text-center">
-          <h1 className="mt-4 font-heading text-3xl sm:text-4xl md:text-5xl text-[#152A38] max-w-3xl mx-auto leading-tight">
+          <h1 className="mt-4 heading leading-[1.15] max-w-3xl mx-auto">
             Our Rooms
           </h1>
 
@@ -99,7 +99,7 @@ export default function RoomsPage() {
 
                   {/* Icon */}
 
-                  <h3 className="text-xl font-heading font-semibold mb-2">
+                  <h3 className="heading leading-[1.15] mb-2">
                     {room.title}
                   </h3>
 

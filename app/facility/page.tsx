@@ -72,7 +72,7 @@ export default function FacilityPage() {
 
       <section className="pb-24 px-4 bg-[#FFFFFF]">
         <div className="relative rounded-3xl bg-[#F3EEE6] px-6 sm:px-10 py-6 sm:py-6 text-center">
-          <h1 className="mt-4 font-heading text-3xl sm:text-4xl md:text-5xl text-[#152A38] max-w-3xl mx-auto leading-tight">
+          <h1 className="mt-4 heading leading-[1.15] max-w-3xl mx-auto">
             Facilities
           </h1>
 
@@ -120,7 +120,7 @@ export default function FacilityPage() {
           <div className="w-full max-w-7xl mx-auto space-y-16">
             {/* Heading */}
             <div className="text-center">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-semibold text-[#1F3A44]">
+              <h2 className="heading leading-[1.15]">
                 Why Choose Hotel Nakshathra?
               </h2>
             </div>
@@ -180,7 +180,7 @@ export default function FacilityPage() {
 
                       {/* CONTENT */}
                       <div className="mt-6 text-center flex flex-col flex-grow">
-                        <h3 className="text-base sm:text-lg font-heading font-semibold text-[#1F3A44] mb-2">
+                        <h3 className="text-base heading leading-[1.15] mb-2">
                           {item.title}
                         </h3>
 

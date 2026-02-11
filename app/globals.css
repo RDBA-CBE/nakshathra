@@ -395,7 +395,6 @@
   }
 }
 
-
 .swiper-wrapper {
   align-items: stretch;
 }
@@ -415,4 +414,26 @@
 .swiper-pagination-bullet-active.custom-bullet {
   width:8px;
   background: #8b4513;
+}
+
+
+
+h1.heading{
+  font-family: "Marcellus", serif !important;
+  font-size: 58px !important;
+  font-weight: 300 !important;
+  color:#1F3A44 !important; 
+}
+
+h2.heading{
+  font-family: "Marcellus", serif !important;
+  font-size: 48px !important;
+  font-weight: 300 !important;
+  color:#1F3A44 !important; 
+}
+h3.heading{
+  font-family: "Marcellus", serif !important;
+  font-size: 22px !important;
+  font-weight: 300 !important;
+  color:#1F3A44 !important; 
 }

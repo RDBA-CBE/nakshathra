@@ -25,15 +25,7 @@ export default function HeroSection() {
               </h6>
 
               {/* Main heading */}
-              <h1
-                className="text-[36px] sm:text-[44px] lg:text-[52px] xl:text-[58px] text-[#1F3A44] mb-8"
-                style={{
-                  fontFamily: '"Marcellus", serif',
-                  lineHeight: "1.15",
-                  letterSpacing: "-0.01em",
-                  fontWeight: 400,
-                }}
-              >
+              <h1 className="heading leading-[1.15] mb-8">
                 Elegant Spaces, Personalized Services and a Serene Ambience
               </h1>
 

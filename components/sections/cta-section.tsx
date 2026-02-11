@@ -37,7 +37,7 @@ export default function CTASection() {
         </span>
 
         {/* MAIN HEADING EXACT AS IMAGE */}
-        <h2 className="font-heading text-[50px] leading-[1.2] text-[#1F3A44]">
+        <h2 className="heading leading-[1.15]">
           Make your Reservation and Look Forward to a Peaceful, 
           <br />
           Well-connected and Memorable Stay

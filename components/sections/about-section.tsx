@@ -66,8 +66,7 @@ export default function AboutSection() {
 
             {/* MAIN HEADING */}
             <h2
-              className="text-5xl lg:text-6xl leading-tight text-[#1F3A44]"
-              style={{ fontFamily: '"Marcellus", serif' }}
+              className="leading-[1.15] heading "
             >
               Redefining Stays with Warmth and Elegance
             </h2>

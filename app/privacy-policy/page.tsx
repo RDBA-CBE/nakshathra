@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
       <section className="pb-20 px-4 bg-[#FFFFFF]">
         {/* Hero Section */}
         <div className="relative rounded-3xl bg-[#F3EEE6] px-6 sm:px-10 py-12 sm:py-16 text-center">
-          <h1 className="mt-4 font-heading text-3xl sm:text-4xl md:text-5xl text-[#152A38] max-w-3xl mx-auto leading-tight">
+          <h1 className="mt-4 heading leading-[1.15] max-w-3xl mx-auto">
             Privacy Policy
           </h1>
         </div>
@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Information Collection */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="font-heading text-4xl text-[#152A38]">
+                <h2 className="leading-[1.15]">
                   Consent
                 </h2>
 
@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
 
               {/* How We Use Information */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="font-heading text-4xl text-[#152A38]">
+                <h2 className="leading-[1.15]">
                   Information we collect
                 </h2>
 
@@ -88,7 +88,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Data Sharing */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="font-heading text-4xl text-[#152A38]">
+                <h2 className="leading-[1.15]">
                   How we use your information
                 </h2>
 
@@ -147,7 +147,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Data Security */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="font-heading text-4xl text-[#152A38]">
+                <h2 className="leading-[1.15]">
                   Log Files
                 </h2>
                 <p className="text-gray-600 leading-relaxed">
@@ -167,7 +167,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Your Rights */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="font-heading text-4xl text-[#152A38]">
+                <h2 className="leading-[1.15]">
                   Cookies and Web Beacons
                 </h2>
 
@@ -196,7 +196,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Cookies */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="font-heading text-4xl text-[#152A38]">
+                <h2 className="leading-[1.15]">
                   Google DoubleClick DART Cookie
                 </h2>
                 <p className="text-gray-600 leading-relaxed">
@@ -219,7 +219,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Third-Party Links */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="font-heading text-4xl text-[#152A38]">
+                <h2 className="leading-[1.15]">
                   Advertising Partners Privacy Policies
                 </h2>
                 <p className="text-gray-600 leading-relaxed">
@@ -246,7 +246,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Children's Privacy */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="font-heading text-4xl text-[#152A38]">
+                <h2 className="leading-[1.15]">
                   Third Party Privacy Policies
                 </h2>
                 <p className="text-gray-600 leading-relaxed">
@@ -267,7 +267,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Policy Updates */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="font-heading text-4xl text-[#152A38]">
+                <h2 className="leading-[1.15]">
                   CCPA Privacy Rights (Do Not Sell My Personal Information)
                 </h2>
                 <p className="text-gray-600 leading-relaxed">
@@ -296,7 +296,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Contact Information */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="font-heading text-4xl text-[#152A38]">
+                <h2 className="leading-[1.15]">
                   GDPR Data Protection Rights
                 </h2>
                 <div className="space-y-4 text-gray-600 leading-relaxed">
@@ -345,7 +345,7 @@ export default function PrivacyPolicyPage() {
               </section>
 
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="font-heading text-4xl text-[#152A38]">
+                <h2 className="leading-[1.15]">
                   Children's Information
                 </h2>
                 <div className="space-y-4 text-gray-600 leading-relaxed">

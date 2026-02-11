@@ -26,7 +26,7 @@ export default function SitemapPage() {
       <section className="py-20 sm:py-24">
         <div className="max-w-5xl mx-auto px-4">
           {/* Page Title */}
-          <h1 className="text-4xl md:text-5xl font-heading text-[#152A38] mb-10 sm:mb-12">
+          <h1 className="heading leading-[1.15] mb-10 sm:mb-12">
             Sitemap
           </h1>
 

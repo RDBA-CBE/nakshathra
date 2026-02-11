@@ -20,7 +20,7 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto px-4">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-heading text-[#152A38] mb-4">
+            <h1 className="heading leading-[1.15] mb-4">
               Arulmigu Dhandayuthapani Swamy Temple
               <br /> Pooja Timing
             </h1>

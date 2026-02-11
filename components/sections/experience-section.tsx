@@ -64,7 +64,7 @@ export default function ExperienceSection() {
               <p className="text-[#C9A961] font-heading text-xl font-bold mb-4 tracking-widest uppercase pt-[120px]">
                 Smart choice for sightseeing{" "}
               </p>
-              <h2 className="font-heading text-4xl lg:text-5xl text-[#1F3A44] text-balance">
+              <h2 className="heading leading-[1.15] text-balance">
                 Easy Connectivity to Popular <br/> Sights and Tranquil Retreats
               </h2>
             </div>

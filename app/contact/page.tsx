@@ -1,3 +1,5 @@
+"use client";
+
 import Header from "@/components/header";
 import Footer from "@/components/sections/footer";
 import type { Metadata } from "next";
@@ -6,13 +8,34 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
-export const metadata: Metadata = {
-  title: "Contact Us - Nakshatra Royal Stay",
-  description: "Get in touch with Nakshatra Royal Stay",
-};
+import { useState } from "react";
 
 export default function ContactPage() {
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+
+    const formData = new FormData(e.target);
+
+    const response = await fetch(
+      "https://formsubmit.co/379bd2ec4bb050103a4d5e594f17942a",
+      {
+        method: "POST",
+        body: formData,
+      },
+    );
+
+    if (response.ok) {
+      setSuccess(true);
+      form.reset();
+    } else {
+      setSuccess(false);
+    }
+  };
+
   return (
     <main className="min-h-screen bg-white">
       <Header />
@@ -20,9 +43,7 @@ export default function ContactPage() {
       {/* HERO */}
       <section className="px-4 pt-24 pb-20 bg-[#F3EEE6]">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl text-[#1F3A44]">
-            Contact Us
-          </h1>
+          <h1 className="heading leading-[1.15]">Contact Us</h1>
           <div className="mt-8 flex justify-center">
             <span className="h-[1px] w-32 bg-[#8B4513]/40"></span>
           </div>
@@ -39,7 +60,8 @@ export default function ContactPage() {
             <div className="rounded-3xl border border-[#8B4513]/20 p-10 hover:shadow-xl transition">
               <Phone className="w-6 h-6 mx-auto text-[#8B4513]" />
               <p className="mt-6 text-xl text-[#1F3A44] font-light">
-                +91 90871 73000 <br/>+91 90871 74000
+                +91 90871 73000 <br />
+                +91 90871 74000
               </p>
             </div>
 
@@ -90,17 +112,13 @@ export default function ContactPage() {
               <p className="text-xs uppercase tracking-widest text-white/80">
                 Nakshatra Royal Stay
               </p>
-              <h3 className="font-heading text-3xl mt-2">
-                Personalized Assistance
-              </h3>
+              <h3 className="heading leading-[1.15] mt-2">Personalized Assistance</h3>
             </div>
           </div>
 
           {/* FORM SIDE */}
           <div className="max-w-xl mx-auto w-full border border-[#8B4513]/25 rounded-2xl p-10 bg-transparent">
-            <h2 className="font-heading text-4xl text-[#1F3A44] mb-6">
-              We’d love to hear from you.
-            </h2>
+            <h2 className="heading leading-[1.15]">We’d love to hear from you.</h2>
 
             <p className="text-gray-600 text-sm mb-16">
               At Hotel Nakshathra, we strive to make your experience seamless
@@ -108,13 +126,24 @@ export default function ContactPage() {
               assistance, you’ll receive prompt and personalized support.
             </p>
 
-            <form className="space-y-10">
+            <form onSubmit={(e) => handleSubmit(e)} className="space-y-10">
+              {/* hidden settings */}
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Contact Form Submission"
+              />
+              <input type="hidden" name="_template" value="table" />
+
               <div>
                 <label className="text-xs uppercase tracking-widest text-gray-500">
                   Full Name
                 </label>
                 <Input
+                  name="name"
                   placeholder="Your name"
+                  required
                   className="mt-3 border-0 border-b border-gray-300 rounded-none bg-transparent focus:border-[#8B4513]"
                 />
               </div>
@@ -125,7 +154,9 @@ export default function ContactPage() {
                 </label>
                 <Input
                   type="email"
+                  name="email"
                   placeholder="your@email.com"
+                  required
                   className="mt-3 border-0 border-b border-gray-300 rounded-none bg-transparent focus:border-[#8B4513]"
                 />
               </div>
@@ -135,6 +166,7 @@ export default function ContactPage() {
                   Subject
                 </label>
                 <Input
+                  name="subject"
                   placeholder="Booking / Inquiry / Support"
                   className="mt-3 border-0 border-b border-gray-300 rounded-none bg-transparent focus:border-[#8B4513]"
                 />
@@ -145,15 +177,30 @@ export default function ContactPage() {
                   Message
                 </label>
                 <Textarea
+                  name="message"
                   rows={5}
                   placeholder="Write your message..."
+                  required
                   className="mt-3 border-0 border-b border-gray-300 rounded-none bg-transparent focus:border-[#8B4513]"
                 />
               </div>
 
-              <Button className="w-full mt-10 bg-[#8B4513] hover:bg-[#723610] text-white py-6 text-sm uppercase tracking-widest">
+              <Button
+                type="submit"
+                className="w-full mt-10 bg-[#8B4513] hover:bg-[#723610] text-white py-6 text-sm uppercase tracking-widest"
+              >
                 Send Message
               </Button>
+
+              {success ? (
+                <p className="text-green-600 text-sm mt-4">
+                  Message sent successfully!
+                </p>
+              ) : (
+                <p className="text-green-600 text-sm mt-4">
+                  Something went wrong!
+                </p>
+              )}
             </form>
           </div>
         </div>

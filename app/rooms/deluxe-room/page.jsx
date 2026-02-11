@@ -61,7 +61,7 @@ export default function StandardSingleRoom() {
 
             {/* RIGHT – ROOM INFO */}
             <div>
-              <h1 className="text-3xl md:text-4xl font-heading font-semibold mb-4">
+              <h1 className="heading leading-[1.15] mb-4">
                 Deluxe
               </h1>
 
@@ -128,7 +128,7 @@ export default function StandardSingleRoom() {
                           {/* Accent bar */}
                           <span className="h-8 w-1 rounded-full bg-[#8B6F4E] transition-all duration-300 group-open:h-12" />
 
-                          <h3 className="text-lg font-heading font-semibold">
+                          <h3 className="heading leading-[1.15]">
                             {section.title}
                           </h3>
                         </div>

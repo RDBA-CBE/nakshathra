@@ -47,7 +47,7 @@ export default function GallerySection() {
               OUR GALLERY
             </p>
 
-            <h2 className='font-heading text-[44px] md:text-[64px] leading-[1.15] text-[#1F3A44]'>
+            <h2 className='heading leading-[1.15]'>
               Sophisticated Interiors Thoughtfully 
               <br />
               Balanced with Comfort and Warmth

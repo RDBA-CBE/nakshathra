@@ -26,12 +26,8 @@ export default function RoomCard({ title, price, image }: RoomCardProps) {
       </div>
       <div className="p-5">
         <h3 
-          className="text-xl sm:text-2xl mb-4"
-          style={{ 
-            fontFamily: '"Marcellus", serif',
-            color: '#2C1810',
-            fontWeight: 400
-          }}
+          className="heading leading-[1.15]"
+          
         >
           {title}
         </h3>

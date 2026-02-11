@@ -32,7 +32,7 @@ export default function AboutClient() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.1 }}
-                  className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-[#152A38] mb-8 leading-[1.1]"
+                  className="heading leading-[1.15] mb-8"
                 >
                   About <span className="text-[#b3862f]">Us</span>{" "}
                 </motion.h1>
@@ -122,7 +122,7 @@ export default function AboutClient() {
             >
               <div>
                 <div className="h-px w-24 bg-gradient-to-r from-[#8B4513] to-transparent mb-6"></div>
-                <h2 className="text-4xl md:text-5xl font-heading text-[#152A38] leading-tight">
+                <h2 className="heading leading-[1.15]">
                   Dedicated to{" "}
                   <span className="text-[#b3862f]">Exceptional</span>{" "}
                   Hospitality
@@ -155,7 +155,7 @@ export default function AboutClient() {
             >
               <div>
                 <div className="h-px w-24 bg-gradient-to-r from-[#8B4513] to-transparent mb-6"></div>
-                <h2 className="text-4xl md:text-5xl font-heading text-[#152A38] leading-tight">
+                <h2 className="heading leading-[1.15]">
                   A Welcoming Stay in the{" "}
                   <span className="text-[#b3862f]">Heart of Sivakasi</span>
                 </h2>
@@ -207,7 +207,7 @@ export default function AboutClient() {
             transition={{ duration: 0.8 }}
             className="text-center mb-20"
           >
-            <h2 className="text-4xl md:text-5xl font-heading text-[#152A38] mb-8 leading-tight">
+            <h2 className="heading leading-[1.15] mb-8">
               Thoughtfully{" "}
               <span className="text-[#b3862f]">Curated Design</span>
             </h2>
