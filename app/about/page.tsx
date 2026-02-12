@@ -276,25 +276,25 @@ export default function AboutClient() {
                   {/* Opening Line */}
                   <p className="para">
                     Whether you are visiting Sivakasi for{" "}
-                    <span className="text-[#b3862f] font-medium">business</span>
+                    <span className="text-[#b3862f] font-medium">Business</span>
                     ,{" "}
                     <span className="text-[#b3862f] font-medium">
-                      pilgrimage
+                      Pilgrimage
                     </span>{" "}
                     or{" "}
                     <span className="text-[#b3862f] font-medium">
-                      family travel
+                      Family Travel
                     </span>
                     ,
                   </p>
 
                   {/* Hotel Name Divider Section */}
-                  <div className="relative py-8">
+                  
                     {/* Top Divider */}
-                    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8B4513]/25 to-transparent" />
+                    
 
                     {/* Hotel Name */}
-                    <div className="text-3xl sm:text-4xl md:text-5xl font-heading text-[#b3862f] mb-4">
+                    <div className="text-3xl sm:text-4xl md:text-5xl font-heading text-[#b3862f] mb-6">
                       Hotel Nakshathra
                     </div>
 
@@ -306,7 +306,7 @@ export default function AboutClient() {
 
                     {/* Bottom Divider */}
                     <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#8B4513]/25 to-transparent" />
-                  </div>
+                  
                 </div>
               </div>
             </div>

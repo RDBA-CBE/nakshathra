@@ -19,11 +19,27 @@ export default function StandardSingleRoom() {
   return (
     <main className='min-h-screen bg-white'>
       <Header />
-
+      <div className='w-full bg-[#F8F5F0] '>
+        <div className='max-w-6xl mx-auto px-4 py-8'>
+          <p className='para'>
+            <Link href='/' className='hover:text-[#8F2D2D] transition'>
+              Home
+            </Link>
+            <span className='mx-2 text-gray-400'>/</span>
+            <Link href='/rooms' className='hover:text-[#8F2D2D] transition'>
+              Rooms
+            </Link>
+            <span className='mx-2 text-gray-400'>/</span>
+            <span className='text-[#640720] font-medium'>
+              Super Deluxe Room
+            </span>
+          </p>
+        </div>
+      </div>
       {/* MAIN SECTION */}
       <section className='pt-10 pb-24 px-4 bg-white'>
         <div className='max-w-6xl mx-auto'>
-          <p className='para mb-10'>
+          {/* <p className='para mb-10'>
             <Link href='/' className='hover:text-[#8F2D2D] transition'>
               Home
             </Link>
@@ -33,7 +49,7 @@ export default function StandardSingleRoom() {
             </Link>
             {' / '}
             <span className='text-gray-700 font-medium'>Super Deluxe Room</span>
-          </p>
+          </p> */}
           <div className='grid lg:grid-cols-2 gap-12'>
             {/* LEFT – IMAGE GALLERY */}
             <div className='flex gap-4'>
@@ -44,7 +60,7 @@ export default function StandardSingleRoom() {
                     key={img}
                     onClick={() => setActiveImage(img)}
                     className={`relative h-20 w-20 rounded-lg overflow-hidden border
-                    ${activeImage === img ? 'border-[#8B6F4E]' : 'border-gray-300'}`}
+                    ${activeImage === img ? 'border-[#cc9e32]' : 'border-gray-300'}`}
                   >
                     <Image
                       src={img}
@@ -75,7 +91,9 @@ export default function StandardSingleRoom() {
               {/* Tariff */}
               <div className='text-[18px] inline-flex items-center gap-3 mb-6 px-5 py-2 rounded-full bg-[#b3862f] text-[#FFFFFF] font-semibold'>
                 Tariff: ₹3999
-                <span className='text-[18px] font-medium'>+ 5% tax (₹4199)</span>
+                <span className='text-[18px] font-medium'>
+                  + 5% tax (₹4199)
+                </span>
               </div>
 
               <p className='para'>
@@ -85,7 +103,7 @@ export default function StandardSingleRoom() {
                 for 1 to 3 guests who seek extra space and a premium experience.
               </p>
 
-              <section className='pb-24 px-4'>
+              <section className='py-5'>
                 <div className='max-w-4xl mx-auto space-y-4'>
                   {[
                     {
@@ -132,7 +150,7 @@ export default function StandardSingleRoom() {
                       <summary className='flex items-center justify-between cursor-pointer list-none px-6 py-5'>
                         <div className='flex items-center gap-4'>
                           {/* Accent bar */}
-                          <span className='h-8 w-1 rounded-full bg-[#8B6F4E] transition-all duration-300 group-open:h-12' />
+                          <span className='h-8 w-1 rounded-full bg-[#cc9e32] transition-all duration-300 group-open:h-12' />
 
                           <h3 className='heading leading-[1.15]'>
                             {section.title}
@@ -140,7 +158,7 @@ export default function StandardSingleRoom() {
                         </div>
 
                         {/* Chevron */}
-                        <span className='text-[#8B6F4E] text-lg tracking-tight transition-transform duration-300 group-open:-rotate-90'>
+                        <span className='text-[#cc9e32] text-lg tracking-tight transition-transform duration-300 group-open:-rotate-90'>
                           ›
                         </span>
                       </summary>
@@ -153,7 +171,7 @@ export default function StandardSingleRoom() {
                               className='flex items-start gap-3 text-sm text-gray-700'
                             >
                               <span className='mt-0.5 h-5 w-5 rounded-full bg-[#F3EFE6] flex items-center justify-center'>
-                                <span className='h-2 w-2 rounded-full bg-[#8B6F4E]' />
+                                <span className='h-2 w-2 rounded-full bg-[#cc9e32]' />
                               </span>
                               <span>{item}</span>
                             </li>
