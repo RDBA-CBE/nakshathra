@@ -90,10 +90,10 @@ export default function TestimonialsSection() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <span className='text-[#bd9454] font-heading text-xl tracking-wider uppercase font-bold leading-[1.2]'>
+          <p className='subtitle'>
             Feedback that Mirrors our Commitment
-          </span>
-          <h2 className='heading leading-[1.15] mb-4'>
+          </p>
+          <h2 className='heading leading-[1.15] my-5'>
             Every Review Helps us Improve 
             <br />
             And Continue Delivering Meaningful Stays

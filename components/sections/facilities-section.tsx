@@ -76,13 +76,13 @@ export default function FacilitiesSection() {
             ${isInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}
             `}
           >
-            <p className="text-xl font-heading font-bold text-[#b3862f] uppercase tracking-widest">
+            <p className="subtitle tracking-widest">
             Stay Connected. Stay Comfortable
           </p>
             
 
             <h2
-              className="heading leading-[1.15] mb-6"
+              className="heading leading-[1.15] my-5"
               
             >
               Facilities Designed for

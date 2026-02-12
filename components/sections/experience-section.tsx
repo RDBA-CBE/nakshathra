@@ -10,18 +10,21 @@ const experiences = [
     description: "Excepteur sint occaecat",
     image: "/home/near-places/attakatti-viewpoint.webp",
     rotation: "-rotate-6",
+    link:"/pooja-time",
   },
   {
     title: "Sholayar Dam",
     description: "Sunt culpa aliquip officia",
     image: "/home/near-places/sholayar-dam.webp",
     rotation: "rotate-2",
+    link:"/pooja-time",
   },
   {
     title: "Loam View Point",
     description: "Quis nostrud exercitation",
     image: "/home/near-places/loam-viewpoint.webp",
     rotation: "rotate-6",
+    link:"/pooja-time",
   },
 ];
 
@@ -61,10 +64,10 @@ export default function ExperienceSection() {
                   : "opacity-0 translate-y-10"
               }`}
             >
-              <p className="text-[#C9A961] font-heading text-xl font-bold mb-4 tracking-widest uppercase pt-[120px]">
+              <p className="subtitle mb-4 tracking-widest pt-[120px]">
                 Smart choice for sightseeing{" "}
               </p>
-              <h2 className="heading leading-[1.15] text-balance">
+              <h2 className="heading leading-[1.15] mt-5 text-balance">
                 Easy Connectivity to Popular <br/> Sights and Tranquil Retreats
               </h2>
             </div>

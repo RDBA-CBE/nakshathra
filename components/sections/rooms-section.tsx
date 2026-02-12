@@ -52,13 +52,13 @@ export default function RoomsSection() {
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <p className="text-xl font-heading font-bold text-[#b3862f] uppercase tracking-widest">
+          <p className="subtitle">
             Thoughtful spaces for meaningful stays
           </p>
           
             
           
-          <h2 className="heading leading-[1.15]">
+          <h2 className="heading leading-[1.15] mt-5">
             Ideal for Business Travellers,<br /> Pilgrims and Families Alike
           </h2>
         </div>

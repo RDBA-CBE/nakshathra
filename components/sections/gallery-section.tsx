@@ -44,11 +44,11 @@ export default function GallerySection() {
           }`}
         >
           <div>
-            <p className='text-[#C9A962] font-heading text-xl tracking-widest uppercase font-semibold mb-4'>
+            <p className='subtitle mb-4'>
               OUR GALLERY
             </p>
 
-            <h2 className='heading leading-[1.15]'>
+            <h2 className='heading leading-[1.15] mt-5'>
               Sophisticated Interiors Thoughtfully
               <br />
               Balanced with Comfort and Warmth
@@ -56,10 +56,10 @@ export default function GallerySection() {
           </div>
 
           <Link href='/gallery'>
-            <Button className='bg-[#8B3A3A] hover:bg-[#6F2A2A] text-white px-8 py-6 rounded-md group cursor-pointer'>
+            <button  className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] mt-5 font-medium transition'>
               View All
               <ArrowRight className='ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform' />
-            </Button>
+            </button>
           </Link>
         </div>
       </div>

@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { useInView } from '@/hooks/use-in-view';
 import { useCounter } from '@/hooks/use-counter';
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 export default function AboutSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -61,12 +62,12 @@ export default function AboutSection() {
           >
             {/* SMALL HEADING */}
 
-            <p className='text-xl font-heading font-bold text-[#b3862f] uppercase tracking-widest'>
+            <p className='subtitle'>
               About Our Hotel
             </p>
 
             {/* MAIN HEADING */}
-            <h2 className='leading-[1.15] heading '>
+            <h2 className='leading-[1.15] heading  mt-5'>
               Redefining Stays with Warmth and Elegance
             </h2>
           </div>
@@ -119,9 +120,10 @@ export default function AboutSection() {
             >
               <Link href='/about'>
                 <button
-                  className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-sm font-medium transition cursor-pointer'
+                   className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] font-medium transition'
                 >
                   Know More
+                  <ArrowRight className='ml-2 h-4 w-4' />
                 </button>
               </Link>
             </div>

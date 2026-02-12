@@ -164,7 +164,7 @@ export default function RoomsPage() {
                     </h3>
                   </Link>
 
-                  <p className="text-sm font-semibold text-[#9C8468] mb-3">
+                  <p className="text-sm font-semibold text-[#b3862f] mb-3">
                     {room.price}
                   </p>
 
@@ -174,7 +174,7 @@ export default function RoomsPage() {
 
                   <Link
                     href={room.link}
-                    className="inline-flex items-center gap-2 hover:text-[#9C8468] transition"
+                    className="inline-flex mt-2 text-[#b3862f]  items-center gap-2 hover:text-[#9C8468] transition"
                   >
                     Read More <span>→</span>
                   </Link>
