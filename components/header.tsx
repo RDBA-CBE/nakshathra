@@ -3,7 +3,8 @@
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Calendar, Phone, Menu, X } from "lucide-react"
+import { Calendar, Smartphone, Menu, X } from "lucide-react"
+
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -39,7 +40,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`text-[15px] xl:text-base font-normal transition-colors ${
+                  className={`text-[18px] font-normal transition-colors ${
                     pathname === item.href
                       ? "text-[#8B4513]"
                       : "text-[#1F3A44] hover:text-[#8B4513]"
@@ -56,12 +57,12 @@ export default function Header() {
 
             {/* Booking Info */}
             <div className="flex items-center gap-2.5">
-              <Calendar className="w-4 h-4 text-[#8B4513] flex-shrink-0" />
+              <Smartphone className="w-8 h-8 text-[#8B4513] flex-shrink-0" />
               <div className="flex flex-col">
-                <span className="text-[11px] text-[#666666] leading-tight whitespace-nowrap">
+                <p className="para whitespace-nowrap">
                   Reserve Your Stay Today
-                </span>
-                <span className="text-sm font-semibold text-[#1F3A44] leading-tight whitespace-nowrap">
+                </p>
+                <span className="header-contact">
                   +91 90871 73000
                 </span>
               </div>
@@ -104,7 +105,8 @@ export default function Header() {
             </nav>
 
             <div className="flex items-center gap-3 mt-6 pt-6 border-t border-gray-200 bg-[#F5F5F5] px-4 py-3 rounded-lg">
-              <Calendar className="w-4 h-4 text-[#8B4513] flex-shrink-0" />
+              <Smartphone className="w-8 h-8 text-[#8B4513] flex-shrink-0" />
+
               <div className="flex flex-col">
                 <span className="text-xs text-[#666666] leading-tight">
                   Reserve Your Stay Today

@@ -32,22 +32,22 @@ export default function AboutSection() {
             <div className='flex gap-20'>
               <div>
                 <div
-                  className='text-7xl leading-none text-black mb-2'
+                  className='text-7xl leading-none text-[#1F3A44] mb-2'
                   style={{ fontFamily: '"Marcellus", serif' }}
                 >
                   +{countAmenities}
                 </div>
-                <p className='text-sm text-[#5E6E73]'>Amenity Services</p>
+                <p className='para'>Amenity Services</p>
               </div>
 
               <div>
                 <div
-                  className='text-7xl leading-none text-black mb-2'
+                  className='text-7xl leading-none text-[#1F3A44] mb-2'
                   style={{ fontFamily: '"Marcellus", serif' }}
                 >
                   +{countRooms}
                 </div>
-                <p className='text-sm text-[#5E6E73]'>Total Luxury Rooms</p>
+                <p className='para'>Total Luxury Rooms</p>
               </div>
             </div>
           </div>
@@ -62,9 +62,7 @@ export default function AboutSection() {
           >
             {/* SMALL HEADING */}
 
-            <p className='subtitle'>
-              About Our Hotel
-            </p>
+            <p className='subtitle'>About Our Hotel</p>
 
             {/* MAIN HEADING */}
             <h2 className='leading-[1.15] heading  mt-5'>
@@ -119,9 +117,7 @@ export default function AboutSection() {
               }`}
             >
               <Link href='/about'>
-                <button
-                   className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] font-medium transition'
-                >
+                <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] font-medium transition'>
                   Know More
                   <ArrowRight className='ml-2 h-4 w-4' />
                 </button>

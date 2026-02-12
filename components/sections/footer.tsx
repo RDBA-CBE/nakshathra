@@ -17,7 +17,7 @@ export default function Footer() {
             <p className="para max-w-[320px] mx-auto md:mx-0">
               Nakshathra Royal Stay, a smart business class hotel situated in
               Palani with a promise 'Hey we are different' from existing hotels
-              in the region with a vow to delight you...
+              in the region with a vow to delight you.
             </p>
           </div>
 
