@@ -428,7 +428,7 @@ h3.heading {
 }
 p.subtitle {
   font-size: 20px !important; /* text-xl */
-  font-family:Marcellus, serif !important;
+  font-family:"Marcellus", serif !important;
   font-weight: 700 !important; /* font-bold */
   color: #b3862f !important;
   text-transform: uppercase !important;
@@ -439,14 +439,14 @@ p.subtitle {
 p.para {
   font-size: 18px !important;
   font-weight: 500 !important;
-  font-family: Satoshi, sans-serif !important;
+  font-family: "Satoshi", sans-serif !important;
   line-height: 1.6 !important;
   color: #5D5D5B !important;
 }
 p.para-title {
   font-size: 20px !important;
   font-weight: 500 !important;
-  font-family: Satoshi, sans-serif !important;
+  font-family: "Satoshi", sans-serif !important;
   line-height: 1.6 !important;
   color: #5D5D5B !important;
 }
@@ -455,7 +455,7 @@ p.para-title {
 li.list{
   font-size: 18px !important;
   font-weight: 500 !important;
-  font-family: Satoshi, sans-serif !important;
+  font-family: "Satoshi", sans-serif !important;
   line-height: 1.6 !important;
   color: #5D5D5B !important;
 }
@@ -463,7 +463,7 @@ li.list{
 span.item-text {
   font-size: 18px !important;
   font-weight: 500 !important;
-  font-family: Satoshi, sans-serif !important;
+  font-family: "Satoshi", sans-serif !important;
   line-height: 1.6 !important;
   color: #5D5D5B !important;
 }

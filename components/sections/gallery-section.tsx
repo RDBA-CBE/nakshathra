@@ -4,6 +4,7 @@ import { useRef, useState, useEffect } from 'react';
 import { useInView } from '@/hooks/use-in-view';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const galleryImages = [
   '/home/gallery/L-img1.webp',
@@ -48,16 +49,18 @@ export default function GallerySection() {
             </p>
 
             <h2 className='heading leading-[1.15]'>
-              Sophisticated Interiors Thoughtfully 
+              Sophisticated Interiors Thoughtfully
               <br />
               Balanced with Comfort and Warmth
             </h2>
           </div>
 
-          <Button className='bg-[#8B3A3A] hover:bg-[#6F2A2A] text-white px-8 py-6 rounded-md group'>
-            View All
-            <ArrowRight className='ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform' />
-          </Button>
+          <Link href='/gallery'>
+            <Button className='bg-[#8B3A3A] hover:bg-[#6F2A2A] text-white px-8 py-6 rounded-md group cursor-pointer'>
+              View All
+              <ArrowRight className='ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform' />
+            </Button>
+          </Link>
         </div>
       </div>
 

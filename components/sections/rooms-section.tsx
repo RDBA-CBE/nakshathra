@@ -3,6 +3,7 @@
 import { useRef } from "react"
 import { useInView } from "@/hooks/use-in-view"
 import RoomCard from "@/components/room-card"
+import { link } from "fs"
 
 const rooms = [
   {
@@ -11,6 +12,7 @@ const rooms = [
     // area: "300 Sq ft",
     // guests: "4 guest",
     image: "/home/rooms/premium-room.webp",
+    link:"/rooms/standard-single-room"
   },
   {
     title: "Standard Double",
@@ -18,6 +20,7 @@ const rooms = [
     // area: "200 Sq ft",
     // guests: "2 guest",
     image: "/home/rooms/family-room,.webp",
+    link:"/rooms/standard-double-room"
   },
   {
     title: "Deluxe Room",
@@ -25,6 +28,7 @@ const rooms = [
     // area: "250 Sq ft",
     // guests: "2 guest",
     image: "/home/rooms/premium-room.webp",
+    link:"/rooms/deluxe-room"
   },
   {
     title: "Super Deluxe Room",
@@ -32,6 +36,7 @@ const rooms = [
     // area: "250 Sq ft",
     // guests: "2 guest",
     image: "/home/rooms/suite-room.webp",
+    link:"/rooms/super-deluxe-room"
   },
 ]
 

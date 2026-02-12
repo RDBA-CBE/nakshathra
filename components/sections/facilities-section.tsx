@@ -90,7 +90,7 @@ export default function FacilitiesSection() {
               Modern Lifestyles
             </h2>
 
-            <p className="para">
+            <p className="para mb-4">
               Seamless check-ins, impeccably maintained spaces, modern amenities
               and attentive service for a comfortable and relaxing stay.
             </p>
