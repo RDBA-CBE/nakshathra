@@ -5,6 +5,7 @@ import Footer from '@/components/sections/footer';
 import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 
 export default function StandardSingleRoom() {
   return (
@@ -24,7 +25,7 @@ export default function StandardSingleRoom() {
 
       {/* MAIN SECTION */}
       {/* MAIN SECTION */}
-      <section className='pt-12 pb-24 bg-white'>
+      <section className='py-20 bg-white'>
         <div className='max-w-6xl mx-auto px-4'>
           {/* Big Image */}
           <div className='relative w-full h-[450px] md:h-[550px] rounded-xl overflow-hidden mb-10'>
@@ -99,6 +100,11 @@ export default function StandardSingleRoom() {
               Tuesdays, Fridays, and new moon days, special poojas are performed
               at this temple.
             </p>
+            <Link href='/pooja-time'>
+              <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] font-medium transition cursor-pointer'>
+                Back
+              </button>
+            </Link>
           </div>
         </div>
       </section>
