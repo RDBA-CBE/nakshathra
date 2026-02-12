@@ -19,18 +19,18 @@ export default function TestimonialCard({
         {stars.map((_, i) => (
           <Star
             key={i}
-            size={14}
-            className={`text-[#D9B66E] ${
-              i < rating ? 'opacity-100' : 'opacity-40'
+            size={16}
+            className={`transition-all duration-200 ${
+              i < rating
+                ? 'text-[#D9B66E] fill-[#D9B66E]' // highlighted
+                : 'text-[#D9B66E]/40' // faded
             }`}
           />
         ))}
       </div>
 
       {/* Review */}
-      <p className='font-heading testimonial-two-paragraph text-[#2b3940] text-lg leading-relaxed mb-6 flex-1'>
-        {review}
-      </p>
+      <p className='para mb-6 flex-1'>{review}</p>
 
       <hr className='mb-6 border-t border-[#efe9df]' />
 
@@ -41,13 +41,13 @@ export default function TestimonialCard({
             <Image src={avatar} alt={name} fill className='object-cover' />
           </div>
           <div>
-            <p className='font-medium text-[#10212b]'>{name}</p>
-            <p className='text-sm text-gray-400'>{role}</p>
+            <p className='para-title'>{name}</p>
+            <p className='subtitle'>{role}</p>
           </div>
         </div>
 
         {/* Platform badge (Tripadvisor-like) */}
-        <div className='flex items-center gap-3'>
+        {/* <div className='flex items-center gap-3'>
           <div className='text-sm text-[#00AA6C] font-semibold hidden sm:block'>
             {platform}
           </div>
@@ -63,7 +63,7 @@ export default function TestimonialCard({
               <circle cx='17.5' cy='6.5' r='2' fill='#fff' />
             </svg>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

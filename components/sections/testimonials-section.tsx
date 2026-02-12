@@ -5,56 +5,56 @@ import TestimonialCard from '@/components/testimonial-card';
 
 const testimonials = [
   {
-    name: 'Sarath Kumar',
-    date: 'March 15, 2024',
+    name: 'Hari P',
+    date: 'Feb 2026',
     rating: 5,
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.',
+      'Hotel stay was comfortable. Restaurant offers south meals and North Indian rotis as well. Very close to the hills. We went by walk to the temple rope car way. Just 500 meters walk. Wash rooms are maintained well',
     avatar: '/placeholder-user.jpg',
     platform: 'Tripadvisor',
   },
   {
-    name: 'Ramesh Sharma',
-    date: 'March 10, 2024',
-    rating: 5,
+    name: 'Senthil K',
+    date: 'Feb 2026',
+    rating: 4,
     review:
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, delivering a seamless and satisfying guest experience with exceptional service, refined comfort, and consistent attention.',
+      'Stay at Nakshatra was excellent and comfortable. Room was well maintained. MakeMyTrip quote should be in a good range considering the location of any property and city tiers. Room quote is slightly above the normal quote.',
     avatar: '/placeholder-user.jpg',
     platform: 'Tripadvisor',
   },
   {
-    name: 'Anita Desai',
-    date: 'Feb 28, 2024',
+    name: 'Ramesh N',
+    date: 'Jan 2026',
     rating: 5,
     review:
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+      'The entire property is maintained very tidy with ample parking space. Food is top notch. The menu is veg and taste and quality is too good. The hotel staff are very cooperative and respond fast to any queries. The hotel rooms are spacious and free of dust. The only little drawback which I encountered was the spring mattress, usually I prefer hard mattress, due to back issues. Property is at a walkable distance to Mayil parking with easy access to battery cars, that take you to the path uphill either through Vinches or cable car.',
     avatar: '/placeholder-user.jpg',
     platform: 'Tripadvisor',
   },
   {
-    name: 'Vikram Patel',
-    date: 'Feb 10, 2024',
-    rating: 5,
+    name: 'Viswamohan K',
+    date: 'Dec 2025',
+    rating: 4,
     review:
-      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      'Location is good, walkable to Temple Mount road. Breakfast was good, South Indian food. Room was okay, clean',
     avatar: '/placeholder-user.jpg',
     platform: 'Tripadvisor',
   },
   {
-    name: 'Priya Nair',
-    date: 'Jan 22, 2024',
+    name: 'Ravi N',
+    date: 'Nov 2025',
     rating: 5,
     review:
-      'Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus.',
+      'Great hotel near to temple and on way to Kodaikanal... Nice room and friendly staff.. Thanks for making our stay relaxing',
     avatar: '/placeholder-user.jpg',
     platform: 'Tripadvisor',
   },
   {
-    name: 'Arjun Rao',
-    date: 'Jan 05, 2024',
+    name: 'Ganesh K',
+    date: 'Oct 2025',
     rating: 5,
     review:
-      'Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt.',
+      'The location of the hotel is its star attraction. Its very close to Parking 2 and Rope Car station. We had our own taxi, and it reached parking in 5 min, then free electric shuttle to starting point of Rope Car or even steps to climb hill. Veg restaurant is good, it gets busy with waiting during peak times. Rooms were very good.',
     avatar: '/placeholder-user.jpg',
     platform: 'Tripadvisor',
   },
