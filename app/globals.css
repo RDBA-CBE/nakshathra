@@ -2,7 +2,37 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
 @custom-variant dark (&:is(.dark *));
+
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
 
 :root {
   --background: oklch(0.985 0.01 70);
@@ -194,6 +224,7 @@
 }
 
 @media (min-width: 1400px) {
+
   .container,
   .container-lg,
   .container-md,
@@ -295,6 +326,7 @@
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -420,16 +452,20 @@ h2.heading {
   font-weight: 300 !important;
   color: #1f3a44 !important;
 }
+
 h3.heading {
   font-family: "Marcellus", serif !important;
   font-size: 22px !important;
   font-weight: 300 !important;
   color: #1f3a44 !important;
 }
+
 p.subtitle {
-  font-size: 20px !important; /* text-xl */
-  font-family:"Marcellus", serif !important;
-  font-weight: 700 !important; /* font-bold */
+  font-size: 20px !important;
+  /* text-xl */
+  font-family: "Marcellus", serif !important;
+  font-weight: 700 !important;
+  /* font-bold */
   color: #b3862f !important;
   text-transform: uppercase !important;
   letter-spacing: 0.1em !important;
@@ -437,12 +473,13 @@ p.subtitle {
 }
 
 p.para {
-  font-size: 18px !important;
-  font-weight: 500 !important;
-  font-family: "Satoshi", sans-serif !important;
+   font-size: 18px !important;
+  font-weight: 500 !important; /* use 400 or 700 unless you have 500 file */
+  font-family: 'Satoshi', sans-serif !important;
   line-height: 1.6 !important;
   color: #5D5D5B !important;
 }
+
 p.para-title {
   font-size: 20px !important;
   font-weight: 500 !important;
@@ -452,7 +489,7 @@ p.para-title {
 }
 
 
-li.list{
+li.list {
   font-size: 18px !important;
   font-weight: 500 !important;
   font-family: "Satoshi", sans-serif !important;
