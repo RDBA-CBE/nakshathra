@@ -205,7 +205,7 @@ export default function AboutClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-20"
+            className="text-center mb-16"
           >
             <h2 className="heading leading-[1.15] mb-8">
               Thoughtfully{" "}

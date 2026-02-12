@@ -19,27 +19,53 @@ export default function ExperienceCard({
 }: ExperienceCardProps) {
   return (
     <div
-      className={`group relative w-[320px] ${rotation} hover:rotate-0 transition-all duration-500`}
+      className={`group relative w-full max-w-[320px] ${rotation}
+      mx-auto transition-all duration-500`}
     >
-      <div className='bg-white p-5 shadow-2xl rounded-sm'>
-        <div className='relative h-[280px] rounded-sm overflow-hidden mb-5'>
-          <img
-            src={image || '/placeholder.svg'}
-            alt={title}
-            className='w-full h-full object-cover group-hover:scale-110 transition-transform duration-700'
-          />
-        </div>
+      <div className="bg-white p-5 shadow-xl rounded-xl">
+        
+        {/* Image with Link */}
+        {link ? (
+          <Link href={link} className="block">
+            <div className="relative h-[260px] rounded-lg overflow-hidden mb-5">
+              <img
+                src={image || '/placeholder.svg'}
+                alt={title}
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+          </Link>
+        ) : (
+          <div className="relative h-[260px] rounded-lg overflow-hidden mb-5">
+            <img
+              src={image || '/placeholder.svg'}
+              alt={title}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        )}
 
-        <div className='space-y-2 px-2 pb-2'>
-          <h3 className='heading leading-[1.15] mb-1'>{title}</h3>
+        <div className="space-y-2">
+          
+          {/* Title with Link */}
+          {link ? (
+            <Link href={link}>
+              <h3 className="heading leading-tight hover:text-[#8B4513] transition-colors">
+                {title}
+              </h3>
+            </Link>
+          ) : (
+            <h3 className="heading leading-tight">{title}</h3>
+          )}
+
           {description && (
-          <p className='text-sm text-gray-600 mb-3'>{description}</p>
+            <p className="text-sm text-gray-600">{description}</p>
           )}
 
           {link && (
             <Link
               href={link}
-              className="flex items-center gap-2 text-[#8B4513] text-sm font-medium group-hover:gap-3 transition-all"
+              className="flex items-center gap-2 text-[#8B4513] text-sm font-medium hover:gap-3 transition-all"
             >
               Know More
               <ArrowRight className="w-4 h-4" />

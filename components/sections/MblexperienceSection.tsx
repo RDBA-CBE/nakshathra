@@ -43,35 +43,35 @@ export default function MblexperienceSection() {
 
         <div className='overflow-hidden'>
           <Swiper
-            modules={[Pagination]}
-            spaceBetween={24}
-            centeredSlides={true}
-            pagination={{ clickable: true }}
-            breakpoints={{
-              0: {
-                slidesPerView: 'auto',
-                centeredSlides: true,
-              },
-              640: {
-                slidesPerView: 2,
-                centeredSlides: false,
-              },
-              1024: {
-                slidesPerView: 3,
-                centeredSlides: false,
-              },
-            }}
-            className='!pb-12 mbl-experience-swiper'
-          >
-            {experiences.map((experience) => (
-              <SwiperSlide
-                key={experience.title}
-                className='flex justify-center w-[280px] sm:w-auto'
-              >
-                <ExperienceCard {...experience} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+  modules={[Pagination]}
+  spaceBetween={24}
+  pagination={{ clickable: true }}
+  breakpoints={{
+    0: {
+      slidesPerView: 1,
+      centeredSlides: false,
+    },
+    640: {
+      slidesPerView: 2,
+      centeredSlides: false,
+    },
+    1024: {
+      slidesPerView: 3,
+      centeredSlides: false,
+    },
+  }}
+  className="!pb-12"
+>
+  {experiences.map((experience) => (
+    <SwiperSlide
+      key={experience.title}
+      className="flex justify-center"
+    >
+      <ExperienceCard {...experience} />
+    </SwiperSlide>
+  ))}
+</Swiper>
+
         </div>
       </div>
     </section>
