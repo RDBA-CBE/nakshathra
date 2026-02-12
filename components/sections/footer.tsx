@@ -8,12 +8,13 @@ export default function Footer() {
         <div className='grid grid-cols-1 md:grid-cols-[minmax(0,380px)_1px_minmax(0,1fr)] gap-12 mb-16'>
           {/* LEFT */}
           <div className='text-center md:text-left min-w-0'>
-            <img
-              src='/footer-logo.png'
-              alt='Hotel Nakshatra Logo'
-              className='w-40 mb-6 mx-auto md:mx-0'
-            />
-
+            <Link href='/'>
+              <img
+                src='/footer-logo.png'
+                alt='Hotel Nakshatra Logo'
+                className='w-40 mb-6 mx-auto md:mx-0'
+              />
+            </Link>
             <p className='para max-w-[320px] mx-auto md:mx-0'>
               With comfortable accommodations, attentive service and modern
               amenities, Hotel Nakshathra is the preferred choice for guests

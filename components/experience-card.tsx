@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 interface ExperienceCardProps {
   title: string;
-  description: string;
+  description?: string;
   image: string;
   link?: string;
   rotation?: string;
@@ -32,7 +32,9 @@ export default function ExperienceCard({
 
         <div className='space-y-2 px-2 pb-2'>
           <h3 className='heading leading-[1.15] mb-1'>{title}</h3>
+          {description && (
           <p className='text-sm text-gray-600 mb-3'>{description}</p>
+          )}
 
           {link && (
             <Link

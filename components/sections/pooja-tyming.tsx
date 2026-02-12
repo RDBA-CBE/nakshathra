@@ -1,22 +1,29 @@
 "use client";
 
 import ExperienceCard from "@/components/experience-card";
+import { link } from "fs";
 
 const experiences = [
   {
     title: "Attakatti View Point",
-    description: "Excepteur sint occaecat",
-    image: "/home/near-places/attakatti-viewpoint.webp",
+    // description: "Excepteur sint occaecat",
+    image: "/attakathi-loam-view-point.jpg",
+    rotation: "rotate-6",
+    link:"/attakathi-loem-view-point"
   },
   {
     title: "Sholayar Dam",
-    description: "Sunt culpa aliquip officia",
-    image: "/home/near-places/sholayar-dam.webp",
+    // description: "Sunt culpa aliquip officia",
+    image: "/sholiyar-dam.jpg",
+    rotation: "rotate-0",
+    link:"/attakathi-loem-view-point"
   },
   {
-    title: "Loam View Point",
-    description: "Quis nostrud exercitation",
-    image: "/home/near-places/loam-viewpoint.webp",
+    title: "Masani Amman Temple Pollachi",
+    // description: "Quis nostrud exercitation",
+    image: "/masani-temple.jpg",
+    rotation: "-rotate-6",
+    link:"/attakathi-loem-view-point"
   },
 ];
 
@@ -42,8 +49,10 @@ export default function PoojaTiming() {
             <ExperienceCard
               key={experience.title}
               title={experience.title}
-              description={experience.description}
+              // description={experience.description}
               image={experience.image}
+              rotation={experience.rotation}
+               link={experience.link}
             />
           ))}
         </div>

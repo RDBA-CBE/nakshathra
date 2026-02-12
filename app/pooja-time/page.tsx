@@ -44,10 +44,6 @@ export default function ContactPage() {
                 >
                   
                 </motion.div>
-
-                {/* Decorative Line */}
-
-                {/* Features */}
               </div>
             </div>
           </div>
