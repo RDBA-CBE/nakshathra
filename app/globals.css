@@ -461,7 +461,12 @@ h3.heading {
   font-weight: 300 !important;
   color: #1f3a44 !important;
 }
-
+h3.privacy {
+  font-family: "Marcellus", serif !important;
+  font-size: 32px !important;
+  font-weight: 300 !important;
+  color: #1f3a44 !important;
+}
 p.subtitle {
   font-size: 20px !important;
   /* text-xl */

@@ -95,16 +95,16 @@ export default function PrivacyPolicyPage() {
           </div>
         </div>
       </section>
-      <section className='pb-20 px-4 bg-[#FFFFFF]'>
+      <section className='py-20 px-4 bg-[#FFFFFF]'>
         {/* Content Section */}
-        <div className='max-w-6xl mx-auto mt-16'>
+        <div className='max-w-6xl mx-auto'>
           <div className='px-8 sm:px-12'>
             <div className='space-y-12'>
               {/* Introduction */}
 
               {/* Information Collection */}
-              <section className='space-y-4 pt-8'>
-                <h2 className='heading leading-[1.15]'>Consent</h2>
+              <section className='space-y-4'>
+                <h3 className='privacy leading-[1.15]'>Consent</h3>
 
                 <p className='para'>
                   By using our website, you hereby consent to our Privacy Policy
@@ -114,9 +114,9 @@ export default function PrivacyPolicyPage() {
 
               {/* How We Use Information */}
               <section className='space-y-4 pt-8 border-t border-gray-200'>
-                <h2 className='heading leading-[1.15]'>
+                <h3 className='privacy leading-[1.15]'>
                   Information we collect
-                </h2>
+                </h3>
 
                 <p className='para'>
                   The personal information that you are asked to provide, and
@@ -139,9 +139,9 @@ export default function PrivacyPolicyPage() {
 
               {/* Data Sharing */}
               <section className='space-y-4 pt-8 border-t border-gray-200'>
-                <h2 className='heading leading-[1.15]'>
+                <h3 className='privacy leading-[1.15]'>
                   How we use your information
-                </h2>
+                </h3>
 
                 <p className='para'>
                   We use the information we collect in various ways, including
@@ -223,7 +223,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Data Security */}
               <section className='space-y-4 pt-8 border-t border-gray-200'>
-                <h2 className='heading leading-[1.15]'>Log Files</h2>
+                <h3 className='privacy leading-[1.15]'>Log Files</h3>
                 <p className='para'>
                   Hotel Nakshathra Royal Stay follows a standard procedure of
                   using log files. These files log visitors when they visit
@@ -241,9 +241,9 @@ export default function PrivacyPolicyPage() {
 
               {/* Your Rights */}
               <section className='space-y-4 pt-8 border-t border-gray-200'>
-                <h2 className='heading leading-[1.15]'>
+                <h3 className='privacy leading-[1.15]'>
                   Cookies and Web Beacons
-                </h2>
+                </h3>
 
                 <p className='para'>
                   Like any other website, Hotel Nakshathra Royal Stay uses
@@ -270,9 +270,9 @@ export default function PrivacyPolicyPage() {
 
               {/* Cookies */}
               <section className='space-y-4 pt-8 border-t border-gray-200'>
-                <h2 className='heading leading-[1.15]'>
+                <h3 className='privacy leading-[1.15]'>
                   Google DoubleClick DART Cookie
-                </h2>
+                </h3>
                 <p className='para'>
                   Google is one of a third-party vendor on our site. It also
                   uses cookies, known as DART cookies, to serve ads to our site
@@ -293,9 +293,9 @@ export default function PrivacyPolicyPage() {
 
               {/* Third-Party Links */}
               <section className='space-y-4 pt-8 border-t border-gray-200'>
-                <h2 className='heading leading-[1.15]'>
+                <h3 className='privacy leading-[1.15]'>
                   Advertising Partners Privacy Policies
-                </h2>
+                </h3>
                 <p className='para'>
                   You may consult this list to find the Privacy Policy for each
                   of the advertising partners of Hotel Nakshathra Royal Stay.
@@ -320,9 +320,9 @@ export default function PrivacyPolicyPage() {
 
               {/* Children's Privacy */}
               <section className='space-y-4 pt-8 border-t border-gray-200'>
-                <h2 className='heading leading-[1.15]'>
+                <h3 className='privacy leading-[1.15]'>
                   Third Party Privacy Policies
-                </h2>
+                </h3>
                 <p className='para'>
                   Hotel Nakshathra Royal Stay's Privacy Policy does not apply to
                   other advertisers or websites. Thus, we are advising you to
@@ -341,9 +341,9 @@ export default function PrivacyPolicyPage() {
 
               {/* Policy Updates */}
               <section className='space-y-4 pt-8 border-t border-gray-200'>
-                <h2 className='heading leading-[1.15]'>
+                <h3 className='privacy leading-[1.15]'>
                   CCPA Privacy Rights (Do Not Sell My Personal Information)
-                </h2>
+                </h3>
                 <p className='para'>
                   Under the CCPA, among other rights, California consumers have
                   the right to:
@@ -370,9 +370,9 @@ export default function PrivacyPolicyPage() {
 
               {/* Contact Information */}
               <section className='space-y-4 pt-8 border-t border-gray-200'>
-                <h2 className='heading leading-[1.15]'>
+                <h3 className='privacy leading-[1.15]'>
                   GDPR Data Protection Rights
-                </h2>
+                </h3>
                 <div className='space-y-4 text-gray-600 leading-relaxed'>
                   <p className='para'>
                     We would like to make sure you are fully aware of all of
@@ -419,9 +419,9 @@ export default function PrivacyPolicyPage() {
               </section>
 
               <section className='space-y-4 pt-8 border-t border-gray-200'>
-                <h2 className='heading leading-[1.15]'>
+                <h3 className='privacy leading-[1.15]'>
                   Children's Information
-                </h2>
+                </h3>
                 <div className='space-y-4 text-gray-600 leading-relaxed'>
                   <p className='para'>
                     Another part of our priority is adding protection for

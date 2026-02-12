@@ -98,7 +98,7 @@ export default function PrivacyPolicyPage() {
             <div className="space-y-12">
               {/* How We Use Information */}
               <section className="space-y-4">
-                <h2 className="heading leading-[1.15]">Use of Content</h2>
+                <h3 className="privacy leading-[1.15]">Use of Content</h3>
 
                 <p className="para">
                   All logos, brands and marks appearing in this site, except as
@@ -120,7 +120,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Data Sharing */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="heading leading-[1.15]">Acceptable Site Use</h2>
+                <h3 className="privacy leading-[1.15]">Acceptable Site Use</h3>
 
                 <p className="para-title">
                   (A) Security Rules
@@ -165,9 +165,9 @@ export default function PrivacyPolicyPage() {
 
               {/* Data Security */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="heading leading-[1.15]">
+                <h3 className="privacy leading-[1.15]">
                   Links to/from other Websites
-                </h2>
+                </h3>
                 <p className="para">
                   This website contains links to other websites. These links are
                   provided solely as a convenience to you. Wherever such link/s
@@ -213,7 +213,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Your Rights */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="heading leading-[1.15]">Indemnity</h2>
+                <h3 className="privacy leading-[1.15]">Indemnity</h3>
 
                 <p className="para">
                   You agree to defend, indemnify, and hold harmless Nakshathra
@@ -231,7 +231,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Cookies */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="heading leading-[1.15]">Liability</h2>
+                <h3 className="privacy leading-[1.15]">Liability</h3>
                 <p className="para">
                   While all reasonable care has been taken in providing the
                   content on this website, Nakshathra Royal Stay. and / or its
@@ -270,9 +270,9 @@ export default function PrivacyPolicyPage() {
 
               {/* Third-Party Links */}
               <section className="space-y-4 pt-8 border-t border-gray-200">
-                <h2 className="heading leading-[1.15]">
+                <h3 className="privacy leading-[1.15]">
                   Disclaimer of Consequential Damages
-                </h2>
+                </h3>
                 <p className="para">
                   In no event shall Nakshathra Royal Stay, or any parties,
                   organisations or entities associated with the corporate brand
