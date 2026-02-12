@@ -16,7 +16,7 @@ export default function StandardSingleRoom() {
         <div className='max-w-6xl mx-auto px-4 py-2'>
           <p className='para'>
             <h2 className='heading text-center !mb-0'>
-              Masani Amman Temple - Pollachi
+              Sholayar Dam
             </h2>
           </p>
         </div>

@@ -16,14 +16,14 @@ const experiences = [
     // description: "Sunt culpa aliquip officia",
     image: "/sholiyar-dam.jpg",
     rotation: "rotate-0",
-    link:"/attakathi-loem-view-point"
+    link:"/sholayar-dam"
   },
   {
     title: "Masani Amman Temple Pollachi",
     // description: "Quis nostrud exercitation",
     image: "/masani-temple.jpg",
-    rotation: "-rotate-6",
-    link:"/attakathi-loem-view-point"
+    rotation: "rotate-6",
+    link:"/masani-amman-temple-pollachi"
   },
 ];
 
