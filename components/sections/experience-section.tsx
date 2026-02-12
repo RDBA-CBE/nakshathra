@@ -35,7 +35,7 @@ export default function ExperienceSection() {
   return (
     <section
       ref={sectionRef}
-      className="py-16 px-0 bg-white relative overflow-hidden desk-experience"
+      className="py-20 px-0 bg-white relative overflow-hidden desk-experience"
     >
       <div
         className="relative"

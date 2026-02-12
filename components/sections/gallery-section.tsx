@@ -35,7 +35,7 @@ export default function GallerySection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className='py-24 bg-white overflow-hidden'>
+    <section ref={sectionRef} className=' bg-white overflow-hidden'>
       <div className='container mx-auto max-w-7xl px-6'>
         {/* Header */}
         <div

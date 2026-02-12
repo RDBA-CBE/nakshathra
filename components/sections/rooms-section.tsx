@@ -45,7 +45,7 @@ export default function RoomsSection() {
   const isInView = useInView(sectionRef)
 
   return (
-    <section ref={sectionRef} className="py-16 px-6 bg-white">
+    <section ref={sectionRef} className="pb-20 px-6 bg-white">
       <div className="container mx-auto">
         <div
           className={`text-center mb-16 transition-all duration-700 ${
