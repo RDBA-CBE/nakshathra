@@ -6,7 +6,7 @@ interface ExperienceCardProps {
   title: string;
   description: string;
   image: string;
-  link: string;
+  link?: string;
   rotation?: string;
 }
 
@@ -34,13 +34,15 @@ export default function ExperienceCard({
           <h3 className='heading leading-[1.15] mb-1'>{title}</h3>
           <p className='text-sm text-gray-600 mb-3'>{description}</p>
 
-          <Link
-            href={"/pooja-time"}
-            className='flex items-center gap-2 text-[#8B4513] text-sm font-medium group-hover:gap-3 transition-all'
-          >
-            Know More
-            <ArrowRight className='w-4 h-4' />
-          </Link>
+          {link && (
+            <Link
+              href={link}
+              className="flex items-center gap-2 text-[#8B4513] text-sm font-medium group-hover:gap-3 transition-all"
+            >
+              Know More
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          )}
         </div>
       </div>
     </div>

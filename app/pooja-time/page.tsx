@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import PoojaTyming from "@/components/sections/pooja-tyming";
 
 // export const metadata: Metadata = {
 //   title: "Privacy Policy - Hotel Nakshathra",
@@ -172,6 +173,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <PoojaTyming />
 
       <Footer />
     </main>
