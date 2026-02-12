@@ -86,11 +86,11 @@ export default function Footer() {
                     Refund Policy
                   </Link>
                 </li>
-                <li className="list">
+                {/* <li className="list">
                   <Link href="/site-map" className="hover:text-[#8B1C1C]">
                     Sitemap
                   </Link>
-                </li>
+                </li> */}
                 <li className="list">
                   <Link href="/pooja-time" className="hover:text-[#8B1C1C]">
                     Pooja Time
