@@ -30,9 +30,7 @@ export default function DiningSection() {
       <div className='container mx-auto px-4'>
         {/* Heading */}
         <div className='text-center mb-12'>
-          <p className='subtitle'>
-            Relaxed Ambience, Quality Cuisine
-          </p>
+          <p className='subtitle'>Relaxed Ambience, Quality Cuisine</p>
           <h2 className='heading leading-[1.15] mt-5'>
             Peaceful Dining with Nourishing <br /> Meals and Attentive Service
           </h2>
@@ -68,7 +66,7 @@ export default function DiningSection() {
             <div className='bg-gray-100 rounded-xl p-6 shadow-sm h-full flex flex-col justify-between'>
               <h3 className='text-[#10212b] font-heading font mb-4'>Hours</h3>
 
-              <div className='space-y-3 mb-6'>
+              {/* <div className='space-y-3 mb-6'>
                 <div className='bg-white rounded-lg px-4 py-2 shadow-sm flex justify-between items-center'>
                   <span className='font-medium'>Breakfast</span>
                   <span className='text-sm text-gray-600'>
@@ -93,7 +91,7 @@ export default function DiningSection() {
                     8.30 PM to 10.00 PM
                   </span>
                 </div>
-              </div>
+              </div> */}
 
               <p className='para'>
                 Carefully prepared dishes balance traditional flavours and
@@ -102,8 +100,8 @@ export default function DiningSection() {
                 personalized care
               </p>
 
-              <div className='flex'>
-                <Link href='/facilities'>
+              {/* <div className='flex'>
+                <Link href='/facility'>
                   <button
                      className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] mt-5 font-medium transition'
                   >
@@ -111,7 +109,7 @@ export default function DiningSection() {
                     <ArrowRight className='ml-2 h-4 w-4' />
                   </button>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
