@@ -103,7 +103,7 @@ export default function GallerySection() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10"></div>
             <Image
               src="/facilities/intro.webp"
-              alt="Hotel Nakshathra Elegant Interior"
+              alt="Hotel Nakshatra Elegant Interior"
               fill
               className="object-cover object-center"
               priority

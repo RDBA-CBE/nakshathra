@@ -32,7 +32,7 @@ export default function HeroSection() {
               <p className='para'>
                 Thoughtfully designed, spacious rooms with modern bathrooms and
                 carefully selected amenities. Experience peaceful living with
-                premium comfort, in the heart of Palani.
+                premium comfort, in the heart of Sivakasi.
               </p>
 
               {/* CTA */}

@@ -85,8 +85,8 @@ export default function AboutSection() {
             >
               <div className='max-w-xl space-y-6 text-base font-heading text-[#1F2A37] leading-relaxed'>
                 <p className='para'>
-                  Hotel Nakshathra is a premium business-class hotel, that
-                  blends modern elegance with authentic Indian hospitality for a
+                  Hotel Nakshatra is a premium business-class hotel, that blends
+                  modern elegance with authentic Indian hospitality for a
                   relaxing and pleasant stay. Our well-appointed rooms,
                   contemporary amenities and intuitive service ensure effortless
                   comfort for business travellers, pilgrims and families alike.
@@ -96,9 +96,9 @@ export default function AboutSection() {
                 </p>
 
                 <p className='para'>
-                  Nestled amidst the busy streets of Palani, the hotel provides
-                  easy access to local transportation, shopping areas and key
-                  landmarks, making it an ideal choice for both business
+                  Nestled amidst the busy streets of Sivakasi, the hotel
+                  provides easy access to local transportation, shopping areas
+                  and key landmarks, making it an ideal choice for both business
                   travellers and tourists exploring the region. Its strategic
                   location makes every commute smooth and time-saving. The
                   hotel’s calm setting provides a refreshing escape from

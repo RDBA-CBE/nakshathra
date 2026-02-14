@@ -95,7 +95,7 @@ export default function ContactPage() {
                   className='space-y-6 mb-10 '
                 >
                   <p className='para'>
-                    At Hotel Nakshathra, we strive to make your experience
+                    At Hotel Nakshatra, we strive to make your experience
                     seamless and memorable. Reach out to us for bookings,
                     inquiries or any assistance, you’ll receive prompt and
                     personalized support.
@@ -124,7 +124,7 @@ export default function ContactPage() {
             <div className='absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10'></div>
             <Image
               src='/about/comfort.webp'
-              alt='Hotel Nakshathra Elegant Interior'
+              alt='Hotel Nakshatra Elegant Interior'
               fill
               className='object-cover object-center'
               priority
@@ -154,7 +154,7 @@ export default function ContactPage() {
             <div className='rounded-3xl border border-[#8B4513]/20 p-10 hover:shadow-xl transition'>
               <Mail className='w-6 h-6 mx-auto text-[#8B4513]' />
               <p className='mt-6 text-xl text-[#1F3A44] font-light break-all'>
-                nakshathrapalani@gmail.com
+                Nakshatrapalani@gmail.com
               </p>
             </div>
 
@@ -171,7 +171,7 @@ export default function ContactPage() {
       <section className='relative max-w-7xl  mx-auto rounded-3xl h-[300px]'>
         <div className='relative w-full h-full min-h-[300px] overflow-hidden rounded-3xl'>
           <iframe
-            src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3923.8584287991243!2d77.523839!3d10.432807!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9df4228c617b3%3A0xe36994319f709ff6!2sHotel%20Nakshathra-%20A%20Royal%20Stay!5e0!3m2!1sen!2sin!4v1770721274807!5m2!1sen!2sin'
+            src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3923.8584287991243!2d77.523839!3d10.432807!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9df4228c617b3%3A0xe36994319f709ff6!2sHotel%20Nakshatra-%20A%20Royal%20Stay!5e0!3m2!1sen!2sin!4v1770721274807!5m2!1sen!2sin'
             className='absolute inset-0 w-full h-full border-0'
             loading='lazy'
             referrerPolicy='no-referrer-when-downgrade'

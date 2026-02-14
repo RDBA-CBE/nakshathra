@@ -30,39 +30,39 @@ import {
 
 const facilities = [
   {
-    title: 'Prime Location in the Heart of Palani',
+    title: 'Prime Location in the Heart of Sivakasi',
     desc: 'Easy access to local transportation, shopping areas and key landmarks makes commuting effortless and convenient.',
-    icon: MapPin,
+    icon: '/facilities/prime-location.svg',
   },
   {
     title: 'Complimentary High-Speed Wi-Fi',
     desc: 'Stay connected for work, study or leisure with fast, reliable internet throughout the hotel.',
-    icon: Wifi,
+    icon: '/facilities/wifi.svg',
   },
   {
     title: 'Business-Class Luxury at Exceptional Value',
     desc: 'Modern rooms, refined interiors and premium services ensure a comfortable stay without compromise.',
-    icon: Gem,
+    icon: '/facilities/luxuary.svg',
   },
   {
     title: 'Best Rates Guaranteed on Online Bookings',
     desc: 'Enjoy competitive pricing and exclusive online offers when you book directly with us.',
-    icon: CalendarCheck,
+    icon: '/facilities/Booking.svg',
   },
   {
     title: 'Modern Amenities with Elegant Interiors',
     desc: 'Each room is thoughtfully designed with contemporary decor, ergonomic furnishings and intuitive features for your convenience.',
-    icon: ConciergeBell,
+    icon: '/facilities/aminities.svg',
   },
   {
     title: 'Strict Safety, Hygiene and Cleanliness Protocols',
     desc: 'Our high standards ensure a safe and healthy environment for every guest.',
-    icon: ShieldCheck,
+    icon: '/facilities/safety-hygiene.svg',
   },
   {
     title: 'Warm, Personalized Indian Hospitality',
     desc: 'Our attentive staff and bespoke services create a welcoming atmosphere that makes every stay truly special.',
-    icon: Hospital,
+    icon: '/facilities/hospitality.svg',
   },
 ];
 
@@ -106,7 +106,7 @@ export default function FacilityPage() {
                   className='space-y-6 '
                 >
                   <p className='para'>
-                    At Hotel Nakshathra, we combine modern convenience with
+                    At Hotel Nakshatra, we combine modern convenience with
                     authentic Indian hospitality to ensure every stay is
                     seamless, comfortable and memorable. From smooth check-ins
                     to impeccably maintained spaces, we cater to the needs of
@@ -138,7 +138,7 @@ export default function FacilityPage() {
             <div className='absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10'></div>
             <Image
               src='/facilities/intro.webp'
-              alt='Hotel Nakshathra Elegant Interior'
+              alt='Hotel Nakshatra Elegant Interior'
               fill
               className='object-cover object-center'
               priority
@@ -157,60 +157,36 @@ export default function FacilityPage() {
             {/* Heading */}
             <div className='text-center'>
               <h2 className='heading leading-[1.15]'>
-                Why Choose Hotel Nakshathra?
+                Why Choose Hotel Nakshatra?
               </h2>
             </div>
 
             {/* Facilities */}
             <div className='mt-16 relative'>
-              <Swiper
-                modules={[Pagination, Autoplay]}
-                spaceBetween={24}
-                autoplay={{
-                  delay: 3500,
-                  disableOnInteraction: false,
-                  pauseOnMouseEnter: true,
-                }}
-                pagination={{
-                  clickable: true,
-                  renderBullet: (index, className) =>
-                    `<span class="${className} custom-bullet"></span>`,
-                }}
-                breakpoints={{
-                  0: {
-                    slidesPerView: 1.1,
-                    centeredSlides: true,
-                  },
-                  640: {
-                    slidesPerView: 2,
-                    centeredSlides: true,
-                  },
-                  1024: {
-                    slidesPerView: 4,
-                    centeredSlides: false,
-                  },
-                }}
-                className='!pb-16'
-              >
+              <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
                 {facilities.map((item) => (
-                  <SwiperSlide key={item.title} className='flex justify-center'>
+                  <div key={item.title} className='flex justify-center'>
                     {/* CARD */}
                     <div
                       className='
-            group flex flex-col
-            w-[100%] sm:w-full
-            rounded-2xl border border-[#8B4513]/20 bg-white p-8
-            transition hover:shadow-md
+          group flex flex-col
+          w-full
+          rounded-2xl border border-[#8B4513]/20 bg-white p-8
+          transition hover:shadow-md
 
-            h-[340px]
-            sm:h-[320px]
-            lg:h-[360px]
-          '
+          h-[340px]
+          sm:h-[320px]
+          lg:h-[360px]
+        '
                     >
                       {/* ICON */}
                       <div className='flex justify-center'>
                         <div className='w-16 h-16 rounded-full bg-[#8B4513]/10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110'>
-                          <item.icon className='w-8 h-8 text-[#8B4513]' />
+                          <img
+                            src={item.icon}
+                            alt='icon'
+                            className='w-8 h-8 object-contain'
+                          />
                         </div>
                       </div>
 
@@ -223,9 +199,9 @@ export default function FacilityPage() {
                         <p className='para flex-grow'>{item.desc}</p>
                       </div>
                     </div>
-                  </SwiperSlide>
+                  </div>
                 ))}
-              </Swiper>
+              </div>
             </div>
           </div>
         </div>
@@ -262,7 +238,7 @@ export default function FacilityPage() {
                 {/* Main Content */}
                 <div className='space-y-8'>
                   <div className='text-3xl sm:text-4xl md:text-5xl font-heading text-[#b3862f] mb-6'>
-                    At Hotel Nakshathra
+                    At Hotel Nakshatra
                   </div>
 
                   <p className='para'>
@@ -275,7 +251,7 @@ export default function FacilityPage() {
                     <span className='text-[#b3862f] font-medium'>
                       Spiritual visits &nbsp;
                     </span>
-                    in Palani.
+                    in Sivakasi.
                   </p>
                   {/* Bottom Divider */}
                   <div className='absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#8B4513]/25 to-transparent' />

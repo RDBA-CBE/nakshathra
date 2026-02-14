@@ -5,7 +5,7 @@ import { Check } from 'lucide-react';
 import { useInView } from '@/hooks/use-in-view';
 
 const facilities = [
-  'Prime location in the heart of Palani',
+  'Prime location in the heart of Sivakasi',
   'Complimentary high-speed Wi-Fi',
   'Business-class luxury at exceptional value',
   'Best rates guaranteed on online bookings',

@@ -13,8 +13,48 @@ const images = [
   '/hotel-bedroom-interior.jpg',
 ];
 
+const sections = [
+  {
+    title: 'Amenities',
+    items: [
+      'Ample car parking',
+      'Wheelchair accessibility',
+      'Lift / elevator access',
+      'High-speed Wi-Fi (complimentary)',
+      'Fine south Indian dining ',
+    ],
+  },
+  {
+    title: 'Facilities',
+    items: [
+      'Comfortable bed with premium mattress',
+      'Fresh linens & pillows',
+      'Bedside table',
+      'Wardrobe / Closet with hangers',
+      'Writing desk & chair',
+      'Luggage rack',
+      'LED / Smart TV with satellite channels',
+      'Complimentary BreakFast',
+      'Complimentary bottled water',
+      'Room service menu',
+      '24/7 Power Supply ',
+    ],
+  },
+  {
+    title: 'Bathroom Facilities',
+    items: [
+      'Hot & cold running water',
+      'Shower ',
+      'Bath towels & hand towels',
+      'Toiletries (soap, shampoo, conditioner)',
+      'Shaving mirror',
+    ],
+  },
+];
+
 export default function StandardSingleRoom() {
   const [activeImage, setActiveImage] = useState(images[0]);
+  const [openIndex, setOpenIndex] = useState(null);
 
   return (
     <main className='min-h-screen bg-white'>
@@ -102,84 +142,61 @@ export default function StandardSingleRoom() {
                 amenities. Perfect for couples and guests, it provides a
                 relaxing environment suited for both business and leisure stays.
               </p>
-
-              <section className='pb-24 px-4'>
+              <section className='py-5'>
                 <div className='max-w-4xl mx-auto space-y-4'>
-                  {[
-                    {
-                      title: 'Amenities',
-                      items: [
-                        'Ample car parking',
-                        'Wheelchair accessibility',
-                        'Lift / elevator access',
-                        'High-speed Wi-Fi (complimentary)',
-                        'Fine south Indian dining ',
-                      ],
-                    },
-                    {
-                      title: 'Facilities',
-                      items: [
-                        'Comfortable bed with premium mattress',
-                        'Fresh linens & pillows',
-                        'Bedside table',
-                        'Wardrobe / Closet with hangers',
-                        'Writing desk & chair',
-                        'Luggage rack',
-                        'LED / Smart TV with satellite channels',
-                        'Complimentary BreakFast',
-                        'Complimentary bottled water',
-                        'Room service menu',
-                        '24/7 Power Supply ',
-                      ],
-                    },
-                    {
-                      title: 'Bathroom Facilities',
-                      items: [
-                        'Hot & cold running water',
-                        'Shower ',
-                        'Bath towels & hand towels',
-                        'Toiletries (soap, shampoo, conditioner)',
-                        'Shaving mirror',
-                      ],
-                    },
-                  ].map((section) => (
-                    <details
-                      key={section.title}
-                      className='group rounded-2xl border border-[#E8DCCB] bg-white/70 backdrop-blur transition-all duration-300'
-                    >
-                      <summary className='flex items-center justify-between cursor-pointer list-none px-6 py-5'>
-                        <div className='flex items-center gap-4'>
-                          {/* Accent bar */}
-                          <span className='h-8 w-1 rounded-full bg-[#cc9e32] transition-all duration-300 group-open:h-12' />
+                  {sections.map((section, index) => {
+                    const isOpen = openIndex === index;
 
-                          <h3 className='heading leading-[1.15]'>
-                            {section.title}
-                          </h3>
-                        </div>
+                    return (
+                      <div
+                        key={section.title}
+                        className='rounded-2xl border border-[#E8DCCB] bg-white/70 backdrop-blur transition-all duration-300'
+                      >
+                        <button
+                          onClick={() => setOpenIndex(isOpen ? null : index)}
+                          className='w-full flex items-center justify-between px-6 py-5 text-left cursor-pointer'
+                        >
+                          <div className='flex items-center gap-4'>
+                            <span
+                              className={`h-8 w-1 rounded-full bg-[#cc9e32] transition-all duration-300 ${
+                                isOpen ? 'h-12' : ''
+                              }`}
+                            />
+                            <h3 className='heading leading-[1.15]'>
+                              {section.title}
+                            </h3>
+                          </div>
 
-                        {/* Chevron */}
-                        <span className='text-[#cc9e32] text-lg tracking-tight transition-transform duration-300 group-open:-rotate-90'>
-                          ›
-                        </span>
-                      </summary>
+                          <span
+                            className={`text-[#cc9e32] text-lg transition-transform duration-300 ${
+                              isOpen ? '-rotate-90' : ''
+                            }`}
+                          >
+                            ›
+                          </span>
+                        </button>
 
-                      <div className='py-5'>
-                        <ul className='grid sm:grid-cols-2 gap-y-2 gap-x-6 text-sm text-gray-700'>
-                          {section.items.map((item) => (
-                            <li
-                              key={item}
-                              className='flex items-start gap-3 text-sm text-gray-700'
-                            >
-                              <span className='mt-0.5 h-5 w-5 rounded-full bg-[#F3EFE6] flex items-center justify-center'>
-                                <span className='h-2 w-2 rounded-full bg-[#cc9e32]' />
-                              </span>
-                              <span>{item}</span>
-                            </li>
-                          ))}
-                        </ul>
+                        {isOpen && (
+                          <div className='px-6 pb-6 pt-2'>
+                            <ul className='grid sm:grid-cols-2 gap-y-2 gap-x-6 text-sm text-gray-700'>
+                              {section.items.map((item) => (
+                                <li
+                                  key={item}
+                                  className='list flex items-start gap-3 leading-relaxed'
+                                >
+                                  <span className='mt-1 h-5 w-5 rounded-full bg-[#F3EFE6] flex items-center justify-center flex-shrink-0'>
+                                    <span className='h-2 w-2 rounded-full bg-[#cc9e32]' />
+                                  </span>
+
+                                  <span>{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
                       </div>
-                    </details>
-                  ))}
+                    );
+                  })}
                 </div>
               </section>
             </div>

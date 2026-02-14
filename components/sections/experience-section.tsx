@@ -1,30 +1,30 @@
-"use client";
+'use client';
 
-import { useRef } from "react";
-import { useInView } from "@/hooks/use-in-view";
-import ExperienceCard from "@/components/experience-card";
+import { useRef } from 'react';
+import { useInView } from '@/hooks/use-in-view';
+import ExperienceCard from '@/components/experience-card';
 
 const experiences = [
-   {
-    title: "Attakatti View Point",
+  {
+    title: 'Sivakasi',
     // description: "Excepteur sint occaecat",
-    image: "/attakathi-loam-view-point.jpg",
-    rotation: "rotate-6",
-    link:"/attakathi-loem-view-point"
+    image: '/attakathi-loam-view-point.jpg',
+    rotation: 'rotate-6',
+    link: '/Sivakasi',
   },
   {
-    title: "Sholayar Dam",
+    title: 'Thiru Avingudi Temple',
     // description: "Sunt culpa aliquip officia",
-    image: "/sholiyar-dam.jpg",
-    rotation: "rotate-0",
-    link:"/sholayar-dam"
+    image: '/sholiyar-dam.jpg',
+    rotation: 'rotate-0',
+    link: '/thiruavingudi',
   },
   {
-    title: "Masani Amman Temple Pollachi",
+    title: 'Masani Amman Temple Pollachi',
     // description: "Quis nostrud exercitation",
-    image: "/masani-temple.jpg",
-    rotation: "rotate-6",
-    link:"/masani-amman-temple-pollachi"
+    image: '/masani-temple.jpg',
+    rotation: 'rotate-6',
+    link: '/masani-amman-temple-pollachi',
   },
 ];
 
@@ -35,51 +35,51 @@ export default function ExperienceSection() {
   return (
     <section
       ref={sectionRef}
-      className="py-20 px-0 bg-white relative overflow-hidden desk-experience"
+      className='py-20 px-0 bg-white relative overflow-hidden desk-experience'
     >
       <div
-        className="relative"
-        style={{ height: "1200px", marginTop: "-400px" }}
+        className='relative'
+        style={{ height: '1200px', marginTop: '-400px' }}
       >
         <svg
-          className="absolute inset-0 w-full h-full"
-          viewBox="0 0 1600 1200"
-          preserveAspectRatio="none"
-          fill="none"
+          className='absolute inset-0 w-full h-full'
+          viewBox='0 0 1600 1200'
+          preserveAspectRatio='none'
+          fill='none'
         >
           <path
-            d="M 0,1200 A 800,800 0 0,1 1600,1200 L 1600,1200 L 0,1200 Z"
-            fill="#F5F0E8"
-            stroke="#8B4513"
-            strokeWidth="6"
+            d='M 0,1200 A 800,800 0 0,1 1600,1200 L 1600,1200 L 0,1200 Z'
+            fill='#F5F0E8'
+            stroke='#8B4513'
+            strokeWidth='6'
           />
         </svg>
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center px-6 pt-96 pb-20">
-          <div className="container mx-auto">
+        <div className='absolute inset-0 flex flex-col items-center justify-center px-6 pt-96 pb-20'>
+          <div className='container mx-auto'>
             <div
               className={`text-center mb-24 transition-all duration-700 ${
                 isInView
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-10"
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-10'
               }`}
             >
-              <p className="subtitle mb-4 tracking-widest pt-[120px]">
-                Smart choice for sightseeing{" "}
+              <p className='subtitle mb-4 tracking-widest pt-[120px]'>
+                Smart choice for sightseeing{' '}
               </p>
-              <h2 className="heading leading-[1.15] mt-5 text-balance">
-                Easy Connectivity to Popular <br/> Sights and Tranquil Retreats
+              <h2 className='heading leading-[1.15] mt-5 text-balance'>
+                Easy Connectivity to Popular <br /> Sights and Tranquil Retreats
               </h2>
             </div>
 
-            <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16 max-w-6xl mx-auto">
+            <div className='flex flex-wrap justify-center items-center gap-8 lg:gap-16 max-w-6xl mx-auto'>
               {experiences.map((experience, index) => (
                 <div
                   key={experience.title}
                   className={`transition-all duration-700 ${
                     isInView
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 translate-y-20"
+                      ? 'opacity-100 translate-y-0'
+                      : 'opacity-0 translate-y-20'
                   }`}
                   style={{ transitionDelay: `${index * 200}ms` }}
                 >

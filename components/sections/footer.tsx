@@ -16,27 +16,38 @@ export default function Footer() {
           </li>
 
           <li className='footer-list1'>
-            
-            <Link href='/rooms' className='flex items-center gap-2 hover:text-[#8B1C1C]'>
-            <img src='/stars.svg' alt='star' className='w-4 h-4' />
+            <Link
+              href='/rooms'
+              className='flex items-center gap-2 hover:text-[#8B1C1C]'
+            >
+              <img src='/stars.svg' alt='star' className='w-4 h-4' />
               Rooms
             </Link>
           </li>
           <li className='footer-list1'>
-            <Link href='/facility' className='flex items-center gap-2 hover:text-[#8B1C1C]'>
-            <img src='/stars.svg' alt='star' className='w-4 h-4' />
+            <Link
+              href='/facility'
+              className='flex items-center gap-2 hover:text-[#8B1C1C]'
+            >
+              <img src='/stars.svg' alt='star' className='w-4 h-4' />
               Facility
             </Link>
           </li>
           <li className='footer-list1'>
-            <Link href='/gallery' className='flex items-center gap-2 hover:text-[#8B1C1C]'>
-            <img src='/stars.svg' alt='star' className='w-4 h-4' />
+            <Link
+              href='/gallery'
+              className='flex items-center gap-2 hover:text-[#8B1C1C]'
+            >
+              <img src='/stars.svg' alt='star' className='w-4 h-4' />
               Gallery
             </Link>
           </li>
           <li className='footer-list1'>
-            <Link href='/contact' className='flex items-center gap-2 hover:text-[#8B1C1C]'>
-            <img src='/stars.svg' alt='star' className='w-4 h-4' />
+            <Link
+              href='/contact'
+              className='flex items-center gap-2 hover:text-[#8B1C1C]'
+            >
+              <img src='/stars.svg' alt='star' className='w-4 h-4' />
               Contact
             </Link>
           </li>
@@ -53,9 +64,9 @@ export default function Footer() {
               />
             </Link>
             <p className='footer-para max-w-[320px] mx-auto md:mx-0'>
-              Nakshathra Royal Stay, a smart business class hotel situated in
-              Palani with a promise ‘Hey we are different’ from existing hotels
-              in the region with a vow to delight you
+              Hotel Nakshatra is a reliable business-class stay in Sivakasi,
+              offering comfort, modern amenities, and attentive service for
+              guests from major cities.
             </p>
           </div>
 
@@ -69,71 +80,43 @@ export default function Footer() {
             {/* QUICK LINKS */}
             <div className='min-w-0'>
               <h4 className='font-semibold mb-6 font-heading text-lg'>
-                Quick Links
+                Contact Info
               </h4>
-              <ul className='space-y-3 text-base text-[#5C4A42]'>
-                <li className='footer-list'>
-                  <Link href='/privacy-policy' className='hover:text-[#8B1C1C]'>
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li className='footer-list'>
-                  <Link
-                    href='/terms-and-conditions'
-                    className='hover:text-[#8B1C1C]'
-                  >
-                    Terms & Conditions
-                  </Link>
-                </li>
-                <li className='footer-list'>
-                  <Link href='/refund-policy' className='hover:text-[#8B1C1C]'>
-                    Refund Policy
-                  </Link>
-                </li>
-                {/* <li className="list">
-                  <Link href="/site-map" className="hover:text-[#8B1C1C]">
-                    Sitemap
-                  </Link>
-                </li> */}
-                <li className='footer-list'>
-                  <Link href='/pooja-time' className='hover:text-[#8B1C1C]'>
-                    Pooja Time
-                  </Link>
-                </li>
-              </ul>
+              <p className='footer-para'>
+                HOTEL NAKSHATRA,
+                <br />
+                #1828 PKN ROAD,
+                <br />
+                SIVAKASI
+              </p>
             </div>
 
             {/* CONTACT */}
             <div className='min-w-0'>
               <h4 className='font-semibold mb-6 font-heading text-lg'>
-                Contact Us
+                Get In Touch
               </h4>
-
-              <p className='footer-para'>
-                Kodaikanal Road,
-                <br />
-                Palani, Tamil Nadu,
-                <br />
-                India 624601
-              </p>
 
               <div className='mt-4 space-y-2 text-base'>
                 <p className='footer-para'>
-                  <a href='tel:+919087173000' className='hover:text-[#8B1C1C]'>
-                    +91 90871 73000
-                  </a>
-                </p>
-                <p className='footer-para'>
-                  <a href='tel:+919087174000' className='hover:text-[#8B1C1C]'>
-                    +91 90871 74000
+                  <a href='tel:+914562264233' className='hover:text-[#8B1C1C]'>
+                    +91-4562264233
                   </a>
                 </p>
                 <p className='pt-2 footer-para break-all'>
                   <a
-                    href='mailto:nakshathrapalani@gmail.com'
+                    href='mailto:hotelnakshatra33@gmail.com'
                     className='hover:text-[#8B1C1C]'
                   >
-                    nakshathrapalani@gmail.com
+                    hotelnakshatra33@gmail.com
+                  </a>
+                </p>
+                <p className='pt-2 footer-para break-all'>
+                  <a
+                    href='mailto:info@hotelnakshatra.com'
+                    className='hover:text-[#8B1C1C]'
+                  >
+                    info@hotelnakshatra.com
                   </a>
                 </p>
               </div>
@@ -145,13 +128,13 @@ export default function Footer() {
 
               <div className='rounded-xl overflow-hidden shadow-md border border-[#1f3a44]/20'>
                 <iframe
-                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.858363664228!2d77.52126437502278!3d10.43281216543776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9df4228c617b3%3A0xe36994319f709ff6!2sHotel%20Nakshathra-%20A%20Royal%20Stay!5e0!3m2!1sen!2sin!4v1771060436505!5m2!1sen!2sin'
+                  src='https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3935.5997870721044!2d77.805296!3d9.456446999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMjcnMjMuMiJOIDc3wrA0OCcxOS4xIkU!5e0!3m2!1sen!2sin!4v1771068439471!5m2!1sen!2sin'
                   className='w-full h-[220px] sm:h-[250px] lg:h-[220px]'
                   style={{ border: 0 }}
                   loading='lazy'
                   referrerPolicy='no-referrer-when-downgrade'
                   allowFullScreen
-                  title='Hotel Nakshathra Location'
+                  title='Hotel Nakshatra Location'
                 ></iframe>
               </div>
             </div>

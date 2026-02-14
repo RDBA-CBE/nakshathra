@@ -36,7 +36,7 @@ export default function DiningSection() {
           </h2>
         </div>
 
-        <div className='grid lg:grid-cols-[70%_30%] gap-8 items-stretch'>
+        <div className='grid lg:grid-cols-[70%_30%] gap-8 '>
           {/* Left: large rounded image */}
           <div
             className={`transition-all duration-700 h-full ${
@@ -64,7 +64,7 @@ export default function DiningSection() {
             }`}
           >
             <div className='bg-gray-100 rounded-xl p-6 shadow-sm h-full flex flex-col justify-between'>
-              <h3 className='text-[#10212b] font-heading font mb-4'>Hours</h3>
+              {/* <h3 className='text-[#10212b] font-heading font mb-4'>Hours</h3> */}
 
               {/* <div className='space-y-3 mb-6'>
                 <div className='bg-white rounded-lg px-4 py-2 shadow-sm flex justify-between items-center'>

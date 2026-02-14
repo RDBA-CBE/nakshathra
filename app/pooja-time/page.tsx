@@ -8,9 +8,9 @@ import { motion } from 'framer-motion';
 import PoojaTyming from '@/components/sections/pooja-timing';
 
 // export const metadata: Metadata = {
-//   title: "Privacy Policy - Hotel Nakshathra",
+//   title: "Privacy Policy - Hotel Nakshatra",
 //   description:
-//     "Privacy Policy for Hotel Nakshathra - Your privacy is important to us",
+//     "Privacy Policy for Hotel Nakshatra - Your privacy is important to us",
 // };
 export default function ContactPage() {
   return (
@@ -59,8 +59,8 @@ export default function ContactPage() {
           <div className='w-full lg:w-1/2 relative'>
             <div className='absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10'></div>
             <Image
-              src='/facilities/intro.webp'
-              alt='Hotel Nakshathra Elegant Interior'
+              src='/Sivakasi.jpg'
+              alt='Hotel Nakshatra Elegant Interior'
               fill
               className='object-cover object-center'
               priority

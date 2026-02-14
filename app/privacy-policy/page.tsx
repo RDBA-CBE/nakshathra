@@ -7,9 +7,9 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 // export const metadata: Metadata = {
-//   title: "Privacy Policy - Hotel Nakshathra",
+//   title: "Privacy Policy - Hotel Nakshatra",
 //   description:
-//     "Privacy Policy for Hotel Nakshathra - Your privacy is important to us",
+//     "Privacy Policy for Hotel Nakshatra - Your privacy is important to us",
 // };
 
 export default function PrivacyPolicyPage() {
@@ -42,11 +42,11 @@ export default function PrivacyPolicyPage() {
                   className='space-y-6 '
                 >
                   <p className='text-lg text-[#5A5A5A] leading-relaxed'>
-                    At Hotel Nakshathra Royal Stay, accessible from
-                    www.hotelnakshathra.com, one of our main priorities is the
+                    At Hotel Nakshatra Royal Stay, accessible from
+                    www.hotelNakshatra.com, one of our main priorities is the
                     privacy of our visitors. This Privacy Policy document
                     contains types of information that is collected and recorded
-                    by Hotel Nakshathra Royal Stay and how we use it.
+                    by Hotel Nakshatra Royal Stay and how we use it.
                   </p>
                   <p className='text-lg text-[#5A5A5A] leading-relaxed'>
                     If you have additional questions or require more information
@@ -57,7 +57,7 @@ export default function PrivacyPolicyPage() {
                     This Privacy Policy applies only to our online activities
                     and is valid for visitors to our website with regards to the
                     information that they shared and/or collect in Hotel
-                    Nakshathra Royal Stay. This policy is not applicable to any
+                    Nakshatra Royal Stay. This policy is not applicable to any
                     information collected offline or via channels other than
                     this website.
                   </p>
@@ -85,7 +85,7 @@ export default function PrivacyPolicyPage() {
             <div className='absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10'></div>
             <Image
               src='/facilities/intro.webp'
-              alt='Hotel Nakshathra Elegant Interior'
+              alt='Hotel Nakshatra Elegant Interior'
               fill
               className='object-cover object-center'
               priority
@@ -225,7 +225,7 @@ export default function PrivacyPolicyPage() {
               <section className='space-y-4 pt-8 border-t border-gray-200'>
                 <h3 className='privacy leading-[1.15]'>Log Files</h3>
                 <p className='para'>
-                  Hotel Nakshathra Royal Stay follows a standard procedure of
+                  Hotel Nakshatra Royal Stay follows a standard procedure of
                   using log files. These files log visitors when they visit
                   websites. All hosting companies do this and a part of hosting
                   services' analytics. The information collected by log files
@@ -246,7 +246,7 @@ export default function PrivacyPolicyPage() {
                 </h3>
 
                 <p className='para'>
-                  Like any other website, Hotel Nakshathra Royal Stay uses
+                  Like any other website, Hotel Nakshatra Royal Stay uses
                   'cookies'. These cookies are used to store information
                   including visitors' preferences, and the pages on the website
                   that the visitor accessed or visited. The information is used
@@ -298,13 +298,13 @@ export default function PrivacyPolicyPage() {
                 </h3>
                 <p className='para'>
                   You may consult this list to find the Privacy Policy for each
-                  of the advertising partners of Hotel Nakshathra Royal Stay.
+                  of the advertising partners of Hotel Nakshatra Royal Stay.
                 </p>
                 <p className='para'>
                   Third-party ad servers or ad networks uses technologies like
                   cookies, JavaScript, or Web Beacons that are used in their
                   respective advertisements and links that appear on Hotel
-                  Nakshathra Royal Stay, which are sent directly to users'
+                  Nakshatra Royal Stay, which are sent directly to users'
                   browser. They automatically receive your IP address when this
                   occurs. These technologies are used to measure the
                   effectiveness of their advertising campaigns and/or to
@@ -312,7 +312,7 @@ export default function PrivacyPolicyPage() {
                   that you visit.
                 </p>
                 <p className='para'>
-                  Note that Hotel Nakshathra Royal Stay has no access to or
+                  Note that Hotel Nakshatra Royal Stay has no access to or
                   control over these cookies that are used by third-party
                   advertisers.
                 </p>
@@ -324,7 +324,7 @@ export default function PrivacyPolicyPage() {
                   Third Party Privacy Policies
                 </h3>
                 <p className='para'>
-                  Hotel Nakshathra Royal Stay's Privacy Policy does not apply to
+                  Hotel Nakshatra Royal Stay's Privacy Policy does not apply to
                   other advertisers or websites. Thus, we are advising you to
                   consult the respective Privacy Policies of these third-party
                   ad servers for more detailed information. It may include their
@@ -430,7 +430,7 @@ export default function PrivacyPolicyPage() {
                     guide their online activity.
                   </p>
                   <p className='para'>
-                    Hotel Nakshathra Royal Stay does not knowingly collect any
+                    Hotel Nakshatra Royal Stay does not knowingly collect any
                     Personal Identifiable Information from children under the
                     age of 13. If you think that your child provided this kind
                     of information on our website, we strongly encourage you to

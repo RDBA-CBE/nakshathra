@@ -61,8 +61,8 @@ export default function StandardSingleRoom() {
               Aliyar Project and has a water storage capacity of 160 ft (49 m).
               The reservoir’s overflowing waters are let into the Parambikulam
               Reservoir through the saddle dam. It is constructed by a team who
-              was working under K Palanisamy, the most popular engineer in that
-              area.
+              was working under K Sivakasisamy, the most popular engineer in
+              that area.
             </p>
             <p className='para'>
               Valparai is a newly explored tourist spot located in the Anamalai

@@ -45,7 +45,7 @@ export default function AboutClient() {
                   className='space-y-6 mb-10 '
                 >
                   <p className='para'>
-                    Hotel Nakshathra is a premium business-class hotel that
+                    Hotel Nakshatra is a premium business-class hotel that
                     blends modern elegance and authentic Indian hospitality to
                     offer a relaxing and pleasant stay. Thoughtfully designed
                     for business travellers, pilgrims and families alike, the
@@ -77,7 +77,7 @@ export default function AboutClient() {
             <div className='absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10'></div>
             <Image
               src='/about/comfort.webp'
-              alt='Hotel Nakshathra Elegant Interior'
+              alt='Hotel Nakshatra Elegant Interior'
               fill
               className='object-cover object-center'
               priority
@@ -103,7 +103,7 @@ export default function AboutClient() {
               <div className='relative aspect-[5/4] rounded-3xl overflow-hidden'>
                 <Image
                   src='/about/hospitality.webp'
-                  alt='Exceptional Hospitality at Hotel Nakshathra'
+                  alt='Exceptional Hospitality at Hotel Nakshatra'
                   fill
                   className='object-cover'
                 />
@@ -130,7 +130,7 @@ export default function AboutClient() {
 
               <p className='para'>
                 With a strong commitment to cleanliness, safety and personalized
-                care, every stay at Hotel Nakshathra is crafted to be peaceful,
+                care, every stay at Hotel Nakshatra is crafted to be peaceful,
                 reliable and truly satisfying. Our warm hospitality and
                 attention to detail create an environment where guests feel
                 welcomed, relaxed and well cared for.
@@ -156,14 +156,14 @@ export default function AboutClient() {
                 <div className='h-px w-24 bg-gradient-to-r from-[#8B4513] to-transparent mb-6'></div>
                 <h2 className='heading leading-[1.15]'>
                   A Welcoming Stay in the{' '}
-                  <span className='text-[#b3862f]'>Heart of Palani</span>
+                  <span className='text-[#b3862f]'>Heart of Sivakasi</span>
                 </h2>
               </div>
 
               <div className='space-y-6'>
                 <p className='para'>
-                  Located in the heart of Palani, Hotel Nakshathra provides easy
-                  access to local transportation, shopping areas and key
+                  Located in the heart of Sivakasi, Hotel Nakshatra provides
+                  easy access to local transportation, shopping areas and key
                   landmarks, making it an ideal choice for both business
                   travellers and tourists exploring the region. Its strategic
                   location makes every commute smooth and time-saving. The
@@ -185,7 +185,7 @@ export default function AboutClient() {
               <div className='relative aspect-square rounded-3xl overflow-hidden shadow-2xl'>
                 <Image
                   src='/about/welcoming-stay.webp'
-                  alt='Hotel Nakshathra Location in Palani'
+                  alt='Hotel Nakshatra Location in Sivakasi'
                   fill
                   className='object-cover'
                 />
@@ -212,7 +212,7 @@ export default function AboutClient() {
             </h2>
             <p className='para'>
               Blending contemporary design with timeless Indian warmth, Hotel
-              Nakshathra balances style and functionality. From tastefully
+              Nakshatra balances style and functionality. From tastefully
               designed interiors to attentive service, every element is curated
               to enhance guest comfort and convenience.
             </p>
@@ -229,7 +229,7 @@ export default function AboutClient() {
             <div className='relative aspect-[16/9] rounded-3xl overflow-hidden'>
               <Image
                 src='/about/design.webp'
-                alt='Hotel Nakshathra Interior Design'
+                alt='Hotel Nakshatra Interior Design'
                 fill
                 className='object-cover'
               />
@@ -274,7 +274,7 @@ export default function AboutClient() {
                 <div className='space-y-8'>
                   {/* Opening Line */}
                   <p className='para'>
-                    Whether you are visiting Palani for{' '}
+                    Whether you are visiting Sivakasi for{' '}
                     <span className='text-[#b3862f] font-medium'>Business</span>
                     ,{' '}
                     <span className='text-[#b3862f] font-medium'>
@@ -293,7 +293,7 @@ export default function AboutClient() {
 
                   {/* Hotel Name */}
                   <div className='text-3xl sm:text-4xl md:text-5xl font-heading text-[#b3862f] mb-6'>
-                    Hotel Nakshathra
+                    Hotel Nakshatra
                   </div>
 
                   {/* Closing Line */}

@@ -44,7 +44,7 @@ const rooms = [
     title: 'Super Deluxe Room',
     price: '₹3999 + 5% tax (₹4199)',
     description:
-      'The Super Deluxe Room is the most spacious category at Hotel Nakshathra, featuring refined decor, superior amenities and exceptional comfort. ',
+      'The Super Deluxe Room is the most spacious category at Hotel Nakshatra, featuring refined decor, superior amenities and exceptional comfort. ',
     image: '/rooms/super-deluxe-room.webp',
     link: '/rooms/super-deluxe-room',
   },
@@ -113,7 +113,7 @@ export default function RoomsPage() {
             <div className='absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10'></div>
             <Image
               src='/facilities/intro.webp'
-              alt='Hotel Nakshathra Elegant Interior'
+              alt='Hotel Nakshatra Elegant Interior'
               fill
               className='object-cover object-center'
               priority
