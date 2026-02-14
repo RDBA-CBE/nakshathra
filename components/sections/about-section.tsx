@@ -72,7 +72,7 @@ export default function AboutSection() {
         </div>
 
         {/* PARENT: Description/CTA and Image aligned to end */}
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-20 items-end'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-20'>
           {/* LEFT: Description and CTA */}
           <div>
             {/* DESCRIPTION */}

@@ -37,7 +37,7 @@ export default function StandardSingleRoom() {
       </div>
 
       {/* MAIN SECTION */}
-      <section className='py-12 sm:py-16 md:py-20 lg:py-20 px-4 bg-white'>
+      <section className='py-20 px-4 bg-white'>
         <div className='max-w-6xl mx-auto'>
           {/* <p className='para mb-10'>
             <Link href='/' className='hover:text-[#8F2D2D] transition'>

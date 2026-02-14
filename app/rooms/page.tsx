@@ -123,12 +123,12 @@ export default function RoomsPage() {
           </div>
         </div>
       </section>
-      <section className=' sm:py-16 md:py-20 lg:py-20 px-4 bg-[#FFFFFF]'>
-        <div className='max-w-6xl sm:mt-16 sm:mb-16 mx-auto'>
+      <section className='py-20 px-4 bg-[#FFFFFF]'>
+        <div className='max-w-6xl mx-auto'>
           {/* Heading */}
 
           {/* Rooms Grid */}
-          <div className='grid gap-10 sm:grid-cols-2 mb-16 lg:grid-cols-2'>
+          <div className='grid gap-10 sm:grid-cols-2 lg:grid-cols-2'>
             {rooms.map((room) => (
               <div
                 key={room.id}
