@@ -138,7 +138,7 @@ export default function ContactPage() {
       {/* MAP SECTION */}
 
       {/* CONTACT DETAILS */}
-      <section className='px-4 py-20 bg-white'>
+      <section className='px-4 py-12 sm:py-16 md:py-20 lg:py-24 bg-white'>
         <div className='max-w-7xl mx-auto'>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-10 text-center'>
             {/* Phone */}
@@ -181,8 +181,8 @@ export default function ContactPage() {
       </section>
 
       {/* FORM */}
-      <section className='px-4 py-28 bg-[#FFFFF]'>
-        <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch'>
+      <section className='px-4 py-12 sm:py-16 md:py-20 lg:py-24 bg-[#FFFFF]'>
+        <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 items-stretch'>
           {/* IMAGE SIDE */}
           <div className='relative w-full h-full min-h-full overflow-hidden rounded-3xl'>
             <Image
