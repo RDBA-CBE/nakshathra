@@ -123,7 +123,7 @@ export default function RoomsPage() {
           </div>
         </div>
       </section>
-      <section className=' sm:py-16 md:py-20 lg:py-24 px-4 bg-[#FFFFFF]'>
+      <section className=' sm:py-16 md:py-20 lg:py-20 px-4 bg-[#FFFFFF]'>
         <div className='max-w-6xl sm:mt-16 sm:mb-16 mx-auto'>
           {/* Heading */}
 
