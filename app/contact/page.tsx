@@ -145,8 +145,7 @@ export default function ContactPage() {
             <div className='rounded-3xl border border-[#8B4513]/20 p-10 hover:shadow-xl transition'>
               <Phone className='w-6 h-6 mx-auto text-[#8B4513]' />
               <p className='mt-6 text-xl text-[#1F3A44] font-light'>
-                +91 90871 73000 <br />
-                +91 90871 74000
+                +91-45622 64233 
               </p>
             </div>
 
@@ -154,7 +153,11 @@ export default function ContactPage() {
             <div className='rounded-3xl border border-[#8B4513]/20 p-10 hover:shadow-xl transition'>
               <Mail className='w-6 h-6 mx-auto text-[#8B4513]' />
               <p className='mt-6 text-xl text-[#1F3A44] font-light break-all'>
-                Nakshatrapalani@gmail.com
+                hotelnakshatra33@gmail.com
+              </p>
+              
+              <p className='mt-6 text-xl text-[#1F3A44] font-light break-all'>
+                info@hotelnakshatra.com
               </p>
             </div>
 
@@ -162,7 +165,7 @@ export default function ContactPage() {
             <div className='rounded-3xl  border border-[#8B4513]/20 p-10 hover:shadow-xl transition'>
               <MapPin className='w-6 h-6 mx-auto text-[#8B4513]' />
               <p className='mt-6 text-xl text-[#1F3A44] font-light'>
-                Kodaikanal Road, Palani, Tamil Nadu India 624601
+              <br/> #1828, PKN Road,<br/> Sivakasi
               </p>
             </div>
           </div>
@@ -171,7 +174,7 @@ export default function ContactPage() {
       <section className='relative max-w-7xl  mx-auto rounded-3xl h-[300px]'>
         <div className='relative w-full h-full min-h-[300px] overflow-hidden rounded-3xl'>
           <iframe
-            src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3923.8584287991243!2d77.523839!3d10.432807!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9df4228c617b3%3A0xe36994319f709ff6!2sHotel%20Nakshatra-%20A%20Royal%20Stay!5e0!3m2!1sen!2sin!4v1770721274807!5m2!1sen!2sin'
+            src='https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3935.5997870721044!2d77.805296!3d9.456446999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMjcnMjMuMiJOIDc3wrA0OCcxOS4xIkU!5e0!3m2!1sen!2sin!4v1771068439471!5m2!1sen!2sin'
             className='absolute inset-0 w-full h-full border-0'
             loading='lazy'
             referrerPolicy='no-referrer-when-downgrade'
