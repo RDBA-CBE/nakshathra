@@ -135,7 +135,16 @@ export default function StandardSingleRoom() {
                   + 5% tax (₹1574)
                 </span>
               </div>
-
+              <a
+                href='tel:+91-4562264233'
+                className='inline-flex items-center justify-center gap-2
+             px-5 mx-8 py-2 rounded-full
+             bg-[#640720] text-[#FFFFFF]
+             text-[18px] font-semibold
+             hover:bg-[#b3862f] transition'
+              >
+                Book Now
+              </a>
               <p className='para'>
                 Designed for solo travellers, the standard single room offers a
                 cozy and functional space with warm decor that provides comfort

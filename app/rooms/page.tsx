@@ -171,12 +171,23 @@ export default function RoomsPage() {
 
                   <p className='para'>{room.description}</p>
 
-                  <Link
-                    href={room.link}
-                    className='inline-flex mt-2 text-[#b3862f]  items-center gap-2 hover:text-[#9C8468] transition'
-                  >
-                    Read More <span>→</span>
-                  </Link>
+                  <div className='mt-4 flex items-center justify-between w-full'>
+                    {/* Read More - LEFT */}
+                    <Link
+                      href={room.link}
+                      className='inline-flex text-[#b3862f] items-center gap-2 hover:text-[#9C8468] transition'
+                    >
+                      Read More <span>→</span>
+                    </Link>
+
+                    {/* Book Now - RIGHT */}
+                    <a
+                      href='tel:+91-4562264233'
+                      className='px-4 py-2 rounded-md bg-[#640720] text-[#FFFFFF] text-sm font-medium hover:bg-[#6f3610] transition'
+                    >
+                      Book Now
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}

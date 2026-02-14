@@ -144,7 +144,7 @@ export default function Footer() {
         {/* COPYRIGHT */}
         <div className='border-t border-[#1f3a44]/20 py-6 text-center text-sm sm:text-base text-[#5C4A42]'>
           <p className='footer-para'>
-            Copyright 2026 © Nakshatra Royal Stay. Concept by{' '}
+            Copyright 2026 © Hotel Nakshatra. Concept by{' '}
             <a
               href='https://irepute.in/'
               target='_blank'

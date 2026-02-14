@@ -9,15 +9,15 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 const _playfair = Playfair_Display({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Nakshatra Royal Stay - Luxury Hotel in Palghar",
+  title: "Hotel Nakshatra - Luxury Hotel in Sivakasi",
   description:
-    "Experience comfort and luxury at Nakshatra Royal Stay. Premium hotel accommodations in Palghar with modern amenities and exceptional service.",
+    "Experience comfort and luxury at Nakshatra. Premium hotel accommodations in Sivakasi with modern amenities and exceptional service.",
   generator: "v0.app",
-  keywords: "luxury hotel, Palghar hotel, Nakshatra Royal Stay, premium accommodation",
-  authors: [{ name: "Nakshatra Royal Stay" }],
+  keywords: "luxury hotel, Sivakasi hotel, Nakshatra, premium accommodation",
+  authors: [{ name: "Nakshatra" }],
   openGraph: {
-    title: "Nakshatra Royal Stay - Luxury Hotel in Palghar",
-    description: "Experience comfort and luxury at Nakshatra Royal Stay.",
+    title: "Nakshatra - Luxury Hotel in Sivakasi",
+    description: "Experience comfort and luxury at Nakshatra.",
     type: "website",
   },
   icons: {
