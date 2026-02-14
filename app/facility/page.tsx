@@ -30,7 +30,7 @@ import {
 
 const facilities = [
   {
-    title: 'Prime Location in the Heart of Sivakasi',
+    title: 'Prime Location in the Heart of Palani',
     desc: 'Easy access to local transportation, shopping areas and key landmarks makes commuting effortless and convenient.',
     icon: MapPin,
   },
@@ -264,20 +264,18 @@ export default function FacilityPage() {
                   <div className='text-3xl sm:text-4xl md:text-5xl font-heading text-[#b3862f] mb-6'>
                     At Hotel Nakshathra
                   </div>
-                  
-                  <p className="para">
+
+                  <p className='para'>
                     every is curated to provide comfort, convenience and care,
-                    making it your ideal choice for{" "}
-                    <span className="text-[#b3862f] font-medium">Business</span>
-                    ,{" "}
-                    <span className="text-[#b3862f] font-medium">
-                      Leisure
-                    </span>{" "}
-                    or{" "}
-                    <span className="text-[#b3862f] font-medium">
+                    making it your ideal choice for{' '}
+                    <span className='text-[#b3862f] font-medium'>Business</span>
+                    ,{' '}
+                    <span className='text-[#b3862f] font-medium'>Leisure</span>{' '}
+                    or{' '}
+                    <span className='text-[#b3862f] font-medium'>
                       Spiritual visits &nbsp;
                     </span>
-                      in Sivakasi.
+                    in Palani.
                   </p>
                   {/* Bottom Divider */}
                   <div className='absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#8B4513]/25 to-transparent' />

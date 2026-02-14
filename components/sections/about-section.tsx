@@ -96,9 +96,9 @@ export default function AboutSection() {
                 </p>
 
                 <p className='para'>
-                  Nestled amidst the busy streets of Sivakasi, the hotel
-                  provides easy access to local transportation, shopping areas
-                  and key landmarks, making it an ideal choice for both business
+                  Nestled amidst the busy streets of Palani, the hotel provides
+                  easy access to local transportation, shopping areas and key
+                  landmarks, making it an ideal choice for both business
                   travellers and tourists exploring the region. Its strategic
                   location makes every commute smooth and time-saving. The
                   hotel’s calm setting provides a refreshing escape from

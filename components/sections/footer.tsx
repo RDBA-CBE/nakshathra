@@ -20,7 +20,7 @@ export default function Footer() {
               amenities, Hotel Nakshathra is the preferred choice for guests
               arriving from cities like Coimbatore, Chennai, Bengaluru and
               Madurai, seeking a reliable, well-connected business-class stay in
-              Sivakasi.
+              Palani.
             </p>
           </div>
 
