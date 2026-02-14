@@ -486,6 +486,13 @@ p.para {
   line-height: 1.6 !important;
   color: #5D5D5B !important;
 }
+p.footer-para {
+   font-size: 16px !important;
+  font-weight: 500 !important; /* use 400 or 700 unless you have 500 file */
+  font-family: 'Satoshi', sans-serif !important;
+  line-height: 1.6 !important;
+  color: #5D5D5B !important;
+}
 
 p.para-title {
   font-size: 20px !important;
@@ -498,6 +505,22 @@ p.para-title {
 
 li.list {
   font-size: 18px !important;
+  font-weight: 500 !important;
+  font-family: "Satoshi", sans-serif !important;
+  line-height: 1.6 !important;
+  color: #5D5D5B !important;
+}
+
+
+li.footer-list1 {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  font-family: "Satoshi", sans-serif !important;
+  line-height: 1.6 !important;
+  color: #5D5D5B !important;
+}
+li.footer-list {
+  font-size: 16px !important;
   font-weight: 500 !important;
   font-family: "Satoshi", sans-serif !important;
   line-height: 1.6 !important;
