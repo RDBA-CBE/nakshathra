@@ -56,7 +56,7 @@ export default function GallerySection() {
           </div>
 
           <Link href='/gallery'>
-            <button  className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] mt-5 font-medium transition'>
+            <button  className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] mt-5 font-medium transition cursor-pointer'>
               View All
               <ArrowRight className='ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform' />
             </button>

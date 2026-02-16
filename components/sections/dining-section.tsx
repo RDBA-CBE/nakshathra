@@ -36,7 +36,7 @@ export default function DiningSection() {
           </h2>
         </div>
 
-        <div className='grid lg:grid-cols-[70%_30%] gap-8 items-start '>
+        <div className=' grid lg:grid-cols-[70%_30%] gap-8'>
           {/* Left: large rounded image */}
           <div
             className={`transition-all duration-700 h-full ${
@@ -45,7 +45,7 @@ export default function DiningSection() {
                 : 'opacity-0 -translate-x-10'
             }`}
           >
-            <div className='relative w-full rounded-2xl overflow-hidden shadow-lg aspect-[16/9]'>
+            <div className='relative w-full h-full rounded-2xl overflow-hidden shadow-lg'>
               <Image
                 src='/home/dining.webp'
                 alt='Restaurant Interior'
@@ -63,7 +63,7 @@ export default function DiningSection() {
                 : 'opacity-0 translate-x-10'
             }`}
           >
-            <div className='bg-gray-100 rounded-xl p-6 shadow-sm h-full flex flex-col justify-between'>
+            <div className='py-10 bg-gray-100 rounded-xl p-6 shadow-sm h-full flex flex-col justify-between'>
               {/* <h3 className='text-[#10212b] font-heading font mb-4'>Hours</h3> */}
 
               {/* <div className='space-y-3 mb-6'>
@@ -98,7 +98,10 @@ export default function DiningSection() {
                 modern preferences, ensuring high standards of taste, hygiene
                 and consistency complemented by relaxed ambience and
                 personalized care
+                
               </p>
+              {/* <p><br/></p>
+              <p><br/></p> */}
 
               {/* <div className='flex'>
                 <Link href='/facility'>

@@ -194,7 +194,7 @@ export default function ContactPage() {
               fill
               className='object-cover'
             />
-            <div className='absolute inset-0 bg-[#152A38]/25' />
+            <div className='absolute inset-0 bg-[#152A38]/60' />
 
             <div className='absolute bottom-10 left-10 right-10 text-white'>
               <p className='text-l uppercase tracking-widest text-white'>

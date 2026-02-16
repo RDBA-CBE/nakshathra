@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { Phone, Mail, MapPin } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -51,6 +53,15 @@ export default function Footer() {
               Contact
             </Link>
           </li>
+          <li className='footer-list1'>
+            <Link
+              href='/explore-nearby-places'
+              className='flex items-center gap-2 hover:text-[#8B1C1C]'
+            >
+              <img src='/stars.svg' alt='star' className='w-4 h-4' />
+              Explore
+            </Link>
+          </li>
         </ul>
         {/* MAIN GRID */}
         <div className='border-t border-[#1f3a44]/20 pt-10 grid grid-cols-1 md:grid-cols-[minmax(0,380px)_1px_minmax(0,1fr)] gap-12 mb-10'>
@@ -60,7 +71,7 @@ export default function Footer() {
               <img
                 src='/footer-logo.png'
                 alt='Hotel Nakshatra Logo'
-                className='w-40 mb-6 mx-auto md:mx-0'
+                className='h-23 w-auto mb-6 mx-auto md:mx-0'
               />
             </Link>
             <p className='footer-para max-w-[320px] mx-auto md:mx-0'>
@@ -76,19 +87,29 @@ export default function Footer() {
           </div>
 
           {/* RIGHT */}
-          <div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 min-w-0 text-center sm:text-left'>
+          <div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 min-w-0 text-center sm:text-left'>
             {/* QUICK LINKS */}
             <div className='min-w-0'>
               <h4 className='font-semibold mb-6 font-heading text-lg'>
                 Contact Info
               </h4>
-              <p className='footer-para'>
-                HOTEL NAKSHATRA,
+
+              <p className='footer-para flex items-center gap-3'>
+                <MapPin className='w-4 h-4 text-[#8B1C1C] shrink-0' />
+                Hotel Nakshatra,
                 <br />
-                #1828 PKN ROAD,
+                #1828 PKN Road,
                 <br />
-                SIVAKASI
+                Sivakasi
               </p>
+
+              <Link
+                href='/contact'
+                className='inline-flex items-center gap-2 text-[#8F2D2D] px-7 pt-2 rounded-lg text-[18px] font-medium transition'
+              >
+                Book Now
+                <ArrowRight className=' h-5 w-5' />
+              </Link>
             </div>
 
             {/* CONTACT */}
@@ -97,13 +118,18 @@ export default function Footer() {
                 Get In Touch
               </h4>
 
-              <div className='mt-4 space-y-2 text-base'>
-                <p className='footer-para'>
+              <div className='mt-4 space-y-3 text-base'>
+                {/* Phone */}
+                <p className='footer-para flex items-center gap-3'>
+                  <Phone className='w-4 h-4 text-[#8B1C1C] shrink-0' />
                   <a href='tel:+914562264233' className='hover:text-[#8B1C1C]'>
                     +91-4562264233
                   </a>
                 </p>
-                <p className='footer-para break-all'>
+
+                {/* Email 1 */}
+                <p className='footer-para break-all flex items-center gap-3'>
+                  <Mail className='w-4 h-4 text-[#8B1C1C] shrink-0' />
                   <a
                     href='mailto:hotelnakshatra33@gmail.com'
                     className='hover:text-[#8B1C1C]'
@@ -111,7 +137,10 @@ export default function Footer() {
                     hotelnakshatra33@gmail.com
                   </a>
                 </p>
-                <p className='footer-para break-all'>
+
+                {/* Email 2 */}
+                <p className='footer-para break-all flex items-center gap-3'>
+                  <Mail className='w-4 h-4 text-[#8B1C1C] shrink-0' />
                   <a
                     href='mailto:info@hotelnakshatra.com'
                     className='hover:text-[#8B1C1C]'
@@ -119,6 +148,13 @@ export default function Footer() {
                     info@hotelnakshatra.com
                   </a>
                 </p>
+                {/* <Link
+                  href='/contact'
+                  className='inline-flex items-center gap-2 text-[#8F2D2D] px-7 pt-2 rounded-lg text-[18px] font-medium transition'
+                >
+                  Book Now
+                  <ArrowRight className='ml-2 h-5 w-5' />
+                </Link> */}
               </div>
             </div>
             <div className='min-w-0'>
@@ -129,7 +165,7 @@ export default function Footer() {
               <div className='rounded-xl overflow-hidden shadow-md border border-[#1f3a44]/20'>
                 <iframe
                   src='https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3935.5997870721044!2d77.805296!3d9.456446999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMjcnMjMuMiJOIDc3wrA0OCcxOS4xIkU!5e0!3m2!1sen!2sin!4v1771068439471!5m2!1sen!2sin'
-                  className='w-full h-[220px] sm:h-[250px] lg:h-[220px]'
+                  className='w-full h-[160px] sm:h-[250px] lg:h-[160px]'
                   style={{ border: 0 }}
                   loading='lazy'
                   referrerPolicy='no-referrer-when-downgrade'
