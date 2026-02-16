@@ -110,7 +110,7 @@ export default function ExperienceSection() {
                 640: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },
               }}
-              className='nearby-swiper !pb-10'
+              className='nearby-swiper'
             >
               {experiences.map((experience, index) => (
                 <SwiperSlide key={experience.title}>
