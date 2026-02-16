@@ -168,7 +168,7 @@ export default function ContactPage() {
             {/* TEXT */}
             <div className='absolute bottom-10 left-10 right-10 text-white z-20'>
               <p className='text-l uppercase tracking-widest text-white'>
-                Nakshatra Royal Stay
+                Nakshatra
               </p>
               <h2 className='heading !text-white leading-[1.15] mt-2'>
                 Personalized Assistance
