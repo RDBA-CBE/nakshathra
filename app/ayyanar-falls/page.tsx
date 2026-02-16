@@ -17,21 +17,20 @@ export default function StandardSingleRoom() {
         <div className='max-w-6xl mx-auto px-4 py-2'>
           <p className='para'>
             <h2 className='heading text-center !mb-0'>
-              Thiru Aavinnankudi Temple
+              Ayyanar Falls
             </h2>
           </p>
         </div>
       </div>
 
       {/* MAIN SECTION */}
-      {/* MAIN SECTION */}
       <section className='py-20 bg-white'>
         <div className='max-w-6xl mx-auto px-4'>
           {/* Big Image */}
           <div className='relative w-full h-[450px] md:h-[550px] rounded-xl overflow-hidden mb-10'>
             <Image
-              src='/attakathi-loam-view-point.jpg' // replace with your image
-              alt='Attakatti and Loam’s View Point'
+              src='/nearby/ayyanar-falls.webp' // replace with your image
+              alt='Ayyanar Falls'
               fill
               className='object-cover'
               priority
@@ -72,7 +71,7 @@ export default function StandardSingleRoom() {
               setting sun behind the hills. The place is monkey infested, so
               beware.
             </p>
-            <Link href='/pooja-time'>
+            <Link href='/explore-nearby-places'>
               <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] font-medium transition cursor-pointer'>
                 Back
               </button>

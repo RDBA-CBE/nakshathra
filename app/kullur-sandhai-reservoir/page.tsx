@@ -16,7 +16,7 @@ export default function StandardSingleRoom() {
       <div className='w-full bg-[#F8F5F0]'>
         <div className='max-w-6xl mx-auto px-4 py-2'>
           <p className='para'>
-            <h2 className='heading text-center !mb-0'>Sholayar Dam</h2>
+            <h2 className='heading text-center !mb-0'>Kullur Sandhai Reservoir</h2>
           </p>
         </div>
       </div>
@@ -27,7 +27,7 @@ export default function StandardSingleRoom() {
           {/* Big Image */}
           <div className='relative w-full h-[450px] md:h-[550px] rounded-xl overflow-hidden mb-10'>
             <Image
-              src='/sholiyar-dam.jpg' // replace with your image
+              src='/nearby/kullur-sandhai.webp' // replace with your image
               alt='Sholiyar Dam'
               fill
               className='object-cover'
@@ -84,7 +84,7 @@ export default function StandardSingleRoom() {
               Parambikulam, Old bird sanctuary and the Chalakudy River which
               flows across the dam.
             </p>
-            <Link href='/pooja-time'>
+            <Link href='/explore-nearby-places'>
               <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] font-medium transition cursor-pointer'>
                 Back
               </button>

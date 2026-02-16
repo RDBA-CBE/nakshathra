@@ -36,7 +36,7 @@ export default function DiningSection() {
           </h2>
         </div>
 
-        <div className='grid lg:grid-cols-[70%_30%] gap-8 '>
+        <div className='grid lg:grid-cols-[70%_30%] gap-8 items-start '>
           {/* Left: large rounded image */}
           <div
             className={`transition-all duration-700 h-full ${
@@ -45,7 +45,7 @@ export default function DiningSection() {
                 : 'opacity-0 -translate-x-10'
             }`}
           >
-            <div className='relative w-full h-full rounded-2xl overflow-hidden shadow-lg'>
+            <div className='relative w-full rounded-2xl overflow-hidden shadow-lg aspect-[16/9]'>
               <Image
                 src='/home/dining.webp'
                 alt='Restaurant Interior'

@@ -103,7 +103,7 @@ export default function Footer() {
                     +91-4562264233
                   </a>
                 </p>
-                <p className='pt-2 footer-para break-all'>
+                <p className='footer-para break-all'>
                   <a
                     href='mailto:hotelnakshatra33@gmail.com'
                     className='hover:text-[#8B1C1C]'
@@ -111,7 +111,7 @@ export default function Footer() {
                     hotelnakshatra33@gmail.com
                   </a>
                 </p>
-                <p className='pt-2 footer-para break-all'>
+                <p className='footer-para break-all'>
                   <a
                     href='mailto:info@hotelnakshatra.com'
                     className='hover:text-[#8B1C1C]'

@@ -17,7 +17,7 @@ export default function StandardSingleRoom() {
         <div className='max-w-6xl mx-auto px-4 py-2'>
           <p className='para'>
             <h2 className='heading text-center !mb-0'>
-              Masani Amman Temple - Pollachi
+              Vembakottai Dam
             </h2>
           </p>
         </div>
@@ -30,7 +30,7 @@ export default function StandardSingleRoom() {
           {/* Big Image */}
           <div className='relative w-full h-[450px] md:h-[550px] rounded-xl overflow-hidden mb-10'>
             <Image
-              src='/masani-temple.jpg' // replace with your image
+              src='/nearby/vembakottai-dam.webp' // replace with your image
               alt='Masani Amman Temple Pollachi'
               fill
               className='object-cover'
@@ -100,7 +100,7 @@ export default function StandardSingleRoom() {
               Tuesdays, Fridays, and new moon days, special poojas are performed
               at this temple.
             </p>
-            <Link href='/pooja-time'>
+            <Link href='/explore-nearby-places'>
               <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] font-medium transition cursor-pointer'>
                 Back
               </button>

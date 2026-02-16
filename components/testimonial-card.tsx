@@ -13,7 +13,7 @@ export default function TestimonialCard({
   const stars = Array.from({ length: 5 });
 
   return (
-    <div className='relative bg-white rounded-2xl border border-[#D9B66E] p-8 shadow-sm h-full md:h-[420px] flex flex-col overflow-hidden'>
+    <div className='relative bg-white rounded-2xl border border-[#D9B66E] p-8 shadow-sm h-full md:h-[300px] flex flex-col overflow-hidden'>
       {/* Stars (outlined gold) */}
       <div className='flex gap-2 mb-6'>
         {stars.map((_, i) => (

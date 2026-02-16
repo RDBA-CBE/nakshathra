@@ -1,30 +1,51 @@
 'use client';
+'use client';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import { Navigation, Autoplay } from 'swiper/modules';
 import { useRef } from 'react';
 import { useInView } from '@/hooks/use-in-view';
 import ExperienceCard from '@/components/experience-card';
 
 const experiences = [
   {
-    title: 'Sivakasi',
-    // description: "Excepteur sint occaecat",
-    image: '/attakathi-loam-view-point.jpg',
+    title: 'Thiruthangal Nindra Narayana Perumal Temple',
+    image: '/nearby/thiruthangal.webp',
     rotation: 'rotate-6',
-    link: '/Sivakasi',
+    link: '/thiruthangal-nindra-narayana-perumal-temple',
   },
   {
-    title: 'Thiru Avingudi Temple',
-    // description: "Sunt culpa aliquip officia",
-    image: '/sholiyar-dam.jpg',
+    title: 'Vembakottai Dam',
+    image: '/nearby/vembakottai-dam.webp',
     rotation: 'rotate-0',
-    link: '/thiruavingudi',
+    link: '/vembakottai-dam',
   },
   {
-    title: 'Masani Amman Temple Pollachi',
-    // description: "Quis nostrud exercitation",
-    image: '/masani-temple.jpg',
+    title: 'Srivilliputhur Andal Temple',
+    image: '/nearby/srivilliputhur.webp',
     rotation: 'rotate-6',
-    link: '/masani-amman-temple-pollachi',
+    link: '/srivilliputhur-andal-temple',
+  },
+  {
+    title: 'Shenbaga Thoppu Grizzled Squirrel Sanctuary',
+    image: '/nearby/shenbaga-thoppu.webp',
+    rotation: 'rotate-0',
+    link: '/shenbaga-thoppu-grizzled-squirrel-sanctuary',
+  },
+  {
+    title: 'Ayyanar Falls',
+    image: '/nearby/ayyanar-falls.webp',
+    rotation: 'rotate-6',
+    link: '/ayyanar-falls',
+  },
+  {
+    title: 'Kullur Sandhai Reservoir',
+    image: '/nearby/kullur-sandhai.webp',
+    rotation: 'rotate-0',
+    link: '/kullur-sandhai-reservoir',
   },
 ];
 
@@ -72,21 +93,36 @@ export default function ExperienceSection() {
               </h2>
             </div>
 
-            <div className='flex flex-wrap justify-center items-center gap-8 lg:gap-16 max-w-6xl mx-auto'>
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              navigation
+              loop
+              speed={800}
+              grabCursor
+              autoplay={{ delay: 3500, disableOnInteraction: false }}
+              spaceBetween={24}
+              breakpoints={{
+                0: { slidesPerView: 1.15 },
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+              className='nearby-swiper !pb-6'
+            >
               {experiences.map((experience, index) => (
-                <div
-                  key={experience.title}
-                  className={`transition-all duration-700 ${
-                    isInView
-                      ? 'opacity-100 translate-y-0'
-                      : 'opacity-0 translate-y-20'
-                  }`}
-                  style={{ transitionDelay: `${index * 200}ms` }}
-                >
-                  <ExperienceCard {...experience} />
-                </div>
+                <SwiperSlide key={experience.title}>
+                  <div
+                    className={`transition-all duration-700 ${
+                      isInView
+                        ? 'opacity-100 translate-y-0'
+                        : 'opacity-0 translate-y-20'
+                    }`}
+                    style={{ transitionDelay: `${index * 150}ms` }}
+                  >
+                    <ExperienceCard {...experience} />
+                  </div>
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
           </div>
         </div>
       </div>
