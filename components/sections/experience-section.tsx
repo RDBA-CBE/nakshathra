@@ -75,15 +75,72 @@ export default function ExperienceSection() {
             strokeWidth='6'
           />
         </svg>
-
         <div className='absolute inset-0 flex flex-col items-center justify-center px-6 pt-96 pb-20'>
-          <div className='container mx-auto'>
+          <div className='container mx-auto px-4'>
+            {/* Heading */}
             <div
-              className={`text-center mb-24 transition-all duration-700 ${
+              className={`text-center mb-12 transition-all duration-700 ${
                 isInView
                   ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 translate-y-10'
+                  : 'opacity-0 translate-y-20'
               }`}
+            >
+              <p className='subtitle mb-4 tracking-widest'>
+                Smart choice for sightseeing
+              </p>
+
+              <h2 className='heading leading-[1.15]'>
+                Easy Connectivity to Popular <br />
+                Sights and Tranquil Retreats
+              </h2>
+            </div>
+
+            {/* SWIPER */}
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              navigation
+              loop
+              centeredSlides
+              speed={800}
+              grabCursor
+              autoplay={{ delay: 3500, disableOnInteraction: false }}
+              spaceBetween={14}
+              breakpoints={{
+                0: { slidesPerView: 1.15 },
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+              className='nearby-swiper !pb-10'
+            >
+              {experiences.map((experience, index) => (
+                <SwiperSlide key={experience.title}>
+                  <div className='slide-inner'>
+                    <div
+                      className={`transition-all duration-700 ${
+                        isInView
+                          ? 'opacity-100 translate-y-0'
+                          : 'opacity-0 translate-y-20'
+                      }`}
+                      style={{ transitionDelay: `${index * 150}ms` }}
+                    >
+                      <ExperienceCard {...experience} />
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+
+        {/* <div className='absolute inset-0 flex flex-col items-center justify-center '>
+          <div className='container mx-auto'>
+            <div
+              className={`transition-all duration-700 ${
+                isInView
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-20'
+              }`}
+              style={{ transitionDelay: `${index * 150}ms` }}
             >
               <p className='subtitle mb-4 tracking-widest pt-[120px]'>
                 Smart choice for sightseeing{' '}
@@ -97,10 +154,11 @@ export default function ExperienceSection() {
               modules={[Navigation, Autoplay]}
               navigation
               loop
+              centeredSlides={true}
               speed={800}
               grabCursor
               autoplay={{ delay: 3500, disableOnInteraction: false }}
-              spaceBetween={24}
+              spaceBetween={14} // reduced gap
               breakpoints={{
                 0: { slidesPerView: 1.15 },
                 640: { slidesPerView: 2 },
@@ -124,7 +182,7 @@ export default function ExperienceSection() {
               ))}
             </Swiper>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

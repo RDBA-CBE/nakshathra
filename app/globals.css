@@ -412,7 +412,7 @@
   display: none !important;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1300px) {
   .mbl-experience {
     display: block !important;
   }
@@ -604,11 +604,11 @@ span.header-contact {
 
 /* Position */
 .nearby-swiper .swiper-button-prev {
-  left: -18px;
+  left: 8px;
 }
 
 .nearby-swiper .swiper-button-next {
-  right: -18px;
+  right: 8px;
 }
 
 /* Disabled */
@@ -643,17 +643,21 @@ span.header-contact {
     font-size: 13px;
   }
 }
-
-/* Smooth slide scaling */
-.nearby-swiper .swiper-slide {
+/* Smooth scaling */
+.nearby-swiper .slide-inner {
   transition: transform 0.4s ease, opacity 0.4s ease;
-  opacity: 0.75;
   transform: scale(0.92);
+  opacity: 0.75;
 }
 
-/* CENTER CARD POPS */
-.nearby-swiper .swiper-slide-active {
-  opacity: 1;
+/* Active center slide */
+.nearby-swiper .swiper-slide-active .slide-inner {
   transform: scale(1);
+  opacity: 1;
   z-index: 2;
+}
+
+/* Optional premium lift */
+.nearby-swiper .swiper-slide-active .slide-inner {
+  transform: scale(1) translateY(-6px);
 }

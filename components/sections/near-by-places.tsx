@@ -46,7 +46,7 @@ const experiences = [
   },
 ];
 
-export default function PoojaTiming() {
+export default function ExploreNearByPlaces() {
   return (
     <section className='py-20 md:py-20 bg-white'>
       <div className='max-w-7xl mx-auto'>

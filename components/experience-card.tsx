@@ -22,7 +22,7 @@ export default function ExperienceCard({
       className={`group relative w-full max-w-[320px] ${rotation}
       mx-auto transition-all duration-500`}
     >
-      <div className="bg-white p-5 shadow-xl rounded-xl">
+      <div className="bg-white p-5 shadow-xl rounded-xl h-100 flex flex-col">
         
         {/* Image with Link */}
         {link ? (
@@ -65,7 +65,7 @@ export default function ExperienceCard({
           {link && (
             <Link
               href={link}
-              className="flex items-center gap-2 text-[#8B4513] text-sm font-medium hover:gap-3 transition-all"
+              className="flex mt-2 items-center gap-2 text-[#8B4513] text-sm font-medium hover:gap-3 transition-all"
             >
               Know More
               <ArrowRight className="w-4 h-4" />

@@ -123,7 +123,7 @@ export default function ContactPage() {
           <div className='w-full lg:w-1/2 relative'>
             <div className='absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10'></div>
             <Image
-              src='/about/comfort.webp'
+              src='/contact/contact-banner.png'
               alt='Hotel Nakshatra Elegant Interior'
               fill
               className='object-cover object-center'
@@ -189,7 +189,7 @@ export default function ContactPage() {
           {/* IMAGE SIDE */}
           <div className='relative w-full h-full min-h-full overflow-hidden rounded-3xl'>
             <Image
-              src='/about/welcoming-stay.webp' // replace with your image
+              src='/contact/contact.png' // replace with your image
               alt='Nakshatra Royal Stay Concierge'
               fill
               className='object-cover'

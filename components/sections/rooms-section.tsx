@@ -11,7 +11,7 @@ const rooms = [
     price: "₹1499 + 5% tax (₹1574)",
     // area: "300 Sq ft",
     // guests: "4 guest",
-    image: "/home/rooms/premium-room.webp",
+    image: "/home/rooms/standard-single.webp",
     link:"/rooms/standard-single-room"
   },
   {
@@ -19,7 +19,7 @@ const rooms = [
     price: "₹1999 + 5% tax (₹2099)",
     // area: "200 Sq ft",
     // guests: "2 guest",
-    image: "/home/rooms/family-room,.webp",
+    image: "/home/rooms/standard-double.webp",
     link:"/rooms/standard-double-room"
   },
   {
@@ -27,7 +27,7 @@ const rooms = [
     price: "₹2399 + 5% tax (₹2519)",
     // area: "250 Sq ft",
     // guests: "2 guest",
-    image: "/home/rooms/premium-room.webp",
+    image: "/home/rooms/deluxe-room.webp",
     link:"/rooms/deluxe-room"
   },
   {
@@ -35,7 +35,7 @@ const rooms = [
     price: "₹3999 + 5% tax (₹4199)",
     // area: "250 Sq ft",
     // guests: "2 guest",
-    image: "/home/rooms/suite-room.webp",
+    image: "/home/rooms/super-deluxe-room.webp",
     link:"/rooms/super-deluxe-room"
   },
 ]

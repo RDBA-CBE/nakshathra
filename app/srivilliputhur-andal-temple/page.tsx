@@ -46,32 +46,28 @@ export default function StandardSingleRoom() {
             </h2> */}
             {/* Description Paragraphs */}
             <p className='para'>
-              At a distance of 7 km from Monkey Falls, 12 km from Aliyar Dam, 31
-              km from Valparai and 35 km from Pollachi, Loam's View Point is a
-              beautiful vantage point located on Valparai-Pollachi Road in
-              Tamilnadu. Situated in the Anamalai Hills of Western Ghats, it is
-              one of the popular viewpoints in Valparai and among the must-visit
-              places as part of Valparai Tour Packages.
+              Guests staying at Hotel Nakshatra in Sivakasi can enjoy a
+              meaningful cultural excursion to the renowned Srivilliputhur Andal
+              Temple, located approximately 20–21 km away, with a comfortable
+              drive of around 25–30 minutes. The journey takes visitors through
+              scenic stretches of rural Tamil Nadu, offering a pleasant
+              transition from the lively atmosphere of Sivakasi to the spiritual
+              charm of Srivilliputhur. 
             </p>
             <p className='para'>
-              The Loam's Viewpoint is situated at the 9th hairpin bend of the
-              winding Pollachi - Aliyar - Valparai hill road. This viewpoint has
-              been named after Mathew Loam, who marked the roadway back in 1886.
-              There is a platform at the viewpoint that offers an impeccable
-              view of the Aliyar Dam and its reservoir, Anamalai mountain ranges
-              of the Western Ghats, as well as the stunning sunset views. The
-              place is also a good vantage point to look out into the plains, as
-              far as the town of Pollachi.
+              Famous for its iconic Rajagopuram a
+              symbol deeply associated with Tamil heritage the temple welcomes
+              travelers into a world of devotion, magnificent Dravidian
+              architecture, and centuries-old traditions. The convenient
+              distance from Hotel Nakshatra makes this sacred destination an
+              ideal half-day outing, allowing guests to experience both cultural
+              richness and peaceful surroundings without extensive travel.
+              Whether visiting for spiritual blessings, architectural
+              appreciation, or a serene cultural experience, a trip to
+              Srivilliputhur Andal Temple adds depth, elegance, and authenticity
+              to your stay in the region.
             </p>
-            <p className='para'>
-              Loam's View Point is an important vantage point that one cannot
-              afford to miss while making their way to Valparai. This vantage
-              point overlooks multiple scenic hairpin bends. This is also a
-              great place to see the endangered Nilgiri Tahr, especially towards
-              late afternoon. This is also the spot to catch the views of the
-              setting sun behind the hills. The place is monkey infested, so
-              beware.
-            </p>
+            
             <Link href='/explore-nearby-places'>
               <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] font-medium transition cursor-pointer'>
                 Back

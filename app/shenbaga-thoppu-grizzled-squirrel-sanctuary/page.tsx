@@ -16,7 +16,9 @@ export default function StandardSingleRoom() {
       <div className='w-full bg-[#F8F5F0]'>
         <div className='max-w-6xl mx-auto px-4 py-2'>
           <p className='para'>
-            <h2 className='heading text-center !mb-0'>Shenbaga Thoppu Grizzled Squirrel Sanctuary</h2>
+            <h2 className='heading text-center !mb-0'>
+              Shenbaga Thoppu Grizzled Squirrel Sanctuary
+            </h2>
           </p>
         </div>
       </div>
@@ -43,47 +45,26 @@ export default function StandardSingleRoom() {
             </h2> */}
             {/* Description Paragraphs */}
             <p className='para'>
-              Sholayar is situated 20 km from Valparai, a hill station in the
-              Anaimalai Hills of the Coimbatore district, Tamil Nadu India. A
-              part of the hydroelectric project of Tamil Nadu, special
-              permission is required to visit the dam.
+              Guests staying at Hotel Nakshatra in Sivakasi can enjoy an
+              unforgettable nature escape to the serene Shenbaga Thoppu Grizzled
+              Squirrel Sanctuary, located approximately 30–35 km away, with a
+              scenic drive of around 45–60 minutes depending on road conditions.
+              The journey gradually transitions from the lively streets of
+              Sivakasi to the lush foothills of the Western Ghats, offering
+              beautiful countryside views along the way.
             </p>
             <p className='para'>
-              Sholayar Dam is built by Sholayar Flanking in 1964 and Sholayar
-              Saddle Dam in 1965. The reservoir has an area of 8.705 square km
-              and the length of the dam is 430.60 metres. The Sholayar Dam has a
-              height of 66 metres and 430 metres width, Sholayar Flanking has a
-              height of 28 metres and 19 metres width and Sholayar Saddle has a
-              height of 259 metres and 109 metres width.
-            </p>
-            <p className='para'>
-              The Solaiyar dam is a vital reservoir under the Parambikulam
-              Aliyar Project and has a water storage capacity of 160 ft (49 m).
-              The reservoir’s overflowing waters are let into the Parambikulam
-              Reservoir through the saddle dam. It is constructed by a team who
-              was working under K Sivakasisamy, the most popular engineer in
-              that area.
-            </p>
-            <p className='para'>
-              Valparai is a newly explored tourist spot located in the Anamalai
-              hills of Westernghats. Entering the forest and tea gardens of
-              valparai you can enjoy the presence of many streams, dams,
-              valleys, waterfalls, high mountains, grass lands, flora and fauna.
+              As visitors approach the sanctuary, the landscape transforms into
+              dense greenery and cool forest surroundings, creating a refreshing
+              contrast to city life. Known for its rich biodiversity and
+              peaceful atmosphere, the sanctuary is ideal for nature lovers,
+              photography enthusiasts, and travelers seeking quiet moments amid
+              natural beauty. Its accessible distance from Hotel Nakshatra makes
+              it a perfect half-day excursion, allowing guests to combine
+              comfort, adventure, and eco-tourism into a well-rounded and
+              memorable stay in the Sivakasi region.
             </p>
 
-            <p className='para'>
-              Ecotourism is given more importance than regular form of tourism.
-              Chinnakallar in valparai records maximum rainfall next to
-              chirapungi. Valparai is the only hill station in the world which
-              has 12 dams and hydro electric power stations.
-            </p>
-
-            <p className='para'>
-              Within 8 km distance there is a beautiful place which is the
-              confluence of the three rivers Kuriarkutty, Karapara and
-              Parambikulam, Old bird sanctuary and the Chalakudy River which
-              flows across the dam.
-            </p>
             <Link href='/explore-nearby-places'>
               <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] font-medium transition cursor-pointer'>
                 Back

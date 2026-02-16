@@ -76,7 +76,7 @@ export default function AboutClient() {
           <div className='w-full lg:w-1/2 relative'>
             <div className='absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10'></div>
             <Image
-              src='/about/comfort.webp'
+              src='/about/about-banner.webp'
               alt='Hotel Nakshatra Elegant Interior'
               fill
               className='object-cover object-center'
@@ -247,7 +247,7 @@ export default function AboutClient() {
           <div
             className='absolute inset-0 bg-cover bg-center'
             style={{
-              backgroundImage: "url('/home/dining.webp')",
+              backgroundImage: "url('/about/hotel-nakshatra.webp')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}

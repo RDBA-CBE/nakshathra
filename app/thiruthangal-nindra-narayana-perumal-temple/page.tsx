@@ -46,32 +46,26 @@ export default function StandardSingleRoom() {
             </h2> */}
             {/* Description Paragraphs */}
             <p className='para'>
-              At a distance of 7 km from Monkey Falls, 12 km from Aliyar Dam, 31
-              km from Valparai and 35 km from Pollachi, Loam's View Point is a
-              beautiful vantage point located on Valparai-Pollachi Road in
-              Tamilnadu. Situated in the Anamalai Hills of Western Ghats, it is
-              one of the popular viewpoints in Valparai and among the must-visit
-              places as part of Valparai Tour Packages.
+              Guests staying at Hotel Nakshatra in Sivakasi can effortlessly
+              discover the timeless charm of the sacred Ninra Narayana Perumal
+              Temple, located just a short 10–15 minute drive away in the serene
+              town of Thiruthangal. Nestled atop a gentle granite hill, this
+              ancient temple offers a peaceful retreat where spirituality,
+              heritage, and natural beauty come together in perfect harmony. 
             </p>
             <p className='para'>
-              The Loam's Viewpoint is situated at the 9th hairpin bend of the
-              winding Pollachi - Aliyar - Valparai hill road. This viewpoint has
-              been named after Mathew Loam, who marked the roadway back in 1886.
-              There is a platform at the viewpoint that offers an impeccable
-              view of the Aliyar Dam and its reservoir, Anamalai mountain ranges
-              of the Western Ghats, as well as the stunning sunset views. The
-              place is also a good vantage point to look out into the plains, as
-              far as the town of Pollachi.
+              The
+              journey itself is calm and scenic, leading visitors from the
+              vibrant energy of the city into an atmosphere of quiet devotion
+              and cultural richness. Surrounded by tranquil views and steeped in
+              centuries of tradition, the temple invites travelers to slow down,
+              reflect, and experience the spiritual soul of Tamil Nadu. Whether
+              you seek cultural exploration, architectural beauty, or a moment
+              of inner peace, a visit to this revered sanctuary adds a
+              meaningful and memorable dimension to your stay at Hotel
+              Nakshatra.
             </p>
-            <p className='para'>
-              Loam's View Point is an important vantage point that one cannot
-              afford to miss while making their way to Valparai. This vantage
-              point overlooks multiple scenic hairpin bends. This is also a
-              great place to see the endangered Nilgiri Tahr, especially towards
-              late afternoon. This is also the spot to catch the views of the
-              setting sun behind the hills. The place is monkey infested, so
-              beware.
-            </p>
+            
             <Link href='/explore-nearby-places'>
               <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] font-medium transition cursor-pointer'>
                 Back

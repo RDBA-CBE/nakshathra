@@ -14,14 +14,14 @@ type GalleryImage = {
 
 /* ✅ IMAGES */
 const images: GalleryImage[] = [
-  { src: "/gallery/architectural-detail.webp", label: "Architectural Detail" },
-  { src: "/gallery/conference-room.webp", label: "Conference Room" },
-  { src: "/gallery/elegant-hallway.webp", label: "Elegant Hallway" },
-  { src: "/gallery/grand-staircase.webp", label: "Grand Staircase" },
-  { src: "/gallery/hotel-exterior.webp", label: "Hotel Exterior" },
-  { src: "/gallery/lobby-lounge.webp", label: "Lobby Lounge" },
-  { src: "/gallery/reception-area.webp", label: "Reception Area" },
-  { src: "/gallery/restaurant.webp", label: "Restaurant" },
+  { src: "/gallery/L-img1.webp", label: "Architectural Detail" },
+  { src: "/gallery/L-img2.webp", label: "Conference Room" },
+  { src: "/gallery/L-img3.webp", label: "Elegant Hallway" },
+  { src: "/gallery/L-img4.webp", label: "Grand Staircase" },
+  { src: "/gallery/S-img1.webp", label: "Hotel Exterior" },
+  { src: "/gallery/S-img2.webp", label: "Lobby Lounge" },
+  { src: "/gallery/S-img3.webp", label: "Reception Area" },
+  { src: "/gallery/S-img4.webp", label: "Restaurant" },
 ];
 
 /* ✅ GROUPED IMAGES (TYPED) */
@@ -102,7 +102,7 @@ export default function GallerySection() {
           <div className="w-full lg:w-1/2 relative">
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10"></div>
             <Image
-              src="/facilities/intro.webp"
+              src="/gallery/gallery-banner.webp"
               alt="Hotel Nakshatra Elegant Interior"
               fill
               className="object-cover object-center"

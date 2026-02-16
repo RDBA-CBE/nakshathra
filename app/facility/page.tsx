@@ -32,37 +32,37 @@ const facilities = [
   {
     title: 'Prime Location in the Heart of Sivakasi',
     desc: 'Easy access to local transportation, shopping areas and key landmarks makes commuting effortless and convenient.',
-    icon: '/facilities/prime-location.svg',
+    icon: '/facilities/icons/prime-location.svg',
   },
   {
     title: 'Complimentary High-Speed Wi-Fi',
     desc: 'Stay connected for work, study or leisure with fast, reliable internet throughout the hotel.',
-    icon: '/facilities/wifi.svg',
+    icon: '/facilities/icons/wifi.svg',
   },
   {
     title: 'Business-Class Luxury at Exceptional Value',
     desc: 'Modern rooms, refined interiors and premium services ensure a comfortable stay without compromise.',
-    icon: '/facilities/luxuary.svg',
+    icon: '/facilities/icons/luxuary.svg',
   },
   {
     title: 'Best Rates Guaranteed on Online Bookings',
     desc: 'Enjoy competitive pricing and exclusive online offers when you book directly with us.',
-    icon: '/facilities/Booking.svg',
+    icon: '/facilities/icons/Booking.svg',
   },
   {
     title: 'Modern Amenities with Elegant Interiors',
     desc: 'Each room is thoughtfully designed with contemporary decor, ergonomic furnishings and intuitive features for your convenience.',
-    icon: '/facilities/aminities.svg',
+    icon: '/facilities/icons/aminities.svg',
   },
   {
     title: 'Strict Safety, Hygiene and Cleanliness Protocols',
     desc: 'Our high standards ensure a safe and healthy environment for every guest.',
-    icon: '/facilities/safety-hygiene.svg',
+    icon: '/facilities/icons/safety-hygiene.svg',
   },
   {
     title: 'Warm, Personalized Indian Hospitality',
     desc: 'Our attentive staff and bespoke services create a welcoming atmosphere that makes every stay truly special.',
-    icon: '/facilities/hospitality.svg',
+    icon: '/facilities/icons/hospitality.svg',
   },
 ];
 
@@ -137,7 +137,7 @@ export default function FacilityPage() {
           <div className='w-full lg:w-1/2 relative'>
             <div className='absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10'></div>
             <Image
-              src='/facilities/intro.webp'
+              src='/facilities/facility-banner.webp'
               alt='Hotel Nakshatra Elegant Interior'
               fill
               className='object-cover object-center'
@@ -213,7 +213,7 @@ export default function FacilityPage() {
           <div
             className='absolute inset-0 bg-cover bg-center'
             style={{
-              backgroundImage: "url('/home/dining.webp')",
+              backgroundImage: "url('/facilities/hotel-nakshatra.webp')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
@@ -242,7 +242,7 @@ export default function FacilityPage() {
                   </div>
 
                   <p className='para'>
-                    every is curated to provide comfort, convenience and care,
+                    Every is curated to provide comfort, convenience and care,
                     making it your ideal choice for{' '}
                     <span className='text-[#b3862f] font-medium'>Business</span>
                     ,{' '}
