@@ -39,7 +39,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="w-full bg-white lg:sticky lg:top-0 lg:z-50 transition-shadow duration-300">
+    <header className="w-full bg-white sticky top-0 z-50 transition-shadow duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
 
         {/* ⭐ FIXED HEIGHT — ONLY SCALE INSIDE */}
@@ -54,7 +54,7 @@ export default function Header() {
             <img
               src="/header-logo.png"
               alt="Hotel Nakshatra Logo"
-              className="h-auto w-auto max-h-16 sm:max-h-16 lg:max-h-20 xl:max-h-22"
+              className="h-auto w-auto max-h-16 sm:max-h-14 lg:max-h-20 xl:max-h-22"
             />
           </Link>
 

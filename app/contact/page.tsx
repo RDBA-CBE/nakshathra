@@ -2,7 +2,6 @@
 
 import Header from '@/components/header';
 import Footer from '@/components/sections/footer';
-import type { Metadata } from 'next';
 import Image from 'next/image';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -13,41 +12,39 @@ import { motion } from 'framer-motion';
 
 export default function ContactPage() {
   const [success, setSuccess] = useState<boolean | null>(null);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    setLoading(true);
+    setSuccess(null);
 
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    // Get values
     const name = formData.get('name');
     const email = formData.get('email');
     const message = formData.get('message');
 
-    // Clear original fields
+    // merge fields into single message
     formData.delete('name');
     formData.delete('email');
     formData.delete('message');
 
-    // Append a single message with your custom format
     formData.append(
       'message',
       `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     );
 
-    // Required for raw template
-    formData.set('_template', 'raw');
-
-    // Optional: subject and reply-to
-    formData.set('_subject', 'Nakshatra');
-    formData.set('_replyto', 'rdba.developer@gmail.com');
-
     try {
       const response = await fetch(
-        'https://formsubmit.co/rdba.developer@gmail.com',
+        'https://formsubmit.co/repute.pragathi@gmail.com',
         {
           method: 'POST',
+          headers: {
+            Accept: 'application/json',
+          },
           body: formData,
         }
       );
@@ -58,9 +55,10 @@ export default function ContactPage() {
       } else {
         setSuccess(false);
       }
-    } catch (error) {
-      console.error('Form submission error:', error);
+    } catch {
       setSuccess(false);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -70,133 +68,105 @@ export default function ContactPage() {
 
       {/* HERO */}
       <section className='relative w-full overflow-hidden'>
-        <div className='relative flex flex-col lg:flex-row  w-full'>
-          {/* LEFT CONTENT - Light Background */}
-          <div className='relative z-10 w-full lg:w-1/2 bg-gradient-to-br from-[#F8F4E9] to-[#F1ECE0] flex items-center'>
-            <div className='w-full px-6 sm:px-10 lg:px-16 xl:px-20 py-16 lg:py-20'>
-              <div>
-                {/* Eyebrow / Subtitle */}
+        <div className='flex flex-col lg:flex-row w-full'>
+          <div className='w-full lg:w-1/2 bg-gradient-to-br from-[#F8F4E9] to-[#F1ECE0] flex items-center'>
+            <div className='w-full px-6 sm:px-10 lg:px-16 xl:px-20 py-14 sm:py-16 lg:py-20'>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className='heading leading-[1.15]'
+              >
+                Contact <span className='text-[#b3862f]'>Us</span>
+              </motion.h1>
 
-                {/* Main Heading */}
-                <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.1 }}
-                  className='heading leading-[1.15] '
-                >
-                  Contact <span className='text-[#b3862f]'>Us</span>{' '}
-                </motion.h1>
-
-                {/* Description */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className='space-y-6 mb-10 '
-                >
-                  <p className='para'>
-                    At Hotel Nakshatra, we strive to make your experience
-                    seamless and memorable. Reach out to us for bookings,
-                    inquiries or any assistance, you’ll receive prompt and
-                    personalized support.
-                  </p>
-                </motion.div>
-
-                {/* Decorative Line */}
-
-                {/* Features */}
-              </div>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className='para mt-6'
+              >
+                At Hotel Nakshatra, we strive to make your experience seamless
+                and memorable. Reach out for bookings or inquiries.
+              </motion.p>
             </div>
           </div>
 
-          {/* DIAGONAL SEPARATOR */}
-          <div className='hidden lg:block absolute left-1/2 top-0 h-full -translate-x-1/2 z-20 pointer-events-none'>
-            <div className='relative h-full w-px'>
-              <div className='absolute inset-y-0 left-1/2 transform -translate-x-1/2 w-[2px]'>
-                <div className='h-full bg-gradient-to-b from-[#8B4513]/20 via-[#8B4513]/40 to-[#8B4513]/20'></div>
-              </div>
-              <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-[#FBF6E6] border-2 border-[#8B4513]/30 rounded-full'></div>
-            </div>
-          </div>
-
-          {/* RIGHT IMAGE */}
-          <div className='w-full lg:w-1/2 relative'>
-            <div className='absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10'></div>
+          <div className='relative w-full lg:w-1/2 h-[260px] sm:h-[360px] lg:h-auto min-h-[420px]'>
             <Image
               src='/contact/contact-banner.png'
-              alt='Hotel Nakshatra Elegant Interior'
+              alt='Hotel Nakshatra'
               fill
               className='object-cover object-center'
               priority
             />
-
-            {/* Image Overlay Content */}
+            <div className='absolute inset-0 bg-gradient-to-t from-black/10 to-transparent' />
           </div>
         </div>
       </section>
 
-      {/* MAP SECTION */}
-
       {/* CONTACT DETAILS */}
-      <section className='px-4 py-12 sm:py-16 md:py-20 lg:py-20 bg-white'>
+      <section className='px-4 py-10 sm:py-14 lg:py-20 bg-white'>
         <div className='max-w-7xl mx-auto'>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-10 text-center'>
-            {/* Phone */}
-            <div className='rounded-3xl border border-[#8B4513]/20 p-10 hover:shadow-xl transition'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-8 text-center'>
+            <div className='rounded-3xl border p-8 sm:p-10 hover:shadow-xl transition'>
               <Phone className='w-6 h-6 mx-auto text-[#8B4513]' />
-              <p className='mt-6 text-xl text-[#1F3A44] font-light'>
-                +91-45622 64233 
+              <p className='mt-6 text-base sm:text-lg lg:text-xl font-light'>
+                +91-45622 64233
               </p>
             </div>
 
-            {/* Email */}
-            <div className='rounded-3xl border border-[#8B4513]/20 p-10 hover:shadow-xl transition'>
+            <div className='rounded-3xl border p-8 sm:p-10 hover:shadow-xl transition'>
               <Mail className='w-6 h-6 mx-auto text-[#8B4513]' />
-              <p className='mt-6 text-xl text-[#1F3A44] font-light break-all'>
+              <p className='mt-6 text-base sm:text-lg lg:text-xl font-light break-all'>
                 hotelnakshatra33@gmail.com
               </p>
-              
-              <p className='mt-6 text-xl text-[#1F3A44] font-light break-all'>
+              <p className='mt-3 text-base sm:text-lg lg:text-xl font-light break-all'>
                 info@hotelnakshatra.com
               </p>
             </div>
 
-            {/* Location */}
-            <div className='rounded-3xl  border border-[#8B4513]/20 p-10 hover:shadow-xl transition'>
+            <div className='rounded-3xl border p-8 sm:p-10 hover:shadow-xl transition'>
               <MapPin className='w-6 h-6 mx-auto text-[#8B4513]' />
-              <p className='mt-6 text-xl text-[#1F3A44] font-light'>
-              <br/> #1828, PKN Road,<br/> Sivakasi
+              <p className='mt-6 text-base sm:text-lg lg:text-xl font-light'>
+                #1828, PKN Road,
+                <br />
+                Sivakasi
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section className='relative max-w-7xl  mx-auto rounded-3xl h-[300px]'>
-        <div className='relative w-full h-full min-h-[300px] overflow-hidden rounded-3xl'>
+
+      {/* MAP */}
+      <section className='px-4'>
+        <div className='relative max-w-7xl mx-auto rounded-3xl h-[240px] sm:h-[320px] lg:h-[380px] overflow-hidden'>
           <iframe
-            src='https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3935.5997870721044!2d77.805296!3d9.456446999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMjcnMjMuMiJOIDc3wrA0OCcxOS4xIkU!5e0!3m2!1sen!2sin!4v1771068439471!5m2!1sen!2sin'
-            className='absolute inset-0 w-full h-full border-0'
+            src='https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7871.199574144209!2d77.805296!3d9.456447!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMjcnMjMuMiJOIDc3wrA0OCcxOS4xIkU!5e0!3m2!1sen!2sin!4v1771243748690!5m2!1sen!2sin'
+            className='w-full h-full border-0'
             loading='lazy'
-            referrerPolicy='no-referrer-when-downgrade'
             allowFullScreen
           />
         </div>
       </section>
 
       {/* FORM */}
-      <section className='px-4 py-12 sm:py-16 md:py-20 lg:py-20 bg-[#FFFFF]'>
-        <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 items-stretch'>
-          {/* IMAGE SIDE */}
+      <section className='px-4 py-10 sm:py-14 lg:py-20'>
+        <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16'>
           <div className='relative w-full h-full min-h-full overflow-hidden rounded-3xl'>
+            {/* IMAGE */}
             <Image
-              src='/contact/contact.png' // replace with your image
+              src='/contact/contact.png'
               alt='Nakshatra Royal Stay Concierge'
               fill
-              className='object-cover'
+              className='object-cover z-0'
             />
-            <div className='absolute inset-0 bg-[#152A38]/60' />
 
-            <div className='absolute bottom-10 left-10 right-10 text-white'>
+            {/* OVERLAY */}
+            <div className='absolute inset-0 bg-[#152A38]/60 z-10' />
+
+            {/* TEXT */}
+            <div className='absolute bottom-10 left-10 right-10 text-white z-20'>
               <p className='text-l uppercase tracking-widest text-white'>
                 Nakshatra Royal Stay
               </p>
@@ -206,89 +176,36 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* FORM SIDE */}
-          <div className='max-w-xl mx-auto w-full border border-[#8B4513]/25 rounded-2xl p-10 bg-transparent'>
-            <h2 className='heading leading-[1.15] mb-10'>
-              We’d love to hear from you.
-            </h2>
+          <div className='w-full border rounded-2xl p-6 sm:p-8 lg:p-10'>
+            <h2 className='heading mb-8'>We’d love to hear from you.</h2>
 
-            <form onSubmit={(e) => handleSubmit(e)} className='space-y-10'>
-              {/* hidden settings */}
+            <form onSubmit={handleSubmit} className='space-y-8'>
+              {/* Hidden fields for FormSubmit */}
               <input type='hidden' name='_captcha' value='false' />
-              <input
-                type='hidden'
-                name='_subject'
-                value='New Contact Form Submission'
-              />
               <input type='hidden' name='_template' value='table' />
+              <input type='hidden' name='_subject' value='Nakshatra Contact' />
 
-              <div>
-                <label className='text-xs uppercase tracking-widest text-gray-500'>
-                  Full Name
-                </label>
-                <Input
-                  name='name'
-                  placeholder='Your name'
-                  required
-                  className='mt-3 border-0 border-b border-gray-300 rounded-none bg-transparent focus:border-[#8B4513]'
-                />
-              </div>
-
-              <div>
-                <label className='text-xs uppercase tracking-widest text-gray-500'>
-                  Email Address
-                </label>
-                <Input
-                  type='email'
-                  name='email'
-                  placeholder='your@email.com'
-                  required
-                  className='mt-3 border-0 border-b border-gray-300 rounded-none bg-transparent focus:border-[#8B4513]'
-                />
-              </div>
-
-              <div>
-                <label className='text-xs uppercase tracking-widest text-gray-500'>
-                  Subject
-                </label>
-                <Input
-                  name='subject'
-                  placeholder='Booking / Inquiry / Support'
-                  className='mt-3 border-0 border-b border-gray-300 rounded-none bg-transparent focus:border-[#8B4513]'
-                />
-              </div>
-
-              <div>
-                <label className='text-xs uppercase tracking-widest text-gray-500'>
-                  Message
-                </label>
-                <Textarea
-                  name='message'
-                  rows={5}
-                  placeholder='Write your message...'
-                  required
-                  className='mt-3 border-0 border-b border-gray-300 rounded-none bg-transparent focus:border-[#8B4513]'
-                />
-              </div>
+              <Input name='name' placeholder='Name' required />
+              <Input type='email' name='email' placeholder='Email' required />
+              <Textarea
+                name='message'
+                rows={5}
+                placeholder='Message'
+                required
+              />
 
               <Button
-                type='submit'
-                className='w-full mt-10 bg-[#8B4513] hover:bg-[#723610] text-white py-6 text-sm uppercase tracking-widest cursor-pointer'
+                disabled={loading}
+                className='w-full bg-[#8B4513] hover:bg-[#723610]'
               >
-                Send Message
+                {loading ? 'Sending...' : 'Send Message'}
               </Button>
 
-              {/* Success / Error Messages */}
               {success === true && (
-                <p className='text-green-600 !font-[300] !text-[21px] mt-4'>
-                  Message sent successfully!
-                </p>
+                <p className='text-green-600'>Message sent successfully!</p>
               )}
-
               {success === false && (
-                <p className='text-red-600 !font-[300] !text-[21px] mt-4'>
-                  Something went wrong!
-                </p>
+                <p className='text-red-600'>Something went wrong!</p>
               )}
             </form>
           </div>

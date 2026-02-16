@@ -163,21 +163,22 @@ export default function FacilityPage() {
 
             {/* Facilities */}
             <div className='mt-16 relative'>
-              <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
+              <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:items-stretch'>
                 {facilities.map((item) => (
-                  <div key={item.title} className='flex justify-center'>
+                  <div
+                    key={item.title}
+                    className='flex justify-center lg:h-full '
+                  >
                     {/* CARD */}
                     <div
                       className='
-          group flex flex-col
-          w-full
-          rounded-2xl border border-[#8B4513]/20 bg-white p-8
-          transition hover:shadow-md
-
-          h-[340px]
-          sm:h-[320px]
-          lg:h-[360px]
-        '
+    group flex flex-col
+    w-full
+    rounded-2xl border border-[#8B4513]/20
+    bg-white p-8
+    transition hover:shadow-md
+    lg:h-full
+  '
                     >
                       {/* ICON */}
                       <div className='flex justify-center'>

@@ -1,10 +1,13 @@
 'use client';
 
-import { useRef, useState, useEffect } from 'react';
+import { useRef } from 'react';
 import { useInView } from '@/hooks/use-in-view';
-import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 
 const galleryImages = [
   '/home/gallery/L-img1.webp',
@@ -17,118 +20,71 @@ const galleryImages = [
   '/home/gallery/S-img4.webp',
 ];
 
-const imageGroups: string[][] = [];
-for (let i = 0; i < galleryImages.length; i += 4) {
-  imageGroups.push(galleryImages.slice(i, i + 4));
-}
-
 export default function GallerySection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sectionRef);
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % imageGroups.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
-    <section ref={sectionRef} className=' bg-white overflow-hidden'>
-      <div className='container mx-auto max-w-7xl px-6'>
-        {/* Header */}
+    <section ref={sectionRef} className='bg-white overflow-hidden py-16'>
+      <div className='container mx-auto max-w-7xl px-4 sm:px-6'>
+
+        {/* HEADER */}
         <div
-          className={`flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-6 transition-all duration-700 ${
+          className={`flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6 transition-all duration-700 ${
             isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
           <div>
-            <p className='subtitle mb-4'>
-              OUR GALLERY
-            </p>
+            <p className='subtitle mb-4'>OUR GALLERY</p>
 
-            <h2 className='heading leading-[1.15] mt-5'>
+            <h2 className='heading leading-[1.15]'>
               Sophisticated Interiors Thoughtfully
-              <br />
+              <br className='hidden sm:block' />
               Balanced with Comfort and Warmth
             </h2>
           </div>
 
           <Link href='/gallery'>
-            <button  className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] mt-5 font-medium transition cursor-pointer'>
+            <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-7 sm:px-10 py-3 rounded-lg text-base sm:text-[18px] font-medium transition'>
               View All
-              <ArrowRight className='ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform' />
+              <ArrowRight className='w-4 h-4' />
             </button>
           </Link>
         </div>
       </div>
 
-      {/* FULL-BLEED SLIDER */}
-      <div className='w-full relative'>
-        <div
-          className='flex transition-transform duration-700 ease-in-out'
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-        >
-          {imageGroups.map((group, index) => (
+      {/* RESPONSIVE SWIPER */}
+      <Swiper
+        modules={[Autoplay]}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        loop
+        speed={800}
+        spaceBetween={16}
+        breakpoints={{
+          0: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },   // TABLET = 2
+          1024: { slidesPerView: 4 },  // DESKTOP = 4
+        }}
+        className='px-4 sm:px-6'
+      >
+        {galleryImages.map((img, i) => (
+          <SwiperSlide key={i}>
             <div
-              key={index}
-              className='min-w-full px-6 grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6'
-            >
-              {/* BIG */}
-              <div className='h-[300px] md:h-[520px] rounded-2xl overflow-hidden shadow-lg'>
-                <img
-                  src={group[0]}
-                  className='w-full h-full object-cover'
-                  alt=''
-                />
-              </div>
-
-              {/* SMALL */}
-              <div className='h-[300px] md:h-[380px] rounded-2xl overflow-hidden shadow-lg self-center'>
-                <img
-                  src={group[1]}
-                  className='w-full h-full object-cover'
-                  alt=''
-                />
-              </div>
-
-              {/* BIG */}
-              <div className='h-[300px] md:h-[520px] rounded-2xl overflow-hidden shadow-lg'>
-                <img
-                  src={group[2]}
-                  className='w-full h-full object-cover'
-                  alt=''
-                />
-              </div>
-
-              {/* SMALL */}
-              <div className='h-[300px] md:h-[380px] rounded-2xl overflow-hidden shadow-lg self-center'>
-                <img
-                  src={group[3]}
-                  className='w-full h-full object-cover'
-                  alt=''
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Dots */}
-        {/* <div className="flex justify-center gap-2 mt-10">
-          {imageGroups.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrentSlide(i)}
-              className={`h-2 rounded-full transition-all ${
-                i === currentSlide
-                  ? "w-8 bg-[#8B3A3A]"
-                  : "w-2 bg-[#D6C2A0]"
+              className={`rounded-2xl overflow-hidden shadow-lg ${
+                i % 2 === 0
+                  ? 'h-[240px] sm:h-[320px] lg:h-[520px]'
+                  : 'h-[220px] sm:h-[280px] lg:h-[380px] lg:mt-16'
               }`}
-            />
-          ))}
-        </div> */}
-      </div>
+            >
+              <img
+                src={img}
+                alt=''
+                className='w-full h-full object-cover transition-transform duration-700 hover:scale-105'
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 }

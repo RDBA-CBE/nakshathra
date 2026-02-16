@@ -224,7 +224,7 @@ export default function AboutClient() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className='relative mb-16'
+            className='relative'
           >
             <div className='relative aspect-[16/9] rounded-3xl overflow-hidden'>
               <Image

@@ -2,17 +2,23 @@
 
 import Header from "@/components/header";
 import Footer from "@/components/sections/footer";
-import { useState, useEffect } from "react";
+import { useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
-/* ✅ TYPE FIRST */
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
+/* TYPES */
 type GalleryImage = {
   src: string;
   label: string;
 };
 
-/* ✅ IMAGES */
+/* IMAGES */
 const images: GalleryImage[] = [
   { src: "/gallery/L-img1.webp", label: "Architectural Detail" },
   { src: "/gallery/L-img2.webp", label: "Conference Room" },
@@ -24,168 +30,87 @@ const images: GalleryImage[] = [
   { src: "/gallery/S-img4.webp", label: "Restaurant" },
 ];
 
-/* ✅ GROUPED IMAGES (TYPED) */
-const imageGroups: GalleryImage[][] = [];
-
-for (let i = 0; i < images.length; i += 4) {
-  imageGroups.push(images.slice(i, i + 4));
-}
-
 export default function GallerySection() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  // 🔹 autoplay
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) =>
-        prev === imageGroups.length - 1 ? 0 : prev + 1,
-      );
-    }, 4000);
-
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <main className="min-h-screen bg-white">
       <Header />
+
+      {/* HERO */}
       <section className="relative w-full overflow-hidden">
-        <div className="relative flex flex-col lg:flex-row  w-full">
-          {/* LEFT CONTENT - Light Background */}
-          <div className="relative z-10 w-full lg:w-1/2 bg-gradient-to-br from-[#F8F4E9] to-[#F1ECE0] flex items-center">
+        <div className="relative flex flex-col lg:flex-row w-full">
+
+          {/* LEFT */}
+          <div className="w-full lg:w-1/2 bg-gradient-to-br from-[#F8F4E9] to-[#F1ECE0] flex items-center">
             <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20 py-16 lg:py-20">
-              <div>
-                {/* Eyebrow / Subtitle */}
 
-                {/* Main Heading */}
-                <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.1 }}
-                  className="heading leading-[1.15]"
-                >
-                  Gallery
-                </motion.h1>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="heading leading-[1.15]"
+              >
+                Gallery
+              </motion.h1>
 
-                {/* Description */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="space-y-6 "
-                >
-                  <p className="para">
-                    Explore interiors that are designed to be both stylish and
-                    comfortable, creating a relaxing and welcoming atmosphere.
-                    From elegant decor to cozy furnishings, every detail is
-                    crafted to make your stay enjoyable and memorable.
-                  </p>
-                </motion.div>
-
-                {/* Decorative Line */}
-
-                {/* Features */}
-              </div>
-            </div>
-          </div>
-
-          {/* DIAGONAL SEPARATOR */}
-          <div className="hidden lg:block absolute left-1/2 top-0 h-full -translate-x-1/2 z-20 pointer-events-none">
-            <div className="relative h-full w-px">
-              <div className="absolute inset-y-0 left-1/2 transform -translate-x-1/2 w-[2px]">
-                <div className="h-full bg-gradient-to-b from-[#8B4513]/20 via-[#8B4513]/40 to-[#8B4513]/20"></div>
-              </div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-[#FBF6E6] border-2 border-[#8B4513]/30 rounded-full"></div>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="para mt-4"
+              >
+                Explore interiors that are designed to be both stylish and
+                comfortable, creating a relaxing and welcoming atmosphere.
+              </motion.p>
             </div>
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="w-full lg:w-1/2 relative">
-            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10"></div>
+          <div className="relative w-full lg:w-1/2 h-[280px] sm:h-[400px] lg:h-auto min-h-[420px]">
             <Image
               src="/gallery/gallery-banner.webp"
               alt="Hotel Nakshatra Elegant Interior"
               fill
-              className="object-cover object-center"
+              className="object-cover"
               priority
             />
-
-            {/* Image Overlay Content */}
           </div>
         </div>
       </section>
+
+      {/* GALLERY SLIDER */}
       <section className="py-20 px-4 bg-white">
-        {/* GALLERY CAROUSEL */}
-        <div className="w-full relative overflow-hidden ">
-          {/* TRACK */}
-          <div
-            className="flex transition-transform duration-700 ease-in-out"
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-          >
-            {imageGroups.map((group, index) => (
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          loop
+          speed={800}
+          spaceBetween={16}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },   // TABLET = 2
+            1024: { slidesPerView: 4 },  // DESKTOP = 4
+          }}
+          className="px-2 gallery-swiper sm:px-4"
+        >
+          {images.map((img, i) => (
+            <SwiperSlide key={i}>
               <div
-                key={index}
-                className="
-                  min-w-full
-                  px-4 sm:px-6
-                  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
-                  gap-4 md:gap-6
-                "
-              >
-                {/* BIG */}
-                <div className="h-[260px] sm:h-[320px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg">
-                  <img
-                    src={group[0]?.src}
-                    alt={group[0]?.label}
-                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                  />
-                </div>
-
-                {/* SMALL */}
-                <div className="h-[260px] sm:h-[300px] lg:h-[380px] rounded-2xl overflow-hidden shadow-lg lg:self-center">
-                  <img
-                    src={group[1]?.src}
-                    alt={group[1]?.label}
-                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                  />
-                </div>
-
-                {/* BIG */}
-                <div className="h-[260px] sm:h-[320px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg">
-                  <img
-                    src={group[2]?.src}
-                    alt={group[2]?.label}
-                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                  />
-                </div>
-
-                {/* SMALL */}
-                <div className="h-[260px] sm:h-[300px] lg:h-[380px] rounded-2xl overflow-hidden shadow-lg lg:self-center">
-                  <img
-                    src={group[3]?.src}
-                    alt={group[3]?.label}
-                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* DOTS */}
-          <div className="flex justify-center gap-3 mt-10">
-            {imageGroups.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setCurrentSlide(i)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  i === currentSlide
-                    ? "w-10 bg-[#8B4513]"
-                    : "w-2 bg-[#8B4513]/40"
+                className={`rounded-2xl overflow-hidden shadow-lg ${
+                  i % 2 === 0
+                    ? "h-[260px] sm:h-[320px] lg:h-[520px]"
+                    : "h-[260px] sm:h-[300px] lg:h-[380px] lg:mt-16"
                 }`}
-                aria-label={`Go to slide ${i + 1}`}
-              />
-            ))}
-          </div>
-        </div>
+              >
+                <img
+                  src={img.src}
+                  alt={img.label}
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
 
       <Footer />

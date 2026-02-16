@@ -439,73 +439,99 @@
   background: #8b4513;
 }
 
+/* ===============================
+   RESPONSIVE HEADINGS
+================================= */
+
 h1.heading {
   font-family: "Marcellus", serif !important;
-  font-size: 58px !important;
+  font-size: clamp(2rem, 5vw, 3.625rem);
+  /* 32px → 58px */
   margin-bottom: 20px !important;
   font-weight: 300 !important;
   color: #1f3a44 !important;
+  line-height: 1.2;
 }
 
 h2.heading {
   font-family: "Marcellus", serif !important;
-  font-size: 48px !important;
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  /* 28px → 48px */
   margin-bottom: 20px !important;
   font-weight: 300 !important;
   color: #1f3a44 !important;
+  line-height: 1.2;
 }
 
 h3.heading {
   font-family: "Marcellus", serif !important;
-  font-size: 22px !important;
+  font-size: clamp(1.125rem, 2.2vw, 1.375rem);
+  /* 18px → 22px */
   font-weight: 300 !important;
   color: #1f3a44 !important;
+  line-height: 1.3;
 }
 
 h3.privacy {
   font-family: "Marcellus", serif !important;
-  font-size: 32px !important;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  /* 24px → 32px */
   font-weight: 300 !important;
   color: #1f3a44 !important;
+  line-height: 1.25;
 }
 
+/* ===============================
+   SUBTITLE
+================================= */
 p.subtitle {
-  font-size: 20px !important;
-  /* text-xl */
+  font-size: clamp(0.95rem, 2vw, 1.25rem);
+  /* 15px → 20px */
   font-family: "Marcellus", serif !important;
   font-weight: 700 !important;
-  /* font-bold */
   color: #b3862f !important;
   text-transform: uppercase !important;
   letter-spacing: 0.1em !important;
   margin: 5px;
+  line-height: 1.4;
 }
 
+/* ===============================
+   MAIN PARAGRAPH
+================================= */
 p.para {
-  font-size: 18px !important;
+  font-size: clamp(1rem, 1.8vw, 1.125rem);
+  /* 16px → 18px */
   font-weight: 500 !important;
-  /* use 400 or 700 unless you have 500 file */
   font-family: 'Satoshi', sans-serif !important;
-  line-height: 1.6 !important;
+  line-height: 1.7 !important;
   color: #5D5D5B !important;
 }
 
+/* ===============================
+   FOOTER PARAGRAPH
+================================= */
 p.footer-para {
-  font-size: 16px !important;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  /* 14px → 16px */
   font-weight: 500 !important;
-  /* use 400 or 700 unless you have 500 file */
   font-family: 'Satoshi', sans-serif !important;
   line-height: 1.6 !important;
   color: #5D5D5B !important;
 }
 
+/* ===============================
+   PARAGRAPH TITLE
+================================= */
 p.para-title {
-  font-size: 20px !important;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  /* 16px → 20px */
   font-weight: 500 !important;
   font-family: "Satoshi", sans-serif !important;
   line-height: 1.6 !important;
   color: #5D5D5B !important;
 }
+
 
 
 li.list {
@@ -552,90 +578,127 @@ span.header-contact {
    LUXURY SWIPER ARROWS
 ================================= */
 
-/* ===================================
-   ELEGANT HOTEL STYLE SWIPER
-=================================== */
+/* =====================================================
+   NEARBY SWIPER - FULL FIXED CSS
+===================================================== */
 
 .nearby-swiper {
   position: relative;
   padding-inline: 8px;
 }
 
-/* Slide smooth animation */
+/* -----------------------------------------------------
+   SLIDES
+----------------------------------------------------- */
+
+/* slide smooth transition */
 .nearby-swiper .swiper-slide {
   transition: transform 0.4s ease, opacity 0.4s ease;
-  opacity: 0.85;
 }
 
-/* Active slide highlight */
-.nearby-swiper .swiper-slide-active {
+/* inner card default */
+.nearby-swiper .slide-inner {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform: scale(0.92);
+  opacity: 0.75;
+}
+
+/* CENTER ACTIVE CARD */
+.nearby-swiper .swiper-slide-active .slide-inner {
+  transform: scale(1) translateY(-6px);
   opacity: 1;
-  transform: translateY(-4px);
+  z-index: 2;
 }
 
-/* ---------- NAVIGATION BUTTONS ---------- */
+/* nearby cards */
+.nearby-swiper .swiper-slide-prev .slide-inner,
+.nearby-swiper .swiper-slide-next .slide-inner {
+  transform: scale(0.95);
+  opacity: 0.9;
+}
+
+/* keep active card on top */
+.nearby-swiper .swiper-slide-active {
+  z-index: 5;
+}
+
+/* -----------------------------------------------------
+   NAVIGATION BUTTONS
+----------------------------------------------------- */
 
 .nearby-swiper .swiper-button-prev,
 .nearby-swiper .swiper-button-next {
   width: 50px;
   height: 50px;
   border-radius: 9999px;
-
-
-
   color: #8b4513;
-  transition: all 0.3s ease;
+
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
 }
 
-/* Hover elegance */
+/* hover (NO JUMP) */
 .nearby-swiper .swiper-button-prev:hover,
 .nearby-swiper .swiper-button-next:hover {
-  color: #8b4513;
-
-  transform: scale(1.06);
+  transform: translateY(-50%) scale(1.06);
 }
 
-/* Arrow icon */
+/* click press effect */
+.nearby-swiper .swiper-button-prev:active,
+.nearby-swiper .swiper-button-next:active {
+  transform: translateY(-50%) scale(0.96);
+}
+
+/* arrow icon */
 .nearby-swiper .swiper-button-prev::after,
 .nearby-swiper .swiper-button-next::after {
   font-size: 15px;
   font-weight: 700;
 }
 
-/* Position */
+/* desktop position */
 .nearby-swiper .swiper-button-prev {
-  left: 8px;
+  left: 6px;
 }
 
 .nearby-swiper .swiper-button-next {
-  right: 8px;
+  right: 6px;
 }
 
-/* Disabled */
+/* disabled */
 .nearby-swiper .swiper-button-disabled {
   opacity: 0.35;
 }
 
-/* ---------- MOBILE ---------- */
+/* -----------------------------------------------------
+   MOBILE
+----------------------------------------------------- */
 
 @media (max-width: 768px) {
 
   .nearby-swiper .swiper-button-prev,
   .nearby-swiper .swiper-button-next {
-    width: 38px;
-    height: 38px;
-    bottom: -42px;
+    width: 25px;
+    height: 25px;
     top: auto;
+    bottom: -44px;
+    transform: none;
+  }
+
+  .nearby-swiper .swiper-button-prev:hover,
+  .nearby-swiper .swiper-button-next:hover,
+  .nearby-swiper .swiper-button-prev:active,
+  .nearby-swiper .swiper-button-next:active {
+    transform: scale(1.05);
   }
 
   .nearby-swiper .swiper-button-prev {
-    left: 42%;
-    transform: translateX(-50%);
+    left: calc(50% - 45px);
   }
 
   .nearby-swiper .swiper-button-next {
-    right: 42%;
-    transform: translateX(50%);
+    right: calc(50% - 45px);
   }
 
   .nearby-swiper .swiper-button-prev::after,
@@ -643,21 +706,8 @@ span.header-contact {
     font-size: 13px;
   }
 }
-/* Smooth scaling */
-.nearby-swiper .slide-inner {
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  transform: scale(0.92);
-  opacity: 0.75;
-}
 
-/* Active center slide */
-.nearby-swiper .swiper-slide-active .slide-inner {
-  transform: scale(1);
-  opacity: 1;
-  z-index: 2;
-}
 
-/* Optional premium lift */
-.nearby-swiper .swiper-slide-active .slide-inner {
-  transform: scale(1) translateY(-6px);
+.gallery-swiper .swiper-pagination {
+  display: none !important;
 }
