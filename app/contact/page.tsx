@@ -110,7 +110,7 @@ export default function ContactPage() {
         <div className='max-w-7xl mx-auto'>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8 text-center'>
             <div className='rounded-3xl bg-[#F8F4E9] border p-8 sm:p-10 hover:shadow-xl transition'>
-              <Phone className='w-6 h-6 mx-auto text-[#8B4513]' />
+              <Phone className='w-6 h-6 mx-auto text-[#cc9e31]' />
 
               <a
                 href='tel:+914562264233'
@@ -121,7 +121,7 @@ export default function ContactPage() {
             </div>
 
             <div className='rounded-3xl bg-[#F8F4E9] border p-8 sm:p-10 hover:shadow-xl '>
-              <Mail className='w-6 h-6 mx-auto text-[#8B4513]' />
+              <Mail className='w-6 h-6 mx-auto text-[#cc9e31]' />
 
               <a
                 href='mailto:hotelnakshatra33@gmail.com'
@@ -139,7 +139,7 @@ export default function ContactPage() {
             </div>
 
             <div className='rounded-3xl bg-[#F8F4E9] border p-8 sm:p-10 hover:shadow-xl transition'>
-              <MapPin className='w-6 h-6 mx-auto text-[#8B4513]' />
+              <MapPin className='w-6 h-6 mx-auto text-[#cc9e31]' />
               <p className='para mt-6 text-base'>
                 #1828, PKN Road,
                 <br />
@@ -208,7 +208,7 @@ export default function ContactPage() {
 
               <Button
                 disabled={loading}
-                className='w-full bg-[#8B4513] hover:bg-[#723610]'
+                className='w-full bg-[#8F2D2D] cursor-pointer'
               >
                 {loading ? 'Sending...' : 'Send Message'}
               </Button>
