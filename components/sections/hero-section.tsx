@@ -59,7 +59,7 @@ export default function HeroSection() {
         {/* RIGHT IMAGE */}
         <div className='w-full lg:w-1/2 relative'>
           <img
-            src='/home/banner.webp'
+            src='/home/banner-dark.webp'
             alt='Luxury hotel bedroom'
             className='absolute inset-0 w-full h-full object-cover object-center'
           />

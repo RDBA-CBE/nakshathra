@@ -276,7 +276,7 @@
   font-size: 22px;
   letter-spacing: -0.005em;
   text-transform: capitalize;
-  color: #b99d75;
+  color: #d4a53b;
   line-height: 1.1;
   white-space: nowrap;
   will-change: transform;
@@ -449,7 +449,7 @@ h1.heading {
   /* 32px → 58px */
   margin-bottom: 20px !important;
   font-weight: 300 !important;
-  color: #1f3a44 !important;
+  color: #152a38 !important;
   line-height: 1.1;
 }
 
@@ -489,7 +489,7 @@ p.subtitle {
   /* 15px → 20px */
   font-family: "Marcellus", serif !important;
   font-weight: 700 !important;
-  color: #b3862f !important;
+  color: #cb9c31 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.1em !important;
   margin: 5px;
@@ -505,16 +505,24 @@ p.para {
   font-weight: 500 !important;
   font-family: 'Satoshi', sans-serif !important;
   line-height: 1.7 !important;
-  color: #5D5D5B !important;
+  color: #253743 !important;
 }
-
+span.span-list
+{
+  font-size: clamp(1rem, 1.8vw, 1.125rem);
+  /* 16px → 18px */
+  font-weight: 500 !important;
+  font-family: "Marcellus", serif !important;
+  line-height: 1.7 !important;
+  color: #253743 !important;
+}
 a.para-link {
   font-size: clamp(1rem, 1.8vw, 1.125rem);
   /* 16px → 18px */
   font-weight: 500 !important;
   font-family: 'Satoshi', sans-serif !important;
   line-height: 1.7 !important;
-  color: #5D5D5B !important;
+  color: #253743 !important;
   color: #640720;
 }
 a.para-link:hover {
@@ -530,7 +538,7 @@ p.footer-para {
   font-weight: 500 !important;
   font-family: 'Satoshi', sans-serif !important;
   line-height: 1.6 !important;
-  color: #5D5D5B !important;
+  color: #253743 !important;
 }
 
 /* ===============================

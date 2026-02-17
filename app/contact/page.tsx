@@ -94,7 +94,7 @@ export default function ContactPage() {
 
           <div className='relative w-full lg:w-1/2 h-[260px] sm:h-[360px] lg:h-auto min-h-[420px]'>
             <Image
-              src='/contact/contact-banner.png'
+              src='/contact/contact-banner.webp'
               alt='Hotel Nakshatra'
               fill
               className='object-cover object-center'
@@ -168,7 +168,7 @@ export default function ContactPage() {
           <div className='relative w-full h-full min-h-full overflow-hidden rounded-3xl'>
             {/* IMAGE */}
             <Image
-              src='/contact/contact.png'
+              src='/contact/contact.webp'
               alt='Nakshatra Royal Stay Concierge'
               fill
               className='object-cover z-0'

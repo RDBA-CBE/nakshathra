@@ -99,12 +99,12 @@ export default function FacilitiesSection() {
                   className='group flex items-center gap-3 bg-white px-5 py-3 rounded-full w-fit shadow-sm transition'
                 >
                   {/* Tick */}
-                  <span className='w-6 h-6 rounded-full bg-[#F6F7F9] flex items-center justify-center text-[203 46% 15%] transition-colors duration-300 group-hover:bg-[#F4C430] group-hover:text-white'>
+                  <span className='w-6 h-6 rounded-full bg-[#F6F7F9] flex items-center justify-center text-[#253743] transition-colors duration-300 group-hover:bg-[#cb9c31] group-hover:text-white'>
                     <Check size={14} />
                   </span>
 
                   {/* Text */}
-                  <span className='text-base item-text'>{item}</span>
+                  <span className='span-list'>{item}</span>
                 </div>
               ))}
             </div>
