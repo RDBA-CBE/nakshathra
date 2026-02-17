@@ -25,7 +25,7 @@ export default function GallerySection() {
   const isInView = useInView(sectionRef);
 
   return (
-    <section ref={sectionRef} className='bg-white overflow-hidden py-16'>
+    <section ref={sectionRef} className='bg-white overflow-hidden pb-20'>
       <div className='container mx-auto max-w-7xl px-4 sm:px-6'>
 
         {/* HEADER */}

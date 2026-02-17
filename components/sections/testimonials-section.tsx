@@ -83,7 +83,7 @@ export default function TestimonialsSection() {
   }, []);
 
   return (
-    <section id='testimonials-section' className='py-20 overflow-hidden'>
+    <section id='testimonials-section' className='pb-20 overflow-hidden'>
       <div className='container mx-auto px-4'>
         <div
           className={`text-center mb-12 transition-all duration-1000 ${
