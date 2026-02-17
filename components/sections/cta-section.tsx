@@ -24,7 +24,7 @@ export default function CTASection() {
   return (
     <section
       id='cta-section'
-      className='relative pb-20 flex justify-center items-center'
+      className='relative flex justify-center items-center'
     >
       <div className='container bg-[#f2f1ef] mx-auto px-4 py-16 '>
         <div
