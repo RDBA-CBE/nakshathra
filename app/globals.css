@@ -508,6 +508,19 @@ p.para {
   color: #5D5D5B !important;
 }
 
+a.para-link {
+  font-size: clamp(1rem, 1.8vw, 1.125rem);
+  /* 16px → 18px */
+  font-weight: 500 !important;
+  font-family: 'Satoshi', sans-serif !important;
+  line-height: 1.7 !important;
+  color: #5D5D5B !important;
+  color: #640720;
+}
+a.para-link:hover {
+  color: #640720 !important;
+}
+
 /* ===============================
    FOOTER PARAGRAPH
 ================================= */

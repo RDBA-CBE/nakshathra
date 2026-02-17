@@ -114,25 +114,25 @@ export default function ContactPage() {
 
               <a
                 href='tel:+914562264233'
-                className='block mt-6 text-base sm:text-lg lg:text-xl font-light hover:text-[#8B4513] transition'
+                className='para-link block mt-6 text-base transition'
               >
                 +91-45622 64233
               </a>
             </div>
 
-            <div className='rounded-3xl bg-[#F8F4E9] border p-8 sm:p-10 hover:shadow-xl transition'>
+            <div className='rounded-3xl bg-[#F8F4E9] border p-8 sm:p-10 hover:shadow-xl '>
               <Mail className='w-6 h-6 mx-auto text-[#8B4513]' />
 
               <a
                 href='mailto:hotelnakshatra33@gmail.com'
-                className='block mt-6 text-base sm:text-lg lg:text-xl font-light break-all hover:text-[#8B4513] transition'
+                className='para-link block mt-6 text-base break-all '
               >
                 hotelnakshatra33@gmail.com
               </a>
 
               <a
                 href='mailto:info@hotelnakshatra.com'
-                className='block mt-3 text-base sm:text-lg lg:text-xl font-light break-all hover:text-[#8B4513] transition'
+                className='para-link block mt-3 text-base break-all '
               >
                 info@hotelnakshatra.com
               </a>
@@ -140,7 +140,7 @@ export default function ContactPage() {
 
             <div className='rounded-3xl bg-[#F8F4E9] border p-8 sm:p-10 hover:shadow-xl transition'>
               <MapPin className='w-6 h-6 mx-auto text-[#8B4513]' />
-              <p className='mt-6 text-base sm:text-lg lg:text-xl font-light'>
+              <p className='para mt-6 text-base'>
                 #1828, PKN Road,
                 <br />
                 Sivakasi
