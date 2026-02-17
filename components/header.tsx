@@ -86,7 +86,7 @@ export default function Header() {
             <div className='flex items-center gap-2.5'>
               <Smartphone className='w-8 h-8 text-[#640720]' />
               <div className='flex flex-col leading-tight'>
-                <p className='para whitespace-nowrap'>
+                <p className='header-para whitespace-nowrap'>
                   Reserve Your Stay Today
                 </p>
                 <a href='tel:+914562264233' className='header-contact hover:text-[#640720] cursor-pointer'>

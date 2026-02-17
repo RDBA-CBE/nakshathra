@@ -507,6 +507,14 @@ p.para {
   line-height: 1.7 !important;
   color: #253743 !important;
 }
+p.header-para{
+  font-size: clamp(1rem, 1.8vw, 1rem);
+  /* 16px → 18px */
+  font-weight: 500 !important;
+  font-family: 'Satoshi', sans-serif !important;
+  line-height: 1.7 !important;
+  color: #253743 !important;
+}
 span.span-list
 {
   font-size: clamp(1rem, 1.8vw, 1.125rem);
@@ -569,7 +577,7 @@ li.footer-list1 {
   font-weight: 500 !important;
   font-family: "Satoshi", sans-serif !important;
   line-height: 1.6 !important;
-  color: #5D5D5B !important;
+  color: #253743 !important;
 }
 
 li.footer-list {
