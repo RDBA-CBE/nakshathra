@@ -567,7 +567,7 @@ span.item-text {
   color: #5D5D5B !important;
 }
 
-span.header-contact {
+a.header-contact {
   font-family: "Marcellus", serif !important;
   font-size: 18px !important;
   font-weight: 300 !important;

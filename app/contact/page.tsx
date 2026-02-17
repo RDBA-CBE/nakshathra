@@ -109,24 +109,36 @@ export default function ContactPage() {
       <section className='px-4 py-10 sm:py-14 lg:py-20 bg-white'>
         <div className='max-w-7xl mx-auto'>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8 text-center'>
-            <div className='rounded-3xl border p-8 sm:p-10 hover:shadow-xl transition'>
+            <div className='rounded-3xl bg-[#F8F4E9] border p-8 sm:p-10 hover:shadow-xl transition'>
               <Phone className='w-6 h-6 mx-auto text-[#8B4513]' />
-              <p className='mt-6 text-base sm:text-lg lg:text-xl font-light'>
+
+              <a
+                href='tel:+914562264233'
+                className='block mt-6 text-base sm:text-lg lg:text-xl font-light hover:text-[#8B4513] transition'
+              >
                 +91-45622 64233
-              </p>
+              </a>
             </div>
 
-            <div className='rounded-3xl border p-8 sm:p-10 hover:shadow-xl transition'>
+            <div className='rounded-3xl bg-[#F8F4E9] border p-8 sm:p-10 hover:shadow-xl transition'>
               <Mail className='w-6 h-6 mx-auto text-[#8B4513]' />
-              <p className='mt-6 text-base sm:text-lg lg:text-xl font-light break-all'>
+
+              <a
+                href='mailto:hotelnakshatra33@gmail.com'
+                className='block mt-6 text-base sm:text-lg lg:text-xl font-light break-all hover:text-[#8B4513] transition'
+              >
                 hotelnakshatra33@gmail.com
-              </p>
-              <p className='mt-3 text-base sm:text-lg lg:text-xl font-light break-all'>
+              </a>
+
+              <a
+                href='mailto:info@hotelnakshatra.com'
+                className='block mt-3 text-base sm:text-lg lg:text-xl font-light break-all hover:text-[#8B4513] transition'
+              >
                 info@hotelnakshatra.com
-              </p>
+              </a>
             </div>
 
-            <div className='rounded-3xl border p-8 sm:p-10 hover:shadow-xl transition'>
+            <div className='rounded-3xl bg-[#F8F4E9] border p-8 sm:p-10 hover:shadow-xl transition'>
               <MapPin className='w-6 h-6 mx-auto text-[#8B4513]' />
               <p className='mt-6 text-base sm:text-lg lg:text-xl font-light'>
                 #1828, PKN Road,
