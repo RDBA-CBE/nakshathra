@@ -71,8 +71,8 @@ export default function Header() {
                   href={item.href}
                   className={`text-[18px] transition-colors ${
                     pathname === item.href
-                      ? 'text-[#8B4513]'
-                      : 'text-[#1F3A44] hover:text-[#8B4513]'
+                      ? 'text-[#640720]'
+                      : 'text-[#1F3A44] hover:text-[#640720]'
                   }`}
                   style={{ fontFamily: '"Marcellus", serif' }}
                 >
@@ -84,12 +84,12 @@ export default function Header() {
             <div className='w-px h-8 bg-gray-300' />
 
             <div className='flex items-center gap-2.5'>
-              <Smartphone className='w-8 h-8 text-[#8B4513]' />
+              <Smartphone className='w-8 h-8 text-[#640720]' />
               <div className='flex flex-col leading-tight'>
                 <p className='para whitespace-nowrap'>
                   Reserve Your Stay Today
                 </p>
-                <a href='tel:+914562264233' className='header-contact'>
+                <a href='tel:+914562264233' className='header-contact hover:text-[#640720] cursor-pointer'>
                   +91-45622 64233
                 </a>
               </div>

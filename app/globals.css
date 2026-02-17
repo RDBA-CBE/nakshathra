@@ -587,6 +587,10 @@ a.header-contact {
   color: #1f3a44 !important;
 }
 
+a.header-contact:hover {
+  color: #640720 !important;
+}
+
 /* ===============================
    LUXURY SWIPER ARROWS
 ================================= */
