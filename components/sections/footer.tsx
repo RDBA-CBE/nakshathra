@@ -7,7 +7,7 @@ export default function Footer() {
       <div className='max-w-[1280px] mx-auto w-full'>
 
         {/* TOP LINKS */}
-        <ul className='pb-10 flex flex-wrap items-center justify-center gap-6 text-base text-[#5C4A42]'>
+        <ul className='pb-10 flex flex-wrap items-center justify-center gap-6 text-base text-[#253743]'>
           {[
             ['About', '/about'],
             ['Rooms', '/rooms'],
