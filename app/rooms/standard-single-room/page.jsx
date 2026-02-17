@@ -7,10 +7,10 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 const images = [
-  '/elegant-hotel-bedroom-interior.jpg',
-  '/family-hotel-room-orange-decor.jpg',
-  '/premium-hotel-room-warm-lighting.jpg',
-  '/hotel-bedroom-interior.jpg',
+  '/rooms/standard-single-room/img1.webp',
+  '/rooms/standard-single-room/img2.webp',
+  '/rooms/standard-single-room/img3.webp',
+  '/rooms/standard-single-room/img4.webp',
 ];
 
 const sections = [
@@ -60,7 +60,7 @@ export default function StandardSingleRoom() {
     <main className='min-h-screen bg-white'>
       <Header />
       <div className='w-full bg-[#F8F5F0] '>
-        <div className='max-w-6xl mx-auto px-4 py-8'>
+        <div className='max-w-6xl mx-auto px-4 py-4'>
           <p className='para'>
             <Link href='/' className='hover:text-[#8F2D2D] transition'>
               Home
@@ -99,7 +99,7 @@ export default function StandardSingleRoom() {
                   <button
                     key={img}
                     onClick={() => setActiveImage(img)}
-                    className={`relative h-20 w-20 rounded-lg overflow-hidden border
+                    className={`relative h-20 w-20 rounded-lg overflow-hidden border cursor-pointer
                     ${activeImage === img ? 'border-[#cc9e32]' : 'border-gray-300'}`}
                   >
                     <Image
