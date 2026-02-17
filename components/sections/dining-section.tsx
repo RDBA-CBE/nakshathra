@@ -45,7 +45,7 @@ export default function DiningSection() {
                 : 'opacity-0 -translate-x-10'
             }`}
           >
-            <div className='relative w-full h-full rounded-2xl overflow-hidden shadow-lg'>
+            <div className='relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-full rounded-2xl overflow-hidden shadow-lg'>
               <Image
                 src='/home/dining.webp'
                 alt='Restaurant Interior'

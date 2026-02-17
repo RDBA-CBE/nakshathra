@@ -117,7 +117,7 @@ export default function AboutSection() {
               }`}
             >
               <Link href='/about'>
-                <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] font-medium transition cursor-pointer'>
+                <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-5 py-3 rounded-lg text-[16px] font-medium transition cursor-pointer'>
                   Know More
                   <ArrowRight className='ml-2 h-4 w-4' />
                 </button>

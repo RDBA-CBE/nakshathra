@@ -38,7 +38,7 @@ export default function HeroSection() {
               {/* CTA */}
               <Link
                 href='/rooms'
-                className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] mt-5 font-medium transition'
+                className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-5 py-3 rounded-lg text-[16px] mt-5 font-medium transition'
               >
                 Know More
                 <ArrowRight className='w-4 h-4' />

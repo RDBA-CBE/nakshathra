@@ -48,7 +48,7 @@ export default function CTASection() {
           <div>
             <Link
               href='/contact'
-              className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-10 py-3.5 rounded-lg text-[18px] font-medium transition'
+              className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-5 py-3 rounded-lg text-[16px] font-medium transition'
             >
               Make Reservation
               <ArrowRight className='ml-2 h-5 w-5' />

@@ -76,7 +76,7 @@ export default function ExperienceSection() {
           />
         </svg>
         <div className='absolute inset-0 flex flex-col items-center justify-center px-6 pt-96 pb-20'>
-          <div className='container mx-auto px-4'>
+          <div className='container pt-10 mx-auto px-4'>
             {/* Heading */}
             <div
               className={`text-center mb-12 transition-all duration-700 ${
@@ -110,20 +110,22 @@ export default function ExperienceSection() {
                 640: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },
               }}
-              className='nearby-swiper'
+              className='nearby-swiper w-full mx-auto px-4 max-w-[1000px] xl:max-w-[1200px]'
             >
               {experiences.map((experience, index) => (
                 <SwiperSlide key={experience.title}>
                   <div className='slide-inner'>
-                    <div
-                      className={`transition-all duration-700 ${
-                        isInView
-                          ? 'opacity-100 translate-y-0'
-                          : 'opacity-0 translate-y-20'
-                      }`}
-                      style={{ transitionDelay: `${index * 150}ms` }}
-                    >
-                      <ExperienceCard {...experience} />
+                    <div className={experience.rotation}>
+                      <div
+                        className={`transition-all duration-700 ${
+                          isInView
+                            ? 'opacity-100 translate-y-0'
+                            : 'opacity-0 translate-y-20'
+                        }`}
+                        style={{ transitionDelay: `${index * 150}ms` }}
+                      >
+                        <ExperienceCard {...experience} rotation='' />
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>

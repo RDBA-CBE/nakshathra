@@ -445,7 +445,7 @@
 
 h1.heading {
   font-family: "Marcellus", serif !important;
-  font-size: clamp(2rem, 5vw, 3.625rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   /* 32px → 58px */
   margin-bottom: 20px !important;
   font-weight: 300 !important;
@@ -455,7 +455,7 @@ h1.heading {
 
 h2.heading {
   font-family: "Marcellus", serif !important;
-  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 4vw, 2rem);
   /* 28px → 48px */
   margin-bottom: 20px !important;
   font-weight: 300 !important;
@@ -485,7 +485,7 @@ h3.privacy {
    SUBTITLE
 ================================= */
 p.subtitle {
-  font-size: clamp(0.95rem, 2vw, 1.25rem);
+  font-size: clamp(0.95rem, 2vw, 1rem);
   /* 15px → 20px */
   font-family: "Marcellus", serif !important;
   font-weight: 700 !important;

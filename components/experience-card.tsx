@@ -19,10 +19,10 @@ export default function ExperienceCard({
 }: ExperienceCardProps) {
   return (
     <div
-      className={`group relative w-full max-w-[320px] ${rotation}
+      className={`group relative w-full max-w-[320px] max-[1290px]:max-w-[280px]${rotation}
       mx-auto transition-all duration-500`}
     >
-      <div className="bg-white p-5 rounded-xl h-100 flex flex-col">
+      <div className="bg-white p-5 rounded-xl min-h-[100px] flex flex-col">
         
         {/* Image with Link */}
         {link ? (

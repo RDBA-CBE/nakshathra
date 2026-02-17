@@ -56,7 +56,7 @@ export default function Footer() {
               </h4>
 
               <p className='footer-para flex items-start gap-3 justify-center lg:justify-start'>
-                <MapPin className='w-4 h-4 text-[#8B1C1C] shrink-0 mt-1' />
+                <MapPin className='w-4 h-4 text-[#cc9e31] shrink-0 mt-1' />
                 <span>
                   Hotel Nakshatra,<br />
                   #1828 PKN Road,<br />
@@ -81,14 +81,14 @@ export default function Footer() {
 
               <div className='space-y-3 text-sm sm:text-base'>
                 <p className='footer-para flex items-center gap-3 justify-center lg:justify-start'>
-                  <Phone className='w-4 h-4 text-[#8B1C1C] shrink-0' />
+                  <Phone className='w-4 h-4 text-[#cc9e31] shrink-0' />
                   <a href='tel:+914562264233' className='hover:text-[#8B1C1C]'>
                     +91-4562264233
                   </a>
                 </p>
 
                 <p className='footer-para flex items-center gap-3 justify-center lg:justify-start'>
-                  <Mail className='w-4 h-4 text-[#8B1C1C] shrink-0' />
+                  <Mail className='w-4 h-4 text-[#cc9e31] shrink-0' />
                   <a
                     href='mailto:hotelnakshatra33@gmail.com'
                     className='hover:text-[#8B1C1C] break-all'
@@ -98,7 +98,7 @@ export default function Footer() {
                 </p>
 
                 <p className='footer-para flex items-center gap-3 justify-center lg:justify-start'>
-                  <Mail className='w-4 h-4 text-[#8B1C1C] shrink-0' />
+                  <Mail className='w-4 h-4 text-[#cc9e31] shrink-0' />
                   <a
                     href='mailto:info@hotelnakshatra.com'
                     className='hover:text-[#8B1C1C] break-all'
