@@ -22,7 +22,7 @@ export default function ExperienceCard({
       className={`group relative w-full max-w-[320px] ${rotation}
       mx-auto transition-all duration-500`}
     >
-      <div className="bg-white p-5 shadow-xl rounded-xl h-100 flex flex-col">
+      <div className="bg-white p-5 rounded-xl h-100 flex flex-col">
         
         {/* Image with Link */}
         {link ? (

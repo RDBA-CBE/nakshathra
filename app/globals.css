@@ -450,7 +450,7 @@ h1.heading {
   margin-bottom: 20px !important;
   font-weight: 300 !important;
   color: #1f3a44 !important;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 h2.heading {
@@ -585,7 +585,9 @@ span.header-contact {
 .nearby-swiper {
   position: relative;
   padding-inline: 8px;
+  padding: 20px 0px 10px 0px !important;
 }
+
 
 /* -----------------------------------------------------
    SLIDES
