@@ -1,60 +1,56 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import TestimonialCard from '@/components/testimonial-card';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+
+import 'swiper/css';
 
 const testimonials = [
   {
-    name: 'Hari P',
-    date: 'Feb 2026',
+    name: 'Arun Kumar',
+    date: '',
     rating: 5,
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Had a very peaceful and comfortable stay. The rooms were clean and spacious. The staff members were polite and supportive throughout our visit. The location is convenient for temple visits. Highly recommended for families.',
     avatar: '/placeholder-user.jpg',
     platform: 'Tripadvisor',
   },
   {
-    name: 'Senthil K',
-    date: 'Feb 2026',
+    name: 'Kavitha Ramesh',
+    date: '',
     rating: 4,
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Excellent hospitality and well maintained rooms. The ambience is calm and pleasant. Check in and check out process was smooth. Worth the money and we will definitely visit again.',
     avatar: '/placeholder-user.jpg',
     platform: 'Tripadvisor',
   },
   {
-    name: 'Ramesh N',
-    date: 'Jan 2026',
+    name: 'Sathish Kumar',
+    date: '',
     rating: 5,
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Good hotel with neat rooms and prompt service. The staff responded quickly to our requests. Very close to major attractions. Overall a satisfying experience.',
     avatar: '/placeholder-user.jpg',
     platform: 'Tripadvisor',
   },
   {
-    name: 'Viswamohan K',
-    date: 'Dec 2025',
+    name: 'Meena Lakshmi',
+    date: '',
     rating: 4,
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'We stayed here with family and had a wonderful experience. Clean surroundings and comfortable bedding made our stay relaxing. The service was professional and friendly',
     avatar: '/placeholder-user.jpg',
     platform: 'Tripadvisor',
   },
   {
-    name: 'Ravi N',
-    date: 'Nov 2025',
+    name: 'Praveen Raj',
+    date: '',
     rating: 5,
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    avatar: '/placeholder-user.jpg',
-    platform: 'Tripadvisor',
-  },
-  {
-    name: 'Ganesh K',
-    date: 'Oct 2025',
-    rating: 5,
-    review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'One of the best stays in the area. The property is well maintained and the atmosphere is peaceful. Staff were courteous and helpful. I would strongly recommend this hotel to others.',
     avatar: '/placeholder-user.jpg',
     platform: 'Tripadvisor',
   },
@@ -62,16 +58,17 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   const [isVisible, setIsVisible] = useState(false);
-  const [page, setPage] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const swiperRef = useRef<any>(null); // ✅ TOP LEVEL
+
   const perPage = 2;
   const pageCount = Math.ceil(testimonials.length / perPage);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.1 }
     );
@@ -85,37 +82,56 @@ export default function TestimonialsSection() {
   return (
     <section id='testimonials-section' className='pb-20 overflow-hidden'>
       <div className='container mx-auto px-4'>
+        {/* Heading */}
         <div
           className={`text-center mb-12 transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <p className='subtitle'>
-            Feedback that Mirrors our Commitment
-          </p>
+          <p className='subtitle'>Feedback that Mirrors our Commitment</p>
           <h2 className='heading leading-[1.15] my-5'>
-            Every Review Helps us Improve 
+            Every Review Helps us Improve
             <br />
             And Continue Delivering Meaningful Stays
           </h2>
         </div>
 
+        {/* Swiper */}
         <div
-          className={`grid md:grid-cols-2 gap-8 items-stretch transition-all duration-1000 delay-300 ${
+          className={`transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          {testimonials
-            .slice(page * perPage, page * perPage + perPage)
-            .map((testimonial, index) => (
-              <div
-                key={page * perPage + index}
-                className='transition-all duration-1000 h-full'
-                style={{ transitionDelay: `${index * 100 + 400}ms` }}
-              >
-                <TestimonialCard {...testimonial} />
-              </div>
+          <Swiper
+            modules={[Autoplay]}
+            loop={true}
+            loopAdditionalSlides={testimonials.length}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+            slidesPerView={1}
+            slidesPerGroup={1} // mobile
+            breakpoints={{
+              768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2, // ⭐ KEY FIX
+              },
+            }}
+            spaceBetween={32}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            onSlideChange={(swiper) => {
+              setActiveIndex(swiper.realIndex / 2); // simple now
+            }}
+          >
+            {testimonials.map((testimonial, index) => (
+              <SwiperSlide key={index}>
+                <div className='h-full'>
+                  <TestimonialCard {...testimonial} />
+                </div>
+              </SwiperSlide>
             ))}
+          </Swiper>
         </div>
 
         {/* Pagination dots */}
@@ -124,22 +140,20 @@ export default function TestimonialsSection() {
             <button
               key={i}
               aria-label={`Go to page ${i + 1}`}
-              aria-current={page === i}
-              onClick={() => setPage(i)}
-              className='p-1 rounded-full transition-colors duration-200'
+              className='p-1 rounded-full'
+              onClick={() => {
+                setActiveIndex(i);
+                swiperRef.current?.slideToLoop(i * 2);
+              }}
             >
-              {/* Outer circle */}
               <span
                 className={`inline-flex items-center justify-center w-4 h-4 rounded-full ${
-                  page === i
-                    ? 'border-2 border-[#8B4513] bg-transparent'
-                    : 'bg-transparent'
+                  activeIndex === i ? 'border-2 border-[#8B4513]' : ''
                 }`}
               >
-                {/* Inner circle: empty for active, filled for inactive */}
                 <span
                   className={`block rounded-full transition-all duration-200 ${
-                    page === i
+                    activeIndex === i
                       ? 'w-2.5 h-2.5 bg-transparent'
                       : 'w-2.5 h-2.5 bg-[#8B4513]'
                   }`}
