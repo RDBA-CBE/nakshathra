@@ -8,7 +8,7 @@ import { link } from "fs"
 const rooms = [
   {
     title: "Standard Single",
-    price: "₹1499 + 5% tax (₹1574)",
+    price: "₹1499 + Taxes (₹1574)",
     // area: "300 Sq ft",
     // guests: "4 guest",
     image: "/home/rooms/standard-single.webp",
@@ -16,15 +16,15 @@ const rooms = [
   },
   {
     title: "Standard Double",
-    price: "₹1999 + 5% tax (₹2099)",
+    price: "₹1999 + Taxes (₹2099)",
     // area: "200 Sq ft",
     // guests: "2 guest",
-    image: "/home/rooms/standard-double.webp",
+    image: "/home/rooms/standard-double-room.webp",
     link:"/rooms/standard-double-room"
   },
   {
     title: "Deluxe Room",
-    price: "₹2399 + 5% tax (₹2519)",
+    price: "₹2499 + Taxes (₹2624)",
     // area: "250 Sq ft",
     // guests: "2 guest",
     image: "/home/rooms/deluxe-room.webp",
@@ -32,11 +32,19 @@ const rooms = [
   },
   {
     title: "Super Deluxe Room",
-    price: "₹3999 + 5% tax (₹4199)",
+    price: "₹2999 + Taxes (₹3149)",
     // area: "250 Sq ft",
     // guests: "2 guest",
     image: "/home/rooms/super-deluxe-room.webp",
     link:"/rooms/super-deluxe-room"
+  },
+  {
+    title: "Two King Bed",
+    price: "₹3999 + Taxes (₹4199)",
+    // area: "250 Sq ft",
+    // guests: "2 guest",
+    image: "/home/rooms/two-king-bed.webp",
+    link:"/rooms/two-king-bed"
   },
 ]
 
@@ -45,8 +53,8 @@ export default function RoomsSection() {
   const isInView = useInView(sectionRef)
 
   return (
-    <section ref={sectionRef} className="pb-20 px-6 bg-white">
-      <div className="container mx-auto">
+    <section ref={sectionRef} className="py-20 px-6 bg-gradient-to-b from-[#f2f1ef] to-white">
+      <div className=" mx-auto">
         <div
           className={`text-center mb-16 transition-all duration-700 ${
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -56,14 +64,12 @@ export default function RoomsSection() {
             Thoughtful spaces for meaningful stays
           </p>
           
-            
-          
           <h2 className="heading leading-[1.15] mt-5">
-            Ideal for Business Travellers,<br /> Pilgrims and Families Alike
+            Ideal for Business Travellers, Pilgrims and Families Alike
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {rooms.map((room, index) => (
             <div
               key={room.title}

@@ -15,7 +15,7 @@ const rooms = [
   {
     id: '01',
     title: 'Standard Single',
-    price: '₹1499 + 5% tax (₹1574)',
+    price: '₹1499 + Taxes (₹1574)',
     description:
       'Designed for solo travellers, the standard single room offers a cozy and functional space with warm decor that provides comfort and relaxation.',
     image: '/rooms/standard-single.webp',
@@ -24,7 +24,7 @@ const rooms = [
   {
     id: '02',
     title: 'Standard Double',
-    price: '₹1999 + 5% tax (₹2099)',
+    price: '₹1999 + Taxes (₹2099)',
     description:
       'The Standard Double Room is a spacious and well-appointed accommodation offering enhanced comfort, privacy and modern amenities.',
     image: '/rooms/standard-double.webp',
@@ -33,7 +33,7 @@ const rooms = [
   {
     id: '03',
     title: 'Deluxe Room',
-    price: '₹2399 + 5% tax (₹2519)',
+    price: '₹2499 + Taxes (₹2624)',
     description:
       'The Deluxe Room offers enhanced space with elegant interiors and premium comforts, creating a refined yet inviting atmosphere.',
     image: '/rooms/deluxe-room.webp',
@@ -42,11 +42,20 @@ const rooms = [
   {
     id: '04',
     title: 'Super Deluxe Room',
-    price: '₹3999 + 5% tax (₹4199)',
+    price: '₹2999 + Taxes (₹3149)',
     description:
       'The Super Deluxe Room is the most spacious category at Hotel Nakshatra, featuring refined decor, superior amenities and exceptional comfort. ',
     image: '/rooms/super-deluxe-room.webp',
     link: '/rooms/super-deluxe-room',
+  },
+   {
+    id: '05',
+    title: 'Two King Bed',
+    price: '₹3999 + Taxes (₹4199)',
+    description:
+      'The Two King Bed Room is the most spacious category at Hotel Nakshatra, featuring refined decor, superior amenities and exceptional comfort. ',
+    image: '/rooms/two-king-bed.webp',
+    link: '/rooms/two-king-bed',
   },
 ];
 

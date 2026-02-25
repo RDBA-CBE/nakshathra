@@ -37,7 +37,7 @@ export default function GallerySection() {
           <div>
             <p className='subtitle mb-4'>OUR GALLERY</p>
 
-            <h2 className='heading leading-[1.15]'>
+            <h2 className='heading leading-[1.15] mt-5'>
               Sophisticated Interiors Thoughtfully
               <br className='hidden sm:block' />
               Balanced with Comfort and Warmth
@@ -45,7 +45,7 @@ export default function GallerySection() {
           </div>
 
           <Link href='/gallery'>
-            <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-5 py-3 rounded-lg text-base text-[16px] font-medium transition'>
+            <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-5 py-3 rounded-lg text-base text-[16px] font-medium transition cursor-pointer'>
               View All
               <ArrowRight className='w-4 h-4' />
             </button>

@@ -30,7 +30,9 @@ export default function DiningSection() {
       <div className='container mx-auto px-4'>
         {/* Heading */}
         <div className='text-center mb-12'>
-          <p className='subtitle'>Relaxed Ambience, Quality Cuisine</p>
+          <p className='subtitle'>
+            Relaxed Ambience, Quality Multicuisine Restaurant
+          </p>
           <h2 className='heading leading-[1.15] mt-5'>
             Peaceful Dining with Nourishing <br /> Meals and Attentive Service
           </h2>
@@ -94,12 +96,15 @@ export default function DiningSection() {
               </div> */}
 
               <p className='para'>
-                Carefully prepared dishes balance traditional flavours and
-                modern preferences, ensuring high standards of taste, hygiene
-                and consistency complemented by relaxed ambience and
-                personalized care
-                
+                Our menu presents a sophisticated selection of Chinese, North
+                Indian, and South Indian cuisines, thoughtfully prepared using
+                the finest ingredients and time-honoured techniques.
               </p>
+              <Link href='/multicuisine-restaurant'>
+                <button className='inline-flex items-center gap-2 bg-[#8F2D2D] hover:bg-[#742222] text-white px-5 py-3 rounded-lg text-[16px] mt-5 font-medium transition cursor-pointer'>
+                  Know More
+                </button>
+              </Link>
               {/* <p><br/></p>
               <p><br/></p> */}
 

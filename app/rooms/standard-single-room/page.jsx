@@ -132,7 +132,7 @@ export default function StandardSingleRoom() {
               <div className='text-[18px] inline-flex items-center gap-3 mb-6 px-5 py-2 rounded-full bg-[#b3862f] text-[#FFFFFF] font-semibold'>
                 Tariff: ₹1499
                 <span className='text-[18px] font-medium'>
-                  + 5% tax (₹1574)
+                  + Taxes (₹1574)
                 </span>
               </div>
               <a

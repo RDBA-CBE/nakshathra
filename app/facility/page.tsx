@@ -64,6 +64,11 @@ const facilities = [
     desc: 'Our attentive staff and bespoke services create a welcoming atmosphere that makes every stay truly special.',
     icon: '/facilities/icons/hospitality.svg',
   },
+  {
+    title: 'Where Every Meal Becomes a Multicuisine Experience',
+    desc: 'Elegantly curated Multicuisine Restaurant serving authentic Chinese, North and South Indian flavours.',
+    icon: '/facilities/icons/hospitality.svg',
+  },
 ];
 
 export default function FacilityPage() {
@@ -115,9 +120,6 @@ export default function FacilityPage() {
                     environment where you can relax and stay productive.
                   </p>
                 </motion.div>
-
-                {/* Decorative Line */}
-
                 {/* Features */}
               </div>
             </div>
@@ -150,8 +152,6 @@ export default function FacilityPage() {
       </section>
       <section className='py-20 px-4 bg-[#FFFFFF]'>
         <div className='max-w-7xl mx-auto space-y-20 md:space-y-24'>
-          {/* HERO IMAGE SECTION */}
-
           {/* WHY CHOOSE US */}
           <div className='w-full max-w-7xl mx-auto space-y-16'>
             {/* Heading */}

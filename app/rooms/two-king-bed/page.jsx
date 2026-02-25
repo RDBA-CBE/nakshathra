@@ -7,10 +7,10 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 const images = [
-  '/rooms/standard-double-room/img1.webp',
-  '/rooms/standard-double-room/img2.webp',
-  '/rooms/standard-double-room/img3.webp',
-  '/rooms/standard-double-room/img4.webp',
+  '/rooms/super-deluxe-room/img1.webp',
+  '/rooms/super-deluxe-room/img2.webp',
+  '/rooms/super-deluxe-room/img3.webp',
+  '/rooms/super-deluxe-room/img4.webp',
 ];
 
 const sections = [
@@ -44,7 +44,7 @@ const sections = [
     title: 'Bathroom Facilities',
     items: [
       'Hot & cold running water',
-      'Shower ',
+      'Shower',
       'Bath towels & hand towels',
       'Toiletries (soap, shampoo, conditioner)',
       'Shaving mirror',
@@ -71,7 +71,7 @@ export default function StandardSingleRoom() {
             </Link>
             <span className='mx-2 text-gray-400'>/</span>
             <span className='text-[#640720] font-medium'>
-              Standard Double Room
+              Two King Bed
             </span>
           </p>
         </div>
@@ -88,7 +88,7 @@ export default function StandardSingleRoom() {
               Rooms
             </Link>
             {' / '}
-            <span className='text-gray-700 font-medium'>Super Deluxe Room</span>
+            <span className='text-gray-700 font-medium'>Two King Bed</span>
           </p> */}
           <div className='grid lg:grid-cols-2 gap-12'>
             {/* LEFT – IMAGE GALLERY */}
@@ -104,7 +104,7 @@ export default function StandardSingleRoom() {
                   >
                     <Image
                       src={img}
-                      alt='Standard Double Room'
+                      alt='Two King Bed'
                       fill
                       className='object-cover'
                     />
@@ -116,7 +116,7 @@ export default function StandardSingleRoom() {
               <div className='relative flex-1 h-[550px] rounded-2xl overflow-hidden bg-gray-200'>
                 <Image
                   src={activeImage}
-                  alt='Standard Double Room'
+                  alt='Two King Bed'
                   fill
                   priority
                   className='object-cover'
@@ -126,13 +126,13 @@ export default function StandardSingleRoom() {
 
             {/* RIGHT – ROOM INFO */}
             <div>
-              <h1 className='heading leading-[1.15] mb-4'>Standard Double</h1>
+              <h1 className='heading leading-[1.15] mb-4'>Two King Bed</h1>
 
               {/* Tariff */}
               <div className='text-[18px] inline-flex items-center gap-3 mb-6 px-5 py-2 rounded-full bg-[#b3862f] text-[#FFFFFF] font-semibold'>
-                Tariff: ₹1999
+                Tariff: ₹3999
                 <span className='text-[18px] font-medium'>
-                  + Taxes (₹2099)
+                  + Taxes (₹4199)
                 </span>
               </div>
               <a
@@ -146,11 +146,12 @@ export default function StandardSingleRoom() {
                 Book Now
               </a>
               <p className='para'>
-                The Standard Double Room is a spacious and well-appointed
-                accommodation offering enhanced comfort, privacy and modern
-                amenities. Perfect for couples and guests, it provides a
-                relaxing environment suited for both business and leisure stays.
+                The Two King Bed is the most spacious category at Hotel
+                Nakshatra, featuring refined decor, superior amenities and
+                exceptional comfort. Designed to elevate your stay, it is ideal
+                for 1 to 3 guests who seek extra space and a premium experience.
               </p>
+
               <section className='py-5'>
                 <div className='max-w-4xl mx-auto space-y-4'>
                   {sections.map((section, index) => {

@@ -35,9 +35,9 @@ const experiences = [
 export default function MblexperienceSection() {
   return (
     <section className='pb-20 mbl-experience overflow-x-hidden'>
-      <div className='container mx-auto px-4 sm:px-6'>
-        <p className='subtitle'>Smart choice for sightseeing </p>
-        <h2 className='heading leading-[1.15] text-balance'>
+      <div className='container mx-auto px-4  pt-20 sm:px-6'>
+        <p className='subtitle  text-center'>Smart choice for sightseeing </p>
+        <h2 className='heading leading-[1.15] text-center text-balance'>
           Easy Connectivity to Popular <br /> Sights and Tranquil Retreats
         </h2>
 

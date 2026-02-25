@@ -83,7 +83,7 @@ export default function Footer() {
                 <p className='footer-para flex items-center gap-3 justify-center lg:justify-start'>
                   <Phone className='w-4 h-4 text-[#cc9e31] shrink-0' />
                   <a href='tel:+914562264233' className='hover:text-[#8B1C1C]'>
-                    +91-4562264233
+                    +91-4562 264233
                   </a>
                 </p>
 
@@ -100,10 +100,10 @@ export default function Footer() {
                 <p className='footer-para flex items-center gap-3 justify-center lg:justify-start'>
                   <Mail className='w-4 h-4 text-[#cc9e31] shrink-0' />
                   <a
-                    href='mailto:info@hotelnakshatra.com'
+                    href='mailto:info@nakshatrahotel.com'
                     className='hover:text-[#8B1C1C] break-all'
                   >
-                    info@hotelnakshatra.com
+                    info@nakshatrahotel.com
                   </a>
                 </p>
               </div>
