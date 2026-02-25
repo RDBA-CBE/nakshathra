@@ -10,25 +10,40 @@ import 'swiper/css/pagination';
 
 const experiences = [
   {
-    title: 'Attakatti View Point',
-    // description: "Excepteur sint occaecat",
-    image: '/attakathi-loam-view-point.jpg',
+    title: 'Thiruthangal Nindra Narayana Perumal Temple',
+    image: '/nearby/thiruthangal.webp',
     // rotation: 'rotate-6',
-    link: '/attakathi-loem-view-point',
+    link: '/thiruthangal-nindra-narayana-perumal-temple',
   },
   {
-    title: 'Sholayar Dam',
-    // description: "Sunt culpa aliquip officia",
-    image: '/sholiyar-dam.jpg',
+    title: 'Vembakottai Dam',
+    image: '/nearby/vembakottai-dam.webp',
     // rotation: 'rotate-0',
-    link: '/sholayar-dam',
+    link: '/vembakottai-dam',
   },
   {
-    title: 'Masani Amman Temple Pollachi',
-    // description: "Quis nostrud exercitation",
-    image: '/masani-temple.jpg',
-    // rotation: '-rotate-6',
-    link: '/masani-amman-temple-pollachi',
+    title: 'Srivilliputhur Andal Temple',
+    image: '/nearby/srivilliputhur.webp',
+    // rotation: 'rotate-6',
+    link: '/srivilliputhur-andal-temple',
+  },
+  {
+    title: 'Shenbaga Thoppu Grizzled Squirrel Sanctuary',
+    image: '/nearby/shenbaga-thoppu.webp',
+    // rotation: 'rotate-0',
+    link: '/shenbaga-thoppu-grizzled-squirrel-sanctuary',
+  },
+  {
+    title: 'Ayyanar Falls',
+    image: '/nearby/ayyanar-falls.webp',
+    // rotation: 'rotate-6',
+    link: '/ayyanar-falls',
+  },
+  {
+    title: 'Kullur Sandhai Reservoir',
+    image: '/nearby/kullur-sandhai.webp',
+    // rotation: 'rotate-0',
+    link: '/kullur-sandhai-reservoir',
   },
 ];
 
