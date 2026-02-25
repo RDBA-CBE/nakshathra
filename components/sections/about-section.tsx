@@ -20,7 +20,9 @@ export default function AboutSection() {
     >
       <div className='container mx-auto'>
         {/* PARENT: Stats and Headings aligned to end */}
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-20 items-end mb-14'>
+        <div
+          className='grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-20 mb-8 md:mb-8 lg:mb-14 items-end'
+        >
           {/* CHILD 1: STATS */}
           <div
             className={`transition-all duration-700 ${
@@ -65,7 +67,7 @@ export default function AboutSection() {
             <p className='subtitle'>About Our Hotel</p>
 
             {/* MAIN HEADING */}
-            <h2 className='leading-[1.15] heading  mt-5'>
+            <h2 className='leading-[1.15] heading mt-5'>
               Redefining Stays with Warmth and Elegance
             </h2>
           </div>

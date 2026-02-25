@@ -62,7 +62,9 @@ export default function HeroSection() {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className='w-full lg:w-1/2 relative h-[750px] sm:h-[400px] lg:h-[700]'>
+        <div
+          className='w-full lg:w-1/2 relative h-[400px] md:h-[500px] lg:h-[720px]'
+        >
           <Swiper
             modules={[Autoplay, EffectFade]}
             slidesPerView={1}
@@ -74,45 +76,21 @@ export default function HeroSection() {
             }}
             className='w-full h-full'
           >
-            <SwiperSlide>
-              <img
-                src='home/banner1.webp'
-                alt='Luxury hotel bedroom'
-                className='w-full object-cover object-center'
-              />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img
-                src='home/banner2.webp'
-                alt='Luxury hotel interior'
-                className='w-full object-cover object-center'
-              />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img
-                src='home/banner3.webp'
-                alt='Luxury hotel suite'
-                className='w-full object-cover object-center'
-              />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img
-                src='home/banner4.webp'
-                alt='Luxury hotel interior'
-                className='w-full object-cover object-center'
-              />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img
-                src='home/banner-dark.webp'
-                alt='Luxury hotel interior'
-                className='w-full h-full object-cover object-center'
-              />
-            </SwiperSlide>
+            {[
+              'home/banner1.webp',
+              'home/banner2.webp',
+              'home/banner3.webp',
+              'home/banner4.webp',
+              'home/banner-dark.webp',
+            ].map((img, index) => (
+              <SwiperSlide key={index}>
+                <img
+                  src={img}
+                  alt='Luxury hotel interior'
+                  className='w-full h-full object-cover object-center'
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
