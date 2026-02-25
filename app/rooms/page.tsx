@@ -191,7 +191,7 @@ export default function RoomsPage() {
 
                     {/* Book Now - RIGHT */}
                     <a
-                      href='tel:+91-4562264233'
+                     href='tel:+914562264233'
                       className='px-4 py-2 rounded-md bg-[#640720] text-[#FFFFFF] text-sm font-medium hover:bg-[#6f3610] transition'
                     >
                       Book Now

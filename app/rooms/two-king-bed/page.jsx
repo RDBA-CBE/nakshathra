@@ -127,7 +127,7 @@ export default function StandardSingleRoom() {
                 <span className='text-[18px] font-medium'>+ Taxes (₹4199)</span>
               </div>
               <a
-                href='tel:+91-4562264233'
+                href='tel:+914562264233'
                 className='inline-flex items-center justify-center gap-2
              px-5 mx-8 py-2 rounded-full
              bg-[#640720] text-[#FFFFFF]
