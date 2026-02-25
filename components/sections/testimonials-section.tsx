@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import TestimonialCard from '@/components/testimonial-card';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, FreeMode } from 'swiper/modules';
 
 import 'swiper/css';
 
@@ -105,23 +105,21 @@ export default function TestimonialsSection() {
           <Swiper
             modules={[Autoplay]}
             loop={true}
-            loopAdditionalSlides={testimonials.length}
             autoplay={{
               delay: 4000,
               disableOnInteraction: false,
             }}
             slidesPerView={1}
-            slidesPerGroup={1} // mobile
+            slidesPerGroup={1}
             breakpoints={{
               768: {
                 slidesPerView: 2,
-                slidesPerGroup: 2, // ⭐ KEY FIX
+                slidesPerGroup: 2,
               },
             }}
             spaceBetween={32}
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
             onSlideChange={(swiper) => {
-              setActiveIndex(swiper.realIndex / 2); // simple now
+              setActiveIndex(swiper.snapIndex);
             }}
           >
             {testimonials.map((testimonial, index) => (
@@ -142,8 +140,7 @@ export default function TestimonialsSection() {
               aria-label={`Go to page ${i + 1}`}
               className='p-1 rounded-full'
               onClick={() => {
-                setActiveIndex(i);
-                swiperRef.current?.slideToLoop(i * 2);
+                swiperRef.current?.slideToLoop(i);
               }}
             >
               <span
