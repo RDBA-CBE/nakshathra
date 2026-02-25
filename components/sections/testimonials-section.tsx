@@ -103,25 +103,23 @@ export default function TestimonialsSection() {
           }`}
         >
           <Swiper
-            modules={[Autoplay]}
-            loop={true}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-            }}
-            slidesPerView={1}
-            slidesPerGroup={1}
-            breakpoints={{
-              768: {
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-              },
-            }}
-            spaceBetween={32}
-            onSlideChange={(swiper) => {
-              setActiveIndex(swiper.snapIndex);
-            }}
-          >
+  modules={[Autoplay]}
+  loop={true}
+  autoplay={{
+    delay: 4000,
+    disableOnInteraction: false,
+  }}
+  slidesPerView={1}
+  breakpoints={{
+    768: {
+      slidesPerView: 2,
+    },
+  }}
+  spaceBetween={32}
+  onSlideChange={(swiper) => {
+    setActiveIndex(swiper.realIndex);
+  }}
+>
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
                 <div className='h-full'>
