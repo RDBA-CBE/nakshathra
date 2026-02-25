@@ -65,7 +65,8 @@ export default function GallerySection() {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="relative w-full lg:w-1/2 h-[280px] sm:h-[400px] lg:h-auto min-h-[420px]">
+          <div className='w-full lg:w-1/2 relative'>
+            <div className='absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10'></div>
             <Image
               src="/gallery/gallery-banner.webp"
               alt="Hotel Nakshatra Elegant Interior"
