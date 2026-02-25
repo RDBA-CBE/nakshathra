@@ -127,25 +127,41 @@ export default function StandardSingleRoom() {
             {/* RIGHT – ROOM INFO */}
             <div>
               <h1 className='heading leading-[1.15] mb-4'>Standard Single</h1>
-
-              {/* Tariff */}
-              <div className='text-[18px] inline-flex items-center gap-3 mb-6 px-5 py-2 rounded-full bg-[#b3862f] text-[#FFFFFF] font-semibold'>
-                Tariff: ₹1499
-                <span className='text-[18px] font-medium'>
-                  + Taxes (₹1574)
-                </span>
-              </div>
-              <a
-                href='tel:+914562264233'
-                className='inline-flex items-center justify-center gap-2
-             px-5 mx-8 py-2 rounded-full
-             bg-[#640720] text-[#FFFFFF]
-             text-[18px] font-semibold
-             hover:bg-[#b3862f] transition'
+              <div
+                className='flex flex-col sm:flex-row 
+items-start sm:items-center 
+gap-4 '
               >
-                Book Now
-              </a>
-              <p className='para'>
+                <div
+                  className='text-sm sm:text-base lg:text-[18px] 
+  inline-flex items-center gap-2 sm:gap-3 
+  px-4 sm:px-5 py-2 sm:mb-5
+  rounded-full 
+  bg-[#b3862f] text-white 
+  font-semibold'
+                >
+                  Tariff: ₹1499
+                  <span className='text-[18px] font-medium'>
+                    + Taxes (₹1574)
+                  </span>
+                </div>
+                <a
+                  href='tel:+914562264233'
+                  className='inline-flex items-center justify-center gap-2
+    px-5 py-2
+    rounded-full
+    bg-[#640720] text-white
+    text-sm sm:text-base lg:text-[18px]
+    font-semibold sm:mb-5
+    hover:bg-[#b3862f]
+    transition'
+                >
+                  Book Now
+                </a>
+              </div>
+              {/* Tariff */}
+
+              <p className='para mt-5 sm:mt-0'>
                 Designed for solo travellers, the standard single room offers a
                 cozy and functional space with warm decor that provides comfort
                 and relaxation. Ideal for guests seeking simplicity and
