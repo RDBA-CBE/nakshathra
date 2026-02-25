@@ -53,7 +53,7 @@ const rooms = [
     title: 'Two King Bed',
     price: '₹3999 + Taxes (₹4199)',
     description:
-      'The Two King Bed Room is the most spacious category at Hotel Nakshatra, featuring refined decor, superior amenities and exceptional comfort. ',
+      'Perfect for families, friends, or colleagues traveling together, our Two King Bed Room gives you the space you need to feel completely at ease.',
     image: '/rooms/two-king-bed.webp',
     link: '/rooms/two-king-bed',
   },

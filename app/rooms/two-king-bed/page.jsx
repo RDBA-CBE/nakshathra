@@ -27,17 +27,12 @@ const sections = [
   {
     title: 'Facilities',
     items: [
-      'Comfortable bed with premium mattress',
-      'Fresh linens & pillows',
-      'Bedside table',
-      'Wardrobe / Closet with hangers',
-      'Writing desk & chair',
-      'Luggage rack',
-      'LED / Smart TV with satellite channels',
-      'Complimentary BreakFast',
-      'Complimentary bottled water',
-      'Room service menu',
-      '24/7 Power Supply ',
+      'Cozy king size beds with soft linen',
+      'Air conditioning and complimentary WiFi',
+      'Flat screen television',
+      'Work desk and seating area',
+      'Tea and coffee making facilities',
+      'Attached bathroom with hot water',
     ],
   },
   {
@@ -70,9 +65,7 @@ export default function StandardSingleRoom() {
               Rooms
             </Link>
             <span className='mx-2 text-gray-400'>/</span>
-            <span className='text-[#640720] font-medium'>
-              Two King Bed
-            </span>
+            <span className='text-[#640720] font-medium'>Two King Bed</span>
           </p>
         </div>
       </div>
@@ -131,9 +124,7 @@ export default function StandardSingleRoom() {
               {/* Tariff */}
               <div className='text-[18px] inline-flex items-center gap-3 mb-6 px-5 py-2 rounded-full bg-[#b3862f] text-[#FFFFFF] font-semibold'>
                 Tariff: ₹3999
-                <span className='text-[18px] font-medium'>
-                  + Taxes (₹4199)
-                </span>
+                <span className='text-[18px] font-medium'>+ Taxes (₹4199)</span>
               </div>
               <a
                 href='tel:+91-4562264233'
@@ -146,10 +137,11 @@ export default function StandardSingleRoom() {
                 Book Now
               </a>
               <p className='para'>
-                The Two King Bed is the most spacious category at Hotel
-                Nakshatra, featuring refined decor, superior amenities and
-                exceptional comfort. Designed to elevate your stay, it is ideal
-                for 1 to 3 guests who seek extra space and a premium experience.
+                Space to Stay Together, Comfort to Relax — with two comfortable
+                king-size beds and a warm, welcoming ambiance, this room is
+                thoughtfully designed to help everyone unwind after a long day,
+                whether you’re here for business, a celebration, or a relaxing
+                getaway.
               </p>
 
               <section className='py-5'>

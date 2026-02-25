@@ -67,7 +67,7 @@ const facilities = [
   {
     title: 'Where Every Meal Becomes a Multicuisine Experience',
     desc: 'Elegantly curated Multicuisine Restaurant serving authentic Chinese, North and South Indian flavours.',
-    icon: '/facilities/icons/hospitality.svg',
+    icon: '/facilities/icons/multicusine-resturant.svg',
   },
 ];
 

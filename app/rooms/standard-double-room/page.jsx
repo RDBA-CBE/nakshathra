@@ -7,8 +7,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 const images = [
-  '/rooms/standard-double-room/img1.webp',
-  '/rooms/standard-double-room/img2.webp',
+  '/rooms/standard-single-room/double-r1.webp',
+  '/rooms/standard-single-room/double-r2.webp',
   '/rooms/standard-double-room/img3.webp',
   '/rooms/standard-double-room/img4.webp',
 ];

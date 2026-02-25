@@ -31,7 +31,7 @@ export default function StandardSingleRoom() {
             {/* Left Side - Image */}
             <div className='relative w-full h-[350px] md:h-[450px] lg:h-[500px] rounded-xl overflow-hidden'>
               <Image
-                src='/home/banner4.webp'
+                src='/multi-cusine.webp'
                 alt='Multicusine Restaurant'
                 fill
                 className='object-cover'

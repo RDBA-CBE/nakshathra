@@ -116,7 +116,7 @@ export default function ContactPage() {
                 href='tel:+914562264233'
                 className='para-link block mt-6 text-base transition'
               >
-                +91-45622 64233
+                +91-4562 264233
               </a>
             </div>
 
@@ -131,10 +131,10 @@ export default function ContactPage() {
               </a>
 
               <a
-                href='mailto:info@hotelnakshatra.com'
+                href='mailto:info@nakshatrahotel.com'
                 className='para-link block mt-3 text-base break-all '
               >
-                info@hotelnakshatra.com
+                info@nakshatrahotel.com
               </a>
             </div>
 
