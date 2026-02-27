@@ -191,9 +191,16 @@ export default function ContactPage() {
 
           <div className='w-full border rounded-2xl p-6 sm:p-8 lg:p-10'>
             <h2 className='heading mb-8'>We’d love to hear from you.</h2>
-
-            <form onSubmit={handleSubmit} className='space-y-8'>
-              {/* Hidden fields for FormSubmit */}
+            <div className='w-full'>
+              <iframe
+                  src='https://connect.irepute.in/file/nakshatra/'
+                  title='Nakshatra Contact Form'
+                  className='w-full h-[550px] lg:h-[600px]'
+                  loading='lazy'
+                />
+            </div>
+            {/* <form onSubmit={handleSubmit} className='space-y-8'>
+              
               <input type='hidden' name='_captcha' value='false' />
               <input type='hidden' name='_template' value='table' />
               <input type='hidden' name='_subject' value='Nakshatra Contact' />
@@ -220,7 +227,8 @@ export default function ContactPage() {
               {success === false && (
                 <p className='text-red-600'>Something went wrong!</p>
               )}
-            </form>
+            </form> */}
+
           </div>
         </div>
       </section>
