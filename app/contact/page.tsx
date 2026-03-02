@@ -152,7 +152,7 @@ export default function ContactPage() {
       </section>
 
       {/* MAP */}
-      <section className='px-4'>
+      <section className='px-4 pb-20'>
         <div className='relative max-w-7xl mx-auto rounded-3xl h-[240px] sm:h-[320px] lg:h-[380px] overflow-hidden'>
           <iframe
             src='https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7871.199574144209!2d77.805296!3d9.456447!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMjcnMjMuMiJOIDc3wrA0OCcxOS4xIkU!5e0!3m2!1sen!2sin!4v1771243748690!5m2!1sen!2sin'
@@ -164,7 +164,7 @@ export default function ContactPage() {
       </section>
 
       {/* FORM */}
-      <section className='px-4 py-10 sm:py-14 lg:py-20'>
+      <section className='px-4 py-10 sm:py-14 lg:py-20' style={{ display: "none" }}>
         <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16'>
           <div className='relative w-full h-full min-h-full overflow-hidden rounded-3xl'>
             {/* IMAGE */}
