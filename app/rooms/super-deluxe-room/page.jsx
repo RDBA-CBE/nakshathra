@@ -144,7 +144,7 @@ gap-4'
   font-semibold'
                 >
                   Tariff: ₹2999
-                  <span className='text-xs sm:text-sm lg:text-[16px] font-medium'>
+                  <span className='text-[18px] font-medium'>
                     + 5% GST (₹3149)
                   </span>
                 </div>
