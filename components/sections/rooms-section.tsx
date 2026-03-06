@@ -1,3 +1,5 @@
+
+
 "use client"
 
 import { useRef } from "react"
@@ -8,7 +10,7 @@ import { link } from "fs"
 const rooms = [
   {
     title: "Standard Single",
-    price: "₹1499 + Taxes (₹1574)",
+    price: " ₹1399 + 5% GST (₹1469)",
     // area: "300 Sq ft",
     // guests: "4 guest",
     image: "/home/rooms/standard-single.webp",
@@ -16,23 +18,31 @@ const rooms = [
   },
   {
     title: "Standard Double",
-    price: "₹1999 + Taxes (₹2099)",
+    price: "₹1799 + 5% GST (₹1889)",
     // area: "200 Sq ft",
     // guests: "2 guest",
     image: "/home/rooms/standard-double-room.webp",
     link:"/rooms/standard-double-room"
   },
   {
-    title: "Deluxe Room",
-    price: "₹2499 + Taxes (₹2624)",
+    title: "Deluxe Single Room",
+    price: "₹1999 + 5% GST (₹2099)",
     // area: "250 Sq ft",
     // guests: "2 guest",
     image: "/home/rooms/deluxe-room.webp",
-    link:"/rooms/deluxe-room"
+    link:"/rooms/deluxe-single-room"
+  },
+  {
+    title: "Deluxe Double Room",
+    price: "₹2499 + 5% GST (₹2624)",
+    // area: "250 Sq ft",
+    // guests: "2 guest",
+    image: "/home/rooms/deluxe-room.webp",
+    link:"/rooms/deluxe-double-room"
   },
   {
     title: "Super Deluxe Room",
-    price: "₹2999 + Taxes (₹3149)",
+    price: "₹2999 + 5% GST (₹3149)",
     // area: "250 Sq ft",
     // guests: "2 guest",
     image: "/home/rooms/super-deluxe-room.webp",
@@ -40,7 +50,7 @@ const rooms = [
   },
   {
     title: "Two King Bed",
-    price: "₹3999 + Taxes (₹4199)",
+    price: "₹3999 + 5% GST (₹4199)",
     // area: "250 Sq ft",
     // guests: "2 guest",
     image: "/home/rooms/two-king-bed.webp",
@@ -54,7 +64,7 @@ export default function RoomsSection() {
 
   return (
     <section ref={sectionRef} className="py-20 px-6 bg-gradient-to-b from-[#f2f1ef] to-white">
-      <div className=" mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div
           className={`text-center mb-16 transition-all duration-700 ${
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -69,7 +79,7 @@ export default function RoomsSection() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {rooms.map((room, index) => (
             <div
               key={room.title}

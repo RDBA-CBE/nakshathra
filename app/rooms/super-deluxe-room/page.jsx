@@ -145,7 +145,7 @@ gap-4'
                 >
                   Tariff: ₹2999
                   <span className='text-xs sm:text-sm lg:text-[16px] font-medium'>
-                    + Taxes (₹3149)
+                    + 5% GST (₹3149)
                   </span>
                 </div>
 

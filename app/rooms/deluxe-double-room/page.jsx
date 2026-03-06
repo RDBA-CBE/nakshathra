@@ -7,10 +7,10 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 const images = [
-  '/rooms/standard-single-room/img1.webp',
-  '/rooms/standard-single-room/img2.webp',
-  '/rooms/standard-single-room/img3.webp',
-  '/rooms/standard-single-room/img4.webp',
+  '/rooms/deluxe-room/img1.webp',
+  '/rooms/deluxe-room/img2.webp',
+  '/rooms/deluxe-room/img3.webp',
+  '/rooms/deluxe-room/img4.webp',
 ];
 
 const sections = [
@@ -37,14 +37,14 @@ const sections = [
       'Complimentary BreakFast',
       'Complimentary bottled water',
       'Room service menu',
-      '24/7 Power Supply ',
+      '24/7 Power Supply',
     ],
   },
   {
     title: 'Bathroom Facilities',
     items: [
       'Hot & cold running water',
-      'Shower ',
+      'Shower',
       'Bath towels & hand towels',
       'Toiletries (soap, shampoo, conditioner)',
       'Shaving mirror',
@@ -59,6 +59,7 @@ export default function StandardSingleRoom() {
   return (
     <main className='min-h-screen bg-white'>
       <Header />
+      {/* Breadcrumb Strip */}
       <div className='w-full bg-[#F8F5F0] '>
         <div className='max-w-6xl mx-auto px-4 py-4'>
           <p className='para'>
@@ -71,11 +72,12 @@ export default function StandardSingleRoom() {
             </Link>
             <span className='mx-2 text-gray-400'>/</span>
             <span className='text-[#640720] font-medium'>
-              Standard Single Room
+              Deluxe Double Room
             </span>
           </p>
         </div>
       </div>
+
       {/* MAIN SECTION */}
       <section className='py-20 px-4 bg-white'>
         <div className='max-w-6xl mx-auto'>
@@ -104,7 +106,7 @@ export default function StandardSingleRoom() {
                   >
                     <Image
                       src={img}
-                      alt='Standard Single Room'
+                      alt='Deluxe Room'
                       fill
                       className='object-cover'
                     />
@@ -116,7 +118,7 @@ export default function StandardSingleRoom() {
               <div className='relative flex-1 h-[550px] rounded-2xl overflow-hidden bg-gray-200'>
                 <Image
                   src={activeImage}
-                  alt='Standard Single Room'
+                  alt='Deluxe Room'
                   fill
                   priority
                   className='object-cover'
@@ -126,7 +128,7 @@ export default function StandardSingleRoom() {
 
             {/* RIGHT – ROOM INFO */}
             <div>
-              <h1 className='heading leading-[1.15] mb-4'>Standard Single</h1>
+              <h1 className='heading leading-[1.15] mb-4'>Deluxe Double</h1>
               <div
                 className='flex flex-col sm:flex-row 
 items-start sm:items-center 
@@ -140,9 +142,9 @@ gap-4 '
   bg-[#b3862f] text-white 
   font-semibold'
                 >
-                  Tariff: ₹1399
+                  Tariff: ₹2499
                   <span className='text-[18px] font-medium'>
-                    + 5% GST (₹1469)
+                    + 5% GST (₹2624)
                   </span>
                 </div>
                 <a
@@ -162,11 +164,13 @@ gap-4 '
               {/* Tariff */}
 
               <p className='para mt-5 sm:mt-0'>
-                Designed for solo travellers, the standard single room offers a
-                cozy and functional space with warm decor that provides comfort
-                and relaxation. Ideal for guests seeking simplicity and
-                convenience, this room ensures a pleasant and hassle-free stay.
+                The Deluxe Double Room offers enhanced space with elegant interiors and
+                premium comforts, creating a refined yet inviting atmosphere.
+                Thoughtfully designed for relaxation, this room comfortably
+                accommodates 1 to 3 guests, making it ideal for families and
+                extended stays.
               </p>
+
               <section className='py-5'>
                 <div className='max-w-4xl mx-auto space-y-4'>
                   {sections.map((section, index) => {

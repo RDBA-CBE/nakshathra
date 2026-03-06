@@ -15,7 +15,7 @@ const rooms = [
   {
     id: '01',
     title: 'Standard Single',
-    price: '₹1499 + Taxes (₹1574)',
+    price: ' ₹1399 + 5% GST (₹1469)',
     description:
       'Designed for solo travellers, the standard single room offers a cozy and functional space with warm decor that provides comfort and relaxation.',
     image: '/rooms/standard-single.webp',
@@ -24,7 +24,7 @@ const rooms = [
   {
     id: '02',
     title: 'Standard Double',
-    price: '₹1999 + Taxes (₹2099)',
+    price: '₹1799 + 5% GST (₹1889)',
     description:
       'The Standard Double Room is a spacious and well-appointed accommodation offering enhanced comfort, privacy and modern amenities.',
     image: '/rooms/standard-double.webp',
@@ -32,26 +32,35 @@ const rooms = [
   },
   {
     id: '03',
-    title: 'Deluxe Room',
-    price: '₹2499 + Taxes (₹2624)',
+    title: 'Deluxe Single Room',
+    price: '₹1999 + 5% GST (₹2099)',
     description:
-      'The Deluxe Room offers enhanced space with elegant interiors and premium comforts, creating a refined yet inviting atmosphere.',
+      'The Deluxe Single Room offers a comfortable, private stay with modern interiors and essential amenities, creating a relaxing space for solo travelers and business guests.',
     image: '/rooms/deluxe-room.webp',
-    link: '/rooms/deluxe-room',
+    link: '/rooms/deluxe-single-room',
   },
   {
     id: '04',
+    title: 'Deluxe Double Room',
+    price: '₹2499 + 5% GST (₹2624)',
+    description:
+      'The Deluxe Double Room offers enhanced space with elegant interiors and premium comforts, creating a refined yet inviting atmosphere.',
+    image: '/rooms/deluxe-room.webp',
+    link: '/rooms/deluxe-double-room',
+  },
+  {
+    id: '05',
     title: 'Super Deluxe Room',
-    price: '₹2999 + Taxes (₹3149)',
+    price: '₹2999 + 5% GST (₹3149)',
     description:
       'The Super Deluxe Room is the most spacious category at Hotel Nakshatra, featuring refined decor, superior amenities and exceptional comfort. ',
     image: '/rooms/super-deluxe-room.webp',
     link: '/rooms/super-deluxe-room',
   },
-   {
-    id: '05',
+  {
+    id: '06',
     title: 'Two King Bed',
-    price: '₹3999 + Taxes (₹4199)',
+    price: '₹3999 + 5% GST (₹4199)',
     description:
       'Perfect for families, friends, or colleagues traveling together, our Two King Bed Room gives you the space you need to feel completely at ease.',
     image: '/rooms/two-king-bed.webp',
@@ -138,10 +147,19 @@ export default function RoomsPage() {
 
           {/* Rooms Grid */}
           <div className='grid gap-10 sm:grid-cols-2 lg:grid-cols-2'>
-            {rooms.map((room) => (
+            {rooms?.map((room) => (
+              // <div
+              //   key={room.id}
+              //   className='bg-white rounded-2xl shadow-sm hover:bg-gradient-to-br hover:from-white hover:to-[#FBF6E6] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden'
+              // >
               <div
                 key={room.id}
-                className='bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden'
+                className='group bg-white/90 backdrop-blur-sm rounded-2xl 
+  shadow-md hover:shadow-2xl
+  hover:-translate-y-3 hover:scale-[1.03]
+  transition-all duration-300 ease-out
+  border border-transparent hover:border-[#FBF6E6]
+  overflow-hidden cursor-pointer'
               >
                 {/* Image */}
                 <div className='relative h-auto overflow-hidden'>
@@ -191,7 +209,7 @@ export default function RoomsPage() {
 
                     {/* Book Now - RIGHT */}
                     <a
-                     href='tel:+914562264233'
+                      href='tel:+914562264233'
                       className='px-4 py-2 rounded-md bg-[#640720] text-[#FFFFFF] text-sm font-medium hover:bg-[#6f3610] transition'
                     >
                       Book Now
