@@ -159,11 +159,11 @@ gap-4 '
               {/* Tariff */}
 
               <p className='para mt-5 sm:mt-0'>
-                The Deluxe Single Room is ideal for solo travelers and business
-                guests, offering comfort and privacy. It features modern
-                interiors, a comfortable bed, air conditioning, high-speed
-                Wi-Fi, LED TV, and a well-appointed bathroom for a relaxing
-                stay.
+                The Deluxe Single Room is designed for solo travellers and
+                business guests, offering a comfortable and private stay. The
+                room features modern interiors, a cosy bed, air conditioning,
+                high speed Wi Fi, an LED television, and a well appointed
+                bathroom to ensure a relaxing and convenient experience.
               </p>
 
               <section className='py-5'>
