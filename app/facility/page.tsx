@@ -239,11 +239,11 @@ export default function FacilityPage() {
                 {/* Main Content */}
                 <div className='space-y-8'>
                   <div className='text-3xl sm:text-4xl md:text-5xl font-heading text-[#b3862f] mb-6'>
-                    At Hotel Nakshatra
+                    Hotel Nakshatra
                   </div>
 
                   <p className='para'>
-                    Every is curated to provide comfort, convenience and care,
+                    At Hotel Nakshathra, every detail is curated to provide comfort, convenience and care,
                     making it your ideal choice for{' '}
                     <span className='text-[#b3862f] font-medium'>Business</span>
                     ,{' '}
